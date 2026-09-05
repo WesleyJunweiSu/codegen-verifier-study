@@ -1,0 +1,59 @@
+name: Isolated Linux evaluator
+on:
+  workflow_dispatch:
+    inputs:
+      input_run:
+        description: Tracked run directory to evaluate
+        required: true
+        default: historical-holdout
+        type: choice
+        options:
+          - historical-holdout
+          - mbpp-pilot-20260905
+permissions:
+  contents: read
+concurrency:
+  group: verifier-linux-eval
+  cancel-in-progress: false
+jobs:
+  evaluate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Prepare official versioned benchmark
+        env:
+          INPUT_RUN: ${{ inputs.input_run }}
+        run: |
+          mkdir -p eval-data eval-output
+          if [ "$INPUT_RUN" = "historical-holdout" ]; then
+            echo DATASET=humaneval >> "$GITHUB_ENV"
+            curl -fL --retry 3 https://github.com/evalplus/humanevalplus_release/releases/download/v0.1.10/HumanEvalPlus-Mini.jsonl.gz | gzip -d > eval-data/dataset.jsonl
+          else
+            echo DATASET=mbpp >> "$GITHUB_ENV"
+            curl -fL --retry 3 https://github.com/evalplus/mbppplus_release/releases/download/v0.2.0/MbppPlus.jsonl.gz | gzip -d > eval-data/dataset.jsonl
+          fi
+          chmod 777 eval-output
+      - name: Build pinned evaluation package image
+        run: docker build -f docker/Dockerfile.eval -t verifier-eval .
+      - name: Score within disposable restricted container
+        env:
+          INPUT_RUN: ${{ inputs.input_run }}
+        run: |
+          docker run --rm --network none --read-only --cap-drop ALL --security-opt no-new-privileges \
+            --pids-limit 128 --memory 3g --cpus 2 --user 65534:65534 \
+            --tmpfs /tmp:rw,nosuid,nodev,size=512m \
+            -e VERIFIER_ISOLATED_RUN=1 -e EVALPLUS_MAX_MEMORY_BYTES=2147483648 \
+            -v "$PWD/eval-data:/data:ro" \
+            -v "$PWD/runs/$INPUT_RUN:/inputs:ro" \
+            -v "$PWD/eval-output:/output:rw" \
+            verifier-eval --dataset "$DATASET" --data /data/dataset.jsonl \
+            --generations /inputs/generations.jsonl --output /output
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: linux-evaluation-${{ inputs.input_run }}
+          path: eval-output/
+          if-no-files-found: error
