@@ -1,0 +1,48 @@
+name: Isolated legacy evaluator diagnostics
+on:
+  workflow_dispatch:
+    inputs:
+      input_run:
+        description: Historical candidates for controlled evaluator interventions
+        required: true
+        default: historical-holdout
+        type: choice
+        options:
+          - historical-holdout
+permissions:
+  contents: read
+concurrency:
+  group: verifier-linux-eval
+  cancel-in-progress: false
+jobs:
+  diagnose:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Prepare versioned historical data
+        run: |
+          mkdir -p eval-data eval-output
+          curl -fL --retry 3 https://github.com/evalplus/humanevalplus_release/releases/download/v0.1.10/HumanEvalPlus-Mini.jsonl.gz | gzip -d > eval-data/dataset.jsonl
+          chmod 777 eval-output
+      - name: Build evaluation image
+        run: docker build -f docker/Dockerfile.eval -t verifier-eval .
+      - name: Run controlled diagnostics in restricted container
+        run: |
+          docker run --rm --network none --read-only --cap-drop ALL --security-opt no-new-privileges \
+            --pids-limit 128 --memory 3g --cpus 2 --user 65534:65534 \
+            --tmpfs /tmp:rw,nosuid,nodev,size=512m \
+            -e VERIFIER_ISOLATED_RUN=1 -e EVALPLUS_MAX_MEMORY_BYTES=2147483648 \
+            -v "$PWD/eval-data:/data:ro" \
+            -v "$PWD/runs/historical-holdout:/inputs:ro" \
+            -v "$PWD/eval-output:/output:rw" \
+            --entrypoint python verifier-eval /app/diagnose_legacy_linux.py \
+            --data /data/dataset.jsonl --generations /inputs/generations.jsonl --output /output
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: legacy-evaluator-diagnostics
+          path: eval-output/
+          if-no-files-found: error

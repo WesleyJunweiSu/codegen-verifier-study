@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-05",
+  "stage": "Mechanism audit frozen before diagnostic run; all historical task labels already exposed",
+  "parent_run": "historical-holdout",
+  "legacy_source_repo": "WesleyJunweiSu/codegen-uncertainty-research",
+  "legacy_source_commit": "de64b309a1ff1b8942916d183142b5fb1f035c6d",
+  "task_ids": ["HumanEval/15", "HumanEval/96", "HumanEval/100", "HumanEval/123", "HumanEval/139", "HumanEval/160", "HumanEval/162"],
+  "hypotheses": [
+    "Joining a worker before draining its Queue can mislabel correct code as timeout when logging large outputs.",
+    "Calling repr on huge integers can turn correct function outputs into ValueError failures.",
+    "Static gate restrictions explain two unsafe labels independently of function correctness."
+  ],
+  "conditions": ["original", "drain_first", "drain_first_omit_repr", "drain_first_unlimited_repr (large-integer cases only)"],
+  "task_timeout_seconds": 10,
+  "fixture_timeout_seconds": 2,
+  "model_calls": 0,
+  "execution": "Restricted Linux Docker only, spawn multiprocessing. Does not establish identical behavior on the original Windows machine."
+}
