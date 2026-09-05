@@ -1,43 +1,49 @@
 # Experiment checkpoint
 
-Updated: 2026-09-05. Phase: first implementation and pilot execution.
+Updated: 2026-09-05. Phase: **first pilot, parser ablation and historical audit complete**.
 
-## Current objective
+## Objective
 
-Build an interview-ready, research-quality study of imperfect code verifiers, candidate selection and abstention. Move quickly through concrete experiments while preserving independent confirmation data and negative results. No claim of conference acceptance or new state of the art.
+Build an interview-ready study and practical code-selection tool with reproducible experiments, honest failure analysis, isolated execution and independent confirmation. Produce useful results quickly; do not promise conference acceptance or invent performance gains.
 
-## Completed
+## Completed evidence
 
-- Created private GitHub repository and pushed initial protocol.
-- Recovered prior private research with explicit user authorization.
-- Located working local GPU environment and Qwen3-4B weights.
-- Downloaded MBPP+ v0.2.0 and froze 60 development / 60 calibration / 180 confirmation / 78 reserve tasks.
-- Exported generator-visible prompt fields without hidden data.
-- Implemented resumable generation and restricted Linux evaluation workflow.
+- Private remote: https://github.com/WesleyJunweiSu/codegen-verifier-study
+- Historical private repo reused with explicit user approval; source commit recorded in provenance.
+- Local Qwen3-4B environment verified; no GPU rental required.
+- MBPP+ split frozen: 60 development / 60 calibration / 180 confirmation / 78 reserve. Pilot uses 20 development tasks.
+- 80 candidates and 20 independent test responses generated. Combined generation time 352.50 s excluding other overhead; peak 8.08 GiB.
+- Historical Linux audit: 134 candidates, 7 changed labels, test subset 75/100 old versus 82/100 Linux. This is an evaluator change.
+- Strict pilot: first/raw/filtered 10/20; public 11/20; candidate oracle 12/20; abstention returns nothing. 25/120 assertions reject reference.
+- Zero-generation parser ablation: 160 assertions, 158 retained, 34 reference rejects; raw/filtered still 10/20, public-first 11/20.
+- Technical report v0.1, figures, raw evidence, analysis scripts, saved-evidence CLI and nine contract tests.
 
-## Active work
+## Active jobs
 
-- Local run `mbpp-pilot-20260905`: 20 development tasks × 4 candidates. Progress is saved after each generation in `runs/mbpp-pilot-20260905/progress.json`.
-- Historical Linux reevaluation: 134 saved candidates; workflow dispatch and outputs tracked next.
+None. GPU generations and all three successful Linux evaluations are complete; artifacts imported. Do not repeat completed model calls. Last successful workflow: 33947519157, parser ablation at commit 18d8301. Initial failed workflow 33947032133 is retained in the log.
 
-## Next actions
+## Next bounded work
 
-1. Check the running process before starting another GPU job. Do not duplicate run IDs or re-sample completed candidate keys.
-2. Validate generated outputs and the Linux evaluator with known fixtures.
-3. Compare historical Windows and Linux labels and report every disagreement.
-4. Generate specification-derived tests, execute a candidate/test matrix in the restricted container, and compare selector baselines on the development pilot.
-5. Freeze the method/operating point before using calibration or confirmation labels for their respective roles. The 180 confirmation tasks are not part of the current run.
+1. Audit the 34 normalized reference-rejecting assertions against public specifications. Separate wrong expectations, invalid inputs and ambiguity; keep reference information out of selectors.
+2. Resolve four historical timeout differences and HumanEval/139 with controlled Linux evaluator diagnostics. Two static policy-gate differences already have direct source explanations.
+3. Freeze one candidate-diversity intervention on development data, with selectors fixed and measured token/time costs. `generate_batch.py` currently uses `split['pilot']`; extending to all development tasks requires a recorded configuration change.
+4. Implement execution-consensus and a documented nearest-work baseline. Current pass-count selection is not S* reproduction.
+5. After a useful selector exists, freeze calibration rules and confirmation protocol. Do not use any of the 180 confirmation labels during development.
 
 ## Continuation rules
 
-Read this file, `docs/pilot-protocol.md`, the claim ledger and the latest run progress. Log every experiment's exact configuration, data/model hashes, code revision, cost and failure modes. Update this checkpoint and commit meaningful completed batches to the private repository. Never claim a running or failed experiment as completed. No GPU rental or paid API calls without a defined spending cap. Do not execute generated code in the Windows host environment.
+Read this file, the protocol, claim ledger and latest summaries. Check active GPU/Actions jobs before launching. Each batch needs configuration, source revision, costs, failures and an updated report. Commit completed batches to the private remote. Preserve negative results; distinguish development adaptations from independent tests. No paid API or rented GPU without a defined spending cap. Never execute model-generated code in the ordinary Windows environment.
+
+Daily follow-up is scheduled for 09:00 America/New_York in this task. Notify on new results, completion, failure or needed input; stay quiet when unchanged. The user may request additional runs directly.
 
 ## Commands
 
-Local generation uses the already working interpreter:
+GPU interpreter: `C:/Users/Asuka/Documents/techblog/.venv/Scripts/python.exe`.
 
-```powershell
-& 'C:/Users/Asuka/Documents/techblog/.venv/Scripts/python.exe' -u scripts/generate_batch.py --model-path 'C:/Users/Asuka/Documents/techblog/models/Qwen3-4B'
-```
+Model: `C:/Users/Asuka/Documents/techblog/models/Qwen3-4B`; checksums: `configs/model-fingerprint.json`.
 
-For Linux scoring, use the `Isolated Linux evaluator` GitHub Actions workflow; choose the intended tracked run. Record the workflow run ID and download its artifacts before reporting scores.
+Analysis: `python scripts/analyze_results.py mbpp-pilot-20260905` and `python scripts/analyze_results.py mbpp-parser-ablation-20260905`.
+
+Demo: `python scripts/selector_cli.py --task Mbpp/564 --method public_tests`.
+
+Execution: dispatch `linux-eval.yml` for the intended tracked run; download/import artifacts with `github_ops.py` and `import_artifact.py`. These use existing Git Credential Manager credentials without printing them. User-context git commands may need a scoped `-c safe.directory=<this repository>`.

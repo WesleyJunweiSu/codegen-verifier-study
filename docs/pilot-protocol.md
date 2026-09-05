@@ -1,6 +1,12 @@
-# Pilot protocol — draft before implementation
+# Pilot protocol — original design with execution addendum
 
-Date: 2026-09-05. No outcomes recorded.
+Date: 2026-09-05. The design below predates implementation. This addendum records execution status and deviations; original forward-looking scope remains for comparison.
+
+## Execution addendum
+
+The 20-task MBPP+ development pilot and parser ablation are complete. IDs are frozen in `configs/split-manifest.json`: 60 development, 60 calibration, 180 confirmation, 78 reserve. The prior repository was audited: MBPP+ was not previously evaluated. Local BF16 inference measured 8.08 GiB peak across candidate and test generation.
+
+Completed comparisons: first candidate, exact uniform-random expectation, public examples, raw/filtered generated tests, fixed uncalibrated abstention. The ablation adds public-first selection. Execution-consensus, full nearest-work reproduction, calibrated abstention and matched end-to-end budgets remain unfinished. The original first-week gate was accelerated to the first pilot. See the technical report and log; these are not confirmation results.
 
 ## Research question
 

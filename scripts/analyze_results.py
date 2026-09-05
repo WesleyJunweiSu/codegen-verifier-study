@@ -94,6 +94,9 @@ def pilot(name):
         "test_generation_seconds":sum(row["wall_seconds"] for row in tests),
         "peak_vram_bytes":max(row["peak_vram_bytes"] for row in candidates+tests),
         "filter_reasons":dict(collections.Counter(reason for row in tests for test in row["tests"] for reason in test["reasons"]))}
+    test_manifest=json.loads((run/"test-manifest.json").read_text())
+    summary["reuses_generation_from"]=test_manifest.get("parent_run")
+    summary["incremental_model_output_tokens"]=0 if "parent_run" in test_manifest else summary["candidate_output_tokens"]+summary["test_output_tokens"]
     for method in sorted({row["method"] for row in decisions}):
         correct=sum(row[method+"_correct"] for row in task_rows)
         accepted=sum(row[method+"_selected"] is not None for row in task_rows)

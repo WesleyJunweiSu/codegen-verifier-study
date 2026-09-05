@@ -1,0 +1,6 @@
+# Preserve recorded bytes and hashes on Windows and Linux.
+*.json -text
+*.jsonl -text
+*.py -text
+*.png -text
+*.pdf -text

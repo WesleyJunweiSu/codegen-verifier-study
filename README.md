@@ -1,35 +1,63 @@
 # Code Generation Verifier Study
 
-Status: research protocol and project planning. No new model experiments have been run in this repository.
+**Status: first empirical pilot complete, 2026-09-05.** Local Qwen3-4B generation, isolated Linux execution, two selector experiments, and a historical evaluator audit are recorded in this private repository.
 
-This project follows Wesley Junwei Su's research blog, [Agreement is not confidence](https://github.com/WesleyJunweiSu/WesleyJunweiSu.github.io/blob/main/app/page.tsx).
+**Research question:** when generated tests contain errors, what evidence is sufficient to select a code candidate—or decide that selection is unsupported—under a constrained compute budget?
 
-The next question is: **when generated tests are imperfect, can a budget-limited code selector distinguish correct candidates from correlated mistakes, and recognize when it lacks enough evidence to select?**
+This follows [Agreement is not confidence](https://github.com/WesleyJunweiSu/WesleyJunweiSu.github.io/blob/main/app/page.tsx). It is a replication and extension of established test-guided selection work, not a claim of a new state of the art.
 
-The intended deliverable is a reproducible evaluation harness and a small local CLI that returns a candidate with execution evidence, or declines to select. Passing generated tests is evidence, not a proof of correctness.
+## First results
 
-## Contents
+Qwen3-4B BF16, non-thinking; MBPP+ v0.2.0; **20 development tasks × 4 candidates**. All selectors share a frozen candidate pool. Hidden tests are read only after selection decisions have been written.
 
-- [中文选题建议与求职规划](docs/project-recommendation.zh.md)
-- [Pilot protocol](docs/pilot-protocol.md)
-- [Related work](docs/related-work.md)
-- [Claim ledger](docs/claim-ledger.md)
-- [Draft pilot configuration](configs/pilot.json)
+| Method | Correct returned / all tasks | Coverage |
+|---|---:|---:|
+| First candidate | 10/20 | 100% |
+| Public-example selection | 11/20 | 100% |
+| Generated-test selection | 10/20 | 100% |
+| Syntactically filtered tests | 10/20 | 100% |
+| Fixed abstention heuristic | 0/20 | 0% |
+| Candidate oracle, diagnostic only | 12/20 | — |
 
-## Scope
+The first 120 parsed generated assertions included **25 reference rejections**. Five tasks produced comparisons without `assert`; an AST normalization ablation recovered 40 assertions, but generated-test selection remained at 10/20. Reference rejection requires specification review; it is not a universal proof of an invalid test. Thirteen tasks had four text-identical candidates. These are exploratory results, not evidence of general superiority or statistical equivalence.
 
-Start with one 4B open-weight model and Python function tasks. Isolate candidate generation from selection. Compare first-candidate, execution-consensus, test-guided selection, and a quality-filtered selector with optional abstention. Preserve hidden evaluation tests for final scoring only.
+The historical audit found **7/134 different labels** between the old Windows evaluator and Linux EvalPlus primitives. Historical test accuracy changed from 75/100 to 82/100 for exactly the same code; this is **not a model improvement**.
 
-This is an empirical replication-and-extension project. Test-guided selection is established prior work; no novelty or performance improvement is claimed.
+![Pilot results](reports/figures/pilot-results.png)
 
-## Local hardware
+## Read and reproduce
 
-Observed on 2026-09-05 via nvidia-smi: NVIDIA GeForce RTX 5070 Ti Laptop GPU, 12,227 MiB memory, driver 610.62. Qwen3-4B is the initial model to preserve continuity with the previous study. Runtime compatibility, peak VRAM, and throughput still need a smoke test.
+- [Technical report v0.1](reports/technical-report-v0.1.md)
+- [Experiment log](reports/experiment-log.md)
+- [Checkpoint and next experiment](PROGRESS.md)
+- [Research protocol](docs/pilot-protocol.md) and [frozen splits](configs/split-manifest.json)
+- [Related work](docs/related-work.md) and [claim ledger](docs/claim-ledger.md)
+- [中文面试讲解与简历表述](docs/interview-notes.zh.md)
+- [Environment and source provenance](docs/provenance.md)
 
-The old blog links to `WesleyJunweiSu/codegen-uncertainty-research`, which was not in the unauthenticated public repository listing. Its raw generations, split manifests and evaluator implementation were not available for this planning pass. Do not treat the blog's numbers as independently reproduced.
+Analysis needs Python 3.12; plots additionally require Matplotlib. From the repository root:
 
-## Implementation status
+```bash
+python -m unittest discover -s tests -v
+python scripts/analyze_results.py historical-holdout
+python scripts/analyze_results.py mbpp-pilot-20260905
+python scripts/analyze_results.py mbpp-parser-ablation-20260905
+python scripts/selector_cli.py --task Mbpp/564 --method public_tests
+python scripts/selector_cli.py --task Mbpp/564 --method filtered_abstain
+```
 
-Only planning documents and a draft configuration exist. There is no runnable experiment entry point yet. The first implementation milestone is an evaluator contract plus an isolated Linux execution environment, followed by a 20-task smoke run.
+The CLI displays saved decisions and code; it does not execute generated code. Linux execution uses the `Isolated Linux evaluator` GitHub Actions workflow or its restricted Docker invocation. Never execute generated candidates directly on a normal host.
 
-No model download, GPU rental, GitHub publication, or benchmark execution has been performed for this project.
+To resume local generation using the existing environment:
+
+```powershell
+& 'C:/Users/Asuka/Documents/techblog/.venv/Scripts/python.exe' -u scripts/generate_batch.py --model-path 'C:/Users/Asuka/Documents/techblog/models/Qwen3-4B'
+```
+
+Recorded candidate keys are skipped. This resumes the pilot; it does not silently expand to confirmation data. Full model/tokenizer checksums are in `configs/model-fingerprint.json`. Weight files and hidden benchmark data are excluded from Git.
+
+## Scope and limitations
+
+This is a runnable research harness and evidence-inspection CLI, not a production coding assistant. The pilot has no demonstrated benefit from generated-test filtering or abstention. Execution-consensus, full S* reproduction, calibrated operating points, multiple generation seeds, held-out confirmation and external data-science tasks remain unfinished.
+
+Local hardware: RTX 5070 Ti Laptop, 12,227 MiB. The two model-generation phases took 352.5 seconds combined, excluding loading and other overhead; peak allocated VRAM was 8.08 GiB. The parser ablation reused all generations and added zero model tokens. No GPU rental or paid model API was used; Linux jobs use the account's GitHub Actions allowance.
