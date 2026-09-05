@@ -1,0 +1,12 @@
+{
+  "assertions": 34,
+  "tasks": 12,
+  "primary_categories": {
+    "wrong_expected_under_public_evidence": 22,
+    "specification_ambiguity_or_conflict": 11,
+    "outside_hidden_benchmark_contract": 1
+  },
+  "source_sha256": "cec11bad35205b63e45b0f850e24eb9765b2e05759677be21c312934207b3c0c",
+  "limitations": "Post-hoc AI-assisted, single-annotator, no agreement estimate; categories are judgments, not definitive ground truth.",
+  "information_boundary": "Diagnostic-only; do not use annotations, hidden contracts or reference behavior in deployable filtering."
+}

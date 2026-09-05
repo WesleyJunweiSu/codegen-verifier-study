@@ -8,6 +8,8 @@ The 20-task MBPP+ development pilot and parser ablation are complete. IDs are fr
 
 Completed comparisons: first candidate, exact uniform-random expectation, public examples, raw/filtered generated tests, fixed uncalibrated abstention. The ablation adds public-first selection. Execution-consensus, full nearest-work reproduction, calibrated abstention and matched end-to-end budgets remain unfinished. The original first-week gate was accelerated to the first pilot. See the technical report and log; these are not confirmation results.
 
+The evening follow-up adds diagnostic-only semantic annotations, historical policy reanalysis with unchanged accepted flags, and controlled legacy-evaluator interventions frozen in `configs/legacy-diagnostics.json`. It adds zero model calls. Reference-visible annotations must not become deployable selector inputs. Historical /96 and /123 timeout causes remain unresolved on Linux; all other intervention findings are qualified by platform in report v0.2.
+
 ## Research question
 
 When generated tests are unreliable, can a small-model selector reduce incorrect acceptance under a fixed compute budget while preserving useful answer coverage?

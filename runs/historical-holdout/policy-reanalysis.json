@@ -1,0 +1,46 @@
+{
+  "scope": "Historical exposed data; fixed accepted flags and entropy scores; no threshold retuning",
+  "bootstrap": "10,000 paired task resamples, Python random.Random(20260709), interpolated 2.5/97.5 percentiles. Original blog used NumPy RNG; bootstrap realizations therefore differ.",
+  "results": {
+    "windows": {
+      "test_tasks": 100,
+      "correct": 75,
+      "accepted": 71,
+      "correct_accepted": 56,
+      "baseline_accuracy": 0.75,
+      "selective_accuracy": 0.7887323943661971,
+      "realized_coverage": 0.71,
+      "selective_minus_baseline_pp": 3.873239436619713,
+      "error_detection_auroc": 0.5984,
+      "lift_task_bootstrap95_pp": [
+        -1.7694444444444426,
+        10.089552238805977
+      ],
+      "original_algorithm_bootstrap95_pp": [
+        -1.7673896499238986,
+        9.952380952380956
+      ],
+      "bootstrap_numpy_version": "2.5.1"
+    },
+    "linux": {
+      "test_tasks": 100,
+      "correct": 82,
+      "accepted": 71,
+      "correct_accepted": 62,
+      "baseline_accuracy": 0.82,
+      "selective_accuracy": 0.8732394366197183,
+      "realized_coverage": 0.71,
+      "selective_minus_baseline_pp": 5.32394366197183,
+      "error_detection_auroc": 0.6239837398373984,
+      "lift_task_bootstrap95_pp": [
+        0.08216401332839549,
+        11.3015873015873
+      ],
+      "original_algorithm_bootstrap95_pp": [
+        -0.07808670203036285,
+        11.23839285714285
+      ],
+      "bootstrap_numpy_version": "2.5.1"
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "historical_cases": 7,
+  "fixture_cases": 2,
+  "condition_rows": 29,
+  "model_calls": 0,
+  "wall_seconds": 30.079973955000014,
+  "cases": [
+    {
+      "task_id": "HumanEval/15",
+      "historical_windows_status": "timeout",
+      "original_legacy_linux_status": "timeout",
+      "drain_first_status": "pass",
+      "omit_repr_status": "pass",
+      "mechanism": "queue_join_order_reproduced_on_linux",
+      "queue_payload_bytes_with_repr": 34444887,
+      "queue_payload_bytes_without_repr": 77,
+      "drain_first_seconds": 1.0833235439999953,
+      "reason": "task_timeout"
+    },
+    {
+      "task_id": "HumanEval/96",
+      "historical_windows_status": "timeout",
+      "original_legacy_linux_status": "pass",
+      "drain_first_status": "pass",
+      "omit_repr_status": "pass",
+      "mechanism": "historical_timeout_not_reproduced_on_linux",
+      "queue_payload_bytes_with_repr": 11955,
+      "queue_payload_bytes_without_repr": 77,
+      "drain_first_seconds": 0.17271806399999434,
+      "reason": null
+    },
+    {
+      "task_id": "HumanEval/100",
+      "historical_windows_status": "timeout",
+      "original_legacy_linux_status": "timeout",
+      "drain_first_status": "pass",
+      "omit_repr_status": "pass",
+      "mechanism": "queue_join_order_reproduced_on_linux",
+      "queue_payload_bytes_with_repr": 9000149,
+      "queue_payload_bytes_without_repr": 68,
+      "drain_first_seconds": 0.440756437999994,
+      "reason": "task_timeout"
+    },
+    {
+      "task_id": "HumanEval/123",
+      "historical_windows_status": "timeout",
+      "original_legacy_linux_status": "pass",
+      "drain_first_status": "pass",
+      "omit_repr_status": "pass",
+      "mechanism": "historical_timeout_not_reproduced_on_linux",
+      "queue_payload_bytes_with_repr": 15026,
+      "queue_payload_bytes_without_repr": 74,
+      "drain_first_seconds": 0.16468425000000764,
+      "reason": null
+    },
+    {
+      "task_id": "HumanEval/139",
+      "historical_windows_status": "fail",
+      "original_legacy_linux_status": "fail",
+      "drain_first_status": "fail",
+      "omit_repr_status": "pass",
+      "mechanism": "integer_repr_limit_reproduced_on_linux",
+      "queue_payload_bytes_with_repr": 99,
+      "queue_payload_bytes_without_repr": 68,
+      "drain_first_seconds": 0.44744676499999514,
+      "reason": null
+    },
+    {
+      "task_id": "HumanEval/160",
+      "historical_windows_status": "unsafe",
+      "original_legacy_linux_status": "unsafe",
+      "drain_first_status": "unsafe",
+      "omit_repr_status": "unsafe",
+      "mechanism": "legacy_gate_reproduced",
+      "queue_payload_bytes_with_repr": null,
+      "queue_payload_bytes_without_repr": null,
+      "drain_first_seconds": 0.00014975999999933265,
+      "reason": "unsafe_call:eval"
+    },
+    {
+      "task_id": "HumanEval/162",
+      "historical_windows_status": "unsafe",
+      "original_legacy_linux_status": "unsafe",
+      "drain_first_status": "unsafe",
+      "omit_repr_status": "unsafe",
+      "mechanism": "legacy_gate_reproduced",
+      "queue_payload_bytes_with_repr": null,
+      "queue_payload_bytes_without_repr": null,
+      "drain_first_seconds": 8.687300000076448e-05,
+      "reason": "unsafe_import"
+    }
+  ],
+  "scope": "Mechanisms tested on Linux with the original Windows evaluator source and unchanged candidates. Two historical timeouts remain unreproduced.",
+  "reproduced_queue_cases": 2,
+  "reproduced_repr_cases": 1,
+  "reproduced_gate_cases": 2,
+  "unreproduced_historical_timeout_cases": 2
+}

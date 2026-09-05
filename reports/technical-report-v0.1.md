@@ -5,6 +5,8 @@ Wesley Junwei Su · Working technical report v0.1 · 2026-09-05
 
 **Status:** exploratory pilot and evaluator audit, not a peer-reviewed paper or a demonstrated new method.
 
+This first version is retained as a dated record. [Version 0.2](technical-report-v0.2.md) adds controlled evaluator interventions, provisional semantic annotations and corrected historical entropy metrics; consult it for current evidence.
+
 ### Abstract
 
 Test-guided code selection assumes that generated checks provide useful evidence about candidate correctness. We examine this assumption using Qwen3-4B on 20 development tasks from MBPP+, with four frozen candidates per task. First-candidate selection returns 10 correct programs; public-example selection returns 11; generated-test and syntactically filtered selection each return 10. The candidate oracle is 12/20. Of 120 strictly parsed generated assertions, 25 reject the benchmark reference implementation. An AST normalization ablation recovers 40 assertions from five malformed test responses but does not improve generated-test selection. A fixed abstention rule returns no programs, demonstrating an unusable operating point rather than successful error avoidance. Separately, a Linux audit changes seven historical Windows labels for unchanged code. These observations motivate separating evaluator reliability, candidate diversity, test semantics and abstention calibration before claiming useful inference-time scaling.

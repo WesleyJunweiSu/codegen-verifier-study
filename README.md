@@ -1,6 +1,6 @@
 # Code Generation Verifier Study
 
-**Status: first empirical pilot complete, 2026-09-05.** Local Qwen3-4B generation, isolated Linux execution, two selector experiments, and a historical evaluator audit are recorded in this private repository.
+**Status: pilot and controlled evaluator diagnostics complete, 2026-09-05.** Local Qwen3-4B generation, two selector experiments, a 29-condition evaluator audit and a semantic test audit are recorded in this private repository.
 
 **Research question:** when generated tests contain errors, what evidence is sufficient to select a code candidate—or decide that selection is unsupported—under a constrained compute budget?
 
@@ -27,7 +27,8 @@ The historical audit found **7/134 different labels** between the old Windows ev
 
 ## Read and reproduce
 
-- [Technical report v0.1](reports/technical-report-v0.1.md)
+- [Technical report v0.2: evaluator mechanisms and test semantics](reports/technical-report-v0.2.md)
+- [Initial pilot report v0.1](reports/technical-report-v0.1.md)
 - [Experiment log](reports/experiment-log.md)
 - [Checkpoint and next experiment](PROGRESS.md)
 - [Research protocol](docs/pilot-protocol.md) and [frozen splits](configs/split-manifest.json)
@@ -42,11 +43,15 @@ python -m unittest discover -s tests -v
 python scripts/analyze_results.py historical-holdout
 python scripts/analyze_results.py mbpp-pilot-20260905
 python scripts/analyze_results.py mbpp-parser-ablation-20260905
+python scripts/analyze_legacy_diagnostics.py
+python scripts/build_test_audit.py
 python scripts/selector_cli.py --task Mbpp/564 --method public_tests
 python scripts/selector_cli.py --task Mbpp/564 --method filtered_abstain
 ```
 
 The CLI displays saved decisions and code; it does not execute generated code. Linux execution uses the `Isolated Linux evaluator` GitHub Actions workflow or its restricted Docker invocation. Never execute generated candidates directly on a normal host.
+
+The latest diagnostic reproduces queue-order false timeouts in two cases and an integer logging failure in one; two historical timeouts remain unresolved. The 34 reference-rejecting tests are provisionally annotated as 22 wrong expectations, 11 specification ambiguities/conflicts and one hidden-domain mismatch. These are AI-assisted analyst judgments, not independent human labels. Historical entropy metrics have been [recomputed without retuning](runs/historical-holdout/policy-reanalysis.json); a private blog correction draft is included.
 
 To resume local generation using the existing environment:
 

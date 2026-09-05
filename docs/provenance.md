@@ -16,6 +16,8 @@
 
 This repository is private. Public release requires reviewing the personal planning documents and inherited private material separately.
 
+The diagnostic additionally copies `src/darc/windows_eval.py` from the same authorized legacy commit to `src/verifier_study/legacy_windows_eval.py`, unchanged (SHA256 `43d5ad714b87812e44558cc39d68a76bbbe05ef8ffccdf4f77fc40c76e138373`). Interventions are implemented separately in `scripts/diagnose_legacy_linux.py`; they never modify the original worker. The old local HumanEval+ Mini file's SHA256 matches the official downloaded file used in the diagnostic. Test-semantic annotations are post-hoc AI-assisted judgments with reference/contract visibility, not independent human labels.
+
 ## Initial line-ending transport
 
 The first three successful Linux runs were checked out from Git-normalized LF files; local Python JSON writers used CRLF. Thus raw-file SHA256 values differ across those initial transports, while parsed records and candidate code hashes are identical. Their recorded workflow commits preserve the exact evaluated snapshots. `scripts/verify_artifacts.py` checks both exact bytes and the explicitly documented LF normalization for these historical runs. `.gitattributes` now disables conversion for JSON/JSONL/Python to preserve frozen local metadata and source bytes in future clones. This is a transport correction, not regenerated experimental data.

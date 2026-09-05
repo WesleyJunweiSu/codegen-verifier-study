@@ -1,6 +1,6 @@
 # Experiment checkpoint
 
-Updated: 2026-09-05. Phase: **first pilot, parser ablation and historical audit complete**.
+Updated: 2026-09-05, evening continuation. Phase: **pilot, semantic audit, controlled evaluator diagnostics and policy reanalysis complete**.
 
 ## Objective
 
@@ -17,18 +17,21 @@ Build an interview-ready study and practical code-selection tool with reproducib
 - Strict pilot: first/raw/filtered 10/20; public 11/20; candidate oracle 12/20; abstention returns nothing. 25/120 assertions reject reference.
 - Zero-generation parser ablation: 160 assertions, 158 retained, 34 reference rejects; raw/filtered still 10/20, public-first 11/20.
 - Technical report v0.1, figures, raw evidence, analysis scripts, saved-evidence CLI and nine contract tests.
+- Technical report v0.2: 29 diagnostic conditions, zero model calls, 30.08 s executor runtime. Two queue-order false timeouts and one integer `repr` failure reproduced on Linux; two gate restrictions reproduced; HumanEval/96 and /123 historical Windows timeouts remain unreproduced.
+- Provisional audit of all 34 normalized reference rejects: 22 wrong expectations, 11 specification ambiguities/conflicts, 1 hidden-domain mismatch. AI-assisted single-annotator judgments; not independent human truth and never selector input.
+- Frozen historical policy reanalysis: AUROC 0.6240, 62/71 accepted correct; +5.32 pp selective lift with original-algorithm interval [-0.08,+11.24] pp. No threshold retuning. Private blog correction draft written; public site unchanged.
+- The previous report push had been blocked by automatic approval due to exhausted usage. After the quota reset was verified, the pending commits were pushed successfully; no reset credit was consumed.
 
 ## Active jobs
 
-None. GPU generations and all three successful Linux evaluations are complete; artifacts imported. Do not repeat completed model calls. Last successful workflow: 33947519157, parser ablation at commit 18d8301. Initial failed workflow 33947032133 is retained in the log.
+None. All local generations and four successful Linux workflows are complete; artifacts imported. Do not repeat completed calls. Last successful workflow: 33992906744, legacy diagnostics at commit b2fc1d3. Initial failed workflow 33947032133 remains in the log.
 
 ## Next bounded work
 
-1. Audit the 34 normalized reference-rejecting assertions against public specifications. Separate wrong expectations, invalid inputs and ambiguity; keep reference information out of selectors.
-2. Resolve four historical timeout differences and HumanEval/139 with controlled Linux evaluator diagnostics. Two static policy-gate differences already have direct source explanations.
-3. Freeze one candidate-diversity intervention on development data, with selectors fixed and measured token/time costs. `generate_batch.py` currently uses `split['pilot']`; extending to all development tasks requires a recorded configuration change.
-4. Implement execution-consensus and a documented nearest-work baseline. Current pass-count selection is not S* reproduction.
-5. After a useful selector exists, freeze calibration rules and confirmation protocol. Do not use any of the 180 confirmation labels during development.
+1. Freeze one candidate-diversity intervention on development data, with selectors fixed and measured token/time costs. `generate_batch.py` currently uses `split['pilot']`; extending to all development tasks requires a recorded configuration change. Check actual GPU headroom before launching because other desktop applications may be using it.
+2. Implement execution-consensus and a documented nearest-work baseline. Current pass-count selection is not S* reproduction. Test richer test-quality signals using visible specifications only; keep diagnostic annotations out of selectors.
+3. Obtain independent review of the provisional 34-assertion taxonomy before a publication claim. If historical Windows fidelity is investigated further, retain /96 and /123 as unresolved until a controlled environment reproduces them. This does not block development experiments.
+4. After a useful selector exists, freeze calibration rules and confirmation protocol. Do not use any of the 180 confirmation labels during development.
 
 ## Continuation rules
 
@@ -43,6 +46,8 @@ GPU interpreter: `C:/Users/Asuka/Documents/techblog/.venv/Scripts/python.exe`.
 Model: `C:/Users/Asuka/Documents/techblog/models/Qwen3-4B`; checksums: `configs/model-fingerprint.json`.
 
 Analysis: `python scripts/analyze_results.py mbpp-pilot-20260905` and `python scripts/analyze_results.py mbpp-parser-ablation-20260905`.
+
+Diagnostics: `python scripts/analyze_legacy_diagnostics.py`; semantic audit: `python scripts/build_test_audit.py`. Historical correction: run `scripts/reanalyze_historical_policy.py --numpy-bootstrap` using the existing inference interpreter with NumPy. The optional NumPy mode is required to reproduce the original bootstrap algorithm, not merely the separate stdlib RNG realization.
 
 Demo: `python scripts/selector_cli.py --task Mbpp/564 --method public_tests`.
 
