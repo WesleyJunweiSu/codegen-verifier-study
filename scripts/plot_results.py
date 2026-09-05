@@ -37,4 +37,7 @@ for axis in axes:
 fig.suptitle("Qwen3-4B / MBPP+ development pilot — 20 tasks, 4 candidates each",fontsize=12)
 target=ROOT/"reports/figures";target.mkdir(parents=True,exist_ok=True)
 for extension in ("png","pdf","svg"): fig.savefig(target/f"pilot-results.{extension}",dpi=180)
+# Matplotlib includes redundant spaces at SVG path-line endings; keep generated diffs clean.
+svg=target/"pilot-results.svg"
+svg.write_text("\n".join(line.rstrip() for line in svg.read_text(encoding="utf-8").splitlines())+"\n",encoding="utf-8",newline="\n")
 print("Saved report figures")
