@@ -5,4 +5,7 @@ RUN python -c "from evalplus.data import get_mbpp_plus; from evalplus.eval impor
 ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1
 WORKDIR /app
 COPY scripts/evaluate_linux.py /app/evaluate_linux.py
+COPY scripts/test_matrix_linux.py /app/test_matrix_linux.py
+COPY src/verifier_study /app/verifier_study
+COPY data/prompts/mbpp-v0.2.0.jsonl /app/mbpp-prompts.jsonl
 ENTRYPOINT ["python", "/app/evaluate_linux.py"]

@@ -27,18 +27,26 @@ def main():
     from evalplus.eval import untrusted_check
     from evalplus.eval._special_oracle import MBPP_OUTPUT_NOT_NONE_TASKS
     from evalplus.gen.util import trusted_exec
-    problems=get_human_eval_plus() if args.dataset=="humaneval" else get_mbpp_plus()
     generations=[json.loads(line) for line in Path(args.generations).read_text().splitlines() if line]
     output=Path(args.output);output.mkdir(parents=True,exist_ok=True)
     rows=[];oracle_cache={};started=time.perf_counter()
     # Known correct/wrong/exception fixtures check the checking contract, not task performance.
     fixtures=[("correct","def f(x): return x+1","pass"),("wrong","def f(x): return x","fail"),
-              ("exception","def f(x): raise ValueError()","fail")]
+              ("exception","def f(x): raise ValueError()","fail"),
+              ("malformed","def f( broken","fail"),
+              ("timeout","def f(x):\n    while True: pass","fail")]
     fixture_results={}
     for name,code,expected_status in fixtures:
         status,_=untrusted_check("humaneval",code,[[1]],"f",[2],0,[0.001],fast_check=True)
         assert status==expected_status,(name,status)
         fixture_results[name]=status
+    tests_path=Path(args.generations).parent/"generated-tests.jsonl"
+    generated_tests=None
+    if tests_path.exists():
+        from test_matrix_linux import build_matrix
+        generated_tests=build_matrix(generations,tests_path,output)
+    # Only after label-blind decisions are persisted do we load references and hidden tests.
+    problems=get_human_eval_plus() if args.dataset=="humaneval" else get_mbpp_plus()
     for row in generations:
         task=problems[row["task_id"]]
         if row["task_id"] not in oracle_cache:
@@ -65,12 +73,19 @@ def main():
         rows.append(evaluated)
         with (output/"evaluation.jsonl").open("a") as handle: handle.write(json.dumps(evaluated)+"\n")
         print(json.dumps(evaluated),flush=True)
+    if generated_tests is not None:
+        from test_matrix_linux import reference_diagnostics
+        reference_diagnostics(problems,generated_tests,output)
     metadata={"dataset":args.dataset,"dataset_sha256":hashlib.sha256(Path(args.data).read_bytes()).hexdigest(),
               "generations_sha256":hashlib.sha256(Path(args.generations).read_bytes()).hexdigest(),
               "evalplus":importlib.metadata.version("evalplus"),"python":platform.python_version(),"platform":platform.platform(),
               "implementation":"Official evalplus.eval.untrusted_check and evalplus.gen.util.trusted_exec; custom serial orchestration, not upstream CLI",
               "fixtures":fixture_results,"samples":len(rows),"passed":sum(row["pass"] for row in rows),
               "wall_seconds":time.perf_counter()-started}
+    if generated_tests is not None:
+        metadata["tests_sha256"]=hashlib.sha256(tests_path.read_bytes()).hexdigest()
+        metadata["decisions_sha256"]=hashlib.sha256((output/"decisions.jsonl").read_bytes()).hexdigest()
+        metadata["decision_order"]="Candidate/test matrix and decisions saved before loading hidden benchmark data"
     (output/"metadata.json").write_text(json.dumps(metadata,indent=2)+"\n")
     print(json.dumps(metadata),flush=True)
 

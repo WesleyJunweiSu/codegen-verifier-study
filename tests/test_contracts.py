@@ -7,6 +7,7 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"src"))
 from verifier_study.io import read_jsonl
 from verifier_study.test_quality import assess_tests,parse_assertions
+from verifier_study.selection import select_candidates
 
 
 class ContractTests(unittest.TestCase):
@@ -41,6 +42,24 @@ class ContractTests(unittest.TestCase):
         assertions,errors=parse_assertions("raise RuntimeError('must not execute')\nassert f(1)==2")
         self.assertEqual(len(assertions),1)
         self.assertEqual(errors,["non_assert_statement:Raise"])
+
+    def test_selector_requires_discriminating_evidence_for_abstention_rule(self):
+        candidates=[{"task_id":"x","sample_index":i,"code_sha256":code} for i,code in enumerate(["a","a","b"])]
+        matrix=[{"task_id":"x","sample_index":i,"source":"generated","test_index":0,"keep":True,
+                 "status":"pass" if i<2 else "fail"} for i in range(3)]
+        decisions={row["method"]:row for row in select_candidates(candidates,matrix)}
+        self.assertEqual(decisions["filtered_abstain"]["sample_index"],0)
+        matrix[2]["status"]="pass"
+        decisions={row["method"]:row for row in select_candidates(candidates,matrix)}
+        self.assertIsNone(decisions["filtered_abstain"]["sample_index"])
+
+    def test_filtered_selector_cannot_use_a_filtered_test(self):
+        candidates=[{"task_id":"x","sample_index":i,"code_sha256":str(i)} for i in range(2)]
+        matrix=[{"task_id":"x","sample_index":i,"source":"generated","test_index":0,"keep":False,
+                 "status":"pass" if i==1 else "fail"} for i in range(2)]
+        decisions={row["method"]:row for row in select_candidates(candidates,matrix)}
+        self.assertEqual(decisions["raw_tests"]["sample_index"],1)
+        self.assertEqual(decisions["filtered_tests"]["sample_index"],0)
 
 
 if __name__=="__main__": unittest.main()
