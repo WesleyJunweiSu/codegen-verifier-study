@@ -1,0 +1,23 @@
+{
+  "status": "draft_not_executable",
+  "study": "codegen-verifier-study",
+  "model_id": "Qwen/Qwen3-4B",
+  "model_revision": null,
+  "thinking": false,
+  "precision_preference": "bfloat16_if_smoke_test_fits",
+  "batch_size": 1,
+  "max_context_tokens": 4096,
+  "max_new_tokens_per_candidate": 768,
+  "candidates_per_task": 4,
+  "pilot_tasks": 20,
+  "generation_seed": 17,
+  "dataset": "new_MBPPPlus_subset_pending_provenance_audit",
+  "dataset_revision": null,
+  "split_manifest": null,
+  "evaluator": "official_evalplus_pinned_revision_pending",
+  "execution_environment": "isolated_linux_pending_setup",
+  "selector_has_access_to_hidden_tests": false,
+  "selector_has_access_to_reference_solution": false,
+  "cloud_spending_authorized_amount": null,
+  "results": null
+}
