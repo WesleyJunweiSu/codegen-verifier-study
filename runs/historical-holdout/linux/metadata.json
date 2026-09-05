@@ -1,0 +1,17 @@
+{
+  "dataset": "humaneval",
+  "dataset_sha256": "78fbba8865b20c5a979cda6e02fd72538e1762e65980af7d1a6e93c3e87e93af",
+  "generations_sha256": "3b68be422294ae7cb7b882340bfa98f9f346523a2c0da620d274d04e8006fd97",
+  "evalplus": "0.3.1",
+  "python": "3.12.14",
+  "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.41",
+  "implementation": "Official evalplus.eval.untrusted_check and evalplus.gen.util.trusted_exec; custom serial orchestration, not upstream CLI",
+  "fixtures": {
+    "correct": "pass",
+    "wrong": "fail",
+    "exception": "fail"
+  },
+  "samples": 134,
+  "passed": 104,
+  "wall_seconds": 7.458968427000002
+}

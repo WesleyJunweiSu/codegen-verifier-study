@@ -1,0 +1,12 @@
+{
+  "parent_run": "mbpp-pilot-20260905",
+  "parent_tests_sha256": "ac0448dfad8caaca41c5993a8b2b08ebdab238316552edffdc3d60590ef8898b",
+  "normalization": "AST Expr(Compare) to Assert; original text and strict errors retained",
+  "converted_comparisons": 40,
+  "new_model_calls": 0,
+  "new_generation_tokens": 0,
+  "selector_extension": "public_then_filtered: lexicographic public passes, then filtered generated-test passes",
+  "development_adaptation": "Chosen after inspecting initial pilot; not independent confirmation",
+  "source_script_sha256": "cdfa8733a9c9e0a440eee8452345860930a47687328c1db085de1fd10f58e0ce",
+  "selection_code_sha256": "9b35b2963d173851e663dff5ee4bf25527f5b9b54e4ef2ccd526aae6d58f7b77"
+}

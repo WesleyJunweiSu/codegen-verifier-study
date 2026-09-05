@@ -1,0 +1,43 @@
+{
+  "model_id": "Qwen/Qwen3-4B",
+  "model_config_sha256": "8ba006f74fecfaaeb392872a60f4a480e7ec9860153d2e1b769ec81f9a147f8a",
+  "split_sha256": "6acab61594ed4432662b23ef8ef2a1904f7a1d9ea96ebd3b2da7f75b22d341ec",
+  "visible_prompts_sha256": "3cf2bdc4478bb3228436e6234e39becadc87c5668ae02d89605b8fc98ea52ce0",
+  "task_ids": [
+    "Mbpp/299",
+    "Mbpp/607",
+    "Mbpp/285",
+    "Mbpp/615",
+    "Mbpp/605",
+    "Mbpp/734",
+    "Mbpp/586",
+    "Mbpp/564",
+    "Mbpp/11",
+    "Mbpp/80",
+    "Mbpp/7",
+    "Mbpp/567",
+    "Mbpp/62",
+    "Mbpp/722",
+    "Mbpp/745",
+    "Mbpp/410",
+    "Mbpp/587",
+    "Mbpp/723",
+    "Mbpp/141",
+    "Mbpp/479"
+  ],
+  "candidates_per_task": 4,
+  "precision": "bfloat16",
+  "thinking": false,
+  "temperature": 0.7,
+  "top_p": 0.8,
+  "max_new_tokens": 768,
+  "python": "3.12.14",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "transformers": "5.13.0",
+    "accelerate": "1.14.0",
+    "tokenizers": "0.22.2"
+  },
+  "generation_backend_sha256": "639213725d2f28311a93a48c460fe9c6f29f9267ad8fba66a51ee279a9c2edc4",
+  "hidden_tests_visible_to_generator": false
+}

@@ -8,13 +8,17 @@ def select_candidates(candidates: list[dict], matrix: list[dict]) -> list[dict]:
     for task_id in tasks:
         pool=sorted([row for row in candidates if row["task_id"]==task_id],key=lambda row:row["sample_index"])
         evidence=[row for row in matrix if row["task_id"]==task_id]
-        for method in ("first","public_tests","raw_tests","filtered_tests","filtered_abstain"):
+        for method in ("first","public_tests","raw_tests","filtered_tests","public_then_filtered","filtered_abstain"):
             source="public" if method=="public_tests" else "generated"
             selected_tests=[row for row in evidence if row["source"]==source and
-                            (method not in ("filtered_tests","filtered_abstain") or row["keep"])]
+                            (method not in ("filtered_tests","public_then_filtered","filtered_abstain") or row["keep"])]
             scores={row["sample_index"]:sum(test["status"]=="pass" for test in selected_tests
                       if test["sample_index"]==row["sample_index"]) for row in pool}
-            chosen=pool[0] if method=="first" else max(pool,key=lambda row:scores[row["sample_index"]])
+            public_scores={row["sample_index"]:sum(test["status"]=="pass" for test in evidence
+                           if test["source"]=="public" and test["sample_index"]==row["sample_index"]) for row in pool}
+            chosen=pool[0] if method=="first" else max(pool,key=lambda row:
+                   (public_scores[row["sample_index"]],scores[row["sample_index"]]) if method=="public_then_filtered"
+                   else (scores[row["sample_index"]],))
             index=chosen["sample_index"]
             ntests=sum(row["sample_index"]==index for row in selected_tests)
             # Identical code is one alternative; duplicate samples are not independent evidence.

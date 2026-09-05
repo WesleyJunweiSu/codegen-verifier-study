@@ -1,0 +1,78 @@
+{
+  "comparison": "same saved code, historical Windows labels versus official EvalPlus primitives in isolated Linux",
+  "samples": 134,
+  "mismatches": [
+    {
+      "task_id": "HumanEval/15",
+      "split": "test",
+      "windows_pass": false,
+      "linux_pass": true,
+      "base_status": "pass",
+      "plus_status": "pass"
+    },
+    {
+      "task_id": "HumanEval/96",
+      "split": "test",
+      "windows_pass": false,
+      "linux_pass": true,
+      "base_status": "pass",
+      "plus_status": "pass"
+    },
+    {
+      "task_id": "HumanEval/100",
+      "split": "test",
+      "windows_pass": false,
+      "linux_pass": true,
+      "base_status": "pass",
+      "plus_status": "pass"
+    },
+    {
+      "task_id": "HumanEval/123",
+      "split": "test",
+      "windows_pass": false,
+      "linux_pass": true,
+      "base_status": "pass",
+      "plus_status": "pass"
+    },
+    {
+      "task_id": "HumanEval/139",
+      "split": "test",
+      "windows_pass": false,
+      "linux_pass": true,
+      "base_status": "pass",
+      "plus_status": "pass"
+    },
+    {
+      "task_id": "HumanEval/160",
+      "split": "test",
+      "windows_pass": false,
+      "linux_pass": true,
+      "base_status": "pass",
+      "plus_status": "pass"
+    },
+    {
+      "task_id": "HumanEval/162",
+      "split": "test",
+      "windows_pass": false,
+      "linux_pass": true,
+      "base_status": "pass",
+      "plus_status": "pass"
+    }
+  ],
+  "splits": {
+    "calibration": {
+      "n": 34,
+      "windows_passed": 22,
+      "linux_passed": 22,
+      "historically_accepted": 25,
+      "linux_passed_among_historically_accepted": 19
+    },
+    "test": {
+      "n": 100,
+      "windows_passed": 75,
+      "linux_passed": 82,
+      "historically_accepted": 71,
+      "linux_passed_among_historically_accepted": 62
+    }
+  }
+}

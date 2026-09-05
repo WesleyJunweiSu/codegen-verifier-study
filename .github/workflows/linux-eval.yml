@@ -10,6 +10,7 @@ on:
         options:
           - historical-holdout
           - mbpp-pilot-20260905
+          - mbpp-parser-ablation-20260905
 permissions:
   contents: read
 concurrency:

@@ -61,5 +61,14 @@ class ContractTests(unittest.TestCase):
         self.assertEqual(decisions["raw_tests"]["sample_index"],1)
         self.assertEqual(decisions["filtered_tests"]["sample_index"],0)
 
+    def test_public_anchor_cannot_be_overridden_by_more_generated_passes(self):
+        candidates=[{"task_id":"x","sample_index":i,"code_sha256":str(i)} for i in range(2)]
+        matrix=[{"task_id":"x","sample_index":i,"source":source,"test_index":0,"keep":True,
+                 "status":"pass" if i==(0 if source=="public" else 1) else "fail"}
+                for i in range(2) for source in ("public","generated")]
+        decisions={row["method"]:row for row in select_candidates(candidates,matrix)}
+        self.assertEqual(decisions["public_then_filtered"]["sample_index"],0)
+        self.assertEqual(decisions["raw_tests"]["sample_index"],1)
+
 
 if __name__=="__main__": unittest.main()
