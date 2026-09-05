@@ -14,7 +14,7 @@ REPO = "WesleyJunweiSu/codegen-verifier-study"
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("operation", choices=["dispatch", "runs", "artifacts", "download", "verify"])
+    parser.add_argument("operation", choices=["dispatch", "runs", "jobs", "logs", "artifacts", "download", "verify"])
     parser.add_argument("--workflow", default="linux-eval.yml")
     parser.add_argument("--run-id")
     parser.add_argument("--artifact-id")
@@ -43,14 +43,18 @@ def main():
     elif args.operation == "artifacts":
         data=request(f"/actions/runs/{args.run_id}/artifacts")
         print(json.dumps([{key:item[key] for key in ["id","name","size_in_bytes","expired"]} for item in data["artifacts"]],indent=2))
-    elif args.operation == "download":
-        assert args.artifact_id and args.output
+    elif args.operation == "jobs":
+        data=request(f"/actions/runs/{args.run_id}/jobs")
+        print(json.dumps([{"id":job["id"],"conclusion":job["conclusion"],"steps":job["steps"]} for job in data["jobs"]],indent=2))
+    elif args.operation in ("download","logs"):
+        assert args.output
+        endpoint=f"/actions/artifacts/{args.artifact_id}/zip" if args.operation=="download" else f"/actions/runs/{args.run_id}/logs"
         # GitHub's API redirects to a time-limited artifact URL. Do not forward authentication across hosts.
         class NoRedirect(urllib.request.HTTPRedirectHandler):
             def redirect_request(self, req, fp, code, msg, hdrs, newurl):
                 return None
         opener=urllib.request.build_opener(NoRedirect)
-        req=urllib.request.Request(f"https://api.github.com/repos/{REPO}/actions/artifacts/{args.artifact_id}/zip",headers=headers)
+        req=urllib.request.Request(f"https://api.github.com/repos/{REPO}{endpoint}",headers=headers)
         try:
             with opener.open(req,timeout=60) as response: content=response.read()
         except urllib.error.HTTPError as error:

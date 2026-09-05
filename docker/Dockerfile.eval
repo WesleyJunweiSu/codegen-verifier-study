@@ -1,6 +1,7 @@
 FROM python:3.12-slim
 RUN pip install --no-cache-dir --no-deps evalplus==0.3.1 && \
-    pip install --no-cache-dir numpy==1.26.4 psutil==5.9.8 tempdir==0.7.1 wget==3.2 appdirs==1.4.4 tqdm==4.67.1 multipledispatch==1.0.0
+    pip install --no-cache-dir numpy==1.26.4 psutil==5.9.8 tempdir==0.7.1 wget==3.2 appdirs==1.4.4 tqdm==4.67.1 multipledispatch==1.0.0 datasets==5.0.0
+RUN python -c "from evalplus.data import get_mbpp_plus; from evalplus.eval import untrusted_check; from evalplus.gen.util import trusted_exec"
 ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1
 WORKDIR /app
 COPY scripts/evaluate_linux.py /app/evaluate_linux.py
