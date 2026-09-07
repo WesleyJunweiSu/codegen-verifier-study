@@ -13,6 +13,7 @@ on:
           - mbpp-parser-ablation-20260905
           - mbpp-temperature-20260906
           - mbpp-repair-20260907
+          - mbpp-reasoning-repair-20260907
 permissions:
   contents: read
 concurrency:

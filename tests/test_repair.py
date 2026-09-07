@@ -1,8 +1,15 @@
 import unittest
 from verifier_study.repair import select_repair
+from verifier_study.reasoning_generation import final_answer
 
 
 class RepairTests(unittest.TestCase):
+    def test_reasoning_never_used_as_code(self):
+        class Tokenizer:
+            def decode(self, ids, **kwargs): return str(ids)
+        self.assertEqual(final_answer([1, 2], Tokenizer(), 99), ('', False))
+        self.assertEqual(final_answer([1, 99, 3], Tokenizer(), 99), ('[3]', True))
+
     def test_public_improvement_only_and_original_ties(self):
         plan = {'tasks': [{'task_id': 'A', 'selected_index': 1, 'triggered': True},
                           {'task_id': 'B', 'selected_index': 0, 'triggered': False}]}

@@ -1,5 +1,6 @@
 """Score decisions already persisted before hidden-label loading in Linux."""
 import json
+import argparse
 import sys
 from pathlib import Path
 
@@ -8,7 +9,10 @@ sys.path.insert(0, str(ROOT/'src'))
 from verifier_study.io import read_jsonl, write_json, sha256
 from analyze_results import paired_interval, wilson
 
-run = ROOT/'runs/mbpp-repair-20260907'
+parser = argparse.ArgumentParser()
+parser.add_argument('--run', default='mbpp-repair-20260907')
+args = parser.parse_args()
+run = ROOT/'runs'/args.run
 plan = json.loads((run/'repair-plan.json').read_text(encoding='utf-8'))
 metadata = json.loads((run/'linux/metadata.json').read_text(encoding='utf-8'))
 assert sha256(run/'generations.jsonl') == metadata['generations_sha256']
