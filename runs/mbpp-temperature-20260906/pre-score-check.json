@@ -1,0 +1,35 @@
+{
+  "metadata_unchanged_except_temperature": [
+    "model_id",
+    "model_config_sha256",
+    "split_sha256",
+    "visible_prompts_sha256",
+    "task_ids",
+    "candidates_per_task",
+    "precision",
+    "thinking",
+    "top_p",
+    "max_new_tokens",
+    "python",
+    "packages",
+    "generation_backend_sha256",
+    "hidden_tests_visible_to_generator"
+  ],
+  "paired_seeds_prompts_input_counts": true,
+  "public_first_consensus_function_AST_unchanged": true,
+  "reference_policy_commit": "11a24ef",
+  "source_sha256": "44d6ecef89afcf1f46910ca6c3ddc8116a438e1ec3a6eae2396bcdaac49dc254",
+  "diversity": {
+    "temperature_0_7": {
+      "unique_code_total": 30,
+      "all_identical_tasks": 13,
+      "parseable_candidates": 80
+    },
+    "temperature_1_0": {
+      "unique_code_total": 32,
+      "all_identical_tasks": 14,
+      "parseable_candidates": 80
+    }
+  },
+  "new_hidden_scores_read": false
+}

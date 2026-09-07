@@ -1,6 +1,6 @@
 # Claim ledger
 
-Updated 2026-09-06. Distinguish observation, hypothesis and unfinished work.
+Updated 2026-09-07. Distinguish observation, hypothesis and unfinished work.
 
 | Claim | Evidence | Permitted wording |
 |---|---|---|
@@ -12,9 +12,10 @@ Updated 2026-09-06. Distinguish observation, hypothesis and unfinished work.
 | New generated-test selector improves accuracy | Not established: raw/filtered 10/20, same as first | No observed benefit in this development pilot. |
 | Public tests beat first candidate generally | Only one pilot rescue | Public examples rescued one of 20 pilot tasks. |
 | Execution consensus improves selection generally | Frozen development comparison: 11/20 versus 10/20 first; one rescue | Input-only consensus rescues one inspected development task. |
-| Public-first consensus is proven better | Adaptive combination after inspecting rescues: 12/20, versus 10/20 first | Promising development composition, not confirmation or a general accuracy claim. |
+| Public-first consensus is proven better | Original adaptive pool 12/20; unchanged policy on temperature 1.0 pool 11/20; first remains 10/20 | Development behavior is sampling-dependent; no general improvement established. |
 | Removing duplicate-code votes helps | Unique-code variant returns 10/20 versus ordinary consensus 11/20 | Deduplication removes the useful vote margin in one case; no universal conclusion. |
-| Temperature diversity experiment has run | Prepared config and runner; deferred with 7,147 MiB free versus 9,216 MiB required | Zero new generation calls so far in this condition. |
+| Temperature diversity experiment has run | Completed 80 new candidates with paired seeds; 3,536 output tokens, 178.16 generation seconds | Temperature-only intervention completed locally with reused tests. |
+| Higher temperature improves useful diversity | Distinct source count 30→32, all-identical tasks 13→14, oracle unchanged 12/20 | Slightly more source variants did not increase oracle availability in this run. |
 | Static filtering detects incorrect tests | All reference rejections survive | Current filters miss semantic defects. |
 | Assertion normalization improves correctness | Recovers 40 assertions; no selection gain | Fixed a format failure without demonstrated correctness gains. |
 | Abstention controls risk usefully | Returns 0/20 | Fixed rule is unusable; calibration unfinished. |

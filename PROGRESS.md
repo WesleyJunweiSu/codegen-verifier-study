@@ -1,6 +1,6 @@
 # Experiment checkpoint
 
-Updated: 2026-09-06 evening (2026-09-07 UTC). Phase: **input-only execution consensus and adaptive public-first composition complete**.
+Updated: 2026-09-07. Phase: **paired temperature intervention complete; remaining 40-task development cohort frozen**.
 
 ## Objective
 
@@ -23,17 +23,19 @@ Build an interview-ready study and practical code-selection tool with reproducib
 - The previous report push had been blocked by automatic approval due to exhausted usage. After the quota reset was verified, the pending commits were pushed successfully; no reset credit was consumed.
 - Execution-consensus experiment: 161 inputs, 644 single-candidate probes, 888 pair probes, 7.82 s, no model calls; ordinary consensus 11/20, unique-code variant 10/20. Hidden data were not mounted in the execution container.
 - Adaptive public-first then consensus composition: 12/20, two rescues, zero regressions; matches this exposed pool's oracle. Proposed after viewing complementary rescues, so not confirmation. Report v0.3 and new CLI demo recorded.
-- Temperature-only intervention frozen (0.7→1.0; other settings, seeds and task IDs held fixed). Runner/config prepared. Headroom check found 7,147 MiB free vs required 9,216 MiB; no model loaded and no new candidates generated.
+- Temperature-only intervention completed after headroom recovered: 80 new candidates, 3,536 output tokens, 178.16 generation seconds, 7.73 GiB new generation peak. Same seeds/prompts/model/settings except temperature; unchanged composition function AST verified. Tests reused byte-for-byte.
+- Temperature 1.0 result: oracle unchanged 12/20, first 10/20, public 11/20, raw/filtered 10/20, consensus 10/20, public-first consensus 11/20. Prior consensus and combination rescue on Mbpp/607 disappears as four distinct no-match conventions tie. No selector retuning. Report v0.4 records the negative result.
+- Next cohort protocol frozen in `configs/development-expansion.json`: remaining 40 development task IDs, excluding pilot/calibration/confirmation/reserve. No new cohort prompts or labels inspected by the freezing script. Generation for that cohort has not started.
 
 ## Active jobs
 
-None. All dispatched workflows finished and artifacts are imported. Last successful workflow: 34072360167, execution consensus at commit 843aba5. Temperature run `mbpp-temperature-20260906` contains only an attempt record (0/80 candidates); it is deferred, not running. Do not regenerate old candidates or tests.
+None. Temperature generation is 80/80 complete; rerunning recognizes completion and loads no model. Artifacts from consensus 34151733732 and scorer 34151735911 are imported (commit b7d9b16). Prior experiments remain complete. New 40-task development cohort has only a frozen config; no GPU process or workflow is active for it.
 
 ## Next bounded work
 
-1. Run the prepared `generate_diversity.py` with the existing inference interpreter once its headroom guard passes. It changes only temperature to 1.0 and reuses parent seeds, task IDs and normalized tests. If memory remains insufficient, record that state and work on the nearest-work comparison; do not terminate user applications or silently change precision/model.
-2. When the 80 new candidates finish, dispatch `linux-eval.yml` with `mbpp-temperature-20260906`, import artifacts, and compare diversity/oracle and fixed selector outcomes with realized token/time costs. `analyze_results.py` handles separate reuse of tests versus candidates. To extend execution consensus to this new pool, record a new workflow input/run mapping and preserve the same consensus policy. The adaptive public-then-consensus policy should remain fixed for the new condition.
-3. Read and implement a documented nearest-work baseline; present current consensus as a simple baseline, not full S*. Consider a new development-task batch only with a recorded task manifest. Obtain independent review of semantic annotations before publication.
+1. Implement a manifest-driven runner for `configs/development-expansion.json`, preserving the frozen temperature-0.7 generation/test prompts and the already chosen selectors. Check GPU headroom before loading; do not terminate user applications or change precision silently. This cohort is additional development evidence, not the reserved confirmation test.
+2. Generalize current evaluation/analysis adapters from the explicit 20-task pilot to the 40-task cohort with strict task-count and completeness checks. Record workflow input/output mappings before scoring. Generate 160 candidates and 40 test responses with resumability, then persist all fixed-policy decisions before analyzing hidden labels. Retain all 40 tasks, including format/empty failures.
+3. Read and implement a documented nearest-work baseline; current consensus is not full S*. Obtain independent review of semantic annotations before publication. Do not keep selecting favorable temperature/threshold settings from the original 20 cases.
 4. /96 and /123 historical Windows timeouts remain unresolved; they do not block new development. After generation/selection procedures stabilize, freeze calibration and confirmation protocol. Keep all 180 confirmation labels unused.
 
 ## Continuation rules
@@ -56,8 +58,10 @@ Demo: `python scripts/selector_cli.py --task Mbpp/564 --method public_tests`.
 
 Latest demo: `python scripts/selector_cli.py --run mbpp-public-consensus-20260906 --task Mbpp/607 --method public_then_consensus`.
 
-Next generation: `& 'C:/Users/Asuka/Documents/techblog/.venv/Scripts/python.exe' -X utf8 -u scripts/generate_diversity.py --model-path 'C:/Users/Asuka/Documents/techblog/models/Qwen3-4B'`. The runner checks available VRAM before importing/loading the model and records attempts. `--check-only` performs just the resource check.
+Completed temperature runner: `& 'C:/Users/Asuka/Documents/techblog/.venv/Scripts/python.exe' -X utf8 -u scripts/generate_diversity.py --model-path 'C:/Users/Asuka/Documents/techblog/models/Qwen3-4B'`. It now exits without model loading because all records exist. Do not use it to start the new 40-task cohort.
 
 Consensus analysis: `python scripts/analyze_consensus.py`; adaptive composition analysis: `python scripts/analyze_composition.py`. Do not rerun `combine_public_consensus.py` to overwrite its frozen decisions; it deliberately refuses existing output.
+
+Temperature comparison: `python scripts/compare_temperature.py`. New consensus analysis: `python scripts/analyze_consensus.py --run mbpp-temperature-consensus-20260907`. New composition: `python scripts/analyze_composition.py --run mbpp-temperature-public-consensus-20260907`. Frozen next-cohort config is validated with `python scripts/freeze_development_expansion.py`.
 
 Execution: dispatch `linux-eval.yml` for the intended tracked run; download/import artifacts with `github_ops.py` and `import_artifact.py`. These use existing Git Credential Manager credentials without printing them. User-context git commands may need a scoped `-c safe.directory=<this repository>`.

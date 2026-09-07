@@ -1,0 +1,21 @@
+{
+  "phase": "Previously chosen policy held fixed on new temperature condition; same exposed tasks",
+  "correct": 11,
+  "tasks": 20,
+  "coverage": 1.0,
+  "accuracy": 0.55,
+  "wilson95": [
+    0.3420853424503473,
+    0.7418021417443715
+  ],
+  "rescues": 1,
+  "regressions": 0,
+  "paired_difference_vs_first": 0.05,
+  "paired_task_bootstrap95": [
+    0.0,
+    0.15
+  ],
+  "new_model_calls": 0,
+  "new_execution_calls": 0,
+  "limitations": "Policy chosen on original development pool; temperature condition reuses task IDs. No independent-task confirmation or selection-adjusted inference."
+}

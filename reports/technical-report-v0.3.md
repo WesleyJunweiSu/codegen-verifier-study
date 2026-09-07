@@ -2,6 +2,8 @@
 
 Technical report v0.3 · 2026-09-06 America/New_York · [Earlier diagnostic report](technical-report-v0.2.md)
 
+[Version 0.4](technical-report-v0.4.md) completes the temperature intervention: the candidate oracle is unchanged and fixed public-first consensus falls from 12/20 to 11/20. This version remains the record of the initial adaptive composition.
+
 This update adds input-only execution consensus to the frozen 20-task development pool. It makes zero model calls. Ordinary consensus returns 11 correct programs, while a unique-code voting variant returns 10. An explicitly adaptive public-first composition returns 12, matching the candidate oracle on this inspected pool. No confirmation data are used and no general improvement is established.
 
 ## 1. Question and frozen comparison

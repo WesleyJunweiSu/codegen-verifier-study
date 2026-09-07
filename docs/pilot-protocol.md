@@ -12,6 +12,8 @@ The evening follow-up adds diagnostic-only semantic annotations, historical poli
 
 2026-09-06: input-only execution consensus and unique-code consensus completed under `configs/consensus-protocol.json`. An adaptive public-first composition was then proposed after inspecting complementary rescues; it is labeled development-only. `configs/temperature-intervention.json` freezes the next single-parameter generation intervention. It has not run because current GPU headroom is insufficient. Report v0.3 records results and limitations. None of these steps uses calibration or confirmation labels.
 
+2026-09-07: the frozen temperature intervention completed when headroom recovered. Candidate oracle stayed at 12/20; fixed public-first consensus fell from 12/20 to 11/20. Report v0.4 retains this negative result. `configs/development-expansion.json` now freezes the remaining 40 development task IDs and existing policies for a future additional-task check; generation for that cohort has not started. The 180 confirmation tasks remain unused.
+
 ## Research question
 
 When generated tests are unreliable, can a small-model selector reduce incorrect acceptance under a fixed compute budget while preserving useful answer coverage?

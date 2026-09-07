@@ -1,0 +1,140 @@
+{
+  "phase": "Same exposed development tasks; prior selectors fixed; not confirmation",
+  "tasks": 20,
+  "paired_seeds_and_prompts_verified": true,
+  "tests_identical_bytes": true,
+  "inherited_top_k": 20,
+  "top_p": 0.8,
+  "max_new_tokens": 768,
+  "comparisons": {
+    "first": {
+      "temperature_0_7_correct": 10,
+      "temperature_1_0_correct": 10,
+      "gained_tasks": [],
+      "lost_tasks": [],
+      "paired_accuracy_difference": 0.0,
+      "paired_task_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "public_tests": {
+      "temperature_0_7_correct": 11,
+      "temperature_1_0_correct": 11,
+      "gained_tasks": [],
+      "lost_tasks": [],
+      "paired_accuracy_difference": 0.0,
+      "paired_task_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "raw_tests": {
+      "temperature_0_7_correct": 10,
+      "temperature_1_0_correct": 10,
+      "gained_tasks": [],
+      "lost_tasks": [],
+      "paired_accuracy_difference": 0.0,
+      "paired_task_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "filtered_tests": {
+      "temperature_0_7_correct": 10,
+      "temperature_1_0_correct": 10,
+      "gained_tasks": [],
+      "lost_tasks": [],
+      "paired_accuracy_difference": 0.0,
+      "paired_task_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "public_then_filtered": {
+      "temperature_0_7_correct": 11,
+      "temperature_1_0_correct": 11,
+      "gained_tasks": [],
+      "lost_tasks": [],
+      "paired_accuracy_difference": 0.0,
+      "paired_task_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "filtered_abstain": {
+      "temperature_0_7_correct": 0,
+      "temperature_1_0_correct": 0,
+      "gained_tasks": [],
+      "lost_tasks": [],
+      "paired_accuracy_difference": 0.0,
+      "paired_task_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "execution_consensus": {
+      "temperature_0_7_correct": 11,
+      "temperature_1_0_correct": 10,
+      "gained_tasks": [],
+      "lost_tasks": [
+        "Mbpp/607"
+      ],
+      "paired_accuracy_difference": -0.05,
+      "paired_task_bootstrap95": [
+        -0.15,
+        0.0
+      ]
+    },
+    "unique_code_consensus": {
+      "temperature_0_7_correct": 10,
+      "temperature_1_0_correct": 10,
+      "gained_tasks": [],
+      "lost_tasks": [],
+      "paired_accuracy_difference": 0.0,
+      "paired_task_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "public_then_consensus": {
+      "temperature_0_7_correct": 12,
+      "temperature_1_0_correct": 11,
+      "gained_tasks": [],
+      "lost_tasks": [
+        "Mbpp/607"
+      ],
+      "paired_accuracy_difference": -0.05,
+      "paired_task_bootstrap95": [
+        -0.15,
+        0.0
+      ]
+    },
+    "oracle": {
+      "temperature_0_7_correct": 12,
+      "temperature_1_0_correct": 12,
+      "gained_tasks": [],
+      "lost_tasks": [],
+      "paired_accuracy_difference": 0.0,
+      "paired_task_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "diversity": {
+    "old_unique_code_total": 30,
+    "new_unique_code_total": 32,
+    "old_all_identical_tasks": 13,
+    "new_all_identical_tasks": 14
+  },
+  "cost": {
+    "old_candidate_output_tokens": 3540,
+    "new_candidate_output_tokens": 3536,
+    "old_candidate_generation_seconds": 175.93007810006384,
+    "new_candidate_generation_seconds": 178.1557252999919,
+    "new_peak_vram_bytes": 8297903104,
+    "new_test_generation_tokens": 0,
+    "limitation": "Different wall-clock sessions and system load; timings exclude loading and other overhead. Equal caps/counts, not equal realized cost."
+  }
+}

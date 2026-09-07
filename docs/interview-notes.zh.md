@@ -37,6 +37,8 @@ python scripts/selector_cli.py --task Mbpp/564 --method filtered_abstain
 
 2026-09-06 新增演示：`python scripts/selector_cli.py --run mbpp-public-consensus-20260906 --task Mbpp/607 --method public_then_consensus`。可以解释如何在不读取隐藏评分的条件下，先用公开测试约束候选，再用执行一致性处理平局。该组合在看过开发集后提出，当前 12/20 不能写成已验证的普遍准确率提升。
 
+2026-09-07 更新：保持选择器不变，只提高温度并复用同一随机种子，组合结果降至 11/20。可对照运行 `python scripts/selector_cli.py --run mbpp-temperature-public-consensus-20260907 --task Mbpp/607 --method public_then_consensus`，解释四种不同的“未匹配”返回值如何让投票打平。可讲的研究能力是发现并验证结果对采样的依赖，而不是把先前 12/20 当作稳定提升。
+
 新增工程案例：旧评测器先等待子进程退出，再读取队列；子进程却在等待父进程读取约 34 MB 的输出日志。只交换读取/等待顺序，同一候选就能通过。这可以讲清进程间通信、日志设计和评测偏差，但它不是模型准确率提升。
 
 先亲自跑两个演示，读懂 `selection.py`，用 Mbpp/564 和 Mbpp/607 解释公开证据与隐藏评分的区别，再参与下一轮假设和结果判断。面试竞争力来自能解释、复现和修改方法。后续博客应说明模型/自动化辅助与自己实际完成的研究判断。

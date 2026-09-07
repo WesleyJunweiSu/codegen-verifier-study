@@ -1,0 +1,12 @@
+{
+  "parent_run": "mbpp-temperature-20260906",
+  "consensus_run": "mbpp-temperature-consensus-20260907",
+  "adaptation": "Policy proposed on original pool; held fixed for subsequent temperature pool; both use already exposed development tasks",
+  "policy": "Lexicographic public passes, execution-consensus score, then smallest sample index",
+  "new_model_calls": 0,
+  "new_execution_calls": 0,
+  "decisions_sha256": "9b8825b21ab7513017a6af14ca91190d39698ec69107752a54f1736a1a8cce27",
+  "source_sha256": "079028644bdc0df77ab7838e948b9a60be8f71e54837f21a195f5caa00621276",
+  "public_matrix_sha256": "067783074e9f6dd30bdc43b2f506e4a710f355904b8eef65b38ceba51af6a240",
+  "consensus_decisions_sha256": "30c99369f25847e4a7b0f953f5a94033b9117b0506e4ae13c841b170f6cf0a23"
+}

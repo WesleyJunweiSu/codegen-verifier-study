@@ -1,0 +1,69 @@
+{
+  "phase": "Exposed development tasks; consensus adds no model calls",
+  "parent_run": "mbpp-temperature-20260906",
+  "tasks": 20,
+  "methods": {
+    "execution_consensus": {
+      "correct": 10,
+      "tasks": 20,
+      "coverage": 1.0,
+      "accuracy": 0.5,
+      "wilson95": [
+        0.29929800819821695,
+        0.700701991801783
+      ],
+      "rescues": 0,
+      "regressions": 0,
+      "paired_difference_vs_first": 0.0,
+      "paired_task_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "unique_code_consensus": {
+      "correct": 10,
+      "tasks": 20,
+      "coverage": 1.0,
+      "accuracy": 0.5,
+      "wilson95": [
+        0.29929800819821695,
+        0.700701991801783
+      ],
+      "rescues": 0,
+      "regressions": 0,
+      "paired_difference_vs_first": 0.0,
+      "paired_task_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "execution": {
+    "kind": "execution_consensus",
+    "parent_run": "mbpp-temperature-20260906",
+    "tasks": 20,
+    "candidates": 80,
+    "literal_inputs": 161,
+    "rejected_nonliteral_calls": 0,
+    "candidate_input_probes": 644,
+    "pair_probes": 891,
+    "uncomparable_pairs": 75,
+    "model_calls": 0,
+    "fixtures": {
+      "equal": "pass",
+      "unequal": "fail",
+      "both_raise": "fail",
+      "large_integer_equal": "pass"
+    },
+    "wall_seconds": 7.7503985630000045,
+    "python": "3.12.14",
+    "evalplus": "0.3.1",
+    "source_sha256": "bc636967fd6fb74f60132b57bb68b1c75b9fb07a90c74d32cf039d2097e6ed0f",
+    "generations_sha256": "a47bd6e4210b3a595428a1b54c89782108e383ed9e3944d7f9bc2eb4600a3284",
+    "tests_sha256": "90094416ca7314d758a567cce4e2548586d7b4fb52de34c02a15092a6a76649e",
+    "hidden_benchmark_mounted": false,
+    "comparison": "Python bool(left == right); exceptions never count as agreement; fixed RNG seeds before each candidate",
+    "decisions_sha256": "30c99369f25847e4a7b0f953f5a94033b9117b0506e4ae13c841b170f6cf0a23"
+  },
+  "hidden_labels_loaded_after_decisions": true
+}
