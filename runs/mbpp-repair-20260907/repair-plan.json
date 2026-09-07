@@ -1,0 +1,155 @@
+{
+  "phase": "Adaptive exposed-development pilot; never confirmation",
+  "tasks": [
+    {
+      "task_id": "Mbpp/11",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/141",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/285",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/299",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/410",
+      "selected_index": 0,
+      "triggered": true,
+      "failed_public_assertions": [
+        "assert min_val(['Python', 3, 2, 4, 5, 'version']) == 2"
+      ]
+    },
+    {
+      "task_id": "Mbpp/479",
+      "selected_index": 0,
+      "triggered": true,
+      "failed_public_assertions": [
+        "assert first_Digit(123) == 1"
+      ]
+    },
+    {
+      "task_id": "Mbpp/564",
+      "selected_index": 3,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/567",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/586",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/587",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/605",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/607",
+      "selected_index": 1,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/615",
+      "selected_index": 0,
+      "triggered": true,
+      "failed_public_assertions": [
+        "assert average_tuple(((10, 10, 10, 12), (30, 45, 56, 45), (81, 80, 39, 32), (1, 2, 3, 4))) == [30.5, 34.25, 27.0, 23.25]"
+      ]
+    },
+    {
+      "task_id": "Mbpp/62",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/7",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/722",
+      "selected_index": 0,
+      "triggered": true,
+      "failed_public_assertions": [
+        "assert filter_data({'Cierra Vega': (6.2, 70), 'Alden Cantrell': (5.9, 65), 'Kierra Gentry': (6.0, 68), 'Pierre Cox': (5.8, 66)}, 6.0, 70) == {'Cierra Vega': (6.2, 70)}"
+      ]
+    },
+    {
+      "task_id": "Mbpp/723",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/734",
+      "selected_index": 1,
+      "triggered": true,
+      "failed_public_assertions": [
+        "assert sum_Of_Subarray_Prod([1, 2, 3]) == 20"
+      ]
+    },
+    {
+      "task_id": "Mbpp/745",
+      "selected_index": 0,
+      "triggered": true,
+      "failed_public_assertions": [
+        "assert divisible_by_digits(1, 22) == [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22]"
+      ]
+    },
+    {
+      "task_id": "Mbpp/80",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    }
+  ],
+  "temperature": 0.7,
+  "top_p": 0.8,
+  "top_k": 20,
+  "max_new_tokens": 768,
+  "repair_instruction": "The implementation below failed one or more PUBLIC example assertions.\nCorrect the implementation using the specification and the failed public assertions.\nReconcile the examples with the prose, fix the general algorithm rather than hardcoding\nthe examples, and preserve the function name and signature. Return only executable\nPython code. Do not add tests or explanations.\n",
+  "trigger": "At least one selected-candidate public assertion failed",
+  "replacement": "Replace only if new candidate passes strictly more public assertions; otherwise retain original",
+  "budget": "One extra model call per triggered task per arm; same seed and output cap, actual tokens/time reported separately",
+  "repair_index": 4,
+  "control_index": 5,
+  "source_hashes": {
+    "runs\\mbpp-public-consensus-20260906\\decisions.jsonl": "b3dc20a2d2a98754a7453fb98bb09eca529ff1234a0b31f7ec3bdc99eb73f381",
+    "data\\prompts\\mbpp-v0.2.0.jsonl": "3cf2bdc4478bb3228436e6234e39becadc87c5668ae02d89605b8fc98ea52ce0",
+    "runs\\mbpp-parser-ablation-20260905\\generations.jsonl": "80c97bc0aa1f69f15a48db0ccd8b99d8388d9aed822ad271f868f794e66aff6c",
+    "runs\\mbpp-parser-ablation-20260905\\linux\\candidate-test-matrix.jsonl": "96a32b9e2f041414d2c58ec1753db7eef0b102ca2148f9c3bd93e977afd4b642"
+  },
+  "generation_source_sha256": "639213725d2f28311a93a48c460fe9c6f29f9267ad8fba66a51ee279a9c2edc4",
+  "selector_sha256": "0a3d1b15ae558c8c913ca59501593628f328fc2424db405aea41208d24505170"
+}

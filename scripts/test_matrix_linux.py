@@ -42,6 +42,10 @@ def build_matrix(generations: list[dict], tests_path: Path, output: Path):
         print(f"Matrix {task_id} sample {candidate['sample_index']} complete",flush=True)
     write_rows(output/"candidate-test-matrix.jsonl",matrix)
     decisions=select_candidates(candidates,matrix)
+    plan_path=tests_path.parent/"repair-plan.json"
+    if plan_path.exists():
+        from verifier_study.repair import select_repair
+        decisions=select_repair(json.loads(plan_path.read_text()),matrix)
     write_rows(output/"decisions.jsonl",decisions)
     return generated
 
