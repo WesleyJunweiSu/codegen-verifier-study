@@ -1,5 +1,6 @@
 """Join persisted label-blind consensus decisions to already scored candidate labels."""
 import json
+import argparse
 import sys
 from pathlib import Path
 
@@ -8,7 +9,10 @@ sys.path.insert(0,str(ROOT/"src"))
 from verifier_study.io import read_jsonl,write_json,sha256
 from analyze_results import wilson,paired_interval
 
-run=ROOT/"runs/mbpp-consensus-20260906"
+parser=argparse.ArgumentParser()
+parser.add_argument("--run",default="mbpp-consensus-20260906")
+args=parser.parse_args()
+run=ROOT/"runs"/args.run
 metadata=json.loads((run/"linux/metadata.json").read_text(encoding="utf-8"))
 parent=ROOT/"runs"/metadata["parent_run"]
 assert sha256(parent/"generations.jsonl")==metadata["generations_sha256"]
@@ -25,7 +29,7 @@ for task_id in task_ids:
         row[decision["method"]+"_sample_index"]=decision["sample_index"]
         row[decision["method"]+"_correct"]=labels[task_id,decision["sample_index"]]
     task_rows.append(row)
-summary={"phase":"Exposed development pilot; no new model calls","parent_run":parent.name,"tasks":20,"methods":{},
+summary={"phase":"Exposed development tasks; consensus adds no model calls","parent_run":parent.name,"tasks":20,"methods":{},
          "execution":metadata,"hidden_labels_loaded_after_decisions":True}
 for method in sorted({row["method"] for row in decisions}):
     correct=sum(row[method+"_correct"] for row in task_rows)

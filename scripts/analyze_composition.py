@@ -1,5 +1,6 @@
 """Score previously persisted development-composition decisions with existing hidden labels."""
 import json
+import argparse
 import sys
 from pathlib import Path
 
@@ -8,7 +9,10 @@ sys.path.insert(0,str(ROOT/"src"))
 from verifier_study.io import read_jsonl,write_json,sha256
 from analyze_results import wilson,paired_interval
 
-run=ROOT/"runs/mbpp-public-consensus-20260906"
+parser=argparse.ArgumentParser()
+parser.add_argument("--run",default="mbpp-public-consensus-20260906")
+args=parser.parse_args()
+run=ROOT/"runs"/args.run
 manifest=json.loads((run/"manifest.json").read_text(encoding="utf-8"))
 assert sha256(run/"decisions.jsonl")==manifest["decisions_sha256"]
 parent=ROOT/"runs"/manifest["parent_run"]

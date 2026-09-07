@@ -43,6 +43,7 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument("--input",required=True)
     parser.add_argument("--output",required=True)
+    parser.add_argument("--parent-run",default="mbpp-parser-ablation-20260905",choices=["mbpp-parser-ablation-20260905","mbpp-temperature-20260906"])
     args=parser.parse_args()
     if platform.system()!="Linux" or os.environ.get("VERIFIER_ISOLATED_RUN")!="1":
         raise SystemExit("Restricted Linux Docker workflow required; host execution disabled.")
@@ -84,7 +85,7 @@ def main():
     write_rows(output/"pair-outcomes.jsonl",pairs)
     decisions=select_consensus(candidates,inputs,pairs)
     write_rows(output/"decisions.jsonl",decisions)
-    metadata={"kind":"execution_consensus","parent_run":"mbpp-parser-ablation-20260905",
+    metadata={"kind":"execution_consensus","parent_run":args.parent_run,
         "tasks":len(tests),"candidates":len(candidates),"literal_inputs":len(inputs),"rejected_nonliteral_calls":rejected,
         "candidate_input_probes":len(validity),"pair_probes":sum(row["status"]!="not_comparable" for row in pairs),
         "uncomparable_pairs":sum(row["status"]=="not_comparable" for row in pairs),"model_calls":0,"fixtures":fixtures,

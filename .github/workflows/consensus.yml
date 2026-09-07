@@ -9,6 +9,7 @@ on:
         type: choice
         options:
           - mbpp-parser-ablation-20260905
+          - mbpp-temperature-20260906
 permissions:
   contents: read
 concurrency:
@@ -23,21 +24,25 @@ jobs:
         with:
           persist-credentials: false
       - name: Stage only generation and visible-test records
+        env:
+          INPUT_RUN: ${{ inputs.input_run }}
         run: |
           mkdir -p consensus-input eval-output
-          cp runs/mbpp-parser-ablation-20260905/generations.jsonl consensus-input/
-          cp runs/mbpp-parser-ablation-20260905/generated-tests.jsonl consensus-input/
+          cp "runs/$INPUT_RUN/generations.jsonl" consensus-input/
+          cp "runs/$INPUT_RUN/generated-tests.jsonl" consensus-input/
           chmod 777 eval-output
       - name: Build evaluator image
         run: docker build -f docker/Dockerfile.eval -t verifier-eval .
       - name: Compare candidates with no hidden data mounted
+        env:
+          INPUT_RUN: ${{ inputs.input_run }}
         run: |
           docker run --rm --network none --read-only --cap-drop ALL --security-opt no-new-privileges \
             --pids-limit 128 --memory 3g --cpus 2 --user 65534:65534 \
             --tmpfs /tmp:rw,nosuid,nodev,size=512m \
             -e VERIFIER_ISOLATED_RUN=1 -e EVALPLUS_MAX_MEMORY_BYTES=2147483648 \
             -v "$PWD/consensus-input:/inputs:ro" -v "$PWD/eval-output:/output:rw" \
-            --entrypoint python verifier-eval /app/consensus_linux.py --input /inputs --output /output
+            --entrypoint python verifier-eval /app/consensus_linux.py --input /inputs --output /output --parent-run "$INPUT_RUN"
       - uses: actions/upload-artifact@v4
         if: always()
         with:

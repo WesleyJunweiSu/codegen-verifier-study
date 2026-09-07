@@ -1,0 +1,11 @@
+{
+  "recorded_date": "2026-09-07",
+  "candidate_run": "mbpp-temperature-20260906",
+  "consensus_run": "mbpp-temperature-consensus-20260907",
+  "composition_run": "mbpp-temperature-public-consensus-20260907",
+  "selection_policy_source_commit": "11a24ef7db6f7dda7aa6a6c9c578bd270e08a419",
+  "policy": "Apply original raw/filtered/public, execution-consensus, unique-code consensus, and public-first consensus rules without algorithm or threshold changes",
+  "sequence": "Generate candidates; run label-blind consensus and test matrices; persist combination decisions; only then analyze hidden scores",
+  "scope": "New sampled programs on the same exposed development task IDs, not independent confirmation",
+  "comparison": "Paired task outcomes vs temperature 0.7; preserve negative results and realized generation costs"
+}
