@@ -1,0 +1,33 @@
+{
+  "task_ids": [
+    "Mbpp/11",
+    "Mbpp/141",
+    "Mbpp/285",
+    "Mbpp/299",
+    "Mbpp/410",
+    "Mbpp/479",
+    "Mbpp/564",
+    "Mbpp/567",
+    "Mbpp/586",
+    "Mbpp/587",
+    "Mbpp/605",
+    "Mbpp/607",
+    "Mbpp/615",
+    "Mbpp/62",
+    "Mbpp/7",
+    "Mbpp/722",
+    "Mbpp/723",
+    "Mbpp/734",
+    "Mbpp/745",
+    "Mbpp/80"
+  ],
+  "plan_sha256": "0f06530416bd360e0f139c94831161b02f75226bcd26f9a362922fb7a64a7659",
+  "model_fingerprint_sha256": "0766a780dbefbb7104882c0a61be9a99d8a94787fac5467420c95d19fd00cbc6",
+  "generator_script_sha256": "ea076cdf83ce6f7b2e760a61fab1a5bfe4b917801c718ecf30cacf020d429207",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "transformers": "5.13.0",
+    "accelerate": "1.14.0",
+    "tokenizers": "0.22.2"
+  }
+}
