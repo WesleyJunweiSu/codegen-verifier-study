@@ -1,0 +1,8 @@
+{
+  "completed": 80,
+  "planned": 80,
+  "output_tokens": 3536,
+  "generation_seconds": 178.1557252999919,
+  "peak_vram_bytes": 8297903104,
+  "status": "complete"
+}

@@ -1,0 +1,7 @@
+{
+  "parent_run": "mbpp-parser-ablation-20260905",
+  "test_generation_reused": true,
+  "candidate_generation_reused": false,
+  "new_test_model_calls": 0,
+  "tests_sha256": "90094416ca7314d758a567cce4e2548586d7b4fb52de34c02a15092a6a76649e"
+}

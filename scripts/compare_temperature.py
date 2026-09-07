@@ -54,7 +54,7 @@ summary={"phase":"Same exposed development tasks; prior selectors fixed; not con
         "new_all_identical_tasks":new_summary["all_identical_candidate_tasks"]},
     "cost":{"old_candidate_output_tokens":old_summary["candidate_output_tokens"],"new_candidate_output_tokens":new_summary["candidate_output_tokens"],
         "old_candidate_generation_seconds":old_summary["candidate_generation_seconds"],"new_candidate_generation_seconds":new_summary["candidate_generation_seconds"],
-        "new_peak_vram_bytes":new_summary["peak_vram_bytes"],"new_test_generation_tokens":0,
+        "new_peak_vram_bytes":max(row["peak_vram_bytes"] for row in new_rows),"new_test_generation_tokens":0,
         "limitation":"Different wall-clock sessions and system load; timings exclude loading and other overhead. Equal caps/counts, not equal realized cost."}}
 write_json(new/"comparison.json",summary);write_json(new/"paired-task-results.json",tasks)
 print(json.dumps(summary,indent=2))

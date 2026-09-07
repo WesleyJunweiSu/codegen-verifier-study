@@ -1,1 +1,2 @@
 {"utc": "2026-09-07T01:16:21.353472+00:00", "free_mib": 7147, "gpu_utilization_percent": 7, "required_free_mib": 9216, "status": "deferred_insufficient_vram", "config_sha256": "86b45cddc25ebc42f82f0d3763328acc9663b45ea09ba5d4182743a2621afda2", "completed": 0, "planned": 80, "model_loaded": false}
+{"utc": "2026-09-07T18:23:34.481460+00:00", "free_mib": 10915, "gpu_utilization_percent": 7, "required_free_mib": 9216, "status": "ready", "config_sha256": "86b45cddc25ebc42f82f0d3763328acc9663b45ea09ba5d4182743a2621afda2", "completed": 0, "planned": 80, "model_loaded": false}
