@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-06",
+  "parent_run": "mbpp-parser-ablation-20260905",
+  "phase": "Exposed 20-task development pilot; freeze before consensus execution",
+  "reason": "Next generation intervention cannot safely fit current free GPU memory; complete planned execution-consensus comparison using saved generations",
+  "input_source": "Public example plus all normalized generated assertions; extract target calls with literal arguments; discard expected outputs; deduplicate AST-identical calls",
+  "comparison": "Pairwise bool(left == right) after independent literal-argument construction and fixed RNG seeding; no repr of returned values",
+  "failure_policy": "Failed candidate execution or comparison is not agreement; no shared-exception votes; all tasks retained",
+  "methods": ["execution_consensus", "unique_code_consensus"],
+  "score": "Mean pair agreement across fixed inputs and all other sample voters; unique variant uses one smallest-index representative per distinct source-code hash and excludes own code group",
+  "tie_break": "Smallest sample_index; same fallback when evidence is empty",
+  "candidate_time_limit_seconds": 0.25,
+  "pair_time_limit_seconds": 0.5,
+  "seed_before_each_candidate": 20260906,
+  "model_calls": 0,
+  "scoring": "Persist new decisions in container without hidden data; join saved hidden labels only in subsequent local data analysis",
+  "limitations": ["Same inspected development tasks", "Exact Python comparison is not EvalPlus tolerance equivalence", "Not a calibrated abstention method", "Distinguishing inputs do not identify which candidate is correct"]
+}
