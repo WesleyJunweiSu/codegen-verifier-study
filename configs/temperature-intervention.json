@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-06",
+  "run_id": "mbpp-temperature-20260906",
+  "parent_candidate_run": "mbpp-pilot-20260905",
+  "parent_test_run": "mbpp-parser-ablation-20260905",
+  "hypothesis": "Raising only sampling temperature from 0.7 to 1.0 increases candidate diversity and candidate-oracle availability on the same development tasks",
+  "stage": "Development adaptation selected after inspecting pilot outcomes; not confirmation",
+  "temperature": 1.0,
+  "top_p": 0.8,
+  "max_new_tokens": 768,
+  "candidates_per_task": 4,
+  "reuse_parent_task_ids_and_seeds": true,
+  "selectors": "Keep existing normalized-test/public/abstention selectors fixed; compare execution-consensus if feasible",
+  "test_generation": "Reuse normalized parent tests; no new generated tests",
+  "model": "Same fingerprinted Qwen3-4B, BF16, non-thinking",
+  "gpu_minimum_free_mib": 9216,
+  "budget_interpretation": "Equal candidate count and maximum token cap, not equal realized tokens/time; report realized costs separately",
+  "primary_diagnostics": ["unique source-code candidates per task", "candidate oracle", "first and public-first selection", "correct-return vs model token/time cost"],
+  "no_confirmatory_claim": true
+}

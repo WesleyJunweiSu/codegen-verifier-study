@@ -1,0 +1,27 @@
+"""Score previously persisted development-composition decisions with existing hidden labels."""
+import json
+import sys
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT/"src"))
+from verifier_study.io import read_jsonl,write_json,sha256
+from analyze_results import wilson,paired_interval
+
+run=ROOT/"runs/mbpp-public-consensus-20260906"
+manifest=json.loads((run/"manifest.json").read_text(encoding="utf-8"))
+assert sha256(run/"decisions.jsonl")==manifest["decisions_sha256"]
+parent=ROOT/"runs"/manifest["parent_run"]
+labels={(row["task_id"],row["sample_index"]):row["pass"] for row in read_jsonl(parent/"linux/evaluation.jsonl")}
+decisions=read_jsonl(run/"decisions.jsonl")
+rows=[{"task_id":row["task_id"],"sample_index":row["sample_index"],"correct":labels[row["task_id"],row["sample_index"]],
+       "first_correct":labels[row["task_id"],0]} for row in decisions]
+assert len(rows)==len({row['task_id'] for row in rows})==20
+delta=[int(row["correct"])-int(row["first_correct"]) for row in rows]
+correct=sum(row["correct"] for row in rows)
+write_json(run/"summary.json",{"phase":"Adaptive development composition, not confirmation","correct":correct,"tasks":20,
+    "coverage":1.0,"accuracy":correct/20,"wilson95":wilson(correct,20),"rescues":sum(d>0 for d in delta),
+    "regressions":sum(d<0 for d in delta),"paired_difference_vs_first":sum(delta)/20,"paired_task_bootstrap95":paired_interval(delta),
+    "new_model_calls":0,"new_execution_calls":0,"limitations":"Policy selected after inspecting development baseline rescues; do not interpret resampling interval as selection-adjusted confirmation."})
+write_json(run/"task-results.json",rows)
+print((run/"summary.json").read_text(encoding="utf-8"))

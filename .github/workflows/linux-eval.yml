@@ -11,6 +11,7 @@ on:
           - historical-holdout
           - mbpp-pilot-20260905
           - mbpp-parser-ablation-20260905
+          - mbpp-temperature-20260906
 permissions:
   contents: read
 concurrency:

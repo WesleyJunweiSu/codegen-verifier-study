@@ -4,9 +4,18 @@ from pathlib import Path
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"src"))
 from verifier_study.consensus import literal_calls,select_consensus
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"scripts"))
+from combine_public_consensus import select as select_public_consensus
 
 
 class ConsensusContracts(unittest.TestCase):
+    def test_composition_uses_public_evidence_before_consensus(self):
+        consensus=[{"task_id":"t","method":"execution_consensus","scores":{"0":{"fraction":0.0},"1":{"fraction":1.0}}}]
+        public=[{"task_id":"t","sample_index":0,"status":"pass"},{"task_id":"t","sample_index":1,"status":"fail"}]
+        self.assertEqual(select_public_consensus(public,consensus)[0]["sample_index"],0)
+        public[1]["status"]="pass"
+        self.assertEqual(select_public_consensus(public,consensus)[0]["sample_index"],1)
+
     def test_expected_values_do_not_change_extracted_inputs(self):
         a,_=literal_calls(["assert f([1,2], n=2)==999"],"f")
         b,_=literal_calls(["assert f([1,2], n=2)==-123"],"f")

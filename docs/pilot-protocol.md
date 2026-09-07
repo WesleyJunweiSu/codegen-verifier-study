@@ -10,6 +10,8 @@ Completed comparisons: first candidate, exact uniform-random expectation, public
 
 The evening follow-up adds diagnostic-only semantic annotations, historical policy reanalysis with unchanged accepted flags, and controlled legacy-evaluator interventions frozen in `configs/legacy-diagnostics.json`. It adds zero model calls. Reference-visible annotations must not become deployable selector inputs. Historical /96 and /123 timeout causes remain unresolved on Linux; all other intervention findings are qualified by platform in report v0.2.
 
+2026-09-06: input-only execution consensus and unique-code consensus completed under `configs/consensus-protocol.json`. An adaptive public-first composition was then proposed after inspecting complementary rescues; it is labeled development-only. `configs/temperature-intervention.json` freezes the next single-parameter generation intervention. It has not run because current GPU headroom is insufficient. Report v0.3 records results and limitations. None of these steps uses calibration or confirmation labels.
+
 ## Research question
 
 When generated tests are unreliable, can a small-model selector reduce incorrect acceptance under a fixed compute budget while preserving useful answer coverage?

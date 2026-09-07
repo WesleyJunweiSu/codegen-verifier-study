@@ -95,8 +95,11 @@ def pilot(name):
         "peak_vram_bytes":max(row["peak_vram_bytes"] for row in candidates+tests),
         "filter_reasons":dict(collections.Counter(reason for row in tests for test in row["tests"] for reason in test["reasons"]))}
     test_manifest=json.loads((run/"test-manifest.json").read_text())
-    summary["reuses_generation_from"]=test_manifest.get("parent_run")
-    summary["incremental_model_output_tokens"]=0 if "parent_run" in test_manifest else summary["candidate_output_tokens"]+summary["test_output_tokens"]
+    candidate_reused=test_manifest.get("candidate_generation_reused","parent_run" in test_manifest)
+    test_reused=test_manifest.get("test_generation_reused","parent_run" in test_manifest)
+    summary["reuses_generation_from"]=test_manifest.get("parent_run") if candidate_reused else None
+    summary["reuses_tests_from"]=test_manifest.get("parent_run") if test_reused else None
+    summary["incremental_model_output_tokens"]=(0 if candidate_reused else summary["candidate_output_tokens"])+(0 if test_reused else summary["test_output_tokens"])
     for method in sorted({row["method"] for row in decisions}):
         correct=sum(row[method+"_correct"] for row in task_rows)
         accepted=sum(row[method+"_selected"] is not None for row in task_rows)
@@ -113,6 +116,6 @@ def pilot(name):
 
 if __name__=="__main__":
     parser=argparse.ArgumentParser()
-    parser.add_argument("run",choices=["historical-holdout","mbpp-pilot-20260905","mbpp-parser-ablation-20260905"])
+    parser.add_argument("run",choices=["historical-holdout","mbpp-pilot-20260905","mbpp-parser-ablation-20260905","mbpp-temperature-20260906"])
     args=parser.parse_args()
     historical() if args.run=="historical-holdout" else pilot(args.run)

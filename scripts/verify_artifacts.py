@@ -14,12 +14,17 @@ for run in sorted((ROOT/"runs").iterdir()):
     for field,name in (("generations_sha256","generations.jsonl"),("tests_sha256","generated-tests.jsonl"),
                        ("decisions_sha256","linux/decisions.jsonl")):
         if field not in metadata: continue
-        raw=(run/name).read_bytes()
+        artifact_root=ROOT/"runs"/metadata["parent_run"] if metadata.get("kind")=="execution_consensus" and not name.startswith("linux/") else run
+        raw=(artifact_root/name).read_bytes()
         exact=digest(raw)==metadata[field]
         legacy_lf=digest(raw.replace(b"\r\n",b"\n"))==metadata[field]
         assert exact or (legacy_transport and legacy_lf),(run.name,field,"hash mismatch")
         checks.append({"run":run.name,"file":name,"match":"exact bytes" if exact else "initial Git CRLF-to-LF transport"})
-    rows=[json.loads(line) for line in (run/"linux/evaluation.jsonl").read_text().splitlines()]
-    assert len(rows)==metadata["samples"]
-    assert sum(row["pass"] for row in rows)==metadata["passed"]
+    if metadata.get("kind")=="execution_consensus":
+        rows=[json.loads(line) for line in (run/"linux/decisions.jsonl").read_text(encoding="utf-8").splitlines()]
+        assert len(rows)==2*metadata["tasks"]
+    else:
+        rows=[json.loads(line) for line in (run/"linux/evaluation.jsonl").read_text(encoding="utf-8").splitlines()]
+        assert len(rows)==metadata["samples"]
+        assert sum(row["pass"] for row in rows)==metadata["passed"]
 print(json.dumps(checks,indent=2))

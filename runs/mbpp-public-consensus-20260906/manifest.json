@@ -1,0 +1,12 @@
+{
+  "parent_run": "mbpp-parser-ablation-20260905",
+  "consensus_run": "mbpp-consensus-20260906",
+  "adaptation": "Proposed after examining which development tasks each baseline rescues; not preregistered or confirmatory",
+  "policy": "Lexicographic public passes, execution-consensus score, then smallest sample index",
+  "new_model_calls": 0,
+  "new_execution_calls": 0,
+  "decisions_sha256": "b3dc20a2d2a98754a7453fb98bb09eca529ff1234a0b31f7ec3bdc99eb73f381",
+  "source_sha256": "c54e25e417b91f92505aaa202fa88c2b450476b543fa7fb3973f4fa5435d2a4e",
+  "public_matrix_sha256": "96a32b9e2f041414d2c58ec1753db7eef0b102ca2148f9c3bd93e977afd4b642",
+  "consensus_decisions_sha256": "240fc325e618d92763a14923e64e6c9dfaed921db3e5988ac8b346ae1af0f956"
+}

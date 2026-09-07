@@ -1,6 +1,6 @@
 # Claim ledger
 
-Updated 2026-09-05. Distinguish observation, hypothesis and unfinished work.
+Updated 2026-09-06. Distinguish observation, hypothesis and unfinished work.
 
 | Claim | Evidence | Permitted wording |
 |---|---|---|
@@ -11,6 +11,10 @@ Updated 2026-09-05. Distinguish observation, hypothesis and unfinished work.
 | All seven historical discrepancies are causally explained | Two queue and one integer-logging mechanism reproduced in Linux; two gate restrictions reproduced; two timeouts unresolved | Report the mechanisms and platform limitation separately. |
 | New generated-test selector improves accuracy | Not established: raw/filtered 10/20, same as first | No observed benefit in this development pilot. |
 | Public tests beat first candidate generally | Only one pilot rescue | Public examples rescued one of 20 pilot tasks. |
+| Execution consensus improves selection generally | Frozen development comparison: 11/20 versus 10/20 first; one rescue | Input-only consensus rescues one inspected development task. |
+| Public-first consensus is proven better | Adaptive combination after inspecting rescues: 12/20, versus 10/20 first | Promising development composition, not confirmation or a general accuracy claim. |
+| Removing duplicate-code votes helps | Unique-code variant returns 10/20 versus ordinary consensus 11/20 | Deduplication removes the useful vote margin in one case; no universal conclusion. |
+| Temperature diversity experiment has run | Prepared config and runner; deferred with 7,147 MiB free versus 9,216 MiB required | Zero new generation calls so far in this condition. |
 | Static filtering detects incorrect tests | All reference rejections survive | Current filters miss semantic defects. |
 | Assertion normalization improves correctness | Recovers 40 assertions; no selection gain | Fixed a format failure without demonstrated correctness gains. |
 | Abstention controls risk usefully | Returns 0/20 | Fixed rule is unusable; calibration unfinished. |

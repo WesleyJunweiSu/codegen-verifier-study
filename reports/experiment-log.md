@@ -2,6 +2,8 @@
 
 All entries: 2026-09-05. Workflow IDs identify exact code snapshots. Model calls ran locally; generated-code execution ran only inside restricted Linux containers.
 
+Entries E09 onward are dated 2026-09-06 America/New_York (2026-09-07 UTC).
+
 | ID | Configuration / purpose | Outcome | Evidence |
 |---|---|---|---|
 | E00 | First historical evaluator dispatch | Failed before scoring: missing `datasets`. Added dependency and build-time import check. No accuracy result. | [33947032133](https://github.com/WesleyJunweiSu/codegen-verifier-study/actions/runs/33947032133), `ee1682a` |
@@ -13,6 +15,9 @@ All entries: 2026-09-05. Workflow IDs identify exact code snapshots. Model calls
 | E06 | Original legacy evaluator plus queue-order / output-stringification interventions; 7 historical cases + 2 fixtures | 29 rows, 30.08 s, zero model calls. Queue mechanism reproduced for /15 and /100; integer logging for /139; two gates reproduced; /96 and /123 Windows timeouts not reproduced. | [33992906744](https://github.com/WesleyJunweiSu/codegen-verifier-study/actions/runs/33992906744), `b2fc1d3` |
 | E07 | Post-hoc source audit of 34 reference-rejecting normalized assertions | Provisional AI-assisted annotations: 22 wrong expectations, 11 specification issues, 1 hidden-domain mismatch. Diagnostic-only; no independent human agreement check. | `runs/mbpp-parser-ablation-20260905/audit/` |
 | E08 | Fixed historical entropy scores and accepted flags rescored with Linux labels | AUROC 0.6240; selective 62/71; lift +5.32 pp; original-algorithm bootstrap interval [-0.08,+11.24] pp. No retuning or fresh data. | `runs/historical-holdout/policy-reanalysis.json` |
+| E09 | Input-only execution consensus; hidden data not mounted; same 80 candidates | 161 literal inputs; 644 single probes, 888 pair probes; 7.82 s; ordinary consensus 11/20, unique-code 10/20. Zero model calls. | [34072360167](https://github.com/WesleyJunweiSu/codegen-verifier-study/actions/runs/34072360167), `843aba5` |
+| E10 | Adaptive public-first, then consensus composition after inspecting complementary rescues | 12/20, two rescues, no regressions; reaches this inspected pool's oracle. Not confirmation. No new model or execution calls. | `runs/mbpp-public-consensus-20260906/` |
+| R01 | Temperature intervention feasibility check | Deferred: 7,147 MiB free vs 9,216 MiB launch threshold. Config prepared; no model loaded, no generation completed. Resource check, not a scored experiment. | `runs/mbpp-temperature-20260906/attempts.jsonl` |
 
 Infrastructure: stopped a redundant Torch installation after finding the compatible old environment. Plotting packages live in ignored `.analysis-packages`, separate from model inference. Those packages require user-context execution due to Windows permissions. Checkpoint hashes were recorded after generation. None of these events counts as a model experiment.
 

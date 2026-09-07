@@ -1,6 +1,6 @@
 # Experiment checkpoint
 
-Updated: 2026-09-05, evening continuation. Phase: **pilot, semantic audit, controlled evaluator diagnostics and policy reanalysis complete**.
+Updated: 2026-09-06 evening (2026-09-07 UTC). Phase: **input-only execution consensus and adaptive public-first composition complete**.
 
 ## Objective
 
@@ -21,17 +21,20 @@ Build an interview-ready study and practical code-selection tool with reproducib
 - Provisional audit of all 34 normalized reference rejects: 22 wrong expectations, 11 specification ambiguities/conflicts, 1 hidden-domain mismatch. AI-assisted single-annotator judgments; not independent human truth and never selector input.
 - Frozen historical policy reanalysis: AUROC 0.6240, 62/71 accepted correct; +5.32 pp selective lift with original-algorithm interval [-0.08,+11.24] pp. No threshold retuning. Private blog correction draft written; public site unchanged.
 - The previous report push had been blocked by automatic approval due to exhausted usage. After the quota reset was verified, the pending commits were pushed successfully; no reset credit was consumed.
+- Execution-consensus experiment: 161 inputs, 644 single-candidate probes, 888 pair probes, 7.82 s, no model calls; ordinary consensus 11/20, unique-code variant 10/20. Hidden data were not mounted in the execution container.
+- Adaptive public-first then consensus composition: 12/20, two rescues, zero regressions; matches this exposed pool's oracle. Proposed after viewing complementary rescues, so not confirmation. Report v0.3 and new CLI demo recorded.
+- Temperature-only intervention frozen (0.7→1.0; other settings, seeds and task IDs held fixed). Runner/config prepared. Headroom check found 7,147 MiB free vs required 9,216 MiB; no model loaded and no new candidates generated.
 
 ## Active jobs
 
-None. All local generations and four successful Linux workflows are complete; artifacts imported. Do not repeat completed calls. Last successful workflow: 33992906744, legacy diagnostics at commit b2fc1d3. Initial failed workflow 33947032133 remains in the log.
+None. All dispatched workflows finished and artifacts are imported. Last successful workflow: 34072360167, execution consensus at commit 843aba5. Temperature run `mbpp-temperature-20260906` contains only an attempt record (0/80 candidates); it is deferred, not running. Do not regenerate old candidates or tests.
 
 ## Next bounded work
 
-1. Freeze one candidate-diversity intervention on development data, with selectors fixed and measured token/time costs. `generate_batch.py` currently uses `split['pilot']`; extending to all development tasks requires a recorded configuration change. Check actual GPU headroom before launching because other desktop applications may be using it.
-2. Implement execution-consensus and a documented nearest-work baseline. Current pass-count selection is not S* reproduction. Test richer test-quality signals using visible specifications only; keep diagnostic annotations out of selectors.
-3. Obtain independent review of the provisional 34-assertion taxonomy before a publication claim. If historical Windows fidelity is investigated further, retain /96 and /123 as unresolved until a controlled environment reproduces them. This does not block development experiments.
-4. After a useful selector exists, freeze calibration rules and confirmation protocol. Do not use any of the 180 confirmation labels during development.
+1. Run the prepared `generate_diversity.py` with the existing inference interpreter once its headroom guard passes. It changes only temperature to 1.0 and reuses parent seeds, task IDs and normalized tests. If memory remains insufficient, record that state and work on the nearest-work comparison; do not terminate user applications or silently change precision/model.
+2. When the 80 new candidates finish, dispatch `linux-eval.yml` with `mbpp-temperature-20260906`, import artifacts, and compare diversity/oracle and fixed selector outcomes with realized token/time costs. `analyze_results.py` handles separate reuse of tests versus candidates. To extend execution consensus to this new pool, record a new workflow input/run mapping and preserve the same consensus policy. The adaptive public-then-consensus policy should remain fixed for the new condition.
+3. Read and implement a documented nearest-work baseline; present current consensus as a simple baseline, not full S*. Consider a new development-task batch only with a recorded task manifest. Obtain independent review of semantic annotations before publication.
+4. /96 and /123 historical Windows timeouts remain unresolved; they do not block new development. After generation/selection procedures stabilize, freeze calibration and confirmation protocol. Keep all 180 confirmation labels unused.
 
 ## Continuation rules
 
@@ -50,5 +53,11 @@ Analysis: `python scripts/analyze_results.py mbpp-pilot-20260905` and `python sc
 Diagnostics: `python scripts/analyze_legacy_diagnostics.py`; semantic audit: `python scripts/build_test_audit.py`. Historical correction: run `scripts/reanalyze_historical_policy.py --numpy-bootstrap` using the existing inference interpreter with NumPy. The optional NumPy mode is required to reproduce the original bootstrap algorithm, not merely the separate stdlib RNG realization.
 
 Demo: `python scripts/selector_cli.py --task Mbpp/564 --method public_tests`.
+
+Latest demo: `python scripts/selector_cli.py --run mbpp-public-consensus-20260906 --task Mbpp/607 --method public_then_consensus`.
+
+Next generation: `& 'C:/Users/Asuka/Documents/techblog/.venv/Scripts/python.exe' -X utf8 -u scripts/generate_diversity.py --model-path 'C:/Users/Asuka/Documents/techblog/models/Qwen3-4B'`. The runner checks available VRAM before importing/loading the model and records attempts. `--check-only` performs just the resource check.
+
+Consensus analysis: `python scripts/analyze_consensus.py`; adaptive composition analysis: `python scripts/analyze_composition.py`. Do not rerun `combine_public_consensus.py` to overwrite its frozen decisions; it deliberately refuses existing output.
 
 Execution: dispatch `linux-eval.yml` for the intended tracked run; download/import artifacts with `github_ops.py` and `import_artifact.py`. These use existing Git Credential Manager credentials without printing them. User-context git commands may need a scoped `-c safe.directory=<this repository>`.

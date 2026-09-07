@@ -2,6 +2,8 @@
 
 Technical report v0.2 · 2026-09-05 · Follow-up to [the first pilot](technical-report-v0.1.md)
 
+[Version 0.3](technical-report-v0.3.md) adds execution-consensus evidence and an explicitly adaptive public-first composition; this version remains the record of evaluator and semantic diagnostics.
+
 This update adds controlled evaluator interventions, an audit of generated-test semantics, and a historical entropy-policy reanalysis. It adds **zero model calls**, uses already exposed development/historical data, and leaves the 180 confirmation tasks untouched.
 
 ## 1. Controlled evaluator interventions

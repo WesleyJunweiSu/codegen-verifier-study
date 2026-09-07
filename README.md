@@ -1,6 +1,6 @@
 # Code Generation Verifier Study
 
-**Status: pilot and controlled evaluator diagnostics complete, 2026-09-05.** Local Qwen3-4B generation, two selector experiments, a 29-condition evaluator audit and a semantic test audit are recorded in this private repository.
+**Status: input-only consensus and an adaptive composition complete, 2026-09-06.** Local Qwen3-4B experiments, isolated execution, evaluator interventions and semantic audits are recorded in this private repository.
 
 **Research question:** when generated tests contain errors, what evidence is sufficient to select a code candidate—or decide that selection is unsupported—under a constrained compute budget?
 
@@ -27,6 +27,7 @@ The historical audit found **7/134 different labels** between the old Windows ev
 
 ## Read and reproduce
 
+- [Technical report v0.3: input-only consensus and adaptive composition](reports/technical-report-v0.3.md)
 - [Technical report v0.2: evaluator mechanisms and test semantics](reports/technical-report-v0.2.md)
 - [Initial pilot report v0.1](reports/technical-report-v0.1.md)
 - [Experiment log](reports/experiment-log.md)
@@ -45,6 +46,8 @@ python scripts/analyze_results.py mbpp-pilot-20260905
 python scripts/analyze_results.py mbpp-parser-ablation-20260905
 python scripts/analyze_legacy_diagnostics.py
 python scripts/build_test_audit.py
+python scripts/analyze_consensus.py
+python scripts/analyze_composition.py
 python scripts/selector_cli.py --task Mbpp/564 --method public_tests
 python scripts/selector_cli.py --task Mbpp/564 --method filtered_abstain
 ```
@@ -52,6 +55,8 @@ python scripts/selector_cli.py --task Mbpp/564 --method filtered_abstain
 The CLI displays saved decisions and code; it does not execute generated code. Linux execution uses the `Isolated Linux evaluator` GitHub Actions workflow or its restricted Docker invocation. Never execute generated candidates directly on a normal host.
 
 The latest diagnostic reproduces queue-order false timeouts in two cases and an integer logging failure in one; two historical timeouts remain unresolved. The 34 reference-rejecting tests are provisionally annotated as 22 wrong expectations, 11 specification ambiguities/conflicts and one hidden-domain mismatch. These are AI-assisted analyst judgments, not independent human labels. Historical entropy metrics have been [recomputed without retuning](runs/historical-holdout/policy-reanalysis.json); a private blog correction draft is included.
+
+**New development result:** input-only execution consensus returns 11/20, and unique-code voting returns 10/20. A public-first composition proposed after inspecting those outcomes returns 12/20, matching this pool's oracle. The adaptive 12/20 result is not independent confirmation. Its saved-evidence demo is `python scripts/selector_cli.py --run mbpp-public-consensus-20260906 --task Mbpp/607 --method public_then_consensus`.
 
 To resume local generation using the existing environment:
 
@@ -63,6 +68,6 @@ Recorded candidate keys are skipped. This resumes the pilot; it does not silentl
 
 ## Scope and limitations
 
-This is a runnable research harness and evidence-inspection CLI, not a production coding assistant. The pilot has no demonstrated benefit from generated-test filtering or abstention. Execution-consensus, full S* reproduction, calibrated operating points, multiple generation seeds, held-out confirmation and external data-science tasks remain unfinished.
+This is a runnable research harness and evidence-inspection CLI, not a production coding assistant. The pilot has no demonstrated benefit from generated-test filtering or abstention. Full S* reproduction, calibrated operating points, multiple generation seeds, held-out confirmation and external data-science tasks remain unfinished. A temperature intervention is prepared but deferred because current GPU headroom is below its launch threshold.
 
 Local hardware: RTX 5070 Ti Laptop, 12,227 MiB. The two model-generation phases took 352.5 seconds combined, excluding loading and other overhead; peak allocated VRAM was 8.08 GiB. The parser ablation reused all generations and added zero model tokens. No GPU rental or paid model API was used; Linux jobs use the account's GitHub Actions allowance.

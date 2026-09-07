@@ -1,0 +1,162 @@
+[
+  {
+    "task_id": "Mbpp/11",
+    "first_correct": true,
+    "execution_consensus_sample_index": 0,
+    "execution_consensus_correct": true,
+    "unique_code_consensus_sample_index": 0,
+    "unique_code_consensus_correct": true
+  },
+  {
+    "task_id": "Mbpp/141",
+    "first_correct": true,
+    "execution_consensus_sample_index": 0,
+    "execution_consensus_correct": true,
+    "unique_code_consensus_sample_index": 0,
+    "unique_code_consensus_correct": true
+  },
+  {
+    "task_id": "Mbpp/285",
+    "first_correct": true,
+    "execution_consensus_sample_index": 0,
+    "execution_consensus_correct": true,
+    "unique_code_consensus_sample_index": 0,
+    "unique_code_consensus_correct": true
+  },
+  {
+    "task_id": "Mbpp/299",
+    "first_correct": false,
+    "execution_consensus_sample_index": 0,
+    "execution_consensus_correct": false,
+    "unique_code_consensus_sample_index": 0,
+    "unique_code_consensus_correct": false
+  },
+  {
+    "task_id": "Mbpp/410",
+    "first_correct": false,
+    "execution_consensus_sample_index": 0,
+    "execution_consensus_correct": false,
+    "unique_code_consensus_sample_index": 0,
+    "unique_code_consensus_correct": false
+  },
+  {
+    "task_id": "Mbpp/479",
+    "first_correct": false,
+    "execution_consensus_sample_index": 0,
+    "execution_consensus_correct": false,
+    "unique_code_consensus_sample_index": 0,
+    "unique_code_consensus_correct": false
+  },
+  {
+    "task_id": "Mbpp/564",
+    "first_correct": false,
+    "execution_consensus_sample_index": 0,
+    "execution_consensus_correct": false,
+    "unique_code_consensus_sample_index": 0,
+    "unique_code_consensus_correct": false
+  },
+  {
+    "task_id": "Mbpp/567",
+    "first_correct": true,
+    "execution_consensus_sample_index": 0,
+    "execution_consensus_correct": true,
+    "unique_code_consensus_sample_index": 0,
+    "unique_code_consensus_correct": true
+  },
+  {
+    "task_id": "Mbpp/586",
+    "first_correct": true,
+    "execution_consensus_sample_index": 0,
+    "execution_consensus_correct": true,
+    "unique_code_consensus_sample_index": 0,
+    "unique_code_consensus_correct": true
+  },
+  {
+    "task_id": "Mbpp/587",
+    "first_correct": true,
+    "execution_consensus_sample_index": 0,
+    "execution_consensus_correct": true,
+    "unique_code_consensus_sample_index": 0,
+    "unique_code_consensus_correct": true
+  },
+  {
+    "task_id": "Mbpp/605",
+    "first_correct": true,
+    "execution_consensus_sample_index": 0,
+    "execution_consensus_correct": true,
+    "unique_code_consensus_sample_index": 0,
+    "unique_code_consensus_correct": true
+  },
+  {
+    "task_id": "Mbpp/607",
+    "first_correct": false,
+    "execution_consensus_sample_index": 1,
+    "execution_consensus_correct": true,
+    "unique_code_consensus_sample_index": 0,
+    "unique_code_consensus_correct": false
+  },
+  {
+    "task_id": "Mbpp/615",
+    "first_correct": false,
+    "execution_consensus_sample_index": 0,
+    "execution_consensus_correct": false,
+    "unique_code_consensus_sample_index": 0,
+    "unique_code_consensus_correct": false
+  },
+  {
+    "task_id": "Mbpp/62",
+    "first_correct": true,
+    "execution_consensus_sample_index": 0,
+    "execution_consensus_correct": true,
+    "unique_code_consensus_sample_index": 0,
+    "unique_code_consensus_correct": true
+  },
+  {
+    "task_id": "Mbpp/7",
+    "first_correct": false,
+    "execution_consensus_sample_index": 0,
+    "execution_consensus_correct": false,
+    "unique_code_consensus_sample_index": 0,
+    "unique_code_consensus_correct": false
+  },
+  {
+    "task_id": "Mbpp/722",
+    "first_correct": false,
+    "execution_consensus_sample_index": 0,
+    "execution_consensus_correct": false,
+    "unique_code_consensus_sample_index": 0,
+    "unique_code_consensus_correct": false
+  },
+  {
+    "task_id": "Mbpp/723",
+    "first_correct": true,
+    "execution_consensus_sample_index": 0,
+    "execution_consensus_correct": true,
+    "unique_code_consensus_sample_index": 0,
+    "unique_code_consensus_correct": true
+  },
+  {
+    "task_id": "Mbpp/734",
+    "first_correct": false,
+    "execution_consensus_sample_index": 1,
+    "execution_consensus_correct": false,
+    "unique_code_consensus_sample_index": 1,
+    "unique_code_consensus_correct": false
+  },
+  {
+    "task_id": "Mbpp/745",
+    "first_correct": false,
+    "execution_consensus_sample_index": 0,
+    "execution_consensus_correct": false,
+    "unique_code_consensus_sample_index": 0,
+    "unique_code_consensus_correct": false
+  },
+  {
+    "task_id": "Mbpp/80",
+    "first_correct": true,
+    "execution_consensus_sample_index": 0,
+    "execution_consensus_correct": true,
+    "unique_code_consensus_sample_index": 0,
+    "unique_code_consensus_correct": true
+  }
+]
