@@ -40,6 +40,8 @@ def main():
     decisions=select(public_rows,read_jsonl(consensus/"linux/decisions.jsonl"))
     if args.parent_run=="mbpp-temperature-20260906":
         for row in decisions: row["phase"]="Previously chosen development policy applied unchanged to new temperature condition"
+    if args.parent_run=="mbpp-development40-20260907":
+        for row in decisions: row["phase"]="Previously chosen policy applied unchanged to remaining 40 development tasks"
     write_jsonl(path,decisions)
     write_json(out/"manifest.json",{"parent_run":parent.name,"consensus_run":consensus.name,
         "adaptation":"Policy proposed on original pool; held fixed for subsequent temperature pool; both use already exposed development tasks",

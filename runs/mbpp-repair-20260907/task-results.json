@@ -1,0 +1,482 @@
+[
+  {
+    "task_id": "Mbpp/11",
+    "method": "selected_baseline",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/141",
+    "method": "selected_baseline",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/285",
+    "method": "selected_baseline",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/299",
+    "method": "selected_baseline",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": false
+  },
+  {
+    "task_id": "Mbpp/410",
+    "method": "selected_baseline",
+    "sample_index": 0,
+    "triggered": true,
+    "replaced": false,
+    "correct": false
+  },
+  {
+    "task_id": "Mbpp/479",
+    "method": "selected_baseline",
+    "sample_index": 0,
+    "triggered": true,
+    "replaced": false,
+    "correct": false
+  },
+  {
+    "task_id": "Mbpp/564",
+    "method": "selected_baseline",
+    "sample_index": 3,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/567",
+    "method": "selected_baseline",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/586",
+    "method": "selected_baseline",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/587",
+    "method": "selected_baseline",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/605",
+    "method": "selected_baseline",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/607",
+    "method": "selected_baseline",
+    "sample_index": 1,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/615",
+    "method": "selected_baseline",
+    "sample_index": 0,
+    "triggered": true,
+    "replaced": false,
+    "correct": false
+  },
+  {
+    "task_id": "Mbpp/62",
+    "method": "selected_baseline",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/7",
+    "method": "selected_baseline",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": false
+  },
+  {
+    "task_id": "Mbpp/722",
+    "method": "selected_baseline",
+    "sample_index": 0,
+    "triggered": true,
+    "replaced": false,
+    "correct": false
+  },
+  {
+    "task_id": "Mbpp/723",
+    "method": "selected_baseline",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/734",
+    "method": "selected_baseline",
+    "sample_index": 1,
+    "triggered": true,
+    "replaced": false,
+    "correct": false
+  },
+  {
+    "task_id": "Mbpp/745",
+    "method": "selected_baseline",
+    "sample_index": 0,
+    "triggered": true,
+    "replaced": false,
+    "correct": false
+  },
+  {
+    "task_id": "Mbpp/80",
+    "method": "selected_baseline",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/11",
+    "method": "public_feedback_repair",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/141",
+    "method": "public_feedback_repair",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/285",
+    "method": "public_feedback_repair",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/299",
+    "method": "public_feedback_repair",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": false
+  },
+  {
+    "task_id": "Mbpp/410",
+    "method": "public_feedback_repair",
+    "sample_index": 0,
+    "triggered": true,
+    "replaced": false,
+    "correct": false
+  },
+  {
+    "task_id": "Mbpp/479",
+    "method": "public_feedback_repair",
+    "sample_index": 0,
+    "triggered": true,
+    "replaced": false,
+    "correct": false
+  },
+  {
+    "task_id": "Mbpp/564",
+    "method": "public_feedback_repair",
+    "sample_index": 3,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/567",
+    "method": "public_feedback_repair",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/586",
+    "method": "public_feedback_repair",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/587",
+    "method": "public_feedback_repair",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/605",
+    "method": "public_feedback_repair",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/607",
+    "method": "public_feedback_repair",
+    "sample_index": 1,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/615",
+    "method": "public_feedback_repair",
+    "sample_index": 0,
+    "triggered": true,
+    "replaced": false,
+    "correct": false
+  },
+  {
+    "task_id": "Mbpp/62",
+    "method": "public_feedback_repair",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/7",
+    "method": "public_feedback_repair",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": false
+  },
+  {
+    "task_id": "Mbpp/722",
+    "method": "public_feedback_repair",
+    "sample_index": 4,
+    "triggered": true,
+    "replaced": true,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/723",
+    "method": "public_feedback_repair",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/734",
+    "method": "public_feedback_repair",
+    "sample_index": 4,
+    "triggered": true,
+    "replaced": true,
+    "correct": false
+  },
+  {
+    "task_id": "Mbpp/745",
+    "method": "public_feedback_repair",
+    "sample_index": 0,
+    "triggered": true,
+    "replaced": false,
+    "correct": false
+  },
+  {
+    "task_id": "Mbpp/80",
+    "method": "public_feedback_repair",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/11",
+    "method": "extra_sample_control",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/141",
+    "method": "extra_sample_control",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/285",
+    "method": "extra_sample_control",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/299",
+    "method": "extra_sample_control",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": false
+  },
+  {
+    "task_id": "Mbpp/410",
+    "method": "extra_sample_control",
+    "sample_index": 0,
+    "triggered": true,
+    "replaced": false,
+    "correct": false
+  },
+  {
+    "task_id": "Mbpp/479",
+    "method": "extra_sample_control",
+    "sample_index": 0,
+    "triggered": true,
+    "replaced": false,
+    "correct": false
+  },
+  {
+    "task_id": "Mbpp/564",
+    "method": "extra_sample_control",
+    "sample_index": 3,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/567",
+    "method": "extra_sample_control",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/586",
+    "method": "extra_sample_control",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/587",
+    "method": "extra_sample_control",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/605",
+    "method": "extra_sample_control",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/607",
+    "method": "extra_sample_control",
+    "sample_index": 1,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/615",
+    "method": "extra_sample_control",
+    "sample_index": 0,
+    "triggered": true,
+    "replaced": false,
+    "correct": false
+  },
+  {
+    "task_id": "Mbpp/62",
+    "method": "extra_sample_control",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/7",
+    "method": "extra_sample_control",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": false
+  },
+  {
+    "task_id": "Mbpp/722",
+    "method": "extra_sample_control",
+    "sample_index": 0,
+    "triggered": true,
+    "replaced": false,
+    "correct": false
+  },
+  {
+    "task_id": "Mbpp/723",
+    "method": "extra_sample_control",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  },
+  {
+    "task_id": "Mbpp/734",
+    "method": "extra_sample_control",
+    "sample_index": 1,
+    "triggered": true,
+    "replaced": false,
+    "correct": false
+  },
+  {
+    "task_id": "Mbpp/745",
+    "method": "extra_sample_control",
+    "sample_index": 0,
+    "triggered": true,
+    "replaced": false,
+    "correct": false
+  },
+  {
+    "task_id": "Mbpp/80",
+    "method": "extra_sample_control",
+    "sample_index": 0,
+    "triggered": false,
+    "replaced": false,
+    "correct": true
+  }
+]

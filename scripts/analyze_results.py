@@ -116,6 +116,6 @@ def pilot(name):
 
 if __name__=="__main__":
     parser=argparse.ArgumentParser()
-    parser.add_argument("run",choices=["historical-holdout","mbpp-pilot-20260905","mbpp-parser-ablation-20260905","mbpp-temperature-20260906"])
+    parser.add_argument("run",choices=["historical-holdout","mbpp-pilot-20260905","mbpp-parser-ablation-20260905","mbpp-temperature-20260906","mbpp-development40-20260907"])
     args=parser.parse_args()
     historical() if args.run=="historical-holdout" else pilot(args.run)

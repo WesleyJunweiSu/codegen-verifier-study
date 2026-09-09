@@ -21,7 +21,9 @@ assert sha256(run/"linux/decisions.jsonl")==metadata["decisions_sha256"]
 labels={(row["task_id"],row["sample_index"]):row["pass"] for row in read_jsonl(parent/"linux/evaluation.jsonl")}
 decisions=read_jsonl(run/"linux/decisions.jsonl")
 task_ids=sorted({row["task_id"] for row in decisions})
-assert len(task_ids)==20 and len(decisions)==40
+n=metadata['tasks']
+assert len(task_ids)==n and len(decisions)==2*n
+assert set(task_ids)==set(json.loads((parent/'manifest.json').read_text(encoding='utf-8'))['task_ids'])
 task_rows=[]
 for task_id in task_ids:
     row={"task_id":task_id,"first_correct":labels[task_id,0]}
@@ -29,14 +31,14 @@ for task_id in task_ids:
         row[decision["method"]+"_sample_index"]=decision["sample_index"]
         row[decision["method"]+"_correct"]=labels[task_id,decision["sample_index"]]
     task_rows.append(row)
-summary={"phase":"Exposed development tasks; consensus adds no model calls","parent_run":parent.name,"tasks":20,"methods":{},
+summary={"phase":"Development tasks; consensus adds no model calls","parent_run":parent.name,"tasks":n,"methods":{},
          "execution":metadata,"hidden_labels_loaded_after_decisions":True}
 for method in sorted({row["method"] for row in decisions}):
     correct=sum(row[method+"_correct"] for row in task_rows)
     delta=[int(row[method+"_correct"])-int(row["first_correct"]) for row in task_rows]
-    summary["methods"][method]={"correct":correct,"tasks":20,"coverage":1.0,"accuracy":correct/20,
-        "wilson95":wilson(correct,20),"rescues":sum(d>0 for d in delta),"regressions":sum(d<0 for d in delta),
-        "paired_difference_vs_first":sum(delta)/20,"paired_task_bootstrap95":paired_interval(delta)}
+    summary["methods"][method]={"correct":correct,"tasks":n,"coverage":1.0,"accuracy":correct/n,
+        "wilson95":wilson(correct,n),"rescues":sum(d>0 for d in delta),"regressions":sum(d<0 for d in delta),
+        "paired_difference_vs_first":sum(delta)/n,"paired_task_bootstrap95":paired_interval(delta)}
 write_json(run/"summary.json",summary)
 write_json(run/"task-results.json",task_rows)
 print(json.dumps(summary,indent=2))
