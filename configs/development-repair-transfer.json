@@ -1,0 +1,24 @@
+{
+  "recorded_date": "2026-09-08",
+  "parent_run": "mbpp-development40-20260907",
+  "phase": "Additional development, not confirmation; frozen before reading this cohort's scoring outcomes",
+  "run_id": "mbpp-development40-repair-20260908",
+  "task_ids_source": "configs/development-expansion.json; all 40 tasks retained",
+  "baseline": "Previously fixed public-first execution-consensus selection on four original candidates",
+  "trigger": "One or more PUBLIC example assertions fail on the baseline-selected candidate",
+  "replacement": "A new candidate replaces the baseline only if it passes strictly more public assertions; otherwise baseline is retained",
+  "arms": [
+    {"method": "nonthinking_feedback_repair", "sample_index": 4, "thinking": false, "feedback": true, "temperature": 0.7, "top_p": 0.8, "top_k": 20, "max_new_tokens": 768},
+    {"method": "nonthinking_resample", "sample_index": 5, "thinking": false, "feedback": false, "temperature": 0.7, "top_p": 0.8, "top_k": 20, "max_new_tokens": 768},
+    {"method": "reasoning_feedback_repair", "sample_index": 6, "thinking": true, "feedback": true, "temperature": 0.6, "top_p": 0.95, "top_k": 20, "max_new_tokens": 2048},
+    {"method": "reasoning_resample", "sample_index": 7, "thinking": true, "feedback": false, "temperature": 0.6, "top_p": 0.95, "top_k": 20, "max_new_tokens": 2048}
+  ],
+  "prompt_source": "Exact system and repair instruction from the completed 20-task pilot, with task specification, baseline-selected code and failed public assertions substituted; no task-specific analyst hints",
+  "seed_rule": "sha256('transfer:20260908:{task_id}')[:8] interpreted as hex integer; same seed in all four arms",
+  "call_budget": "Exactly one extra call per triggered task in each arm; zero on nontriggered tasks",
+  "failure_policy": "No retries or budget extensions; incomplete reasoning yields empty failed code; all 40 task denominators retained",
+  "primary_development_comparison": "Conditional reasoning resampling versus nonthinking resampling: accuracy plus measured extra cost, not a fixed-compute superiority claim",
+  "secondary_comparisons": "Feedback versus resampling within each mode; all arms versus baseline; keep every arm even if it loses",
+  "reason_for_primary": "20-task pilot: reasoning resampling 17/20, reasoning feedback 16/20, nonthinking feedback 13/20, nonthinking resampling and baseline 12/20. This adaptive choice is disclosed.",
+  "confirmation": "Do not load confirmation labels. This configuration is only the development transfer; freeze a separate final confirmation manifest later."
+}

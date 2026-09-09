@@ -1,0 +1,76 @@
+{
+  "phase": "Adaptive exposed-development pilot; never confirmation",
+  "tasks": 20,
+  "triggered_tasks": 6,
+  "methods": {
+    "selected_baseline": {
+      "correct": 12,
+      "accuracy": 0.6,
+      "coverage": 1.0,
+      "wilson95": [
+        0.3865815007622585,
+        0.7811934676271791
+      ],
+      "rescues_vs_selected": 0,
+      "regressions_vs_selected": 0
+    },
+    "public_feedback_repair": {
+      "correct": 16,
+      "accuracy": 0.8,
+      "coverage": 1.0,
+      "wilson95": [
+        0.5839825677481129,
+        0.9193423374202
+      ],
+      "rescues_vs_selected": 4,
+      "regressions_vs_selected": 0
+    },
+    "extra_sample_control": {
+      "correct": 17,
+      "accuracy": 0.85,
+      "coverage": 1.0,
+      "wilson95": [
+        0.6395811352592498,
+        0.9476312541037819
+      ],
+      "rescues_vs_selected": 5,
+      "regressions_vs_selected": 0
+    }
+  },
+  "comparison": {
+    "repair_vs_baseline": {
+      "difference": 0.2,
+      "paired_task_bootstrap95": [
+        0.05,
+        0.4
+      ]
+    },
+    "repair_vs_extra_sample": {
+      "difference": -0.05,
+      "paired_task_bootstrap95": [
+        -0.15,
+        0.0
+      ]
+    }
+  },
+  "cost": {
+    "public_feedback_repair": {
+      "extra_model_calls": 6,
+      "input_tokens": 1721,
+      "output_tokens": 7694,
+      "generation_seconds": 760.5902198000113,
+      "peak_vram_bytes": 8550337024,
+      "truncated_at_cap": 2
+    },
+    "extra_sample_control": {
+      "extra_model_calls": 6,
+      "input_tokens": 769,
+      "output_tokens": 9378,
+      "generation_seconds": 484.2481428999454,
+      "peak_vram_bytes": 8511801856,
+      "truncated_at_cap": 1
+    }
+  },
+  "executor_seconds": 6.597537265,
+  "limitations": "Only 20 exposed development tasks; method chosen using their public failures. Equal extra calls and output caps, not equal realized tokens or runtime. Neither significance nor independent-task generalization is established."
+}

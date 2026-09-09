@@ -1,6 +1,6 @@
 # Code Generation Verifier Study
 
-**Status: paired temperature intervention complete, 2026-09-07.** Two 80-candidate generation conditions, isolated execution, evaluator interventions and semantic audits are recorded in this private repository.
+**Status: repair and bounded reasoning comparisons complete, 2026-09-08.** On the 20 exposed development tasks, the selected baseline returns 12/20, non-thinking feedback repair 13/20, reasoning feedback repair 16/20, and reasoning resampling 17/20. Additional generation cost is reported; independent confirmation remains pending. The remaining 40 development tasks are now in generation.
 
 **Research question:** when generated tests contain errors, what evidence is sufficient to select a code candidate—or decide that selection is unsupported—under a constrained compute budget?
 
@@ -27,6 +27,8 @@ The historical audit found **7/134 different labels** between the old Windows ev
 
 ## Read and reproduce
 
+- [Technical report v0.5: public-failure routing, repair and reasoning controls](reports/technical-report-v0.5.md)
+- [When the 180-task confirmation split can be used](docs/confirmation-readiness.md)
 - [Technical report v0.4: temperature intervention and selection instability](reports/technical-report-v0.4.md)
 - [Technical report v0.3: input-only consensus and adaptive composition](reports/technical-report-v0.3.md)
 - [Technical report v0.2: evaluator mechanisms and test semantics](reports/technical-report-v0.2.md)

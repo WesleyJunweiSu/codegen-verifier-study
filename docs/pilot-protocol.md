@@ -110,4 +110,4 @@ Estimate runtime from the smoke test: planned generation tokens / observed token
 
 Deliverables: one-command reproducible run when implemented, manifest, task-level results, plots, CLI/report demo, and a technical report with limitations.
 
-After the first week, identify the main bottleneck: candidate coverage, candidate diversity, test validity, selection, or evaluator reliability. Improve one identified bottleneck. Do not add training or multi-agent complexity to hide an inconclusive selector result.
+As soon as development evidence is available, identify the main bottleneck: candidate coverage, candidate diversity, test validity, selection, or evaluator reliability. Improve one identified bottleneck. Do not add training or multi-agent complexity to hide an inconclusive selector result. No calendar waiting period is required; see `confirmation-readiness.md` for the 180-task release conditions.

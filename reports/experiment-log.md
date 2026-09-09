@@ -31,3 +31,10 @@ All dispatched experiments above finished; artifacts imported. No GPU generation
 The first report's final push was blocked by automatic approval because usage was exhausted. The evening continuation verified the quota had reset, checked remote state, and completed that push. No reset credit was consumed. A shell inspection also encountered the Windows GBK default encoding; the retry explicitly used UTF-8 and did not change any data.
 
 2026-09-07: the initial resource deferral was resolved with 10,915 MiB free. The temperature batch finished and passed a no-model-load resume check. Generation controls and the composition function AST were audited before new hidden scores were read. The next 40 development IDs were frozen without reading their prompts or labels; that cohort is not yet a completed experiment.
+
+
+## 2026-09-08: public-failure repair and bounded reasoning scored
+
+Six public-failure triggers from the original 20-task selected pool. Non-thinking repair 13/20 vs resample and selected baseline 12/20; 6 calls per arm, 231/230 output tokens, 11.08/10.26 generation seconds. Workflow 34165966111, source 4d5e8f9. Reasoning condition: repair 16/20 vs resampling 17/20; 6 calls per arm, 7694/9378 output tokens, 760.59/484.25 seconds. Two repair and one control attempts hit the cap without completing reasoning; retained as failures. Workflow 34304923901, source ce68578. All reused baseline labels match. This is exposed development, not confirmation; no matched-realized-compute claim. Report v0.5 and exact source/decision/data hashes saved.
+
+Started the previously frozen 40-task development generation, 160 candidates and 40 test responses, on the local GPU with resumable per-record writes. The four-arm transfer protocol was recorded before any new-cohort scoring outcomes. The 180 confirmation labels remain untouched.

@@ -1,6 +1,6 @@
 # Experiment checkpoint
 
-Updated: 2026-09-07. Phase: **paired temperature intervention complete; remaining 40-task development cohort frozen**.
+Updated: 2026-09-08 (America/New_York). Phase: **repair and reasoning comparisons scored; remaining 40-task development generation running**.
 
 ## Objective
 
@@ -25,18 +25,23 @@ Build an interview-ready study and practical code-selection tool with reproducib
 - Adaptive public-first then consensus composition: 12/20, two rescues, zero regressions; matches this exposed pool's oracle. Proposed after viewing complementary rescues, so not confirmation. Report v0.3 and new CLI demo recorded.
 - Temperature-only intervention completed after headroom recovered: 80 new candidates, 3,536 output tokens, 178.16 generation seconds, 7.73 GiB new generation peak. Same seeds/prompts/model/settings except temperature; unchanged composition function AST verified. Tests reused byte-for-byte.
 - Temperature 1.0 result: oracle unchanged 12/20, first 10/20, public 11/20, raw/filtered 10/20, consensus 10/20, public-first consensus 11/20. Prior consensus and combination rescue on Mbpp/607 disappears as four distinct no-match conventions tie. No selector retuning. Report v0.4 records the negative result.
-- Next cohort protocol frozen in `configs/development-expansion.json`: remaining 40 development task IDs, excluding pilot/calibration/confirmation/reserve. No new cohort prompts or labels inspected by the freezing script. Generation for that cohort has not started.
+- Next cohort protocol frozen in `configs/development-expansion.json`: remaining 40 development task IDs, excluding pilot/calibration/confirmation/reserve. Its runner is implemented and generation started during the 2026-09-08 evening follow-up.
+- Public-failure repair pilot: 6 triggered tasks, one repair and one resample each, shared call caps and paired seeds. Non-thinking repair 13/20 versus selected baseline and resample control 12/20; 11.08 vs 10.26 incremental generation seconds. Mbpp/722 rescued; public-passing Mbpp/734 repair remains hidden-incorrect.
+- Bounded reasoning condition: repair 16/20, reasoning resampling 17/20, baseline 12/20. Six extra calls per arm; 7,694/9,378 output tokens and 760.59/484.25 generation seconds. Two repair attempts and one resample exhaust the 2,048-token cap; retained as failures with baseline fallback. All reused labels agree. No independent confirmation or fixed-compute superiority claim.
+- Report v0.5 records this result. All four conditions are frozen for the next development transfer in `configs/development-repair-transfer.json`, before reading the new cohort's scores. Confirmation readiness is described in `docs/confirmation-readiness.md`; no calendar waiting period and no unnecessary calibration gate for a threshold-free policy.
 
 ## Active jobs
 
-None. Temperature generation is 80/80 complete; rerunning recognizes completion and loads no model. Artifacts from consensus 34151733732 and scorer 34151735911 are imported (commit b7d9b16). Prior experiments remain complete. New 40-task development cohort has only a frozen config; no GPU process or workflow is active for it.
+Local `scripts/generate_development.py` is running with the existing Qwen environment. Run directory: `runs/mbpp-development40-20260907`; planned 160 candidates and 40 test responses. Read its `progress.json` and inspect active Python processes before resuming; do not start another model while it is resident. Unified exec session at launch: 8766. Frozen manifest and test manifest identify the exact runner/settings. Last observed 20/160 candidates and 5/40 test responses; this snapshot is not a completion claim.
+
+Both repair scoring workflows completed and artifacts are imported: non-thinking 34165966111 at 4d5e8f9; reasoning 34304923901 at ce68578. No Actions evaluation is currently active. Do not regenerate either completed repair batch.
 
 ## Next bounded work
 
-1. Implement a manifest-driven runner for `configs/development-expansion.json`, preserving the frozen temperature-0.7 generation/test prompts and the already chosen selectors. Check GPU headroom before loading; do not terminate user applications or change precision silently. This cohort is additional development evidence, not the reserved confirmation test.
-2. Generalize current evaluation/analysis adapters from the explicit 20-task pilot to the 40-task cohort with strict task-count and completeness checks. Record workflow input/output mappings before scoring. Generate 160 candidates and 40 test responses with resumability, then persist all fixed-policy decisions before analyzing hidden labels. Retain all 40 tasks, including format/empty failures.
-3. Read and implement a documented nearest-work baseline; current consensus is not full S*. Obtain independent review of semantic annotations before publication. Do not keep selecting favorable temperature/threshold settings from the original 20 cases.
-4. /96 and /123 historical Windows timeouts remain unresolved; they do not block new development. After generation/selection procedures stabilize, freeze calibration and confirmation protocol. Keep all 180 confirmation labels unused.
+1. Let the existing 40-task GPU run complete. If interrupted, resume `scripts/generate_development.py --model-path ...` after checking no duplicate job and enough VRAM. Record every failure; do not change the frozen manifest to retry with different settings. Commit the completed inputs and dispatch `linux-eval.yml` plus `consensus.yml`, each with input_run `mbpp-development40-20260907`. Both workflow allowlists and count-aware analysis adapters are ready.
+2. Import scoring and consensus artifacts with exact workflow/commit IDs. Persist fixed public-first consensus decisions using `combine_public_consensus.py` before analysis reads labels. Suggested consensus directory `mbpp-development40-consensus-20260908`, composition directory `mbpp-development40-public-consensus-20260908`. Analyze with explicit run arguments. Do not present these additional development tasks as the final confirmation set.
+3. Implement the transfer runner for `configs/development-repair-transfer.json`: all four arms, public-only triggers, same existing prompt strings, no manual task hints, strict public improvement for replacement. The current `select_repair` and `analyze_repair` scripts still target the 20-task/two-arm structure and require careful generalization for this transfer; do not simply pass the new run name and assume correctness. Freeze/save transfer decisions before label analysis. Keep all 40 tasks and every arm regardless of outcome.
+4. Freeze the final confirmation method and primary comparison after this development check, then use the 180 confirmation tasks once. Fit a threshold on the 60 calibration tasks only if the final method actually needs one. Nearest-work reproduction, independent annotation review and external-validity tests remain deliverables; current consensus is not full S*. The two unresolved historical Windows timeouts do not block this stage.
 
 ## Continuation rules
 
