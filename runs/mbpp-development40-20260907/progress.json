@@ -1,0 +1,7 @@
+{
+  "status": "generation_complete",
+  "candidate_count": 160,
+  "test_responses": 40,
+  "output_tokens": 14399,
+  "generation_seconds": 5235.819398999738
+}
