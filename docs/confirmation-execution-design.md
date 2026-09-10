@@ -24,4 +24,6 @@ Record common baseline cost once and each extension's incremental model calls, i
 
 ## Implementation status
 
-The existing restricted evaluator, input-only consensus, deterministic composition, conditional replacement and generation backends are reusable. A confirmation coordinator and visible-only workflow still need to be implemented and frozen before generation/scoring. The old `linux-eval.yml` downloads hidden data and is therefore **not an intermediate confirmation visible stage**. This boundary must remain explicit in the next continuation checkpoint.
+The existing restricted evaluator, input-only consensus, deterministic composition, conditional replacement and generation backends are reusable. `visible-evidence.yml` and `visible_linux.py` now implement a stage with no hidden dataset download or mount. Baseline validation on the completed 40 development tasks (workflow 34538843816, c39bc0a) reproduced all seven saved evidence/decision comparisons exactly. The extension branch still needs an end-to-end check once its development generations complete. No confirmation tasks were run for this validation.
+
+A confirmation coordinator, dedicated immutable-decision scorer, final manifest and complete analysis still need implementation and freezing. The old `linux-eval.yml` downloads hidden data and is therefore **not an intermediate confirmation visible stage**. The newly tested `paired_inference.exact_mcnemar` primitive is available for the eventual prespecified primary comparison. No primary hypothesis has been frozen by this design note alone.

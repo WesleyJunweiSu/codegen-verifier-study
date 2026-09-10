@@ -45,3 +45,10 @@ Started the previously frozen 40-task development generation, 160 candidates and
 Validated all 160 candidate keys and 40 test records against frozen config/source/seed rules. Committed inputs bece035. Isolated scoring 34422232779 and input-only consensus 34422234386 both succeeded. Composition and three public-only triggers were saved at f132231 before local hidden-label analysis. First/public/generated-test/consensus/combined policies and oracle all 32/40; zero mixed-correctness pools, 32 all-text-identical tasks. 51/320 assertions reject the reference and all 51 survive static filtering. Full extra-generation transfer is not yet scored.
 
 Measured generation: 7378 candidate plus 7021 test output tokens, 5235.82 wall-seconds. One 4089.06-second call for 20 tokens is unexplained; retained without claiming continuous GPU activity. Peak allocation 8.54 GiB. Transfer runner prepared four arms on Mbpp/137, /777, /801; all 40 task denominators retained. First attempt at 00:43:17 UTC Sept 10 deferred before loading the model with 8404 MiB free versus the 9216 MiB guard. No paid services or precision changes. Twenty contract tests pass; artifact identities verified. Report v0.6 and checkpoint updated.
+
+
+## 2026-09-10: transfer resumed and visible-only boundary validated
+
+The frozen 12-call transfer resumed after observing 9561 MiB free; same model, prompts, seeds, caps and replacement rules. Two calls persisted at the last snapshot; the model is still generating. No new correctness result is available. Do not restart while its process is active.
+
+Added a visible-only stage that mounts candidate/test/manifest records but no hidden dataset. Validated on the already used 40-task cohort, workflow 34538843816, source c39bc0a: all seven comparisons of public matrices, selector decisions, consensus records and composition agree. No new model calls were used for this boundary validation. Added and tested the exact paired McNemar primitive; 24 contract tests pass. A separate confirmation coordinator and immutable final-decision scorer are still needed; the 180 confirmation tasks remain unused.

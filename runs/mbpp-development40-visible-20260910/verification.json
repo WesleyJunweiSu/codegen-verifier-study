@@ -1,0 +1,16 @@
+{
+  "scope": "Engineering boundary validation on 40 previously scored development tasks, not new accuracy evidence",
+  "tasks": 40,
+  "candidates": 160,
+  "exact_record_checks": {
+    "candidate-test-matrix.jsonl": true,
+    "decisions.jsonl": true,
+    "consensus/decisions.jsonl": true,
+    "consensus/pair-outcomes.jsonl": true,
+    "consensus/execution-success.jsonl": true,
+    "consensus/inputs.jsonl": true,
+    "composition_decisions_excluding_phase": true
+  },
+  "all_equal": true,
+  "hidden_labels_read_by_this_comparison": false
+}

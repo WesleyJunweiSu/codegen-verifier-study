@@ -1,6 +1,6 @@
 # Experiment checkpoint
 
-Updated: 2026-09-09 (America/New_York). Phase: **40-task baseline and consensus complete; four-arm transfer prepared, deferred for GPU headroom**.
+Updated: 2026-09-10 (America/New_York). Phase: **four-arm transfer running; visible-only evidence stage verified on completed development data**.
 
 ## Objective
 
@@ -32,18 +32,22 @@ Build an interview-ready study and practical code-selection tool with reproducib
 
 ## Active jobs
 
-No model process or Actions job is active for this project. The 40-task baseline is fully complete: 160 candidates, 40 test responses, both Linux artifacts imported. First/public/raw/filtered/consensus/public-first consensus all 32/40, oracle 32/40, no mixed-correctness candidate pools. 32 tasks have four text-identical candidates. Static filters retain all 51 reference rejects among 320 generated assertions. Report v0.6 records the finding.
+Local `scripts/generate_transfer.py` is running after free VRAM recovered above the unchanged 9,216 MiB guard. Unified exec session 59239; observed model Python PID 48164 (wrapper 6812). Verify process identity and current state rather than trusting stale PIDs. Last persisted count: 2/12 extra calls, third call running. Do not launch a second model or rerun this experiment while it is active. GPU utilization remained high; completed call times are slower than the original pilot. Do not infer a cause without evidence. The final four-arm scores do not exist yet.
+
+The 40-task baseline is fully complete: 160 candidates, 40 test responses, both Linux artifacts imported. First/public/raw/filtered/consensus/public-first consensus all 32/40, oracle 32/40, no mixed-correctness candidate pools. 32 tasks have four text-identical candidates. Static filters retain all 51 reference rejects among 320 generated assertions. Report v0.6 records the finding.
 
 Baseline generation records 14,399 output tokens and 5,235.82 wall-seconds, including an unexplained 4,089.06-second call for 20 tokens on Mbpp/227 sample 3. Preserve the record; do not equate wall-time with active GPU time or silently exclude it. Peak allocated memory 8.54 GiB.
 
-Scoring 34422232779 and consensus 34422234386 used bece035. Composition and the transfer plan were saved at f132231 before local analysis read labels. The 40-task four-arm transfer has 3 public-only triggers (Mbpp/137, /777, /801), 12 planned calls, none completed. Its attempt at 2026-09-10T00:43:17Z deferred before model loading with 8,404 MiB free versus the 9,216 MiB guard. Check `runs/mbpp-development40-repair-20260908/attempts.jsonl` and GPU/process state before resuming. No paid compute is authorized without a spending cap.
+Scoring 34422232779 and consensus 34422234386 used bece035. Composition and the transfer plan were saved at f132231 before local analysis read labels. The four-arm transfer has 3 public-only triggers (Mbpp/137, /777, /801), 12 planned calls. Its first attempt deferred; the 2026-09-10T22:38:58Z attempt observed 9,561 MiB free and started with the same plan. Check its `progress.json`, `attempts.jsonl` and process state before any resume. No paid compute is authorized without a spending cap.
+
+The new `visible-evidence.yml` baseline stage completed successfully on the already scored 40-task cohort: workflow 34538843816 at c39bc0a. It does not download/mount a hidden dataset. All seven record comparisons agree exactly with prior public matrices, selector decisions, consensus inputs/outcomes/decisions and composition (excluding the explanatory phase field). Artifacts are under `runs/mbpp-development40-visible-20260910/visible`, verification in `verification.json`. This is an engineering boundary check, not additional accuracy evidence. No Actions job is active. Twenty-four contract tests pass, including a tested exact paired McNemar primitive for the eventual frozen primary analysis.
 
 ## Next bounded work
 
-1. Check GPU headroom and active project processes, then resume `scripts/generate_transfer.py --model-path C:/Users/Asuka/Documents/techblog/models/Qwen3-4B` with the existing model interpreter. The runner, public-only plan, four-arm selector and strict analysis are implemented. Do not regenerate the 40-task baseline or the original 20-task experiments. Do not lower the 9,216 MiB guard or terminate user apps to force a run.
+1. First check the current transfer process and persisted count. Let the active run finish; only resume `scripts/generate_transfer.py --model-path C:/Users/Asuka/Documents/techblog/models/Qwen3-4B` if it has stopped and incomplete records remain. The runner checks source/plan hashes and completed candidate keys. Do not regenerate baseline experiments, lower the guard or terminate user apps to force a run.
 2. When all 12 extra calls finish, verify the frozen plan/source hashes and candidate keys, commit the complete transfer run and dispatch `linux-eval.yml` with input_run `mbpp-development40-repair-20260908`. The workflow chooses the four-arm selector when `repair-plan.json` includes `arms` and persists decisions before reference loading. Import with exact workflow/commit metadata; run `scripts/analyze_transfer.py`, not the older two-arm analysis.
 3. Report every arm, failure, capped response and cost. The frozen public trigger reaches only 3 of 8 incorrect tasks; even perfect transfer on these triggers would yield 35/40. This is a post-hoc diagnostic, not achieved accuracy. Do not expand triggers using hidden failures. The protocol's primary comparison remains reasoning resampling versus non-thinking resampling with measured extra cost.
-4. Freeze the final confirmation method and primary comparison after this development check, then use the 180 confirmation tasks once. Fit a threshold on the 60 calibration tasks only if the final method actually needs one. Nearest-work reproduction, independent annotation review and external-validity tests remain deliverables; current consensus is not full S*. The two unresolved historical Windows timeouts do not block this stage.
+4. Follow `docs/confirmation-execution-design.md` before freezing the final 180-task manifest. The visible-only stage is implemented and validated on baseline development data; the confirmation coordinator, extension-stage validation, final immutable-decision scorer and complete frozen analysis still need implementation. Do not use the old hidden-data scoring workflow as an intermediate confirmation stage: all final extension decisions must be frozen before confirmation labels are inspected. The 180 tasks remain unused. Calibrate only if the final method actually fits a threshold. Nearest-work reproduction and external-validity checks remain deliverables; current consensus is not full S*.
 
 ## Continuation rules
 
