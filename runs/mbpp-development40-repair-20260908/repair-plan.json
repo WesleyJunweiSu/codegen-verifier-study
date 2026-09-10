@@ -1,0 +1,320 @@
+{
+  "recorded_date": "2026-09-08",
+  "parent_run": "mbpp-development40-20260907",
+  "phase": "Additional development, not confirmation; frozen before reading this cohort's scoring outcomes",
+  "run_id": "mbpp-development40-repair-20260908",
+  "task_ids_source": "configs/development-expansion.json; all 40 tasks retained",
+  "baseline": "Previously fixed public-first execution-consensus selection on four original candidates",
+  "trigger": "One or more PUBLIC example assertions fail on the baseline-selected candidate",
+  "replacement": "A new candidate replaces the baseline only if it passes strictly more public assertions; otherwise baseline is retained",
+  "arms": [
+    {
+      "method": "nonthinking_feedback_repair",
+      "sample_index": 4,
+      "thinking": false,
+      "feedback": true,
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "max_new_tokens": 768
+    },
+    {
+      "method": "nonthinking_resample",
+      "sample_index": 5,
+      "thinking": false,
+      "feedback": false,
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "max_new_tokens": 768
+    },
+    {
+      "method": "reasoning_feedback_repair",
+      "sample_index": 6,
+      "thinking": true,
+      "feedback": true,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "max_new_tokens": 2048
+    },
+    {
+      "method": "reasoning_resample",
+      "sample_index": 7,
+      "thinking": true,
+      "feedback": false,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "max_new_tokens": 2048
+    }
+  ],
+  "prompt_source": "Exact system and repair instruction from the completed 20-task pilot, with task specification, baseline-selected code and failed public assertions substituted; no task-specific analyst hints",
+  "seed_rule": "sha256('transfer:20260908:{task_id}')[:8] interpreted as hex integer; same seed in all four arms",
+  "call_budget": "Exactly one extra call per triggered task in each arm; zero on nontriggered tasks",
+  "failure_policy": "No retries or budget extensions; incomplete reasoning yields empty failed code; all 40 task denominators retained",
+  "primary_development_comparison": "Conditional reasoning resampling versus nonthinking resampling: accuracy plus measured extra cost, not a fixed-compute superiority claim",
+  "secondary_comparisons": "Feedback versus resampling within each mode; all arms versus baseline; keep every arm even if it loses",
+  "reason_for_primary": "20-task pilot: reasoning resampling 17/20, reasoning feedback 16/20, nonthinking feedback 13/20, nonthinking resampling and baseline 12/20. This adaptive choice is disclosed.",
+  "confirmation": "Do not load confirmation labels. This configuration is only the development transfer; freeze a separate final confirmation manifest later.",
+  "tasks": [
+    {
+      "task_id": "Mbpp/119",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/12",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/120",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/129",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/137",
+      "selected_index": 0,
+      "triggered": true,
+      "failed_public_assertions": [
+        "assert math.isclose(zero_count([0, 1, 2, -1, -5, 6, 0, -3, -2, 3, 4, 6, 8]), 0.181818, rel_tol=0.001)"
+      ]
+    },
+    {
+      "task_id": "Mbpp/226",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/227",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/256",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/257",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/276",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/309",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/312",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/388",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/394",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/412",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/429",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/436",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/455",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/463",
+      "selected_index": 2,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/470",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/555",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/559",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/568",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/598",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/623",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/624",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/626",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/628",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/70",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/75",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/758",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/767",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/777",
+      "selected_index": 0,
+      "triggered": true,
+      "failed_public_assertions": [
+        "assert find_sum([1, 2, 3, 1, 1, 4, 5, 6]) == 21"
+      ]
+    },
+    {
+      "task_id": "Mbpp/793",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/796",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/801",
+      "selected_index": 2,
+      "triggered": true,
+      "failed_public_assertions": [
+        "assert test_three_equal(1, 1, 1) == 3"
+      ]
+    },
+    {
+      "task_id": "Mbpp/805",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/808",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/94",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    },
+    {
+      "task_id": "Mbpp/99",
+      "selected_index": 0,
+      "triggered": false,
+      "failed_public_assertions": []
+    }
+  ],
+  "repair_instruction": "The implementation below failed one or more PUBLIC example assertions.\nCorrect the implementation using the specification and the failed public assertions.\nReconcile the examples with the prose, fix the general algorithm rather than hardcoding\nthe examples, and preserve the function name and signature. Return only executable\nPython code. Do not add tests or explanations.\n",
+  "source_hashes": {
+    "configs\\development-repair-transfer.json": "0b336a9c2ea2abef8915f5f22e9d9b9b5ab6fb4bff003bf5e27dd2610dee6152",
+    "runs\\mbpp-development40-public-consensus-20260908\\decisions.jsonl": "9bc8316022d5f40cc4550e37bbd14a56ddf0285f743d10a6781453a86f5f3d9d",
+    "runs\\mbpp-development40-20260907\\linux\\candidate-test-matrix.jsonl": "1c237edc580446ed2ccd83b0340cea183577ccf1f7bdf8e838acedeac2a829bc",
+    "data\\prompts\\mbpp-v0.2.0.jsonl": "3cf2bdc4478bb3228436e6234e39becadc87c5668ae02d89605b8fc98ea52ce0",
+    "runs\\mbpp-development40-20260907\\generations.jsonl": "51fa67fd47ea39ecc8372ad37a3e3c5952e1a02269281a1389f025a7fd5e2805",
+    "runs\\mbpp-repair-20260907\\repair-plan.json": "0f06530416bd360e0f139c94831161b02f75226bcd26f9a362922fb7a64a7659",
+    "src\\verifier_study\\transfer.py": "3b56a755d5aa2b8faf237d806c1085b426137500eaef0aa7d2165842fb8bb1a5",
+    "src\\verifier_study\\generation.py": "639213725d2f28311a93a48c460fe9c6f29f9267ad8fba66a51ee279a9c2edc4",
+    "src\\verifier_study\\reasoning_generation.py": "e3d1fd0ee7ac851986abf6b4098cb8ec8cb628fc32e34450884bb9f2d4265877"
+  }
+}

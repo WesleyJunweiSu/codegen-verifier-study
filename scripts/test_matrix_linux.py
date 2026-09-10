@@ -44,8 +44,13 @@ def build_matrix(generations: list[dict], tests_path: Path, output: Path):
     decisions=select_candidates(candidates,matrix)
     plan_path=tests_path.parent/"repair-plan.json"
     if plan_path.exists():
-        from verifier_study.repair import select_repair
-        decisions=select_repair(json.loads(plan_path.read_text()),matrix)
+        plan=json.loads(plan_path.read_text())
+        if 'arms' in plan:
+            from verifier_study.transfer import select_transfer
+            decisions=select_transfer(plan,matrix)
+        else:
+            from verifier_study.repair import select_repair
+            decisions=select_repair(plan,matrix)
     write_rows(output/"decisions.jsonl",decisions)
     return generated
 

@@ -15,6 +15,7 @@ on:
           - mbpp-repair-20260907
           - mbpp-reasoning-repair-20260907
           - mbpp-development40-20260907
+          - mbpp-development40-repair-20260908
 permissions:
   contents: read
 concurrency:
