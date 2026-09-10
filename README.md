@@ -1,6 +1,6 @@
 # Code Generation Verifier Study
 
-**Status: repair and bounded reasoning comparisons complete, 2026-09-08.** On the 20 exposed development tasks, the selected baseline returns 12/20, non-thinking feedback repair 13/20, reasoning feedback repair 16/20, and reasoning resampling 17/20. Additional generation cost is reported; independent confirmation remains pending. The remaining 40 development tasks are now in generation.
+**Status: additional 40-task development baseline complete, 2026-09-09.** All tested selectors and the candidate oracle return 32/40; the four-arm extra-generation transfer is prepared, with generation deferred for GPU headroom. On the original 20 development tasks, the selected baseline returns 12/20, non-thinking feedback repair 13/20, reasoning feedback repair 16/20, and reasoning resampling 17/20. Extra cost is reported; the 180-task confirmation remains unused.
 
 **Research question:** when generated tests contain errors, what evidence is sufficient to select a code candidate—or decide that selection is unsupported—under a constrained compute budget?
 
@@ -27,6 +27,7 @@ The historical audit found **7/134 different labels** between the old Windows ev
 
 ## Read and reproduce
 
+- [Technical report v0.6: 40 additional tasks and public-trigger coverage](reports/technical-report-v0.6.md)
 - [Technical report v0.5: public-failure routing, repair and reasoning controls](reports/technical-report-v0.5.md)
 - [When the 180-task confirmation split can be used](docs/confirmation-readiness.md)
 - [Technical report v0.4: temperature intervention and selection instability](reports/technical-report-v0.4.md)

@@ -1,0 +1,142 @@
+{
+  "phase": "development pilot; not confirmatory",
+  "tasks": 40,
+  "candidates": 160,
+  "methods": {
+    "filtered_abstain": {
+      "correct_returned": 0,
+      "returned": 0,
+      "tasks": 40,
+      "coverage": 0.0,
+      "correct_return_rate": 0.0,
+      "selective_accuracy": null,
+      "correct_return_wilson95": [
+        6.938893903907228e-18,
+        0.08762160119728224
+      ],
+      "paired_difference_vs_first": -0.8,
+      "paired_task_bootstrap95": [
+        -0.925,
+        -0.675
+      ],
+      "rescues_vs_first": 0,
+      "regressions_vs_first": 32
+    },
+    "filtered_tests": {
+      "correct_returned": 32,
+      "returned": 40,
+      "tasks": 40,
+      "coverage": 1.0,
+      "correct_return_rate": 0.8,
+      "selective_accuracy": 0.8,
+      "correct_return_wilson95": [
+        0.6524269365360096,
+        0.8950001027456211
+      ],
+      "paired_difference_vs_first": 0.0,
+      "paired_task_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "rescues_vs_first": 0,
+      "regressions_vs_first": 0
+    },
+    "first": {
+      "correct_returned": 32,
+      "returned": 40,
+      "tasks": 40,
+      "coverage": 1.0,
+      "correct_return_rate": 0.8,
+      "selective_accuracy": 0.8,
+      "correct_return_wilson95": [
+        0.6524269365360096,
+        0.8950001027456211
+      ],
+      "paired_difference_vs_first": 0.0,
+      "paired_task_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "rescues_vs_first": 0,
+      "regressions_vs_first": 0
+    },
+    "public_tests": {
+      "correct_returned": 32,
+      "returned": 40,
+      "tasks": 40,
+      "coverage": 1.0,
+      "correct_return_rate": 0.8,
+      "selective_accuracy": 0.8,
+      "correct_return_wilson95": [
+        0.6524269365360096,
+        0.8950001027456211
+      ],
+      "paired_difference_vs_first": 0.0,
+      "paired_task_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "rescues_vs_first": 0,
+      "regressions_vs_first": 0
+    },
+    "public_then_filtered": {
+      "correct_returned": 32,
+      "returned": 40,
+      "tasks": 40,
+      "coverage": 1.0,
+      "correct_return_rate": 0.8,
+      "selective_accuracy": 0.8,
+      "correct_return_wilson95": [
+        0.6524269365360096,
+        0.8950001027456211
+      ],
+      "paired_difference_vs_first": 0.0,
+      "paired_task_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "rescues_vs_first": 0,
+      "regressions_vs_first": 0
+    },
+    "raw_tests": {
+      "correct_returned": 32,
+      "returned": 40,
+      "tasks": 40,
+      "coverage": 1.0,
+      "correct_return_rate": 0.8,
+      "selective_accuracy": 0.8,
+      "correct_return_wilson95": [
+        0.6524269365360096,
+        0.8950001027456211
+      ],
+      "paired_difference_vs_first": 0.0,
+      "paired_task_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "rescues_vs_first": 0,
+      "regressions_vs_first": 0
+    }
+  },
+  "oracle_tasks": 32,
+  "all_identical_candidate_tasks": 32,
+  "tasks_with_mixed_correctness": 0,
+  "uniform_random_expected_correct": 32.0,
+  "generated_assertions": 320,
+  "tasks_without_parsed_tests": 0,
+  "kept_assertions": 318,
+  "reference_rejected_assertions": 51,
+  "kept_reference_rejected_assertions": 51,
+  "executed_candidate_test_pairs": 1440,
+  "candidate_output_tokens": 7378,
+  "test_output_tokens": 7021,
+  "candidate_generation_seconds": 4602.154119699786,
+  "test_generation_seconds": 633.6652792999521,
+  "peak_vram_bytes": 9164722176,
+  "filter_reasons": {
+    "duplicate": 2
+  },
+  "reuses_generation_from": null,
+  "reuses_tests_from": null,
+  "incremental_model_output_tokens": 14399
+}

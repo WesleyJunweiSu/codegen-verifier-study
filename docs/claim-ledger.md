@@ -1,6 +1,6 @@
 # Claim ledger
 
-Updated 2026-09-08. Distinguish observation, hypothesis and unfinished work.
+Updated 2026-09-09. Distinguish observation, hypothesis and unfinished work.
 
 | Claim | Evidence | Permitted wording |
 |---|---|---|
@@ -12,7 +12,10 @@ Updated 2026-09-08. Distinguish observation, hypothesis and unfinished work.
 | New generated-test selector improves accuracy | Not established: raw/filtered 10/20, same as first | No observed benefit in this development pilot. |
 | Conditional extra generation improves this development pilot | Baseline 12/20; non-thinking repair 13, reasoning repair 16, reasoning resample 17; all six public-failure triggers retained | Observed development gains with additional generation; report full cost and independent confirmation pending. |
 | Feedback repair is the best use of reasoning | Reasoning repair 16/20 versus reasoning resample 17/20; equal call caps, different realized cost | Feedback superiority is not supported by this pilot. |
-| The 17/20 result generalizes | Same 20 exposed tasks; adaptive development; 40 new development tasks still generating | Do not claim a confirmed 25-point gain or use this as a production accuracy estimate. |
+| The 17/20 result generalizes | Same 20 exposed tasks; new 40-task baseline scored but extra-generation transfer not run | Do not claim a confirmed 25-point gain or use this as a production accuracy estimate. |
+| Selection fixes the new cohort's errors | First, tested selectors and oracle all 32/40; no mixed-correctness candidate pools | No selector gain on this realized 40-task pool; generation remains the limiting factor. |
+| Public-failure routing reaches all incorrect programs | Only 3 of 8 incorrect selected programs fail public examples | At most 35/40 under this frozen trigger, even with perfect new answers on triggered tasks; not achieved performance. |
+| Recorded generation time is stable GPU throughput | 5,235.82 wall-seconds includes one 4,089.06-second, 20-token call with unestablished cause | Report raw wall-time and anomaly; no active-GPU or serving-latency claim. |
 | Public tests beat first candidate generally | Only one pilot rescue | Public examples rescued one of 20 pilot tasks. |
 | Execution consensus improves selection generally | Frozen development comparison: 11/20 versus 10/20 first; one rescue | Input-only consensus rescues one inspected development task. |
 | Public-first consensus is proven better | Original adaptive pool 12/20; unchanged policy on temperature 1.0 pool 11/20; first remains 10/20 | Development behavior is sampling-dependent; no general improvement established. |

@@ -1,0 +1,242 @@
+[
+  {
+    "task_id": "Mbpp/119",
+    "sample_index": 0,
+    "correct": false,
+    "first_correct": false
+  },
+  {
+    "task_id": "Mbpp/12",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/120",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/129",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/137",
+    "sample_index": 0,
+    "correct": false,
+    "first_correct": false
+  },
+  {
+    "task_id": "Mbpp/226",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/227",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/256",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/257",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/276",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/309",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/312",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/388",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/394",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/412",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/429",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/436",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/455",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/463",
+    "sample_index": 2,
+    "correct": false,
+    "first_correct": false
+  },
+  {
+    "task_id": "Mbpp/470",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/555",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/559",
+    "sample_index": 0,
+    "correct": false,
+    "first_correct": false
+  },
+  {
+    "task_id": "Mbpp/568",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/598",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/623",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/624",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/626",
+    "sample_index": 0,
+    "correct": false,
+    "first_correct": false
+  },
+  {
+    "task_id": "Mbpp/628",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/70",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/75",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/758",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/767",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/777",
+    "sample_index": 0,
+    "correct": false,
+    "first_correct": false
+  },
+  {
+    "task_id": "Mbpp/793",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/796",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/801",
+    "sample_index": 2,
+    "correct": false,
+    "first_correct": false
+  },
+  {
+    "task_id": "Mbpp/805",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/808",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/94",
+    "sample_index": 0,
+    "correct": true,
+    "first_correct": true
+  },
+  {
+    "task_id": "Mbpp/99",
+    "sample_index": 0,
+    "correct": false,
+    "first_correct": false
+  }
+]

@@ -1,6 +1,6 @@
 # Experiment checkpoint
 
-Updated: 2026-09-08 (America/New_York). Phase: **repair and reasoning comparisons scored; remaining 40-task development generation running**.
+Updated: 2026-09-09 (America/New_York). Phase: **40-task baseline and consensus complete; four-arm transfer prepared, deferred for GPU headroom**.
 
 ## Objective
 
@@ -32,15 +32,17 @@ Build an interview-ready study and practical code-selection tool with reproducib
 
 ## Active jobs
 
-Local `scripts/generate_development.py` is running with the existing Qwen environment. Run directory: `runs/mbpp-development40-20260907`; planned 160 candidates and 40 test responses. Read its `progress.json` and inspect active Python processes before resuming; do not start another model while it is resident. Unified exec session at launch: 8766. Frozen manifest and test manifest identify the exact runner/settings. Last observed 20/160 candidates and 5/40 test responses; this snapshot is not a completion claim.
+No model process or Actions job is active for this project. The 40-task baseline is fully complete: 160 candidates, 40 test responses, both Linux artifacts imported. First/public/raw/filtered/consensus/public-first consensus all 32/40, oracle 32/40, no mixed-correctness candidate pools. 32 tasks have four text-identical candidates. Static filters retain all 51 reference rejects among 320 generated assertions. Report v0.6 records the finding.
 
-Both repair scoring workflows completed and artifacts are imported: non-thinking 34165966111 at 4d5e8f9; reasoning 34304923901 at ce68578. No Actions evaluation is currently active. Do not regenerate either completed repair batch.
+Baseline generation records 14,399 output tokens and 5,235.82 wall-seconds, including an unexplained 4,089.06-second call for 20 tokens on Mbpp/227 sample 3. Preserve the record; do not equate wall-time with active GPU time or silently exclude it. Peak allocated memory 8.54 GiB.
+
+Scoring 34422232779 and consensus 34422234386 used bece035. Composition and the transfer plan were saved at f132231 before local analysis read labels. The 40-task four-arm transfer has 3 public-only triggers (Mbpp/137, /777, /801), 12 planned calls, none completed. Its attempt at 2026-09-10T00:43:17Z deferred before model loading with 8,404 MiB free versus the 9,216 MiB guard. Check `runs/mbpp-development40-repair-20260908/attempts.jsonl` and GPU/process state before resuming. No paid compute is authorized without a spending cap.
 
 ## Next bounded work
 
-1. Let the existing 40-task GPU run complete. If interrupted, resume `scripts/generate_development.py --model-path ...` after checking no duplicate job and enough VRAM. Record every failure; do not change the frozen manifest to retry with different settings. Commit the completed inputs and dispatch `linux-eval.yml` plus `consensus.yml`, each with input_run `mbpp-development40-20260907`. Both workflow allowlists and count-aware analysis adapters are ready.
-2. Import scoring and consensus artifacts with exact workflow/commit IDs. Persist fixed public-first consensus decisions using `combine_public_consensus.py` before analysis reads labels. Suggested consensus directory `mbpp-development40-consensus-20260908`, composition directory `mbpp-development40-public-consensus-20260908`. Analyze with explicit run arguments. Do not present these additional development tasks as the final confirmation set.
-3. Implement the transfer runner for `configs/development-repair-transfer.json`: all four arms, public-only triggers, same existing prompt strings, no manual task hints, strict public improvement for replacement. The current `select_repair` and `analyze_repair` scripts still target the 20-task/two-arm structure and require careful generalization for this transfer; do not simply pass the new run name and assume correctness. Freeze/save transfer decisions before label analysis. Keep all 40 tasks and every arm regardless of outcome.
+1. Check GPU headroom and active project processes, then resume `scripts/generate_transfer.py --model-path C:/Users/Asuka/Documents/techblog/models/Qwen3-4B` with the existing model interpreter. The runner, public-only plan, four-arm selector and strict analysis are implemented. Do not regenerate the 40-task baseline or the original 20-task experiments. Do not lower the 9,216 MiB guard or terminate user apps to force a run.
+2. When all 12 extra calls finish, verify the frozen plan/source hashes and candidate keys, commit the complete transfer run and dispatch `linux-eval.yml` with input_run `mbpp-development40-repair-20260908`. The workflow chooses the four-arm selector when `repair-plan.json` includes `arms` and persists decisions before reference loading. Import with exact workflow/commit metadata; run `scripts/analyze_transfer.py`, not the older two-arm analysis.
+3. Report every arm, failure, capped response and cost. The frozen public trigger reaches only 3 of 8 incorrect tasks; even perfect transfer on these triggers would yield 35/40. This is a post-hoc diagnostic, not achieved accuracy. Do not expand triggers using hidden failures. The protocol's primary comparison remains reasoning resampling versus non-thinking resampling with measured extra cost.
 4. Freeze the final confirmation method and primary comparison after this development check, then use the 180 confirmation tasks once. Fit a threshold on the 60 calibration tasks only if the final method actually needs one. Nearest-work reproduction, independent annotation review and external-validity tests remain deliverables; current consensus is not full S*. The two unresolved historical Windows timeouts do not block this stage.
 
 ## Continuation rules

@@ -1,0 +1,21 @@
+{
+  "phase": "Development composition, not confirmation",
+  "correct": 32,
+  "tasks": 40,
+  "coverage": 1.0,
+  "accuracy": 0.8,
+  "wilson95": [
+    0.6524269365360096,
+    0.8950001027456211
+  ],
+  "rescues": 0,
+  "regressions": 0,
+  "paired_difference_vs_first": 0.0,
+  "paired_task_bootstrap95": [
+    0.0,
+    0.0
+  ],
+  "new_model_calls": 0,
+  "new_execution_calls": 0,
+  "limitations": "Policy selected after inspecting development baseline rescues; do not interpret resampling interval as selection-adjusted confirmation."
+}

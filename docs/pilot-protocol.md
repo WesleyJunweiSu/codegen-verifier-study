@@ -16,6 +16,8 @@ The evening follow-up adds diagnostic-only semantic annotations, historical poli
 
 ## Research question
 
+2026-09-09 addendum: the remaining 40 development tasks have completed baseline scoring and input-only consensus, all tested selectors and oracle 32/40. A frozen four-arm transfer uses three public-example failure triggers; its first generation attempt deferred for GPU headroom. Reports v0.5–v0.6 supersede earlier status text while preserving that execution history. The 180 confirmation labels remain unused.
+
 When generated tests are unreliable, can a small-model selector reduce incorrect acceptance under a fixed compute budget while preserving useful answer coverage?
 
 This is a replication and extension of established test-guided code-selection work. Novelty has not been established.
