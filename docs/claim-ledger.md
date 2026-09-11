@@ -1,6 +1,6 @@
 # Claim ledger
 
-Updated 2026-09-09. Distinguish observation, hypothesis and unfinished work.
+Updated 2026-09-11. Distinguish observation, hypothesis and unfinished work.
 
 | Claim | Evidence | Permitted wording |
 |---|---|---|
@@ -12,7 +12,9 @@ Updated 2026-09-09. Distinguish observation, hypothesis and unfinished work.
 | New generated-test selector improves accuracy | Not established: raw/filtered 10/20, same as first | No observed benefit in this development pilot. |
 | Conditional extra generation improves this development pilot | Baseline 12/20; non-thinking repair 13, reasoning repair 16, reasoning resample 17; all six public-failure triggers retained | Observed development gains with additional generation; report full cost and independent confirmation pending. |
 | Feedback repair is the best use of reasoning | Reasoning repair 16/20 versus reasoning resample 17/20; equal call caps, different realized cost | Feedback superiority is not supported by this pilot. |
-| The 17/20 result generalizes | Same 20 exposed tasks; new 40-task baseline scored but extra-generation transfer not run | Do not claim a confirmed 25-point gain or use this as a production accuracy estimate. |
+| The 17/20 result generalizes | New 40-task transfer: reasoning 33/40 vs baseline/nonthinking 32/40; one rescue, no feedback advantage | Development effect is smaller on new tasks; no confirmed 25-point gain or production accuracy estimate. |
+| Independent confirmation is complete | Final 180-task protocol frozen at 7ef1103; first generation attempt deferred for memory, zero candidates | Confirmation ready to resume from frozen configuration; no confirmation performance result yet. |
+| Frozen decisions survive separate scoring | 52 development evaluation records and 200 frozen decisions exactly match in score-frozen validation | Validated separated visible-evidence and immutable-decision scoring paths. |
 | Selection fixes the new cohort's errors | First, tested selectors and oracle all 32/40; no mixed-correctness candidate pools | No selector gain on this realized 40-task pool; generation remains the limiting factor. |
 | Public-failure routing reaches all incorrect programs | Only 3 of 8 incorrect selected programs fail public examples | At most 35/40 under this frozen trigger, even with perfect new answers on triggered tasks; not achieved performance. |
 | Recorded generation time is stable GPU throughput | 5,235.82 wall-seconds includes one 4,089.06-second, 20-token call with unestablished cause | Report raw wall-time and anomaly; no active-GPU or serving-latency claim. |

@@ -1,6 +1,6 @@
 # Code Generation Verifier Study
 
-**Status: additional 40-task development baseline complete; transfer running, 2026-09-10.** All tested selectors and the candidate oracle return 32/40; the four-arm extra-generation transfer resumed after GPU headroom recovered. On the original 20 development tasks, the selected baseline returns 12/20, non-thinking feedback repair 13/20, reasoning feedback repair 16/20, and reasoning resampling 17/20. Extra cost is reported; the 180-task confirmation remains unused.
+**Status: development transfer complete; final confirmation frozen, 2026-09-11.** On the additional 40 tasks, both reasoning arms reach 33/40 versus 32/40 for the baseline and non-thinking arms. The larger original 20-task gain remains development evidence. The final 180-task protocol, coordinator and analysis are frozen; generation has not started because its first memory check failed. Extra cost and negative findings are retained.
 
 **Research question:** when generated tests contain errors, what evidence is sufficient to select a code candidate—or decide that selection is unsupported—under a constrained compute budget?
 
@@ -27,6 +27,8 @@ The historical audit found **7/134 different labels** between the old Windows ev
 
 ## Read and reproduce
 
+- [Technical report v0.7: transferred gain and final confirmation freeze](reports/technical-report-v0.7.md)
+- [Final 180-task confirmation protocol](configs/confirmation-protocol.json)
 - [Technical report v0.6: 40 additional tasks and public-trigger coverage](reports/technical-report-v0.6.md)
 - [Technical report v0.5: public-failure routing, repair and reasoning controls](reports/technical-report-v0.5.md)
 - [When the 180-task confirmation split can be used](docs/confirmation-readiness.md)

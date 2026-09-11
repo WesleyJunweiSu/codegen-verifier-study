@@ -16,6 +16,8 @@ The evening follow-up adds diagnostic-only semantic annotations, historical poli
 
 ## Research question
 
+2026-09-11 addendum: the four-arm transfer is complete. Both reasoning arms return 33/40 versus 32/40 for baseline/non-thinking; all failures and costs retained. The final 180-task protocol is frozen in `configs/confirmation-protocol.json` with one primary comparison, source/runtime hashes and separate visible-evidence/frozen-scoring stages. First confirmation generation deferred for GPU memory; no confirmation labels inspected. See report v0.7 and PROGRESS.md.
+
 2026-09-09 addendum: the remaining 40 development tasks have completed baseline scoring and input-only consensus, all tested selectors and oracle 32/40. A frozen four-arm transfer uses three public-example failure triggers; its first generation attempt deferred for GPU headroom. Reports v0.5–v0.6 supersede earlier status text while preserving that execution history. The 180 confirmation labels remain unused.
 
 When generated tests are unreliable, can a small-model selector reduce incorrect acceptance under a fixed compute budget while preserving useful answer coverage?

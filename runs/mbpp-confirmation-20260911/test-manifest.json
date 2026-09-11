@@ -1,0 +1,11 @@
+{
+  "candidate_generation_reused": false,
+  "test_generation_reused": false,
+  "system_prompt": "Write Python assert statements to test a function from its specification.\nReturn only 8 independent assert statements. No Markdown, imports, helper functions,\nloops, or explanations. Include valid edge cases. Each assertion must call the requested\nfunction and check its result against an independently reasoned expected value.\nDo not compare a function call to another call to the same function as an oracle.\nDo not invent input-domain restrictions or require unspecified behavior.",
+  "generation_manifest_sha256": "e550a7e82f0994581dee90ae04643198e6a0b88022fc9d5a0e6b6a6057324507",
+  "temperature": 0.7,
+  "top_p": 0.8,
+  "top_k": 20,
+  "max_new_tokens": 768,
+  "hidden_tests_visible": false
+}

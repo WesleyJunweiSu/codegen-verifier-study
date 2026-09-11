@@ -1,0 +1,7 @@
+{
+  "candidate_records_equal": 52,
+  "frozen_decision_records_equal": 200,
+  "decision_bytes_equal": true,
+  "visible_matrix_and_decisions_match_original": true,
+  "purpose": "Engineering validation on existing development data, not new accuracy evidence"
+}

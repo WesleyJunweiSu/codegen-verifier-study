@@ -1,6 +1,6 @@
 # When the 180-task confirmation split can be used
 
-Updated 2026-09-08 (America/New_York). There is no two-week waiting period.
+Updated 2026-09-11 (America/New_York). The development check is complete and the final protocol is frozen at `7ef1103` in `configs/confirmation-protocol.json`. The coordinator and primary analysis are implemented; the first generation attempt deferred for GPU memory. No additional methodological decision or calendar waiting period is required to resume it. Follow the exact staged commands in `PROGRESS.md`.
 
 The confirmation set is available as soon as the final procedure is frozen. A positive development result is not a prerequisite. Repeatedly changing the method after reading confirmation scores would turn that set into development data.
 

@@ -52,3 +52,10 @@ Measured generation: 7378 candidate plus 7021 test output tokens, 5235.82 wall-s
 The frozen 12-call transfer resumed after observing 9561 MiB free; same model, prompts, seeds, caps and replacement rules. Two calls persisted at the last snapshot; the model is still generating. No new correctness result is available. Do not restart while its process is active.
 
 Added a visible-only stage that mounts candidate/test/manifest records but no hidden dataset. Validated on the already used 40-task cohort, workflow 34538843816, source c39bc0a: all seven comparisons of public matrices, selector decisions, consensus records and composition agree. No new model calls were used for this boundary validation. Added and tested the exact paired McNemar primitive; 24 contract tests pass. A separate confirmation coordinator and immutable final-decision scorer are still needed; the 180 confirmation tasks remain unused.
+
+
+## 2026-09-11: transfer completed and final confirmation frozen
+
+Four-arm transfer scored: baseline/non-thinking arms 32/40, both reasoning arms 33/40, same Mbpp/801 rescue. Two capped unfinished reasoning responses retained. Twelve calls, 9687 tokens, 4949.37 wall-seconds; desktop timing is uncontrolled. Score workflow 34624612668, visible workflow 34624610499, input commit 1205fbd. Immutable-decision scorer 34625001045 at f067e8b exactly reproduces all 52 evaluation records and 200 frozen decisions. Report v0.7 records the smaller transferred gain, costs and failures.
+
+Implemented final coordinator, full original-pool preservation, fixed first baseline and primary analysis; 28 contract tests pass. Final 180-task protocol frozen at 7ef1103 after implementation a10f26e, before any confirmation generation. Primary: conditional reasoning vs non-thinking resampling, paired exact two-sided McNemar with fixed intervals; no retuning/optional stopping. Attempt at 17:07:20 UTC observed 4582 MiB free and deferred before model loading; zero confirmation candidates/test responses. The next step is hardware-guarded execution of the already frozen protocol.
