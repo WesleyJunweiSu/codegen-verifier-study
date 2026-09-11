@@ -5,11 +5,27 @@ import json
 import os
 import platform
 import sys
+import time
 from pathlib import Path
 
 
 def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def expected_candidate_keys(task_ids, plan=None):
+    if plan is None or plan.get('base_candidate_mode') == 'all_four':
+        keys = {(tid, i) for tid in task_ids for i in range(4)}
+    else:
+        keys = {(t['task_id'], t['selected_index']) for t in plan['tasks']}
+    if plan is not None:
+        keys |= {(t['task_id'], a['sample_index']) for t in plan['tasks'] if t['triggered'] for a in plan['arms']}
+    return keys
+
+
+def include_first_decisions(task_ids, decisions):
+    assert not any(r['method'] == 'first' for r in decisions)
+    return decisions + [{'task_id': tid, 'method': 'first', 'sample_index': 0, 'accepted': True} for tid in task_ids]
 
 
 def main():
@@ -21,6 +37,7 @@ def main():
     if platform.system() != 'Linux' or os.environ.get('VERIFIER_ISOLATED_RUN') != '1':
         raise SystemExit('Restricted Linux container required; host execution disabled.')
     source = Path(args.input); out = Path(args.output); out.mkdir(parents=True, exist_ok=True)
+    started = time.perf_counter()
     manifest = json.loads((source/'manifest.json').read_text())
     task_ids = manifest['task_ids']
     assert len(task_ids) == len(set(task_ids)), 'Duplicate expected tasks'
@@ -31,13 +48,16 @@ def main():
     if plan_path.exists():
         plan = json.loads(plan_path.read_text())
         assert len(plan['tasks']) == len(task_ids) and {t['task_id'] for t in plan['tasks']} == set(task_ids)
-        expected = {(t['task_id'], t['selected_index']) for t in plan['tasks']}
-        expected |= {(t['task_id'], a['sample_index']) for t in plan['tasks'] if t['triggered'] for a in plan['arms']}
+        expected = expected_candidate_keys(task_ids, plan)
     else:
-        expected = {(t, i) for t in task_ids for i in range(4)}
+        expected = expected_candidate_keys(task_ids)
     assert keys == expected, 'Incomplete/unexpected candidate keys'
     from test_matrix_linux import build_matrix
     build_matrix(records, source/'generated-tests.jsonl', out)
+    if plan_path.exists() and plan.get('include_first_baseline'):
+        decisions = [json.loads(line) for line in (out/'decisions.jsonl').read_text().splitlines()]
+        decisions = include_first_decisions(task_ids, decisions)
+        (out/'decisions.jsonl').write_text(''.join(json.dumps(r) + '\n' for r in decisions))
     if not plan_path.exists():
         # Reuse the existing consensus algorithm and source seed unchanged.
         from consensus_linux import main as consensus_main
@@ -54,6 +74,7 @@ def main():
         (out/'composition-decisions.jsonl').write_text(''.join(json.dumps(r) + '\n' for r in combined))
     decisions_path = out/'decisions.jsonl'
     metadata = {'kind': 'visible_evidence', 'parent_run': args.parent_run, 'tasks': len(task_ids), 'candidates': len(records),
+        'wall_seconds': time.perf_counter() - started,
         'hidden_benchmark_mounted': False, 'hidden_reference_loading': False,
         'generations_sha256': digest(source/'generations.jsonl'), 'tests_sha256': digest(source/'generated-tests.jsonl'),
         'manifest_sha256': digest(source/'manifest.json'), 'decisions_sha256': digest(decisions_path),

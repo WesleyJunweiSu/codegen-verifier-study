@@ -1,0 +1,22 @@
+{
+  "dataset": "mbpp",
+  "dataset_sha256": "b54e762755248ca411b523c917fa9f93c07b5ff2966bf60b3917b853926a3dad",
+  "generations_sha256": "374b6da48200705571fc9aa859100155b237910a7fa00270c06b4c281be9f56e",
+  "evalplus": "0.3.1",
+  "python": "3.12.14",
+  "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.41",
+  "implementation": "Official evalplus.eval.untrusted_check and evalplus.gen.util.trusted_exec; custom serial orchestration, not upstream CLI",
+  "fixtures": {
+    "correct": "pass",
+    "wrong": "fail",
+    "exception": "fail",
+    "malformed": "fail",
+    "timeout": "fail"
+  },
+  "samples": 52,
+  "passed": 34,
+  "wall_seconds": 2.067004747999988,
+  "decisions_sha256": "b61f941c45c3704d9506f4fd4ae0751e097d3622bc281dfdcc0254f3f070355f",
+  "score_plan_sha256": "d97c3bafd31c3523c4b1dae299f9ed43316e3ba2127fb3b046f38753c9dff68f",
+  "decision_order": "Externally frozen decisions validated before reference loading; scorer never selects"
+}

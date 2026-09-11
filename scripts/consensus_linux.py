@@ -43,7 +43,7 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument("--input",required=True)
     parser.add_argument("--output",required=True)
-    parser.add_argument("--parent-run",default="mbpp-parser-ablation-20260905",choices=["mbpp-parser-ablation-20260905","mbpp-temperature-20260906","mbpp-development40-20260907"])
+    parser.add_argument("--parent-run",default="mbpp-parser-ablation-20260905",choices=["mbpp-parser-ablation-20260905","mbpp-temperature-20260906","mbpp-development40-20260907","mbpp-confirmation-20260911"])
     args=parser.parse_args()
     if platform.system()!="Linux" or os.environ.get("VERIFIER_ISOLATED_RUN")!="1":
         raise SystemExit("Restricted Linux Docker workflow required; host execution disabled.")

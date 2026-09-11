@@ -26,7 +26,7 @@ def main():
     split_path = ROOT/'configs/split-manifest.json'
     split = json.loads(split_path.read_text())
     plan = {'schema_version': 1, 'task_ids': manifest['task_ids'],
-            'methods': ['selected_baseline'] + [a['method'] for a in repair['arms']],
+            'methods': ['selected_baseline'] + [a['method'] for a in repair['arms']] + (['first'] if repair.get('include_first_baseline') else []),
             'generations_sha256': sha256(run/'generations.jsonl'), 'decisions_sha256': sha256(run/'visible/decisions.jsonl'),
             'dataset_sha256': split['sha256'], 'split_manifest_sha256': sha256(split_path),
             'visible_metadata_sha256': sha256(run/'visible/metadata.json'),
