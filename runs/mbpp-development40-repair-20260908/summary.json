@@ -1,0 +1,130 @@
+{
+  "phase": "Additional development, not confirmation; frozen before reading this cohort's scoring outcomes",
+  "tasks": 40,
+  "triggered_tasks": 3,
+  "methods": {
+    "selected_baseline": {
+      "correct": 32,
+      "tasks": 40,
+      "accuracy": 0.8,
+      "coverage": 1.0,
+      "wilson95": [
+        0.6524269365360096,
+        0.8950001027456211
+      ],
+      "rescues": 0,
+      "regressions": 0
+    },
+    "nonthinking_feedback_repair": {
+      "correct": 32,
+      "tasks": 40,
+      "accuracy": 0.8,
+      "coverage": 1.0,
+      "wilson95": [
+        0.6524269365360096,
+        0.8950001027456211
+      ],
+      "rescues": 0,
+      "regressions": 0
+    },
+    "nonthinking_resample": {
+      "correct": 32,
+      "tasks": 40,
+      "accuracy": 0.8,
+      "coverage": 1.0,
+      "wilson95": [
+        0.6524269365360096,
+        0.8950001027456211
+      ],
+      "rescues": 0,
+      "regressions": 0
+    },
+    "reasoning_feedback_repair": {
+      "correct": 33,
+      "tasks": 40,
+      "accuracy": 0.825,
+      "coverage": 1.0,
+      "wilson95": [
+        0.6805000966821273,
+        0.9125458625396392
+      ],
+      "rescues": 1,
+      "regressions": 0
+    },
+    "reasoning_resample": {
+      "correct": 33,
+      "tasks": 40,
+      "accuracy": 0.825,
+      "coverage": 1.0,
+      "wilson95": [
+        0.6805000966821273,
+        0.9125458625396392
+      ],
+      "rescues": 1,
+      "regressions": 0
+    }
+  },
+  "comparisons": {
+    "primary_reasoning_vs_nonthinking_resample": {
+      "difference": 0.025,
+      "paired_task_bootstrap95": [
+        0.0,
+        0.075
+      ]
+    },
+    "reasoning_feedback_vs_resample": {
+      "difference": 0.0,
+      "paired_task_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "nonthinking_feedback_vs_resample": {
+      "difference": 0.0,
+      "paired_task_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "extra_cost": {
+    "nonthinking_feedback_repair": {
+      "model_calls": 3,
+      "input_tokens": 783,
+      "output_tokens": 123,
+      "generation_seconds": 43.00495289998071,
+      "peak_vram_bytes": 8223596544,
+      "capped": 0,
+      "incomplete_reasoning": 0
+    },
+    "nonthinking_resample": {
+      "model_calls": 3,
+      "input_tokens": 338,
+      "output_tokens": 118,
+      "generation_seconds": 38.47630170000775,
+      "peak_vram_bytes": 8183094272,
+      "capped": 0,
+      "incomplete_reasoning": 0
+    },
+    "reasoning_feedback_repair": {
+      "model_calls": 3,
+      "input_tokens": 771,
+      "output_tokens": 4866,
+      "generation_seconds": 3746.8245943999937,
+      "peak_vram_bytes": 8524558848,
+      "capped": 1,
+      "incomplete_reasoning": 1
+    },
+    "reasoning_resample": {
+      "model_calls": 3,
+      "input_tokens": 326,
+      "output_tokens": 4580,
+      "generation_seconds": 1121.0593870999874,
+      "peak_vram_bytes": 8496665600,
+      "capped": 1,
+      "incomplete_reasoning": 1
+    }
+  },
+  "executor_seconds": 9.862323247999996,
+  "limitations": "Additional development, not confirmation. Calls and output caps match within mode; realized input/output tokens and wall time differ. Desktop runtime is uncontrolled. No hidden-outcome tuning of triggers or replacements."
+}

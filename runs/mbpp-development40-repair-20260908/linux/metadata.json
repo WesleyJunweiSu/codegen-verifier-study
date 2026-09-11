@@ -1,0 +1,22 @@
+{
+  "dataset": "mbpp",
+  "dataset_sha256": "b54e762755248ca411b523c917fa9f93c07b5ff2966bf60b3917b853926a3dad",
+  "generations_sha256": "374b6da48200705571fc9aa859100155b237910a7fa00270c06b4c281be9f56e",
+  "evalplus": "0.3.1",
+  "python": "3.12.14",
+  "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.41",
+  "implementation": "Official evalplus.eval.untrusted_check and evalplus.gen.util.trusted_exec; custom serial orchestration, not upstream CLI",
+  "fixtures": {
+    "correct": "pass",
+    "wrong": "fail",
+    "exception": "fail",
+    "malformed": "fail",
+    "timeout": "fail"
+  },
+  "samples": 52,
+  "passed": 34,
+  "wall_seconds": 9.862323247999996,
+  "tests_sha256": "3ba72a92a0fb930871b9e2847ac124ece489131dc5da5637b4e15327ae585638",
+  "decisions_sha256": "b61f941c45c3704d9506f4fd4ae0751e097d3622bc281dfdcc0254f3f070355f",
+  "decision_order": "Candidate/test matrix and decisions saved before loading hidden benchmark data"
+}

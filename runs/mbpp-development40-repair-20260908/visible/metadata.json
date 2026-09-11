@@ -1,0 +1,15 @@
+{
+  "kind": "visible_evidence",
+  "parent_run": "mbpp-development40-repair-20260908",
+  "tasks": 40,
+  "candidates": 52,
+  "hidden_benchmark_mounted": false,
+  "hidden_reference_loading": false,
+  "generations_sha256": "374b6da48200705571fc9aa859100155b237910a7fa00270c06b4c281be9f56e",
+  "tests_sha256": "3ba72a92a0fb930871b9e2847ac124ece489131dc5da5637b4e15327ae585638",
+  "manifest_sha256": "5c2942978df5a3343aa98128fb94e2223930b33b1aee52a19439a246faa28846",
+  "decisions_sha256": "b61f941c45c3704d9506f4fd4ae0751e097d3622bc281dfdcc0254f3f070355f",
+  "matrix_sha256": "a88707cbefee5201ed64e658ed612872d4c03d4ef02d3ac8541dbd1d290fa526",
+  "source_sha256": "2a964d54723605d7a8a1e761effc3ed183303c9b2753d9713dd367a8238b8a38",
+  "repair_plan_sha256": "f3c43fad43e1ea2136a6ad28a13a31575e268bbe9b79eccd3cd03cfddc006436"
+}

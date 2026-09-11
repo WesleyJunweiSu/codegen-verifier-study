@@ -18,6 +18,8 @@ def main():
     parser.add_argument("--data",required=True)
     parser.add_argument("--generations",required=True)
     parser.add_argument("--output",required=True)
+    parser.add_argument("--frozen-decisions")
+    parser.add_argument("--score-plan")
     args=parser.parse_args()
     if platform.system()!="Linux" or os.environ.get("VERIFIER_ISOLATED_RUN")!="1":
         raise SystemExit("Use the restricted Linux Docker workflow; host execution is disabled.")
@@ -42,7 +44,20 @@ def main():
         fixture_results[name]=status
     tests_path=Path(args.generations).parent/"generated-tests.jsonl"
     generated_tests=None
-    if tests_path.exists():
+    if args.frozen_decisions:
+        assert args.score_plan, 'Frozen scoring requires an explicit score plan'
+        from verifier_study.frozen_decisions import validate_decisions
+        frozen_bytes=Path(args.frozen_decisions).read_bytes()
+        score_plan=json.loads(Path(args.score_plan).read_text())
+        frozen_decisions=[json.loads(line) for line in frozen_bytes.decode('utf-8').splitlines() if line]
+        assert hashlib.sha256(frozen_bytes).hexdigest()==score_plan['decisions_sha256']
+        assert hashlib.sha256(Path(args.generations).read_bytes()).hexdigest()==score_plan['generations_sha256']
+        assert hashlib.sha256(Path(args.data).read_bytes()).hexdigest()==score_plan['dataset_sha256']
+        validate_decisions(score_plan,generations,frozen_decisions)
+        (output/'decisions.jsonl').write_bytes(frozen_bytes)
+    elif args.score_plan:
+        raise ValueError('Score plan supplied without frozen decisions')
+    elif tests_path.exists():
         from test_matrix_linux import build_matrix
         generated_tests=build_matrix(generations,tests_path,output)
     # Only after label-blind decisions are persisted do we load references and hidden tests.
@@ -86,6 +101,11 @@ def main():
         metadata["tests_sha256"]=hashlib.sha256(tests_path.read_bytes()).hexdigest()
         metadata["decisions_sha256"]=hashlib.sha256((output/"decisions.jsonl").read_bytes()).hexdigest()
         metadata["decision_order"]="Candidate/test matrix and decisions saved before loading hidden benchmark data"
+    if args.frozen_decisions:
+        assert Path(args.frozen_decisions).read_bytes()==frozen_bytes==(output/'decisions.jsonl').read_bytes()
+        metadata['decisions_sha256']=hashlib.sha256(frozen_bytes).hexdigest()
+        metadata['score_plan_sha256']=hashlib.sha256(Path(args.score_plan).read_bytes()).hexdigest()
+        metadata['decision_order']='Externally frozen decisions validated before reference loading; scorer never selects'
     (output/"metadata.json").write_text(json.dumps(metadata,indent=2)+"\n")
     print(json.dumps(metadata),flush=True)
 

@@ -1,0 +1,51 @@
+name: Score immutable decisions
+on:
+  workflow_dispatch:
+    inputs:
+      input_run:
+        description: Completed pool with externally frozen decisions and score plan
+        required: true
+        default: mbpp-development40-repair-20260908
+        type: choice
+        options:
+          - mbpp-development40-repair-20260908
+permissions:
+  contents: read
+concurrency:
+  group: verifier-linux-eval
+  cancel-in-progress: false
+jobs:
+  score:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Stage immutable inputs and pinned benchmark
+        env:
+          INPUT_RUN: ${{ inputs.input_run }}
+        run: |
+          mkdir -p score-input eval-data eval-output
+          cp "runs/$INPUT_RUN/generations.jsonl" score-input/
+          cp "runs/$INPUT_RUN/frozen-decisions.jsonl" score-input/
+          cp "runs/$INPUT_RUN/score-plan.json" score-input/
+          curl -fL --retry 3 https://github.com/evalplus/mbppplus_release/releases/download/v0.2.0/MbppPlus.jsonl.gz | gzip -d > eval-data/dataset.jsonl
+          chmod 777 eval-output
+      - name: Build isolated evaluator
+        run: docker build -f docker/Dockerfile.eval -t verifier-eval .
+      - name: Score without rerunning selection
+        run: |
+          docker run --rm --network none --read-only --cap-drop ALL --security-opt no-new-privileges \
+            --pids-limit 128 --memory 3g --cpus 2 --user 65534:65534 \
+            --tmpfs /tmp:rw,nosuid,nodev,size=512m \
+            -e VERIFIER_ISOLATED_RUN=1 -e EVALPLUS_MAX_MEMORY_BYTES=2147483648 \
+            -v "$PWD/score-input:/inputs:ro" -v "$PWD/eval-data:/data:ro" -v "$PWD/eval-output:/output:rw" \
+            verifier-eval --dataset mbpp --data /data/dataset.jsonl --generations /inputs/generations.jsonl \
+            --frozen-decisions /inputs/frozen-decisions.jsonl --score-plan /inputs/score-plan.json --output /output
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: frozen-scoring
+          path: eval-output/
+          if-no-files-found: error
