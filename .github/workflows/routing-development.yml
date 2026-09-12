@@ -1,0 +1,80 @@
+name: Development routing ablation
+on:
+  workflow_dispatch:
+    inputs:
+      input_run:
+        description: Fixed development cohort only
+        required: true
+        default: mbpp-routing-v2-development-20260911
+        type: choice
+        options:
+          - mbpp-routing-v2-development-20260911
+permissions:
+  contents: read
+concurrency:
+  group: verifier-linux-eval
+  cancel-in-progress: false
+jobs:
+  visible:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Stage development inputs without benchmark references
+        run: |
+          mkdir -p visible-input eval-output
+          cp runs/mbpp-routing-v2-development-20260911/{generations.jsonl,generated-tests.jsonl,routing-plan.json} visible-input/
+          chmod 777 eval-output
+          cp docker/Dockerfile.eval /tmp/Dockerfile.routing
+          echo 'COPY scripts/routing_v2_visible.py /app/routing_v2_visible.py' >> /tmp/Dockerfile.routing
+          docker build -f /tmp/Dockerfile.routing -t verifier-routing .
+      - name: Freeze every method before scoring
+        run: |
+          docker run --rm --network none --read-only --cap-drop ALL --security-opt no-new-privileges \
+            --pids-limit 128 --memory 3g --cpus 2 --user 65534:65534 \
+            --tmpfs /tmp:rw,nosuid,nodev,size=512m \
+            -e VERIFIER_ISOLATED_RUN=1 -e EVALPLUS_MAX_MEMORY_BYTES=2147483648 \
+            -v "$PWD/visible-input:/inputs:ro" -v "$PWD/eval-output:/output:rw" \
+            --entrypoint python verifier-routing /app/routing_v2_visible.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: routing-visible-frozen
+          path: eval-output/
+          if-no-files-found: error
+  score:
+    needs: visible
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@v4
+        with:
+          name: routing-visible-frozen
+          path: frozen-input
+      - name: Stage fixed decisions and pinned benchmark
+        run: |
+          mkdir -p score-input eval-data eval-output
+          cp frozen-input/{frozen-decisions.jsonl,score-plan.json} score-input/
+          cp runs/mbpp-routing-v2-development-20260911/generations.jsonl score-input/
+          curl -fL --retry 3 https://github.com/evalplus/mbppplus_release/releases/download/v0.2.0/MbppPlus.jsonl.gz | gzip -d > eval-data/dataset.jsonl
+          chmod 777 eval-output
+          docker build -f docker/Dockerfile.eval -t verifier-eval .
+      - name: Score all fixed development methods
+        run: |
+          docker run --rm --network none --read-only --cap-drop ALL --security-opt no-new-privileges \
+            --pids-limit 128 --memory 3g --cpus 2 --user 65534:65534 \
+            --tmpfs /tmp:rw,nosuid,nodev,size=512m \
+            -e VERIFIER_ISOLATED_RUN=1 -e EVALPLUS_MAX_MEMORY_BYTES=2147483648 \
+            -v "$PWD/score-input:/inputs:ro" -v "$PWD/eval-data:/data:ro" -v "$PWD/eval-output:/output:rw" \
+            verifier-eval --dataset mbpp --data /data/dataset.jsonl --generations /inputs/generations.jsonl \
+            --frozen-decisions /inputs/frozen-decisions.jsonl --score-plan /inputs/score-plan.json --output /output
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: routing-frozen-scoring
+          path: eval-output/
+          if-no-files-found: error

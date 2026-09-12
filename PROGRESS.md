@@ -1,6 +1,6 @@
 # Experiment checkpoint
 
-Updated: 2026-09-11 (America/New_York). Phase: **development transfer scored; final 180-task confirmation frozen, generation deferred for GPU headroom**.
+Updated: 2026-09-11 (America/New_York). Phase: **180-task confirmation generation RUNNING; separate development routing v2 prepared**. Live progress files take precedence over snapshot counts below.
 
 ## Objective and evidence
 
@@ -16,9 +16,13 @@ Build an interview-ready research and engineering project with reproducible code
 
 ## Active jobs
 
-No model process or Actions job is active for this project. The development transfer finished; do not resume its completed generator.
+Confirmation base is running in exec session 9982, launcher PID 10756 and child PID 53000. Snapshot: 280/720 candidates and 70/180 test responses. Do not start a duplicate GPU job. The development transfer finished; do not resume its completed generator.
 
-Confirmation base run: runs/mbpp-confirmation-20260911. Its first attempt at 2026-09-11T17:07:20Z observed 4582 MiB free, below the frozen 9216 MiB guard, and returned without loading a model. Manifest/test manifest/attempt log exist; 0/720 candidates and 0/180 test responses have been generated. Inspect process state and GPU headroom before retrying. No paid GPU/API without an explicit spending cap, no user-app termination and no silent precision changes.
+Confirmation base run: runs/mbpp-confirmation-20260911. Initial attempts were deferred by the 9216 MiB guard; a later attempt loaded successfully. Recorded wall time includes a large desktop stall; do not interpret it as continuous active-GPU compute. No correctness labels have been read. No paid GPU/API without an explicit spending cap, no user-app termination and no silent precision changes.
+
+New development work: `docs/routing-v2-development.md`, `scripts/generate_routing_v2.py`, `scripts/routing_v2_visible.py`, and `scripts/analyze_routing_v2.py`. The plan is frozen under `runs/mbpp-routing-v2-development-20260911/routing-plan.json`. Six visible-derived triggers retain all 40 tasks; six prior calls reused, six new calls pending. Seven methods separate routing from replacement and retain both reasoning/nonthinking controls. The 40-task error-screening matrix improves recall from 37.5% to 62.5% with one added false positive; this is NOT new answer accuracy. Current answer accuracy remains 33/40 versus 32/40. Thirty-three tests pass and confirmation source hashes are unchanged.
+
+`scripts/continue_routing_after_base.ps1` waits for the active confirmation base process, verifies all 720+180 rows exist, then generates only the six new development calls. It commits/pushes only the development run and dispatches `routing-development.yml`. Check its `queue-state.json` and process/session before launching anything manually. It stops on incomplete baseline, insufficient headroom, or command failure; no silent retries. This is an immediate dependent job, not a new recurring automation. After dispatch, import `routing-visible-frozen` to development run `visible/` and `routing-frozen-scoring` to `linux/`, then run the analyzer, preserving all seven results. Confirmation remains a separate frozen study; continue its next stages below after the GPU queue finishes.
 
 ## Next execution: use this order
 

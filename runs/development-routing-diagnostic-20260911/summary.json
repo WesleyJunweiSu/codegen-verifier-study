@@ -1,0 +1,129 @@
+{
+  "scope": "Post-hoc development diagnostics; screening errors, not new answer accuracy or calibrated risk",
+  "positive_class": "Baseline-selected candidate is incorrect on base+plus tests",
+  "cohorts": {
+    "original20": {
+      "public_failure": {
+        "tp": 6,
+        "fp": 0,
+        "fn": 2,
+        "tn": 12,
+        "tasks": 20,
+        "flagged": 6,
+        "error_recall": 0.75,
+        "error_precision": 1.0,
+        "false_positive_rate": 0.0,
+        "f1": 0.8571428571428571
+      },
+      "public_or_any_generated_failure": {
+        "tp": 8,
+        "fp": 6,
+        "fn": 0,
+        "tn": 6,
+        "tasks": 20,
+        "flagged": 14,
+        "error_recall": 1.0,
+        "error_precision": 0.5714285714285714,
+        "false_positive_rate": 0.5,
+        "f1": 0.7272727272727273
+      },
+      "public_or_consensus_disagreement": {
+        "tp": 7,
+        "fp": 2,
+        "fn": 1,
+        "tn": 10,
+        "tasks": 20,
+        "flagged": 9,
+        "error_recall": 0.875,
+        "error_precision": 0.7777777777777778,
+        "false_positive_rate": 0.16666666666666666,
+        "f1": 0.8235294117647058
+      }
+    },
+    "additional40": {
+      "public_failure": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 5,
+        "tn": 32,
+        "tasks": 40,
+        "flagged": 3,
+        "error_recall": 0.375,
+        "error_precision": 1.0,
+        "false_positive_rate": 0.0,
+        "f1": 0.5454545454545454
+      },
+      "public_or_any_generated_failure": {
+        "tp": 6,
+        "fp": 13,
+        "fn": 2,
+        "tn": 19,
+        "tasks": 40,
+        "flagged": 19,
+        "error_recall": 0.75,
+        "error_precision": 0.3157894736842105,
+        "false_positive_rate": 0.40625,
+        "f1": 0.4444444444444444
+      },
+      "public_or_consensus_disagreement": {
+        "tp": 5,
+        "fp": 1,
+        "fn": 3,
+        "tn": 31,
+        "tasks": 40,
+        "flagged": 6,
+        "error_recall": 0.625,
+        "error_precision": 0.8333333333333334,
+        "false_positive_rate": 0.03125,
+        "f1": 0.7142857142857143
+      }
+    },
+    "all60": {
+      "public_failure": {
+        "tp": 9,
+        "fp": 0,
+        "fn": 7,
+        "tn": 44,
+        "tasks": 60,
+        "flagged": 9,
+        "error_recall": 0.5625,
+        "error_precision": 1.0,
+        "false_positive_rate": 0.0,
+        "f1": 0.72
+      },
+      "public_or_any_generated_failure": {
+        "tp": 14,
+        "fp": 19,
+        "fn": 2,
+        "tn": 25,
+        "tasks": 60,
+        "flagged": 33,
+        "error_recall": 0.875,
+        "error_precision": 0.42424242424242425,
+        "false_positive_rate": 0.4318181818181818,
+        "f1": 0.5714285714285714
+      },
+      "public_or_consensus_disagreement": {
+        "tp": 12,
+        "fp": 3,
+        "fn": 4,
+        "tn": 41,
+        "tasks": 60,
+        "flagged": 15,
+        "error_recall": 0.75,
+        "error_precision": 0.8,
+        "false_positive_rate": 0.06818181818181818,
+        "f1": 0.7741935483870968
+      }
+    }
+  },
+  "source_hashes": {
+    "runs\\mbpp-parser-ablation-20260905\\linux\\candidate-test-matrix.jsonl": "96a32b9e2f041414d2c58ec1753db7eef0b102ca2148f9c3bd93e977afd4b642",
+    "runs\\mbpp-parser-ablation-20260905\\linux\\evaluation.jsonl": "cc189f5ae352c032a046f92f8c557f81ad3e4db15b7078abb1680605915cba38",
+    "runs\\mbpp-public-consensus-20260906\\decisions.jsonl": "b3dc20a2d2a98754a7453fb98bb09eca529ff1234a0b31f7ec3bdc99eb73f381",
+    "runs\\mbpp-development40-20260907\\linux\\candidate-test-matrix.jsonl": "1c237edc580446ed2ccd83b0340cea183577ccf1f7bdf8e838acedeac2a829bc",
+    "runs\\mbpp-development40-20260907\\linux\\evaluation.jsonl": "52bad94500f8842c19df54017f0f4d2c436b2a17122d56eba6af051d5afecf07",
+    "runs\\mbpp-development40-public-consensus-20260908\\decisions.jsonl": "9bc8316022d5f40cc4550e37bbd14a56ddf0285f743d10a6781453a86f5f3d9d"
+  },
+  "limitation": "Expanded flags alone cannot improve public-passing cases under strict public-improvement replacement. Any tie-acceptance policy is a separate development intervention and may regress correct answers. No change to frozen confirmation."
+}

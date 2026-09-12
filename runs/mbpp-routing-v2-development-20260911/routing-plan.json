@@ -1,0 +1,366 @@
+{
+  "run_id": "mbpp-routing-v2-development-20260911",
+  "phase": "Adaptive development after existing labels inspected; NOT confirmation",
+  "task_ids": [
+    "Mbpp/801",
+    "Mbpp/429",
+    "Mbpp/388",
+    "Mbpp/455",
+    "Mbpp/309",
+    "Mbpp/767",
+    "Mbpp/129",
+    "Mbpp/758",
+    "Mbpp/808",
+    "Mbpp/119",
+    "Mbpp/256",
+    "Mbpp/793",
+    "Mbpp/94",
+    "Mbpp/99",
+    "Mbpp/628",
+    "Mbpp/626",
+    "Mbpp/623",
+    "Mbpp/598",
+    "Mbpp/257",
+    "Mbpp/276",
+    "Mbpp/394",
+    "Mbpp/312",
+    "Mbpp/624",
+    "Mbpp/463",
+    "Mbpp/555",
+    "Mbpp/137",
+    "Mbpp/70",
+    "Mbpp/777",
+    "Mbpp/796",
+    "Mbpp/120",
+    "Mbpp/226",
+    "Mbpp/227",
+    "Mbpp/75",
+    "Mbpp/12",
+    "Mbpp/470",
+    "Mbpp/412",
+    "Mbpp/568",
+    "Mbpp/805",
+    "Mbpp/559",
+    "Mbpp/436"
+  ],
+  "tasks": [
+    {
+      "task_id": "Mbpp/119",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 0.875,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/12",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/120",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/129",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/137",
+      "selected_index": 0,
+      "public_failed": true,
+      "consensus_fraction": 0.7037037037037037,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/226",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/227",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/256",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/257",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/276",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/309",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/312",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/388",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/394",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/412",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/429",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/436",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/455",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/463",
+      "selected_index": 2,
+      "public_failed": false,
+      "consensus_fraction": 0.875,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/470",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/555",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/559",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/568",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/598",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/623",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/624",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/626",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/628",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/70",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/75",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 0.875,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/758",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/767",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/777",
+      "selected_index": 0,
+      "public_failed": true,
+      "consensus_fraction": 1.0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/793",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/796",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/801",
+      "selected_index": 2,
+      "public_failed": true,
+      "consensus_fraction": 0.3333333333333333,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/805",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/808",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/94",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/99",
+      "selected_index": 0,
+      "public_failed": false,
+      "consensus_fraction": 1.0,
+      "triggered": false
+    }
+  ],
+  "dataset_sha256": "b54e762755248ca411b523c917fa9f93c07b5ff2966bf60b3917b853926a3dad",
+  "trigger": "public failure OR selected consensus fraction below one; all flagged tasks retained",
+  "replacement": "strict public improvement; separate tie ablation accepts only all-public-pass alternatives",
+  "seed_rule": "sha256(transfer:20260908:{task_id})[:8] hex; matches reused attempts",
+  "arms": [
+    {
+      "method": "nonthinking",
+      "sample_index": 5,
+      "max_new_tokens": 768,
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20
+    },
+    {
+      "method": "reasoning",
+      "sample_index": 7,
+      "max_new_tokens": 2048,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20
+    }
+  ],
+  "failure_policy": "Keep capped/malformed attempts; no retries. All 40 tasks in every denominator.",
+  "analysis": "Report all seven methods, paired rescues/regressions, accuracy and cost. No confirmatory p-value claims.",
+  "source_hashes": {
+    "runs\\mbpp-development40-public-consensus-20260908\\decisions.jsonl": "9bc8316022d5f40cc4550e37bbd14a56ddf0285f743d10a6781453a86f5f3d9d",
+    "runs\\mbpp-development40-20260907\\linux\\candidate-test-matrix.jsonl": "1c237edc580446ed2ccd83b0340cea183577ccf1f7bdf8e838acedeac2a829bc",
+    "runs\\mbpp-development40-repair-20260908\\new-generations.jsonl": "891541c6a8ec1356ea86fc3b2a0257bf5466e466c1103db91fa7eba9511d0165",
+    "runs\\mbpp-development40-20260907\\generations.jsonl": "51fa67fd47ea39ecc8372ad37a3e3c5952e1a02269281a1389f025a7fd5e2805",
+    "runs\\mbpp-development40-20260907\\generated-tests.jsonl": "3ba72a92a0fb930871b9e2847ac124ece489131dc5da5637b4e15327ae585638",
+    "data\\prompts\\mbpp-v0.2.0.jsonl": "3cf2bdc4478bb3228436e6234e39becadc87c5668ae02d89605b8fc98ea52ce0",
+    "configs\\model-fingerprint.json": "0766a780dbefbb7104882c0a61be9a99d8a94787fac5467420c95d19fd00cbc6",
+    "scripts\\generate_routing_v2.py": "ed9c607afed4f002df41459e5b33a03db9570f0c7ec2a6d7ab07b929f2243da9",
+    "src\\verifier_study\\routing_v2.py": "f722c1962c51ca14c2c969e430566c86fbb6abd5438d5659345a87b878a42bcc",
+    "scripts\\routing_v2_visible.py": "a9bfde29fc89fad25bc8e8449b4db061c377657e890969c50d0b3fcfbaf3359b",
+    "src\\verifier_study\\generation.py": "639213725d2f28311a93a48c460fe9c6f29f9267ad8fba66a51ee279a9c2edc4",
+    "src\\verifier_study\\reasoning_generation.py": "e3d1fd0ee7ac851986abf6b4098cb8ec8cb628fc32e34450884bb9f2d4265877"
+  }
+}
