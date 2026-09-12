@@ -1,0 +1,16 @@
+{
+  "kind": "visible_evidence",
+  "parent_run": "mbpp-confirmation-20260911",
+  "tasks": 180,
+  "candidates": 720,
+  "wall_seconds": 126.73884510500001,
+  "hidden_benchmark_mounted": false,
+  "hidden_reference_loading": false,
+  "generations_sha256": "ec2a6ddaec12ffc8deaec208b11121f7cc11feab9ec2e7160f4560a7027dff1b",
+  "tests_sha256": "6734af439116e92223924919e26132af0bc4f03138da1c8c78634cbb0cec9c36",
+  "manifest_sha256": "e550a7e82f0994581dee90ae04643198e6a0b88022fc9d5a0e6b6a6057324507",
+  "decisions_sha256": "0b6d52bbbb201096af70b73d4fe10f777967047c23a544315cc22f25535feb06",
+  "matrix_sha256": "a6971819ca9a937f44c54de698da40170d3f48d53cc1bbd34dfaaaa0489c766d",
+  "source_sha256": "25f823136fe34dd2ee23bd379350f79bc6320ede451eeb3ddb7a70942e4a7103",
+  "composition_decisions_sha256": "e7070e40435f33292c72ab9a2b4707ae1ec321432a7abcaabb7adb26afdfdd81"
+}

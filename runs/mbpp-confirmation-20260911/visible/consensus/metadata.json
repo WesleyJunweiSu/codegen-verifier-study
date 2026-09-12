@@ -1,0 +1,27 @@
+{
+  "kind": "execution_consensus",
+  "parent_run": "mbpp-confirmation-20260911",
+  "tasks": 180,
+  "candidates": 720,
+  "literal_inputs": 1431,
+  "rejected_nonliteral_calls": 0,
+  "candidate_input_probes": 5724,
+  "pair_probes": 8041,
+  "uncomparable_pairs": 545,
+  "model_calls": 0,
+  "fixtures": {
+    "equal": "pass",
+    "unequal": "fail",
+    "both_raise": "fail",
+    "large_integer_equal": "pass"
+  },
+  "wall_seconds": 91.50457895400001,
+  "python": "3.12.14",
+  "evalplus": "0.3.1",
+  "source_sha256": "3f30d9532e45dd7ff3687ee0eb19e563a735db615a96bff052365e4d9f103c6a",
+  "generations_sha256": "ec2a6ddaec12ffc8deaec208b11121f7cc11feab9ec2e7160f4560a7027dff1b",
+  "tests_sha256": "6734af439116e92223924919e26132af0bc4f03138da1c8c78634cbb0cec9c36",
+  "hidden_benchmark_mounted": false,
+  "comparison": "Python bool(left == right); exceptions never count as agreement; fixed RNG seeds before each candidate",
+  "decisions_sha256": "5a4b1035445226145c43ddfc3dba6bf422652d9de217441a211faba4367e055d"
+}
