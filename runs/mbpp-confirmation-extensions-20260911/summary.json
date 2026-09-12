@@ -1,0 +1,110 @@
+{
+  "phase": "Prespecified 180-task confirmation",
+  "protocol_sha256": "4e9c553d85c58b9676f553ae1a999407f1a1dd73efafc9a837a989c46fb84b31",
+  "tasks": 180,
+  "primary": {
+    "tasks": 180,
+    "left_correct": 118,
+    "right_correct": 107,
+    "wins": 11,
+    "losses": 0,
+    "discordant_tasks": 11,
+    "accuracy_difference": 0.06111111111111111,
+    "exact_two_sided_p": 0.0009765625,
+    "paired_task_bootstrap95": [
+      0.027777777777777776,
+      0.1
+    ],
+    "comparison": "Conditional reasoning resampling minus conditional non-thinking resampling, correct answers / all 180 tasks"
+  },
+  "methods": {
+    "first": {
+      "correct": 103,
+      "tasks": 180,
+      "accuracy": 0.5722222222222222,
+      "coverage": 1.0,
+      "wilson95": [
+        0.49917877569674257,
+        0.6422474301590245
+      ],
+      "rescues_vs_selected": 0,
+      "regressions_vs_selected": 4
+    },
+    "selected_baseline": {
+      "correct": 107,
+      "tasks": 180,
+      "accuracy": 0.5944444444444444,
+      "coverage": 1.0,
+      "wilson95": [
+        0.521468259978131,
+        0.6634737015255646
+      ],
+      "rescues_vs_selected": 0,
+      "regressions_vs_selected": 0
+    },
+    "nonthinking_resample": {
+      "correct": 107,
+      "tasks": 180,
+      "accuracy": 0.5944444444444444,
+      "coverage": 1.0,
+      "wilson95": [
+        0.521468259978131,
+        0.6634737015255646
+      ],
+      "rescues_vs_selected": 0,
+      "regressions_vs_selected": 0
+    },
+    "reasoning_resample": {
+      "correct": 118,
+      "tasks": 180,
+      "accuracy": 0.6555555555555556,
+      "coverage": 1.0,
+      "wilson95": [
+        0.5835387271294028,
+        0.7210715624060957
+      ],
+      "rescues_vs_selected": 11,
+      "regressions_vs_selected": 0
+    }
+  },
+  "cost": {
+    "common_candidates": {
+      "model_calls": 720,
+      "input_tokens": 77256,
+      "output_tokens": 29701,
+      "wall_seconds": 1438.5920958998322,
+      "peak_allocated_bytes": 8448837632,
+      "capped": 0,
+      "incomplete_reasoning": 0
+    },
+    "common_tests": {
+      "model_calls": 180,
+      "input_tokens": 28291,
+      "output_tokens": 30469,
+      "wall_seconds": 32793.69117599985,
+      "peak_allocated_bytes": 8809379840,
+      "capped": 0,
+      "incomplete_reasoning": 0
+    },
+    "nonthinking_resample": {
+      "model_calls": 41,
+      "input_tokens": 4693,
+      "output_tokens": 2316,
+      "wall_seconds": 119.25093959996593,
+      "peak_allocated_bytes": 8410596864,
+      "capped": 0,
+      "incomplete_reasoning": 0
+    },
+    "reasoning_resample": {
+      "model_calls": 41,
+      "input_tokens": 4529,
+      "output_tokens": 72297,
+      "wall_seconds": 4047.388689700165,
+      "peak_allocated_bytes": 8516717568,
+      "capped": 27,
+      "incomplete_reasoning": 26
+    }
+  },
+  "scoring_seconds": 90.76164409100002,
+  "limitations": "One model, public benchmark, single frozen seed schedule; realized compute differs and desktop timing is uncontrolled. Primary contrast changes reasoning mode, sampling and cap jointly. No causal claim for any one factor, fixed-compute superiority, or novel algorithm."
+}
