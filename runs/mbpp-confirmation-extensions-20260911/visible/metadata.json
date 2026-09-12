@@ -1,0 +1,16 @@
+{
+  "kind": "visible_evidence",
+  "parent_run": "mbpp-confirmation-extensions-20260911",
+  "tasks": 180,
+  "candidates": 802,
+  "wall_seconds": 37.02459846900001,
+  "hidden_benchmark_mounted": false,
+  "hidden_reference_loading": false,
+  "generations_sha256": "eb94d28810f102b8b129a40561cd1375a5987d1ae6bb78140548d05967275e49",
+  "tests_sha256": "6734af439116e92223924919e26132af0bc4f03138da1c8c78634cbb0cec9c36",
+  "manifest_sha256": "0791cc013cb6df8190df5d8ac50f9d2af2083332e4a3ddab5f85ef2d8ee01d5e",
+  "decisions_sha256": "74d0d7de015e6af095c6d6d1f68dfa5966e0f6b037dca2294e728713ea58c62c",
+  "matrix_sha256": "7229d0b45a11b672a3487b4afebf9e72ff238a445908167f66f041c7044049c3",
+  "source_sha256": "25f823136fe34dd2ee23bd379350f79bc6320ede451eeb3ddb7a70942e4a7103",
+  "repair_plan_sha256": "7f5a10b57f1934b7210bec9e4eb9dc0490443fd0afdd97a899997254ebccff29"
+}
