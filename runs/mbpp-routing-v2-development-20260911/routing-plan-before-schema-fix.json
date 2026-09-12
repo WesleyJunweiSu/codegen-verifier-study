@@ -359,7 +359,7 @@
     "configs\\model-fingerprint.json": "0766a780dbefbb7104882c0a61be9a99d8a94787fac5467420c95d19fd00cbc6",
     "scripts\\generate_routing_v2.py": "ed9c607afed4f002df41459e5b33a03db9570f0c7ec2a6d7ab07b929f2243da9",
     "src\\verifier_study\\routing_v2.py": "f722c1962c51ca14c2c969e430566c86fbb6abd5438d5659345a87b878a42bcc",
-    "scripts\\routing_v2_visible.py": "b06e4aad5cfa1a8759ae166cfb3f0c165ee6b47a4cc9bcdcab029f18c1008d70",
+    "scripts\\routing_v2_visible.py": "a9bfde29fc89fad25bc8e8449b4db061c377657e890969c50d0b3fcfbaf3359b",
     "src\\verifier_study\\generation.py": "639213725d2f28311a93a48c460fe9c6f29f9267ad8fba66a51ee279a9c2edc4",
     "src\\verifier_study\\reasoning_generation.py": "e3d1fd0ee7ac851986abf6b4098cb8ec8cb628fc32e34450884bb9f2d4265877"
   }

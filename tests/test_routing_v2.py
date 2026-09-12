@@ -1,8 +1,18 @@
 import unittest
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]/'scripts'))
 from verifier_study.routing_v2 import select_routing
+from verifier_study.frozen_decisions import validate_decisions
+from routing_v2_visible import make_score_plan
 
 
 class RoutingTests(unittest.TestCase):
+    def test_visible_score_plan_matches_scorer_contract(self):
+        plan = make_score_plan(['x'], 'dataset', 'generations', 'decisions')
+        decisions = [dict(task_id='x', method=m, sample_index=0, accepted=True) for m in plan['methods']]
+        validate_decisions(plan, [dict(task_id='x', sample_index=0)], decisions)
+
     def run_case(self, baseline, new, public_failed=False, fraction=0.8):
         plan = {'tasks': [dict(task_id='x', selected_index=0, public_failed=public_failed,
                               consensus_fraction=fraction, triggered=public_failed or fraction < 1)]}

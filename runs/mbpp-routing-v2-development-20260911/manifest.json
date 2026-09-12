@@ -41,7 +41,7 @@
     "Mbpp/559",
     "Mbpp/436"
   ],
-  "routing_plan_sha256": "a50894ce82541c35a46df525e38e7c180df80e4c2dc54074d840bc96af5d6e9c",
+  "routing_plan_sha256": "5888a914b7a252c1f1e44801ca590bc062fa02f93d2b3df0da878d7eb7f79d9c",
   "reused_calls": 6,
   "new_calls": 6,
   "hidden_labels_used_by_preparation": false

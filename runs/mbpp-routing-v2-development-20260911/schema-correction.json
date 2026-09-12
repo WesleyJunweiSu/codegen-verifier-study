@@ -1,0 +1,7 @@
+{
+  "reason": "Pre-generation engineering correction: include required score-plan schema_version=1. No task, generation, routing, or replacement change.",
+  "old_source_sha256": "a9bfde29fc89fad25bc8e8449b4db061c377657e890969c50d0b3fcfbaf3359b",
+  "new_source_sha256": "b06e4aad5cfa1a8759ae166cfb3f0c165ee6b47a4cc9bcdcab029f18c1008d70",
+  "old_plan_sha256": "a50894ce82541c35a46df525e38e7c180df80e4c2dc54074d840bc96af5d6e9c",
+  "new_plan_sha256": "5888a914b7a252c1f1e44801ca590bc062fa02f93d2b3df0da878d7eb7f79d9c"
+}

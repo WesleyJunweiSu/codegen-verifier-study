@@ -8,6 +8,12 @@ from verifier_study.routing_v2 import METHODS, select_routing
 from verifier_study.frozen_decisions import validate_decisions
 
 
+def make_score_plan(task_ids, dataset_sha256, generations_sha256, decisions_sha256):
+    return dict(schema_version=1, task_ids=task_ids, methods=METHODS,
+                dataset_sha256=dataset_sha256, generations_sha256=generations_sha256,
+                decisions_sha256=decisions_sha256)
+
+
 def main():
     assert platform.system() == 'Linux' and os.environ.get('VERIFIER_ISOLATED_RUN') == '1'
     source, out = Path('/inputs'), Path('/output')
@@ -21,8 +27,8 @@ def main():
     build_matrix(records, source/'generated-tests.jsonl', out)
     decisions = select_routing(plan, read_jsonl(out/'candidate-test-matrix.jsonl'))
     write_jsonl(out/'frozen-decisions.jsonl', decisions)
-    score_plan = dict(task_ids=plan['task_ids'], methods=METHODS, dataset_sha256=plan['dataset_sha256'],
-        generations_sha256=sha256(source/'generations.jsonl'), decisions_sha256=sha256(out/'frozen-decisions.jsonl'))
+    score_plan = make_score_plan(plan['task_ids'], plan['dataset_sha256'],
+        sha256(source/'generations.jsonl'), sha256(out/'frozen-decisions.jsonl'))
     validate_decisions(score_plan, records, decisions)
     write_json(out/'score-plan.json', score_plan)
     write_json(out/'metadata.json', dict(hidden_benchmark_mounted=False, hidden_reference_loading=False,
