@@ -1,3 +1,5 @@
+> 2026-09-12 completion update: all 180 tasks have been generated, selected and scored under the frozen protocol. Reasoning 118/180 vs selected/nonthinking 107/180. See [report v0.8](../reports/technical-report-v0.8.md). Read the readiness discussion below as historical planning, not current pending status.
+
 # When the 180-task confirmation split can be used
 
 Updated 2026-09-11 (America/New_York). The development check is complete and the final protocol is frozen at `7ef1103` in `configs/confirmation-protocol.json`. The coordinator and primary analysis are implemented; the first generation attempt deferred for GPU memory. No additional methodological decision or calendar waiting period is required to resume it. Follow the exact staged commands in `PROGRESS.md`.

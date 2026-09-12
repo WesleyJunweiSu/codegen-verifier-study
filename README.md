@@ -1,6 +1,6 @@
 # Code Generation Verifier Study
 
-**Status: development transfer complete; final confirmation frozen, 2026-09-11.** On the additional 40 tasks, both reasoning arms reach 33/40 versus 32/40 for the baseline and non-thinking arms. The larger original 20-task gain remains development evidence. The final 180-task protocol, coordinator and analysis are frozen; generation has not started because its first memory check failed. Extra cost and negative findings are retained.
+**Status: frozen 180-task confirmation complete, 2026-09-12.** Conditional reasoning resampling reaches **118/180 (65.56%)**, versus **107/180 (59.44%)** for selected baseline and nonthinking resampling: **+6.11 percentage points, 11 rescues and zero observed regressions**. The prespecified exact paired test gives p=0.0009766; bootstrap 95% interval [2.78, 10.00] points. Both extension arms make 41 calls, with substantially different token costs. The separate expanded-routing development ablation yields no additional gain. See [report v0.8](reports/technical-report-v0.8.md) for matrices, costs and limitations.
 
 **Research question:** when generated tests contain errors, what evidence is sufficient to select a code candidate—or decide that selection is unsupported—under a constrained compute budget?
 
@@ -27,6 +27,7 @@ The historical audit found **7/134 different labels** between the old Windows ev
 
 ## Read and reproduce
 
+- [Technical report v0.8: completed confirmation and routing ablation](reports/technical-report-v0.8.md)
 - [Technical report v0.7: transferred gain and final confirmation freeze](reports/technical-report-v0.7.md)
 - [Final 180-task confirmation protocol](configs/confirmation-protocol.json)
 - [Technical report v0.6: 40 additional tasks and public-trigger coverage](reports/technical-report-v0.6.md)

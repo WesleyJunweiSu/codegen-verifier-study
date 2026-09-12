@@ -1,0 +1,43 @@
+{
+  "scope": "Post-confirmation descriptive diagnostics; no policy selection or refitting",
+  "source_hashes": {
+    "linux/evaluation.jsonl": "30364dc1d097d7397738eff5e9b56f9b01ab752335c53ee40fc184a736b03cca",
+    "frozen-decisions.jsonl": "74d0d7de015e6af095c6d6d1f68dfa5966e0f6b037dca2294e728713ea58c62c",
+    "repair-plan.json": "7f5a10b57f1934b7210bec9e4eb9dc0490443fd0afdd97a899997254ebccff29",
+    "summary.json": "472692223d6e893d683a057463f5630a7ce46b0f569f501baff654cca7de5771"
+  },
+  "detection": {
+    "tp": 41,
+    "fp": 0,
+    "fn": 32,
+    "tn": 107,
+    "error_recall": 0.5616438356164384,
+    "error_precision": 1.0
+  },
+  "transitions": {
+    "first": {
+      "wrong_to_correct": 0,
+      "correct_to_wrong": 4,
+      "correct_to_correct": 103,
+      "wrong_to_wrong": 73
+    },
+    "selected_baseline": {
+      "wrong_to_correct": 0,
+      "correct_to_wrong": 0,
+      "correct_to_correct": 107,
+      "wrong_to_wrong": 73
+    },
+    "nonthinking_resample": {
+      "wrong_to_correct": 0,
+      "correct_to_wrong": 0,
+      "correct_to_correct": 107,
+      "wrong_to_wrong": 73
+    },
+    "reasoning_resample": {
+      "wrong_to_correct": 11,
+      "correct_to_wrong": 0,
+      "correct_to_correct": 107,
+      "wrong_to_wrong": 62
+    }
+  }
+}

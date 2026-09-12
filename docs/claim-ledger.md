@@ -13,7 +13,7 @@ Updated 2026-09-11. Distinguish observation, hypothesis and unfinished work.
 | Conditional extra generation improves this development pilot | Baseline 12/20; non-thinking repair 13, reasoning repair 16, reasoning resample 17; all six public-failure triggers retained | Observed development gains with additional generation; report full cost and independent confirmation pending. |
 | Feedback repair is the best use of reasoning | Reasoning repair 16/20 versus reasoning resample 17/20; equal call caps, different realized cost | Feedback superiority is not supported by this pilot. |
 | The 17/20 result generalizes | New 40-task transfer: reasoning 33/40 vs baseline/nonthinking 32/40; one rescue, no feedback advantage | Development effect is smaller on new tasks; no confirmed 25-point gain or production accuracy estimate. |
-| Independent confirmation is complete | Final 180-task protocol frozen at 7ef1103; first generation attempt deferred for memory, zero candidates | Confirmation ready to resume from frozen configuration; no confirmation performance result yet. |
+| Independent confirmation is complete | Frozen 180-task final score: reasoning 118/180 vs nonthinking/selected 107/180; 11 wins, 0 losses; exact p=0.0009766 | +6.11 percentage points on this held-out split; unequal compute, one model/benchmark/seed schedule. |
 | Frozen decisions survive separate scoring | 52 development evaluation records and 200 frozen decisions exactly match in score-frozen validation | Validated separated visible-evidence and immutable-decision scoring paths. |
 | Selection fixes the new cohort's errors | First, tested selectors and oracle all 32/40; no mixed-correctness candidate pools | No selector gain on this realized 40-task pool; generation remains the limiting factor. |
 | Public-failure routing reaches all incorrect programs | Only 3 of 8 incorrect selected programs fail public examples | At most 35/40 under this frozen trigger, even with perfect new answers on triggered tasks; not achieved performance. |
@@ -28,9 +28,11 @@ Updated 2026-09-11. Distinguish observation, hypothesis and unfinished work.
 | Assertion normalization improves correctness | Recovers 40 assertions; no selection gain | Fixed a format failure without demonstrated correctness gains. |
 | Abstention controls risk usefully | Returns 0/20 | Fixed rule is unusable; calibration unfinished. |
 | Reference-rejecting tests are all wrong | Post-hoc AI-assisted audit: 22 wrong expectations, 11 specification issues, 1 hidden-domain mismatch; not independently human-reviewed | Present provisional categories and rationales, not definitive labels. |
-| Work is novel / conference-ready | Direct prior art; no complete reproduction or confirmation | Research prototype and exploratory technical report. |
+| Work is novel / conference-ready | Completed confirmation but direct prior art and no full nearest-work reproduction or broad external validation | Reproducible research prototype with a confirmed split-level gain; no novelty/SOTA or acceptance claim. |
 | System is deployed / used by others | No deployment or external users | Runnable harness and saved-evidence CLI. |
 | Results generalize to data-science workflows | Not tested | DS transfer is planned. |
 | All resume metrics verified | Not done | Treat resumes as background. |
 
-Evidence: `runs/`, technical report, experiment log. Never describe inherited generations as new calls or oracle/reference filtering as deployable. Confirmation data remain reserved.
+Evidence: `runs/`, technical report, experiment log. Never describe inherited generations as new calls or oracle/reference filtering as deployable. Confirmation scoring is complete; calibration and reserve remain unused.
+
+2026-09-12 update: expanded-routing and full-public-pass tie acceptance remain 33/40 on development, with no extra rescue. Screening recall improvement is not an accuracy improvement. See report v0.8.

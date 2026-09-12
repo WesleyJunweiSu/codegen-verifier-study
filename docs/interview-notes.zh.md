@@ -1,5 +1,18 @@
 # 面试讲解与简历表述：当前能讲到哪里
 
+
+## 2026-09-12：已核验的最新简历表述
+
+**LLM Code Verification & Selective Reasoning — Independent Research Project**
+
+- Built a resumable Qwen3-4B evaluation pipeline with frozen splits, label-blind selection, and isolated Linux scoring; evaluated 802 candidate programs on a held-out 180-task MBPP+ split.
+- Improved correctness from 59.44% to 65.56% (+6.11 percentage points) using conditional reasoning resampling, recovering 11 failures with zero observed regressions; validated against a matched-call nonthinking control and reported paired significance and token costs.
+
+面试解释：先固定候选池和选择规则，再把公开证据与隐藏评分分开执行。只对公开示例失败的题增加一次生成。180 题中，普通重采样仍是 107 题正确，推理重采样达到 118 题正确。两组各增加 41 次调用，但推理输出 token 显著更多，因此不能说是等计算量优势。扩大错误检测范围的开发实验没有带来额外准确率提升，也保留在报告中。
+
+可以讲“预先固定的 180 题验证中提升 6.11 个百分点”；不能扩写成“所有代码任务提升 6.11%”“零风险”“训练了新模型”“顶会新算法”或“线上用户效果”。详见技术报告 v0.8。以下是此前阶段的历史表述，面试优先使用本节。
+
+
 2026-09-05，第一轮实验完成。方向是 **LLM 代码生成的测试可信度、候选选择与拒答**，连接 SWE 的工程实现、AI/ML 的推理实验、DS 的统计评估，以及 fellowship 需要的问题定义和可复现研究。
 
 ## 当前可使用的简历表述

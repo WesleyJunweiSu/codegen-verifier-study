@@ -1,0 +1,22 @@
+{
+  "protocol_sha256": "4e9c553d85c58b9676f553ae1a999407f1a1dd73efafc9a837a989c46fb84b31",
+  "jobs": {
+    "base_visible": {
+      "source_commit": "0a87cf13a1987247f9bd7185e53b916b5b0e6fac",
+      "dispatch_pending": true,
+      "run_id": "34670369963"
+    },
+    "extension_visible": {
+      "source_commit": "c21dc731bf1cd5f87da92443a8c19fea83d4f109",
+      "dispatch_pending": true,
+      "run_id": "34673629219"
+    },
+    "final_score": {
+      "source_commit": "f44fdd68eea4018d9364e115c1829aa1fb54b97b",
+      "dispatch_pending": true,
+      "run_id": "34673699627"
+    }
+  },
+  "stage": "complete",
+  "updated_utc": "2026-09-12T04:44:42.224750+00:00"
+}

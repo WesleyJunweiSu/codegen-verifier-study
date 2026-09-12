@@ -1,0 +1,126 @@
+{
+  "scope": "Adaptive development, not independent confirmation; all seven arms reported",
+  "methods": {
+    "selected_baseline": {
+      "correct": 32,
+      "tasks": 40,
+      "accuracy": 0.8,
+      "gain_percentage_points": 0.0,
+      "rescued": [],
+      "regressed": [],
+      "transition_matrix": {
+        "wrong_to_correct": 0,
+        "correct_to_wrong": 0,
+        "correct_to_correct": 32,
+        "wrong_to_wrong": 8
+      }
+    },
+    "public_nonthinking_strict": {
+      "correct": 32,
+      "tasks": 40,
+      "accuracy": 0.8,
+      "gain_percentage_points": 0.0,
+      "rescued": [],
+      "regressed": [],
+      "transition_matrix": {
+        "wrong_to_correct": 0,
+        "correct_to_wrong": 0,
+        "correct_to_correct": 32,
+        "wrong_to_wrong": 8
+      }
+    },
+    "public_reasoning_strict": {
+      "correct": 33,
+      "tasks": 40,
+      "accuracy": 0.825,
+      "gain_percentage_points": 2.5,
+      "rescued": [
+        "Mbpp/801"
+      ],
+      "regressed": [],
+      "transition_matrix": {
+        "wrong_to_correct": 1,
+        "correct_to_wrong": 0,
+        "correct_to_correct": 32,
+        "wrong_to_wrong": 7
+      }
+    },
+    "expanded_nonthinking_strict": {
+      "correct": 32,
+      "tasks": 40,
+      "accuracy": 0.8,
+      "gain_percentage_points": 0.0,
+      "rescued": [],
+      "regressed": [],
+      "transition_matrix": {
+        "wrong_to_correct": 0,
+        "correct_to_wrong": 0,
+        "correct_to_correct": 32,
+        "wrong_to_wrong": 8
+      }
+    },
+    "expanded_reasoning_strict": {
+      "correct": 33,
+      "tasks": 40,
+      "accuracy": 0.825,
+      "gain_percentage_points": 2.5,
+      "rescued": [
+        "Mbpp/801"
+      ],
+      "regressed": [],
+      "transition_matrix": {
+        "wrong_to_correct": 1,
+        "correct_to_wrong": 0,
+        "correct_to_correct": 32,
+        "wrong_to_wrong": 7
+      }
+    },
+    "expanded_nonthinking_tie": {
+      "correct": 32,
+      "tasks": 40,
+      "accuracy": 0.8,
+      "gain_percentage_points": 0.0,
+      "rescued": [],
+      "regressed": [],
+      "transition_matrix": {
+        "wrong_to_correct": 0,
+        "correct_to_wrong": 0,
+        "correct_to_correct": 32,
+        "wrong_to_wrong": 8
+      }
+    },
+    "expanded_reasoning_tie": {
+      "correct": 33,
+      "tasks": 40,
+      "accuracy": 0.825,
+      "gain_percentage_points": 2.5,
+      "rescued": [
+        "Mbpp/801"
+      ],
+      "regressed": [],
+      "transition_matrix": {
+        "wrong_to_correct": 1,
+        "correct_to_wrong": 0,
+        "correct_to_correct": 32,
+        "wrong_to_wrong": 7
+      }
+    }
+  },
+  "extension_costs": {
+    "nonthinking": {
+      "calls": 6,
+      "newly_generated": 3,
+      "output_tokens": 329,
+      "wall_seconds": 49.199774100023205
+    },
+    "reasoning": {
+      "calls": 6,
+      "newly_generated": 3,
+      "output_tokens": 9042,
+      "wall_seconds": 1343.6330918000021
+    }
+  },
+  "timing_limitation": "Uncontrolled desktop wall time; includes reused calls",
+  "evaluation_sha256": "ab888dfdbafd32c32aa82f0e3340b4b29c4af4b4479061af67a2f0aea6fd2dd0",
+  "decisions_sha256": "f383b8bb4384f83d449a2f7c3030893e8ddfc357b9a154b5e96a1200897dd5b3"
+}
