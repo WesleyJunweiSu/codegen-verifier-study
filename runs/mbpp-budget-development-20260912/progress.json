@@ -1,0 +1,8 @@
+{
+  "completed": 6,
+  "planned": 6,
+  "triggered_tasks": 3,
+  "status": "generation_complete",
+  "output_tokens": 11208,
+  "generation_seconds": 1481.2345921999658
+}
