@@ -31,3 +31,10 @@ Revalidate saved results using scripts/analyze_confirmation.py, scripts/build_co
 The current policy has a confirmed split-level gain. Expanded development routing adds cost without benefit and should not be adopted. Investigate incomplete reasoning on DEVELOPMENT tasks next: test budget/completion controls with matched comparators, all triggered tasks and retained failures. Freeze any new policy before using independent new evidence. Reserve78 must not be casually opened or repeatedly reused. The completed180 results cannot serve as another untouched confirmation of an adjusted policy.
 
 Before claiming conference readiness, finish nearest-work reproduction and broader external/model/seed validation. No novelty, SOTA, production deployment or equal-compute superiority claim. Interview-ready evidence and quantitative bullets are in docs/interview-notes.zh.md.
+
+
+## 2026-09-12 13:03 UTC — next development cap ablation prepared
+
+See docs/development-budget-ablation.md. New fixed run mbpp-budget-development-20260912 compares cached2048 (index7) versus new4096 (index8) reasoning on all three original public-failure triggers, retaining all40 tasks. Only3 new model calls, no new tests. Generator scripts/generate_budget_development.py; config configs/development-budget.json; repair-plan and cached records already saved. Both visible-evidence and score-frozen workflow choices support this run.
+
+First attempt deferred before model load:8849MiB free versus9216MiB guard. No active job was started, zero new calls. Resume when GPU headroom permits; do not use calendar delay as a gate. Current confirmed result remains118/180. All36 tests pass and old confirmation hashes unchanged. Follow the visible -> freeze -> hidden-score order in the budget-ablation document; do not use the four-arm-only analyze_transfer.py for the two new cap arms without adapting a separate analyzer.

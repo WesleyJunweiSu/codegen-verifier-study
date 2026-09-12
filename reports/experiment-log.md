@@ -68,3 +68,8 @@ Implemented final coordinator, full original-pool preservation, fixed first base
 - Post-confirmation public-trigger matrix TP41/FP0/FN32/TN107. Of 41 reasoning attempts, 26 incomplete; all retained. Extension outputs 72,297 reasoning vs 2,316 nonthinking tokens. Unequal compute and desktop timing limitations disclosed.
 - Routing-v2 development artifacts imported from workflow 34670358137 at 57a8478. Seven arms verified; strict public-only comparators reproduce previous decisions exactly. Expanded routing and tie acceptance add no accuracy beyond 33/40 reasoning / 32/40 nonthinking. Six new calls, 4,673 new tokens; prior calls reused.
 - Report v0.8, README, claim ledger, interview bullets and continuation checkpoint updated. 36 tests pass. No active experiment remains; calibration/reserve untouched. Further tuning belongs on development data with new independent evaluation after freezing a new protocol.
+
+
+## 2026-09-12 13:03 UTC — bounded development budget experiment
+
+Prepared 2048-versus4096 reasoning cap comparison on all three original public-failure triggers of the additional40 development tasks. All40 denominators and old2048 records retained; exactly3 new4096 calls planned. Model/runtime/prompt/seed/sampling/selection unchanged. New-generation attempt deferred before model load at8849MiB free against9216MiB guard. Zero new model calls; no accuracy result yet. Configuration, source hashes, cached records and attempt saved. No project jobs were active locally or in Actions. Completed confirmation/calibration/reserve are not reused for tuning this experiment.
