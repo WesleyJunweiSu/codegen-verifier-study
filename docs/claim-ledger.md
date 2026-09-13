@@ -37,6 +37,11 @@ Evidence: `runs/`, technical report, experiment log. Never describe inherited ge
 
 2026-09-12 update: expanded-routing and full-public-pass tie acceptance remain 33/40 on development, with no extra rescue. Screening recall improvement is not an accuracy improvement. See report v0.8.
 
-2026-09-12 budget update: increasing the reasoning cap from 2048 to 4096 on the same three development triggers leaves accuracy 33/40 and incomplete responses 1/3 in each arm, while output cost rises from 4,580 to 6,628 tokens. This does not improve the method; the frozen 180-task confirmation result remains unchanged.
+2026-09-12 budget update: increasing the reasoning cap from 2048 to 4096 on the same three development triggers leaves accuracy 33/40 and incomplete responses 1/3 in each arm, while output cost rises from 4,580 to 6,628 tokens. This underpowered comparison is inconclusive about the method; the frozen 180-task confirmation result remains unchanged.
 
-2026-09-13 concise-instruction update: same2048 cap and seeds, all40 development tasks, three public-failure triggers. Concise32/40 versus original reasoning33/40;0 additional wins,1 loss;3991 versus4580 output tokens,1/3 incomplete each. Cost reduction is not an accuracy improvement; do not adopt this variant. Full evidence in docs/development-concise-ablation.md.
+2026-09-13 concise-instruction update: same2048 cap and seeds, all40 development tasks, three public-failure triggers. Concise32/40 versus original reasoning33/40;0 additional wins,1 loss;3991 versus4580 output tokens,1/3 incomplete each. Cost reduction is not an accuracy improvement; this underpowered comparison is inconclusive about general effectiveness. Full evidence in docs/development-concise-ablation.md.
+
+
+2026-09-13 interpretation correction: this small development ablation is underpowered and inconclusive about general superiority or futility. Observed counts remain valid. The budget and concise comparisons have only three paired triggered tasks; the routing study has six triggers, of which only three are newly added. The full40 denominator describes pipeline accuracy, not40 independently treated tasks. Historical no-gain language must not be read as falsification. Former calibration is now reassigned to development under split-manifest-v2.json; no new generations have been made on it.
+
+2026-09-13 v0.9: completion11/15 versus0/26 is descriptive post-treatment grouping, not causal effect. Actual31.22x token ratio stays;8.22x is completed-subgroup accounting only. No demonstrated4x optimization or CoT faithfulness result. Former calibration is now development under split v2; old statements about unused calibration are historical. New experiments remain planned.

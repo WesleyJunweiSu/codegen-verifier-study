@@ -1,6 +1,6 @@
 # Code Generation Verifier Study
 
-**Status: frozen 180-task confirmation complete, 2026-09-12.** Conditional reasoning resampling reaches **118/180 (65.56%)**, versus **107/180 (59.44%)** for selected baseline and nonthinking resampling: **+6.11 percentage points, 11 rescues and zero observed regressions**. The prespecified exact paired test gives p=0.0009766; bootstrap 95% interval [2.78, 10.00] points. Both extension arms make 41 calls, with substantially different token costs. The separate expanded-routing development ablation yields no additional gain. See [report v0.8](reports/technical-report-v0.8.md) for matrices, costs and limitations.
+**Status: frozen 180-task confirmation complete, 2026-09-12.** Conditional reasoning resampling reaches **118/180 (65.56%)**, versus **107/180 (59.44%)** for selected baseline and nonthinking resampling: **+6.11 percentage points, 11 rescues and zero observed regressions**. The prespecified exact paired test gives p=0.0009766; bootstrap 95% interval [2.78, 10.00] points. Both extension arms make 41 calls, with substantially different token costs. Small development routing, cap and prompt ablations are underpowered and inconclusive; no additional gain was established. See [report v0.9](reports/technical-report-v0.9.md) for matrices, costs and limitations.
 
 **Research question:** when generated tests contain errors, what evidence is sufficient to select a code candidate—or decide that selection is unsupported—under a constrained compute budget?
 
@@ -82,3 +82,9 @@ Recorded candidate keys are skipped. This resumes the pilot; it does not silentl
 This is a runnable research harness and evidence-inspection CLI, not a production coding assistant. The pilot has no demonstrated benefit from generated-test filtering or abstention. Full S* reproduction, calibrated operating points, independent seed repetitions, held-out confirmation and external data-science tasks remain unfinished. The temperature intervention used the same seeds on the same exposed tasks; it is not independent task confirmation.
 
 Local hardware: RTX 5070 Ti Laptop, 12,227 MiB. The two model-generation phases took 352.5 seconds combined, excluding loading and other overhead; peak allocated VRAM was 8.08 GiB. The parser ablation reused all generations and added zero model tokens. No GPU rental or paid model API was used; Linux jobs use the account's GitHub Actions allowance.
+
+## Completion audit and amended development scope
+
+See [v0.9](reports/technical-report-v0.9.md): completed reasoning11 rescues/15 attempts, incomplete0/26. This is a post-hoc association, not a causal effect. Actual reasoning cost remains72,297 tokens (31.22x control);73.65% occurred in incomplete attempts. The completed-only8.22x ratio is not pipeline cost.
+
+[Split v2](configs/split-manifest-v2.json) reassigns former calibration60 to development:120 total, primary100 plus legacy pilot20. Original confirmation180 and reserve78 are unchanged. [Next research design](docs/research-direction-v2.md) prioritizes completion-rate cap ablations and budget-matched independent sampling; these experiments have not run.

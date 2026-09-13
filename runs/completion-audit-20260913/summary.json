@@ -1,0 +1,364 @@
+{
+  "scope": "Post-hoc descriptive; completion is post-treatment, not randomized",
+  "groups": {
+    "completed": {
+      "attempts": 15,
+      "rescue": 11,
+      "no_rescue": 4,
+      "tokens": 19049,
+      "parseable": 15,
+      "token_distribution": [
+        533,
+        572,
+        576,
+        699,
+        791,
+        971,
+        1289,
+        1293,
+        1496,
+        1680,
+        1700,
+        1706,
+        1838,
+        1857,
+        2048
+      ]
+    },
+    "incomplete": {
+      "attempts": 26,
+      "rescue": 0,
+      "no_rescue": 26,
+      "tokens": 53248,
+      "parseable": 0,
+      "token_distribution": [
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048
+      ]
+    }
+  },
+  "nonthinking_tokens": 2316,
+  "actual_reasoning_tokens": 72297,
+  "actual_token_ratio": 31.216321243523318,
+  "actual_extra_reasoning_tokens_per_rescue": 6572.454545454545,
+  "completed_group_tokens_per_rescue": 1731.7272727272727,
+  "incomplete_token_fraction": 0.7365174211931339,
+  "completed_group_to_all_control_token_ratio": 8.224956822107082,
+  "rows": [
+    {
+      "task_id": "Mbpp/138",
+      "completed": false,
+      "tokens": 2048,
+      "code_parses": false,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/20",
+      "completed": false,
+      "tokens": 2048,
+      "code_parses": false,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/239",
+      "completed": false,
+      "tokens": 2048,
+      "code_parses": false,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/245",
+      "completed": false,
+      "tokens": 2048,
+      "code_parses": false,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/259",
+      "completed": true,
+      "tokens": 1680,
+      "code_parses": true,
+      "rescue": true
+    },
+    {
+      "task_id": "Mbpp/260",
+      "completed": false,
+      "tokens": 2048,
+      "code_parses": false,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/294",
+      "completed": true,
+      "tokens": 1857,
+      "code_parses": true,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/301",
+      "completed": false,
+      "tokens": 2048,
+      "code_parses": false,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/306",
+      "completed": false,
+      "tokens": 2048,
+      "code_parses": false,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/311",
+      "completed": false,
+      "tokens": 2048,
+      "code_parses": false,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/392",
+      "completed": false,
+      "tokens": 2048,
+      "code_parses": false,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/415",
+      "completed": false,
+      "tokens": 2048,
+      "code_parses": false,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/421",
+      "completed": true,
+      "tokens": 533,
+      "code_parses": true,
+      "rescue": true
+    },
+    {
+      "task_id": "Mbpp/430",
+      "completed": false,
+      "tokens": 2048,
+      "code_parses": false,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/432",
+      "completed": false,
+      "tokens": 2048,
+      "code_parses": false,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/440",
+      "completed": false,
+      "tokens": 2048,
+      "code_parses": false,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/462",
+      "completed": false,
+      "tokens": 2048,
+      "code_parses": false,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/473",
+      "completed": false,
+      "tokens": 2048,
+      "code_parses": false,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/475",
+      "completed": true,
+      "tokens": 576,
+      "code_parses": true,
+      "rescue": true
+    },
+    {
+      "task_id": "Mbpp/560",
+      "completed": true,
+      "tokens": 971,
+      "code_parses": true,
+      "rescue": true
+    },
+    {
+      "task_id": "Mbpp/572",
+      "completed": true,
+      "tokens": 2048,
+      "code_parses": true,
+      "rescue": true
+    },
+    {
+      "task_id": "Mbpp/590",
+      "completed": false,
+      "tokens": 2048,
+      "code_parses": false,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/592",
+      "completed": true,
+      "tokens": 1838,
+      "code_parses": true,
+      "rescue": true
+    },
+    {
+      "task_id": "Mbpp/597",
+      "completed": false,
+      "tokens": 2048,
+      "code_parses": false,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/6",
+      "completed": true,
+      "tokens": 572,
+      "code_parses": true,
+      "rescue": true
+    },
+    {
+      "task_id": "Mbpp/603",
+      "completed": false,
+      "tokens": 2048,
+      "code_parses": false,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/610",
+      "completed": true,
+      "tokens": 791,
+      "code_parses": true,
+      "rescue": true
+    },
+    {
+      "task_id": "Mbpp/622",
+      "completed": true,
+      "tokens": 1289,
+      "code_parses": true,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/63",
+      "completed": true,
+      "tokens": 1496,
+      "code_parses": true,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/631",
+      "completed": true,
+      "tokens": 1706,
+      "code_parses": true,
+      "rescue": true
+    },
+    {
+      "task_id": "Mbpp/638",
+      "completed": false,
+      "tokens": 2048,
+      "code_parses": false,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/641",
+      "completed": false,
+      "tokens": 2048,
+      "code_parses": false,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/721",
+      "completed": false,
+      "tokens": 2048,
+      "code_parses": false,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/725",
+      "completed": true,
+      "tokens": 1700,
+      "code_parses": true,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/749",
+      "completed": true,
+      "tokens": 699,
+      "code_parses": true,
+      "rescue": true
+    },
+    {
+      "task_id": "Mbpp/751",
+      "completed": false,
+      "tokens": 2048,
+      "code_parses": false,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/752",
+      "completed": true,
+      "tokens": 1293,
+      "code_parses": true,
+      "rescue": true
+    },
+    {
+      "task_id": "Mbpp/765",
+      "completed": false,
+      "tokens": 2048,
+      "code_parses": false,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/769",
+      "completed": false,
+      "tokens": 2048,
+      "code_parses": false,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/77",
+      "completed": false,
+      "tokens": 2048,
+      "code_parses": false,
+      "rescue": false
+    },
+    {
+      "task_id": "Mbpp/84",
+      "completed": false,
+      "tokens": 2048,
+      "code_parses": false,
+      "rescue": false
+    }
+  ],
+  "source_hashes": {
+    "runs\\mbpp-confirmation-extensions-20260911\\new-generations.jsonl": "470817323bbefb594328ad9c05382b056e07f7720a49e8a35655643d5028d62e",
+    "runs\\mbpp-confirmation-extensions-20260911\\task-results.json": "65ef7bdc7c5a7993dffb599aaeee7158cfb7a7a55d7d7ee17db99aabfc06b132"
+  }
+}

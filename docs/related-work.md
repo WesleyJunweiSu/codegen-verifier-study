@@ -26,3 +26,9 @@ Other directions examined during selection:
 - [Frozen-PINN, ICLR 2026](https://proceedings.iclr.cc/paper_files/paper/2026/hash/ab435f7130455143fd9489f389777552-Abstract-Conference.html): optimization/solver architecture matters alongside derivative backends.
 
 Contextual faithfulness, causal faithfulness of reasoning traces, test-supported correctness, and formal verification are different claims and should remain separate in both reports and resumes.
+
+## 2026-09-13: align nearest work with conditional resampling
+
+[Olausson et al., Is Self-Repair a Silver Bullet for Code Generation?, ICLR2024](https://proceedings.iclr.cc/paper_files/paper/2024/hash/9ddc141bdbf9d1db510cefff56c586ad-Abstract-Conference.html) is a direct comparator for cost-aware repair versus independent sampling. Its official abstract reports modest and subset-dependent gains, sometimes absent after cost accounting. [Official code](https://github.com/theoxo/self-repair) contains analysis/sample-and-estimate.py for budget estimates. Abstract and repository record reviewed; full method/estimator reproduction is pending, not completed. The official paper PDF fetch timed out in this pass.
+
+The current question is completion-aware allocation of conditional resampling budgets, extending beyond the original test-selection framing. S* remains relevant; selection-only comparisons are insufficient. Add an independent-sampling budget control before efficiency claims. Output-token budget matching alone is not exact compute matching. See research-direction-v2.md for the planned adaptation and limits.
