@@ -1,7 +1,13 @@
 {
-  "jobs": {},
-  "stage": "waiting_for_current_generator",
-  "updated_utc": "2026-09-13T03:29:26.570154+00:00",
+  "jobs": {
+    "concise_visible": {
+      "source_commit": "b35334375e877388b120ad49f9cfeb5f2359cc03",
+      "dispatch_pending": true,
+      "run_id": "34735732838"
+    }
+  },
+  "stage": "concise_visible_imported",
+  "updated_utc": "2026-09-13T03:33:05.634393+00:00",
   "failure_type": "ModuleNotFoundError",
   "failure_message": "No module named 'psutil'"
 }
