@@ -1,0 +1,41 @@
+{
+  "recorded_date": "2026-09-13",
+  "parent_run": "mbpp-development40-20260907",
+  "phase": "Adaptive DEVELOPMENT prompt ablation; not independent confirmation",
+  "run_id": "mbpp-concise-development-20260913",
+  "task_ids_source": "configs/development-expansion.json; all 40 tasks retained",
+  "baseline": "Previously fixed public-first execution-consensus selection on four original candidates",
+  "trigger": "One or more PUBLIC example assertions fail on the baseline-selected candidate",
+  "replacement": "A new candidate replaces the baseline only if it passes strictly more public assertions; otherwise baseline is retained",
+  "arms": [
+    {
+      "method": "reasoning_2048",
+      "sample_index": 7,
+      "thinking": true,
+      "feedback": false,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "max_new_tokens": 2048
+    },
+    {
+      "method": "reasoning_concise",
+      "sample_index": 9,
+      "thinking": true,
+      "feedback": false,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "max_new_tokens": 2048
+    }
+  ],
+  "prompt_source": "Original independent-resampling messages plus a fixed task-independent user-message suffix in the concise arm only.",
+  "seed_rule": "sha256('transfer:20260908:{task_id}')[:8] interpreted as hex integer; same seed in both arms",
+  "call_budget": "Three cached controls and exactly three new concise-prompt calls; no new tests.",
+  "failure_policy": "No answer-quality retries. All incomplete or malformed attempts retained; all 40 denominators kept.",
+  "primary_development_comparison": "Concise instruction versus cached original instruction at the same 2048 maximum output tokens on all three public-failure triggers; retain all 40 tasks.",
+  "secondary_comparisons": "Both arms versus the selected baseline; retain every failure.",
+  "reason_for_primary": "Doubling the cap failed; test completion-oriented prompting without increasing the cap.",
+  "confirmation": "Do not rerun or retune the completed 180-task experiment; calibration and reserve untouched.",
+  "prompt_suffix": "\nReason briefly and avoid repeating alternatives. Finish your reasoning promptly, then provide the complete Python implementation in a code block."
+}
