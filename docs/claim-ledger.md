@@ -36,3 +36,5 @@ Updated 2026-09-11. Distinguish observation, hypothesis and unfinished work.
 Evidence: `runs/`, technical report, experiment log. Never describe inherited generations as new calls or oracle/reference filtering as deployable. Confirmation scoring is complete; calibration and reserve remain unused.
 
 2026-09-12 update: expanded-routing and full-public-pass tie acceptance remain 33/40 on development, with no extra rescue. Screening recall improvement is not an accuracy improvement. See report v0.8.
+
+2026-09-12 budget update: increasing the reasoning cap from 2048 to 4096 on the same three development triggers leaves accuracy 33/40 and incomplete responses 1/3 in each arm, while output cost rises from 4,580 to 6,628 tokens. This does not improve the method; the frozen 180-task confirmation result remains unchanged.

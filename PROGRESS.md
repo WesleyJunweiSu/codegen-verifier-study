@@ -1,6 +1,6 @@
 # Experiment checkpoint
 
-Updated 2026-09-12. **Frozen 180-task confirmation complete; development routing v2 complete and negative.** Read report v0.8 for the current results. Older pending-state reports are historical.
+Updated 2026-09-12. **Frozen 180-task confirmation complete; routing v2 and reasoning-budget development ablations complete and negative.** Read report v0.8 for the confirmed result. Older pending-state notes below are historical.
 
 ## Verified results
 
@@ -43,3 +43,9 @@ First attempt deferred before model load:8849MiB free versus9216MiB guard. No ac
 ## Budget batch resumed after user request
 
 GPU free9270MiB at restart; model successfully loaded. Active generation exec session55060, parentPID25940/childPID39960. Do not launch another generator. New scripts/continue_budget.py waits for this process then validates46 records, commits inputs, dispatches/imports visible-evidence, freezes decisions, dispatches/imports score-frozen, and runs scripts/analyze_budget_development.py. Its journal lives at runs/mbpp-budget-development-20260912/continuation-state.json. Inspect journal/process before manual dispatch or staging to avoid concurrent Git operations. The analyzer checks original2048 labels, all three methods, code/decision hashes, rescue/regression matrices and cached/new cost. All36 tests pass. No new accuracy claim until final artifacts are complete.
+
+## Current completion and cross-device entry
+
+The budget continuation journal is now `complete`; the original visible workflow 34696110293 and final score workflow 34732911557 both succeeded. Frozen decisions and Linux evaluation were imported, analyzed and committed at c7e08cc. All 40 tasks remain: baseline32/40, reasoning_2048 33/40, reasoning_4096 33/40. Both reasoning arms have one incomplete attempt among three triggers; output tokens rise4580→6628, with zero additional rescue and zero regression for the larger cap. Do not resume this completed batch or interpret the larger budget as an improvement. Confirmation remains118/180 versus107/180.
+
+`AGENTS.md` in the repository root gives future Codex sessions a concise research contract; `docs/remote-access.zh.md` explains Mac/iPhone Remote setup. The currently saved Codex project is the parent Project Builder folder, so add this repository as a separate local project with this folder primary to automatically load AGENTS.md in new remote tasks. The current task is renamed and pinned. Remote host pairing requires the user's QR scan and account verification on their own devices; the project files alone cannot enable remote access.

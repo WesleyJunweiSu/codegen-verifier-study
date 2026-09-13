@@ -27,6 +27,8 @@ The historical audit found **7/134 different labels** between the old Windows ev
 
 ## Read and reproduce
 
+- [Use this research project from Mac or iPhone through the Windows host](docs/remote-access.zh.md)
+- [Project instructions for Codex on any device](AGENTS.md)
 - [Technical report v0.8: completed confirmation and routing ablation](reports/technical-report-v0.8.md)
 - [Technical report v0.7: transferred gain and final confirmation freeze](reports/technical-report-v0.7.md)
 - [Final 180-task confirmation protocol](configs/confirmation-protocol.json)
