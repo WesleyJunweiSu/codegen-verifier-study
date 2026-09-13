@@ -54,3 +54,8 @@ The budget continuation journal is now `complete`; the original visible workflow
 ## Concise-prompt development ablation started
 
 Run mbpp-concise-development-20260913 freezes a task-independent concise-reasoning suffix before generation. Three cached original-prompt controls versus exactly three new calls, same seeds/sampling/BF16/2048 cap, all40 tasks and strict public replacement retained. No confirmation/reserve tuning. Config development-concise.json; generator generate_concise_development.py; continuation continue_concise.py; analyzer analyze_concise_development.py. All36 existing contract tests pass. Check the process and journal before resuming; no gain claimed before immutable Linux scoring.
+
+
+## Concise-prompt batch complete
+
+All three new calls and both isolated workflows completed; journal stage complete, result commit8f989a1. Original reasoning33/40 versus concise32/40, zero wins and one loss (Mbpp/801). Costs4580 cached versus3991 new output tokens; both have1/3 incomplete. Reject concise prompting as an improvement; confirmed180 result unchanged. See docs/development-concise-ablation.md. No GPU generator or continuation remains active. The first continuation launch lacked psutil in the CPU environment; resuming with the existing techblog environment completed successfully without duplicate generation/dispatch. Use that environment for process-waiting continuation scripts.

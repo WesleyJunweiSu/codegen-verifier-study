@@ -38,3 +38,5 @@ Evidence: `runs/`, technical report, experiment log. Never describe inherited ge
 2026-09-12 update: expanded-routing and full-public-pass tie acceptance remain 33/40 on development, with no extra rescue. Screening recall improvement is not an accuracy improvement. See report v0.8.
 
 2026-09-12 budget update: increasing the reasoning cap from 2048 to 4096 on the same three development triggers leaves accuracy 33/40 and incomplete responses 1/3 in each arm, while output cost rises from 4,580 to 6,628 tokens. This does not improve the method; the frozen 180-task confirmation result remains unchanged.
+
+2026-09-13 concise-instruction update: same2048 cap and seeds, all40 development tasks, three public-failure triggers. Concise32/40 versus original reasoning33/40;0 additional wins,1 loss;3991 versus4580 output tokens,1/3 incomplete each. Cost reduction is not an accuracy improvement; do not adopt this variant. Full evidence in docs/development-concise-ablation.md.
