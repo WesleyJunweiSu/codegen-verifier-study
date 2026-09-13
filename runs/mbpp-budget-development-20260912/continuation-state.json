@@ -4,8 +4,13 @@
       "source_commit": "3d95b4885fc84f6085d9d98aa734e4f80cdfd6f2",
       "dispatch_pending": true,
       "run_id": "34696110293"
+    },
+    "budget_score": {
+      "source_commit": "e554c5010d576e31a519d001f63a6392e7749bb1",
+      "dispatch_pending": true,
+      "run_id": "34732911557"
     }
   },
-  "stage": "budget_visible_imported",
-  "updated_utc": "2026-09-13T02:22:59.442615+00:00"
+  "stage": "complete",
+  "updated_utc": "2026-09-13T02:24:09.867095+00:00"
 }

@@ -1,0 +1,78 @@
+{
+  "scope": "Adaptive development on 40 tasks with three triggers; not independent confirmation",
+  "methods": {
+    "selected_baseline": {
+      "correct": 32,
+      "tasks": 40,
+      "accuracy": 0.8,
+      "rescues_vs_baseline": [],
+      "regressions_vs_baseline": [],
+      "transition_matrix": {
+        "wrong_to_correct": 0,
+        "correct_to_wrong": 0,
+        "correct_to_correct": 32,
+        "wrong_to_wrong": 8
+      }
+    },
+    "reasoning_2048": {
+      "correct": 33,
+      "tasks": 40,
+      "accuracy": 0.825,
+      "rescues_vs_baseline": [
+        "Mbpp/801"
+      ],
+      "regressions_vs_baseline": [],
+      "transition_matrix": {
+        "wrong_to_correct": 1,
+        "correct_to_wrong": 0,
+        "correct_to_correct": 32,
+        "wrong_to_wrong": 7
+      }
+    },
+    "reasoning_4096": {
+      "correct": 33,
+      "tasks": 40,
+      "accuracy": 0.825,
+      "rescues_vs_baseline": [
+        "Mbpp/801"
+      ],
+      "regressions_vs_baseline": [],
+      "transition_matrix": {
+        "wrong_to_correct": 1,
+        "correct_to_wrong": 0,
+        "correct_to_correct": 32,
+        "wrong_to_wrong": 7
+      }
+    }
+  },
+  "contrast_4096_vs_2048": {
+    "wins": [],
+    "losses": [],
+    "difference_percentage_points": 0.0
+  },
+  "cost": {
+    "reasoning_2048": {
+      "calls": 3,
+      "cached": true,
+      "output_tokens": 4580,
+      "wall_seconds": 1121.0593870999874,
+      "incomplete": 1,
+      "capped": 1
+    },
+    "reasoning_4096": {
+      "calls": 3,
+      "cached": false,
+      "output_tokens": 6628,
+      "wall_seconds": 360.1752050999785,
+      "incomplete": 1,
+      "capped": 1
+    }
+  },
+  "limitations": "Three triggered tasks, one seed schedule, unequal compute and uncontrolled desktop timing. Retain all failures. No general superiority or confirmatory p-value claim.",
+  "source_hashes": {
+    "repair-plan.json": "219963259838fbbb4d8630ab9e1f746e0d0b7ae350770c631189060ed3acf7d0",
+    "score-plan.json": "b20eb3bdb2566265a0baa6b542cc12734eafad2daa04a7150747fd91f66845c7",
+    "frozen-decisions.jsonl": "fc421d208fee4207fb3db805bac294040b428cf8f10ea2870deb2006e48710f2",
+    "linux/evaluation.jsonl": "5850005f8426ba2236adf9996f80f6b6e960bf7edce06b9234c58d9a761bd2ef"
+  }
+}
