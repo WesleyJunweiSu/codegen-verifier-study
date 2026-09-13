@@ -80,3 +80,8 @@ Reserve78 is reserved for ONE final frozen claim, only after external-benchmark 
 Corrections integrated: KM cannot extrapolate beyond2048 using only2048-censored observations; historical total output length is not delimiter event time. Filler prefill does not match autoregressive compute. Normalized content contrast is unstable near zero denominator and not a causal percentage. Mechanism studies on development remain exploratory without independent replication. Cohort gaps warrant an audit, not label-driven reshuffling. Qwen2.5 is not a non-Qwen family; local GPU is12GB, not24GB; no paid spend authorized. Scope excludes serving frameworks,27B,multimodal,repo repair and new repos.90days is a milestone horizon, not mandatory waiting.
 
 Next execution starts with new60 baseline and the budget-matched control design; check active jobs before generation. Exact external checkpoints/windows and executable intervention protocol remain to be frozen. No claim that proposed tracks have run or that faithfulness has been demonstrated.
+
+
+## 2026-09-13 heartbeat: reassigned60 baseline prepared
+
+No local Python or active Actions jobs found. Frozen configs/development-reassigned60.json and scripts/generate_reassigned60.py reuse the original baseline settings/seeds on exactly60 reassigned development tasks:240 candidates plus60 public-spec test responses. No hidden scoring or reserve access in generation. Check runs/mbpp-development60-20260913 progress and live process before resume; next step after complete generation is visible-only evaluation.
