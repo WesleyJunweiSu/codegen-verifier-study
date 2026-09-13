@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-13",
+  "status": "User-directed standing research constraint; declarative policy, not runtime access control",
+  "original_manifest": "configs/split-manifest.json",
+  "original_manifest_sha256": "6acab61594ed4432662b23ef8ef2a1904f7a1d9ea96ebd3b2da7f75b22d341ec",
+  "reserve_count": 78,
+  "permitted_purpose": "One-time evaluation of the final frozen claim",
+  "required_conditions": [
+    "External-benchmark replication completed before reserve access",
+    "Prospective precision or power assessment supports use",
+    "Final estimand, enrollment, methods and analysis frozen before labels"
+  ],
+  "prohibited_purposes": [
+    "cap tuning",
+    "routing threshold fitting",
+    "exploratory mechanism analysis",
+    "repeated evaluation after tuning"
+  ],
+  "automatic_release": false
+}

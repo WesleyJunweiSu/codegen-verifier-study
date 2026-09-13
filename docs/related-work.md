@@ -32,3 +32,15 @@ Contextual faithfulness, causal faithfulness of reasoning traces, test-supported
 [Olausson et al., Is Self-Repair a Silver Bullet for Code Generation?, ICLR2024](https://proceedings.iclr.cc/paper_files/paper/2024/hash/9ddc141bdbf9d1db510cefff56c586ad-Abstract-Conference.html) is a direct comparator for cost-aware repair versus independent sampling. Its official abstract reports modest and subset-dependent gains, sometimes absent after cost accounting. [Official code](https://github.com/theoxo/self-repair) contains analysis/sample-and-estimate.py for budget estimates. Abstract and repository record reviewed; full method/estimator reproduction is pending, not completed. The official paper PDF fetch timed out in this pass.
 
 The current question is completion-aware allocation of conditional resampling budgets, extending beyond the original test-selection framing. S* remains relevant; selection-only comparisons are insufficient. Add an independent-sampling budget control before efficiency claims. Output-token budget matching alone is not exact compute matching. See research-direction-v2.md for the planned adaptation and limits.
+
+## Reasoning content versus computation: current foundational neighbors
+
+| Work | Relevance | Boundary |
+|---|---|---|
+| [Lanham et al.2023](https://arxiv.org/abs/2307.13702) | Early answering and trace perturbations | A code-domain adaptation is not automatically novel; full-method reading pending |
+| [Turpin et al.2023](https://proceedings.neurips.cc/paper_files/paper/2023/hash/ed3fea9033a80fea1376299fa7863f4a-Abstract.html) | Influential bias can be absent from explanations | Correct answers alone do not establish faithful explanations |
+| [Pfau et al.2024](https://arxiv.org/abs/2404.15758) | Extra tokens can support hidden computation | Task-specific training was important; pasted filler is not matched serial decoding |
+| [LiveCodeBench](https://livecodebench.github.io/) | Dated external validation | Pin window relative to checkpoint cutoff/release; not unlimited clean data |
+| [BigCodeBench](https://github.com/bigcode-project/bigcodebench) | External library-oriented task distribution | Hard subset does not establish absence of training overlap |
+
+Official abstracts/project descriptions checked2026-09-13. Full methods, benchmark adapters and a code-specific intervention novelty search remain pending. These references guide design, not a completed reproduction. Olausson remains required for the matched-budget sampling comparator. Current agenda is docs/research-direction-v3.md.

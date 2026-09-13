@@ -1,3 +1,5 @@
+> Superseded2026-09-13 by [direction v3](research-direction-v3.md). Historical design; do not execute its standalone cap-first ordering. Budget-control details remain reference material.
+
 # Next direction: completion-aware inference budgets
 
 2026-09-13. Research design, not an executed experiment or frozen executable generator protocol. Cohort amendment is frozen separately in configs/split-manifest-v2.json. Do not start a new confirmation from the old180 outcomes.

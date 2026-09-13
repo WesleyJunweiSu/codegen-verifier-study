@@ -1,8 +1,10 @@
-# Code Generation Verifier Study
+# Reasoning Content and Computation in Code Generation
 
-**Status: frozen 180-task confirmation complete, 2026-09-12.** Conditional reasoning resampling reaches **118/180 (65.56%)**, versus **107/180 (59.44%)** for selected baseline and nonthinking resampling: **+6.11 percentage points, 11 rescues and zero observed regressions**. The prespecified exact paired test gives p=0.0009766; bootstrap 95% interval [2.78, 10.00] points. Both extension arms make 41 calls, with substantially different token costs. Small development routing, cap and prompt ablations are underpowered and inconclusive; no additional gain was established. See [report v0.9](reports/technical-report-v0.9.md) for matrices, costs and limitations.
+**Motivating evidence: frozen 180-task confirmation complete.** Conditional reasoning resampling reaches **118/180 (65.56%)**, versus **107/180 (59.44%)** for selected baseline and nonthinking resampling: **+6.11 percentage points, 11 rescues and zero observed regressions**. The prespecified exact paired test gives p=0.0009766; bootstrap 95% interval [2.78, 10.00] points. Both extension arms make 41 calls, with substantially different token costs. Small development routing, cap and prompt ablations are underpowered and inconclusive; no additional gain was established. See [report v0.9](reports/technical-report-v0.9.md) for matrices, costs and limitations.
 
-**Research question:** when generated tests contain errors, what evidence is sufficient to select a code candidate—or decide that selection is unsupported—under a constrained compute budget?
+**Research question:** when does additional serial reasoning contribute useful information beyond additional computation?
+
+Current priorities: external replication with budget-matched sampling controls (P0), paired reasoning-trace interventions (P1), and development-only entropy diagnostics (P2). This is the research agenda, not an established causal-faithfulness or novelty claim. See [direction v3](docs/research-direction-v3.md). Reserve78 is protected for one final confirmation only after external replication and a prospective precision assessment.
 
 This follows [Agreement is not confidence](https://github.com/WesleyJunweiSu/WesleyJunweiSu.github.io/blob/main/app/page.tsx). It is a replication and extension of established test-guided selection work, not a claim of a new state of the art.
 
@@ -87,4 +89,4 @@ Local hardware: RTX 5070 Ti Laptop, 12,227 MiB. The two model-generation phases 
 
 See [v0.9](reports/technical-report-v0.9.md): completed reasoning11 rescues/15 attempts, incomplete0/26. This is a post-hoc association, not a causal effect. Actual reasoning cost remains72,297 tokens (31.22x control);73.65% occurred in incomplete attempts. The completed-only8.22x ratio is not pipeline cost.
 
-[Split v2](configs/split-manifest-v2.json) reassigns former calibration60 to development:120 total, primary100 plus legacy pilot20. Original confirmation180 and reserve78 are unchanged. [Next research design](docs/research-direction-v2.md) prioritizes completion-rate cap ablations and budget-matched independent sampling; these experiments have not run.
+[Split v2](configs/split-manifest-v2.json) reassigns former calibration60 to development:120 total, primary100 plus legacy pilot20. Original confirmation180 and reserve78 are unchanged. [Current research design](docs/research-direction-v3.md) prioritizes completion-rate cap ablations and budget-matched independent sampling; these experiments have not run.
