@@ -4,10 +4,15 @@
       "source_commit": "b35334375e877388b120ad49f9cfeb5f2359cc03",
       "dispatch_pending": true,
       "run_id": "34735732838"
+    },
+    "concise_score": {
+      "source_commit": "ff6d3070490088421eebccca755ac098ffb56a0a",
+      "dispatch_pending": true,
+      "run_id": "34735769094"
     }
   },
-  "stage": "concise_visible_imported",
-  "updated_utc": "2026-09-13T03:33:05.634393+00:00",
+  "stage": "complete",
+  "updated_utc": "2026-09-13T03:33:59.940342+00:00",
   "failure_type": "ModuleNotFoundError",
   "failure_message": "No module named 'psutil'"
 }

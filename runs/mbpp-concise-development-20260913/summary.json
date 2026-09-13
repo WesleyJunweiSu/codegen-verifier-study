@@ -1,0 +1,78 @@
+{
+  "scope": "Adaptive development on 40 tasks with three triggers; not independent confirmation",
+  "methods": {
+    "selected_baseline": {
+      "correct": 32,
+      "tasks": 40,
+      "accuracy": 0.8,
+      "rescues_vs_baseline": [],
+      "regressions_vs_baseline": [],
+      "transition_matrix": {
+        "wrong_to_correct": 0,
+        "correct_to_wrong": 0,
+        "correct_to_correct": 32,
+        "wrong_to_wrong": 8
+      }
+    },
+    "reasoning_2048": {
+      "correct": 33,
+      "tasks": 40,
+      "accuracy": 0.825,
+      "rescues_vs_baseline": [
+        "Mbpp/801"
+      ],
+      "regressions_vs_baseline": [],
+      "transition_matrix": {
+        "wrong_to_correct": 1,
+        "correct_to_wrong": 0,
+        "correct_to_correct": 32,
+        "wrong_to_wrong": 7
+      }
+    },
+    "reasoning_concise": {
+      "correct": 32,
+      "tasks": 40,
+      "accuracy": 0.8,
+      "rescues_vs_baseline": [],
+      "regressions_vs_baseline": [],
+      "transition_matrix": {
+        "wrong_to_correct": 0,
+        "correct_to_wrong": 0,
+        "correct_to_correct": 32,
+        "wrong_to_wrong": 8
+      }
+    }
+  },
+  "contrast_concise_vs_original": {
+    "wins": [],
+    "losses": [
+      "Mbpp/801"
+    ],
+    "difference_percentage_points": -2.5
+  },
+  "cost": {
+    "reasoning_2048": {
+      "calls": 3,
+      "cached": true,
+      "output_tokens": 4580,
+      "wall_seconds": 1121.0593870999874,
+      "incomplete": 1,
+      "capped": 1
+    },
+    "reasoning_concise": {
+      "calls": 3,
+      "cached": false,
+      "output_tokens": 3991,
+      "wall_seconds": 200.58675010000297,
+      "incomplete": 1,
+      "capped": 1
+    }
+  },
+  "limitations": "Three triggered tasks, one seed schedule, unequal compute and uncontrolled desktop timing. Retain all failures. No general superiority or confirmatory p-value claim.",
+  "source_hashes": {
+    "repair-plan.json": "d0b9c40f7f6ce57428ee235e080861cded55387f54288ca1d27a558758f4f53e",
+    "score-plan.json": "bc039750c5ae9d473aa66666707e36d7734e00f17440425faf8180c07541d171",
+    "frozen-decisions.jsonl": "f7a704ca91b6f6de5153ac2d08c5246c53c84843887167925b4ddbf9afeb4508",
+    "linux/evaluation.jsonl": "6007ecf756c53e1ff1fc471335455dfc998f2b63d752f5b8231906e78b2a7ced"
+  }
+}
