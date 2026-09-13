@@ -1,0 +1,16 @@
+{
+  "kind": "visible_evidence",
+  "parent_run": "mbpp-budget-development-20260912",
+  "tasks": 40,
+  "candidates": 46,
+  "wall_seconds": 2.1244461810000104,
+  "hidden_benchmark_mounted": false,
+  "hidden_reference_loading": false,
+  "generations_sha256": "e33e8742be2bd51d6520971bf514b710bdfe903dd5ef9fefa5c16daf787c90c0",
+  "tests_sha256": "3ba72a92a0fb930871b9e2847ac124ece489131dc5da5637b4e15327ae585638",
+  "manifest_sha256": "90adcf88568b46e1e990b04f275f51deb89bd55d77c30a2235069d7ef448cbdd",
+  "decisions_sha256": "fc421d208fee4207fb3db805bac294040b428cf8f10ea2870deb2006e48710f2",
+  "matrix_sha256": "cf338fe717c271acff0f8e811d66697dfedb705e5de2abb56dc21df00d4e9e9e",
+  "source_sha256": "25f823136fe34dd2ee23bd379350f79bc6320ede451eeb3ddb7a70942e4a7103",
+  "repair_plan_sha256": "219963259838fbbb4d8630ab9e1f746e0d0b7ae350770c631189060ed3acf7d0"
+}
