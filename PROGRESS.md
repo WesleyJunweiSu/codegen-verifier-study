@@ -95,3 +95,8 @@ Validated all240 unique candidate keys and60 test responses, frozen generator ha
 ## Reassigned60 visible-stage recovery
 
 Workflow34846853016 failed after matrix generation because consensus CLI run-name choices omitted the new60 batch. No hidden labels loaded. New consensus_development_linux.py differs only by adding the new run name; dedicated development Dockerfile leaves original confirmation sources unchanged. Retry will preserve the failed run in journal and reuse all generation bytes. User reiterated protecting independent evaluation: next optimization remains on development only, with no reserve/external holdout scoring.
+
+
+## New60 visible evidence complete; next development contrast
+
+Retry succeeded after the CLI allowlist-only fix; artifacts committed1d37756. New60 selected baselines have11 public-failure triggers. Together with the existing additional40 cohort's3, the primary100 cohort has14 triggered tasks (not100 treated pairs). Hidden new60 correctness has not been read. This supplies a larger development cohort for the priority matched-output-budget reasoning versus independent nonthinking sampling comparison; no independent holdout or reserve is used. Trigger census saved in visible-trigger-summary.json. No new intervention generation launched in this turn; exact budget-control runner and executable protocol remain next work.

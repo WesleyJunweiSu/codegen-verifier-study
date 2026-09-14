@@ -1,0 +1,23 @@
+{
+  "scope": "Visible-only development trigger census; not accuracy",
+  "tasks": 60,
+  "trigger_count": 11,
+  "trigger_task_ids": [
+    "Mbpp/103",
+    "Mbpp/126",
+    "Mbpp/235",
+    "Mbpp/251",
+    "Mbpp/278",
+    "Mbpp/310",
+    "Mbpp/419",
+    "Mbpp/439",
+    "Mbpp/450",
+    "Mbpp/468",
+    "Mbpp/735"
+  ],
+  "hidden_labels_read": false,
+  "source_hashes": {
+    "runs\\mbpp-development60-20260913\\visible\\composition-decisions.jsonl": "fffc9a14de179c18b39e4bf0b17bfba60fe2e64e96a9c7d6ee53415e3d1f20aa",
+    "runs\\mbpp-development60-20260913\\visible\\candidate-test-matrix.jsonl": "88be65f11f82ec623f6eab777b5ca06c1f62887a623fbbda0314d0eb79e22892"
+  }
+}
