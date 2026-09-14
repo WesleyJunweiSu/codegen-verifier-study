@@ -85,3 +85,8 @@ Next execution starts with new60 baseline and the budget-matched control design;
 ## 2026-09-13 heartbeat: reassigned60 baseline prepared
 
 No local Python or active Actions jobs found. Frozen configs/development-reassigned60.json and scripts/generate_reassigned60.py reuse the original baseline settings/seeds on exactly60 reassigned development tasks:240 candidates plus60 public-spec test responses. No hidden scoring or reserve access in generation. Check runs/mbpp-development60-20260913 progress and live process before resume; next step after complete generation is visible-only evaluation.
+
+
+## 2026-09-14 reassigned60 generation complete
+
+Validated all240 unique candidate keys and60 test responses, frozen generator hash, and enrollment. Total21098 output tokens,909.635 recorded generation wall-seconds. No Python jobs active. Next stage is visible-only Linux evaluation; accuracy and public-failure trigger count are not yet known. Reserve untouched.

@@ -9,6 +9,7 @@ on:
         type: choice
         options:
           - mbpp-development40-20260907
+          - mbpp-development60-20260913
           - mbpp-development40-repair-20260908
           - mbpp-budget-development-20260912
           - mbpp-concise-development-20260913
