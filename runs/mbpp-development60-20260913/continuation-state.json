@@ -4,9 +4,14 @@
       "source_commit": "c752349120631859244a3c11bbbbb0fb0b0408a6",
       "dispatch_pending": true,
       "run_id": "34846853016"
+    },
+    "baseline_visible_retry1": {
+      "source_commit": "4a9d345bfb19e983b48737a21d143ce858b15f66",
+      "dispatch_pending": true,
+      "run_id": "34904867678"
     }
   },
-  "stage": "visible_failed_cli_run_name",
-  "updated_utc": "2026-09-14T13:03:07.028078+00:00",
+  "stage": "visible_complete",
+  "updated_utc": "2026-09-14T22:36:53.889312+00:00",
   "failure_reason": "Consensus parser omitted new run ID after public matrix completed; no hidden data loaded. Retry uses same generation bytes and new allowlist-only adapter."
 }

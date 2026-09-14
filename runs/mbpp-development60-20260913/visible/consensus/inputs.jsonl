@@ -1,0 +1,486 @@
+{"task_id": "Mbpp/103", "input_index": 0, "call": "eulerian_num(3, 1)", "ast_sha256": "7cfb3b254b337f5060dc6a38ad1b8b93a95998f81066b61a741a02c70f83ba0d"}
+{"task_id": "Mbpp/103", "input_index": 1, "call": "eulerian_num(4, 1)", "ast_sha256": "247fb4925ca91844e472f4d31b2114df38f8c64c91a2d735e7113c91aac5c06b"}
+{"task_id": "Mbpp/103", "input_index": 2, "call": "eulerian_num(4, 2)", "ast_sha256": "7e754c54aba922e1cd1859425ed891e99dbd6db0aba464b293f65020b20139ef"}
+{"task_id": "Mbpp/103", "input_index": 3, "call": "eulerian_num(5, 2)", "ast_sha256": "426099d8b675a00ac82f9893b787c1b5ba0253e5d24499e0f0bd61b5225ddc52"}
+{"task_id": "Mbpp/103", "input_index": 4, "call": "eulerian_num(5, 3)", "ast_sha256": "70acb1b266686bb9c825bc2b2d12071418052c3c71a72927149ef70b450bd661"}
+{"task_id": "Mbpp/103", "input_index": 5, "call": "eulerian_num(2, 0)", "ast_sha256": "549fdf07eee4704ab0c73efab02c9fe4ca438d238fe6a02cc403f5eb040c6f64"}
+{"task_id": "Mbpp/103", "input_index": 6, "call": "eulerian_num(2, 1)", "ast_sha256": "d6ce311d56996423c7184a623737f25f71e27518e058395847092b5d3fc8a3d4"}
+{"task_id": "Mbpp/103", "input_index": 7, "call": "eulerian_num(1, 0)", "ast_sha256": "d6de9bacd2f9a62a578409c456a81c86945da32c1d66a7bac2b94ace812ea21a"}
+{"task_id": "Mbpp/104", "input_index": 0, "call": "sort_sublists((['green', 'orange'], ['black', 'white'], ['white', 'black', 'orange']))", "ast_sha256": "82fb3c03f3c7000680ccbdb66282ee80b0ff671fd42dddb727553a8964048f24"}
+{"task_id": "Mbpp/104", "input_index": 1, "call": "sort_sublists([['green', 'orange'], ['black', 'white'], ['white', 'black', 'orange']])", "ast_sha256": "d381af6a01b85f39e7c875a59cd2808a4f9dc6b1750e704d5ca9fa71b6162b5c"}
+{"task_id": "Mbpp/104", "input_index": 2, "call": "sort_sublists([['a', 'c', 'b'], ['z', 'x'], ['d', 'b', 'a']])", "ast_sha256": "db63c82b2c514d4fdd307293c59fcb5cfe31cdf2c37820ad76cd79df5983c021"}
+{"task_id": "Mbpp/104", "input_index": 3, "call": "sort_sublists([['x'], ['y', 'z'], ['a', 'b']])", "ast_sha256": "381c670f69ffc8a32bd34014378af3c3907651e4702e7993d50f45492d6614a5"}
+{"task_id": "Mbpp/104", "input_index": 4, "call": "sort_sublists([['z', 'y', 'x'], ['b', 'a'], ['c']])", "ast_sha256": "fea4decc9f217e5eedfe06f292f33441e7ca385836cd5fd4337f3bfe5110c5bf"}
+{"task_id": "Mbpp/104", "input_index": 5, "call": "sort_sublists([['1', '3', '2'], ['5', '4']])", "ast_sha256": "ff1f00d60c9c3c38346d5c320d221624a8f12a329e158391ba79011aa77a0f8f"}
+{"task_id": "Mbpp/104", "input_index": 6, "call": "sort_sublists([['a', 'b'], ['c', 'd', 'a']])", "ast_sha256": "765af659745708ace4a5f5104e8a7044a0aa4a90e8553b74891935c749aefc6a"}
+{"task_id": "Mbpp/104", "input_index": 7, "call": "sort_sublists([['', 'b', 'a'], ['c', 'd', 'b']])", "ast_sha256": "e729823d207340d8b3a7606d4b74f1f885509c9950669da194665ecc97e3d5d1"}
+{"task_id": "Mbpp/104", "input_index": 8, "call": "sort_sublists([['x', 'x', 'x'], ['y', 'y', 'y']])", "ast_sha256": "ae79fdd1f4e5bbf77939fd9b97af3fa1e425dd7602a036e2983ee8aefbde38c6"}
+{"task_id": "Mbpp/108", "input_index": 0, "call": "merge_sorted_list([25, 24, 15, 4, 5, 29, 110], [19, 20, 11, 56, 25, 233, 154], [24, 26, 54, 48])", "ast_sha256": "d06abdeaa6ac454d5a71e4dea076ee400cea0bd981c3518127d267ee5ee4e2d9"}
+{"task_id": "Mbpp/108", "input_index": 1, "call": "merge_sorted_list([], [], [])", "ast_sha256": "cfded28f57eb4b70b424d81d9460de218dc32d11a387666673468766708bde57"}
+{"task_id": "Mbpp/108", "input_index": 2, "call": "merge_sorted_list([1, 2, 3], [], [])", "ast_sha256": "bb56733e1a1a110864f7093ee049f26d4ab4d029f78f04449a44b66fa5f804e5"}
+{"task_id": "Mbpp/108", "input_index": 3, "call": "merge_sorted_list([], [4, 5, 6], [])", "ast_sha256": "27d5bde1bc274c44945c57a3dce7338f027452f7155271360b6a9c4ef1811691"}
+{"task_id": "Mbpp/108", "input_index": 4, "call": "merge_sorted_list([], [], [7, 8, 9])", "ast_sha256": "f8d76dd4e8aba38f902e144a57e1ed5965a1b968d7c5f284fbeebe970ce0031e"}
+{"task_id": "Mbpp/108", "input_index": 5, "call": "merge_sorted_list([3, 2, 1], [4, 5, 6], [7, 8, 9])", "ast_sha256": "6a947aeca95f186d705fe736990fc466ba1c5860b6ed67bc22eea3dce68003bd"}
+{"task_id": "Mbpp/108", "input_index": 6, "call": "merge_sorted_list([5, 4, 3], [2, 1, 0], [6, 7, 8])", "ast_sha256": "af3bac57962a0649e80e41f44298ca3e4e28b62c80b1a0bc70a1b834d56bae2c"}
+{"task_id": "Mbpp/108", "input_index": 7, "call": "merge_sorted_list([1, 3, 5], [2, 4, 6], [7, 8, 9])", "ast_sha256": "ff9f7a55b25b6a67f207674e2f108d2c19fc7d457f25ed6fea998a1751bca12a"}
+{"task_id": "Mbpp/108", "input_index": 8, "call": "merge_sorted_list([10, 20, 30], [5, 15, 25], [0, 5, 10])", "ast_sha256": "be6435a8d73d484a387d6b376127f0f8b9433b3e14caf3a1a1d9ff6f69d49707"}
+{"task_id": "Mbpp/109", "input_index": 0, "call": "odd_Equivalent('011001', 6)", "ast_sha256": "7861638f8ce36625586e38dbcfdda2584cc74932773e66a62de6ee0937f3133b"}
+{"task_id": "Mbpp/109", "input_index": 1, "call": "odd_Equivalent('011001', 0)", "ast_sha256": "4b73247f4e2353ce627b60f8fe4d901d13a231fb5ce68ad08af548c7e741009d"}
+{"task_id": "Mbpp/109", "input_index": 2, "call": "odd_Equivalent('011001', 1)", "ast_sha256": "082d01b40cfcd2c780c3eba86198cc71bf55e91e54a9093c2779bb52fcc79796"}
+{"task_id": "Mbpp/109", "input_index": 3, "call": "odd_Equivalent('011001', 2)", "ast_sha256": "07d1b59c1c8fdc83c2641148045e74166f204657cd54a45baeea7ae6938d5999"}
+{"task_id": "Mbpp/109", "input_index": 4, "call": "odd_Equivalent('011001', 3)", "ast_sha256": "64a69ab226c58b8a9ab40f8e57cb5440d167fd3e1605c28813be2b2291216c57"}
+{"task_id": "Mbpp/109", "input_index": 5, "call": "odd_Equivalent('011001', 4)", "ast_sha256": "e47733f0a709efc6cabb3134c4e64860031b235f74a139e3aa6cf569ba03d4a1"}
+{"task_id": "Mbpp/109", "input_index": 6, "call": "odd_Equivalent('011001', 5)", "ast_sha256": "4ec5096ce1d904f4e06e7ef4088ae0f765bf32965db9f3f04fd1a3edb3c5d062"}
+{"task_id": "Mbpp/109", "input_index": 7, "call": "odd_Equivalent('011001', 7)", "ast_sha256": "36d3c48cdd6b9977ad6ffa4a5d596c7cf0797add968713c5e087d941cf70ff87"}
+{"task_id": "Mbpp/126", "input_index": 0, "call": "sum(10, 15)", "ast_sha256": "b6568985b22bd2a05c8e2996970cf51d02b8a0a8f12af249dfe3bf3f4bee804a"}
+{"task_id": "Mbpp/126", "input_index": 1, "call": "sum(0, 0)", "ast_sha256": "f27a0bde3876674ca4b84e32c6b8919ba3ea241e8c1fc9d308ca05e53f473bba"}
+{"task_id": "Mbpp/126", "input_index": 2, "call": "sum(1, 1)", "ast_sha256": "f286b48a41e74cd1637197347e2b1c47779bc3215d446d402a39193a06495fb5"}
+{"task_id": "Mbpp/126", "input_index": 3, "call": "sum(12, 18)", "ast_sha256": "a1173c41b954b61db2261cafa282ff5d552a21a2081d9f93a54c712dc94e1b9b"}
+{"task_id": "Mbpp/126", "input_index": 4, "call": "sum(17, 23)", "ast_sha256": "83ab85fe46493e0e403233bacad2bad1cb7467dfe2ddf5e4e03f509932ea87cf"}
+{"task_id": "Mbpp/126", "input_index": 5, "call": "sum(24, 36)", "ast_sha256": "63cd55964fc74402f976aa67acbd5adca5830f81ae359f28dacfcd0c774d2ddc"}
+{"task_id": "Mbpp/126", "input_index": 6, "call": "sum(1, 0)", "ast_sha256": "c5e8287f600a97409cdfb4c8cfa591b8c12ab213511c4b8793a1d579a5dbfa62"}
+{"task_id": "Mbpp/126", "input_index": 7, "call": "sum(9, 6)", "ast_sha256": "c3e58390e412c62f21c8e7897d0728f8cc54361863cd64c79a8d2f3f204966a4"}
+{"task_id": "Mbpp/132", "input_index": 0, "call": "tup_string(('e', 'x', 'e', 'r', 'c', 'i', 's', 'e', 's'))", "ast_sha256": "8e2eb1e3b2b45dab672059844eb54af6d04976f6354d2b3d033948eb433e3c1c"}
+{"task_id": "Mbpp/132", "input_index": 1, "call": "tup_string(('a',))", "ast_sha256": "5176705f9b34ff7d1ac9fb6b3f2a92b893647f22466fc9f59084c266cc23d2a3"}
+{"task_id": "Mbpp/132", "input_index": 2, "call": "tup_string(('1', '2', '3'))", "ast_sha256": "3fa2185f4468266f432a5332b280361e70a91b949df8478e2675ba9551b2ca66"}
+{"task_id": "Mbpp/132", "input_index": 3, "call": "tup_string(('!', '@', '#', '$'))", "ast_sha256": "63c89d7c7e21330212df12d099c9ed761462134008a8c9f3a0352e1edf676d7f"}
+{"task_id": "Mbpp/132", "input_index": 4, "call": "tup_string(('a', 'b', 'c', 'd'))", "ast_sha256": "788f56a1f2b2c86589a959d406cfc000f4a1346ccdd4c7d9aa8aee18461adb1f"}
+{"task_id": "Mbpp/132", "input_index": 5, "call": "tup_string(('A', 'B', 'C'))", "ast_sha256": "98555c2e0ae80cea18c4bb611924779950ffb5bc536ae46c09cd74ce343db4e7"}
+{"task_id": "Mbpp/132", "input_index": 6, "call": "tup_string(('1', 'a', '2'))", "ast_sha256": "8bff2c79c079f7c47e688545322fd9bc9c15de89ed7f1cdeb5c38275fb41d13b"}
+{"task_id": "Mbpp/132", "input_index": 7, "call": "tup_string(())", "ast_sha256": "c4fbe6d3e5cc54fede94c6f1af3e7b6a7489bf12f5eb1deb9f1f662c2d072b02"}
+{"task_id": "Mbpp/142", "input_index": 0, "call": "count_samepair([1, 2, 3, 4, 5, 6, 7, 8], [2, 2, 3, 1, 2, 6, 7, 9], [2, 1, 3, 1, 2, 6, 7, 9])", "ast_sha256": "ba03589d84226f72f51704d7091a5443b62932f3f6c4bb559b9de53e440f9c45"}
+{"task_id": "Mbpp/142", "input_index": 1, "call": "count_samepair([], [], [])", "ast_sha256": "de5ad69240a97881deba8a9dac24bc854617a73b1e87535c14e66557cc726b53"}
+{"task_id": "Mbpp/142", "input_index": 2, "call": "count_samepair([1, 1, 1], [1, 1, 1], [1, 1, 1])", "ast_sha256": "6e1adbbbd20333fe22ce0e8135c0af2573f946cf65faf61f5e266cf2f19c08dd"}
+{"task_id": "Mbpp/142", "input_index": 3, "call": "count_samepair([1, 2, 3], [1, 2, 3], [1, 2, 3])", "ast_sha256": "a73729798a5d5d64d5cc1f39019de53c5395dd1f36218033b6c0d28a02a1312f"}
+{"task_id": "Mbpp/142", "input_index": 4, "call": "count_samepair([1, 2, 3], [4, 5, 6], [7, 8, 9])", "ast_sha256": "4afc00abb8b80301938ee5fcad11e5fe677292f80c624a69d0c77246cab9d44e"}
+{"task_id": "Mbpp/142", "input_index": 5, "call": "count_samepair([1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3, 4])", "ast_sha256": "f6e02153c823fec52ebaf1ad2c0984ece086544415974d4248b53b228f7b1456"}
+{"task_id": "Mbpp/142", "input_index": 6, "call": "count_samepair([1, 2, 3], [2, 3, 4], [1, 3, 3])", "ast_sha256": "f4679f382cc9190daab15fb613590f766c5aac95cbc6d02811bfba93baca24af"}
+{"task_id": "Mbpp/142", "input_index": 7, "call": "count_samepair([1, 2, 3, 4, 5], [1, 2, 3, 4, 5], [5, 4, 3, 2, 1])", "ast_sha256": "db72b075fefe7ebc3067f94c40648d2f9b95a46f21d7308125933363b34ef06c"}
+{"task_id": "Mbpp/165", "input_index": 0, "call": "count_char_position('xbcefg')", "ast_sha256": "cf840cc2dae2a7af752bbfa08ccd2278b94a32b08c676038fb787266c229887c"}
+{"task_id": "Mbpp/165", "input_index": 1, "call": "count_char_position('abc')", "ast_sha256": "8f4cc8a533b8678c7d11e619d119800e90133aa1a6e6b56b4e7b275767657432"}
+{"task_id": "Mbpp/165", "input_index": 2, "call": "count_char_position('XYZ')", "ast_sha256": "be43584cebbd87a7d3a6101cb53bed8541427d596ed81b91681ddad299b68bdb"}
+{"task_id": "Mbpp/165", "input_index": 3, "call": "count_char_position('aBc')", "ast_sha256": "873d7f6643b745abb0043096ada6a4c2a1c6c0f224b811972f0914757d8447cc"}
+{"task_id": "Mbpp/165", "input_index": 4, "call": "count_char_position('123')", "ast_sha256": "b51a8432abd32497e032898803e6a5176f7b672e8ec3c4e23887c649fdedd999"}
+{"task_id": "Mbpp/165", "input_index": 5, "call": "count_char_position('a')", "ast_sha256": "658abb1a26807629a0017c198ce8014314149d0a9b01fd6c85c1f3a7163d97c6"}
+{"task_id": "Mbpp/165", "input_index": 6, "call": "count_char_position('')", "ast_sha256": "7d84e03f9ad3b1cb305b82128feae73155ea7e0122f4655bec03d4578336c092"}
+{"task_id": "Mbpp/165", "input_index": 7, "call": "count_char_position('AbcDef')", "ast_sha256": "781c50ded376da69ac2d2c48c74aa9ec6ac2a3c5965b11d569a48fc4b502b5f5"}
+{"task_id": "Mbpp/167", "input_index": 0, "call": "next_power_of_2(0)", "ast_sha256": "399f7d163a97ce9e7ecd8466a2877b754744a1d56e7ac27cf562d66decf201e8"}
+{"task_id": "Mbpp/167", "input_index": 1, "call": "next_power_of_2(1)", "ast_sha256": "e278270965823aa9243998221e9311a8bbd35ae53cdf30e7e8e1a73cf1171c6b"}
+{"task_id": "Mbpp/167", "input_index": 2, "call": "next_power_of_2(2)", "ast_sha256": "640a0f3589c4095795c4a179db3315aab3c3322092d44db1c67cf4bfd1cd1c86"}
+{"task_id": "Mbpp/167", "input_index": 3, "call": "next_power_of_2(3)", "ast_sha256": "edcf0eb73378393e59784c714371d6e6a716f60eb9f707ff1a6823987447f043"}
+{"task_id": "Mbpp/167", "input_index": 4, "call": "next_power_of_2(4)", "ast_sha256": "1e39bb35d5a767fda1a720e708b3d1be69cadc4368749e6d7a527f6ce27f6881"}
+{"task_id": "Mbpp/167", "input_index": 5, "call": "next_power_of_2(5)", "ast_sha256": "52f8e603d143fb248f1998649ab3bed5f6c088acc71e84248a49fbe5f308356a"}
+{"task_id": "Mbpp/167", "input_index": 6, "call": "next_power_of_2(7)", "ast_sha256": "dd67967e553d41189335a2b22e4cfbbca3b9f809abd3abb487c2921986c6a1d7"}
+{"task_id": "Mbpp/167", "input_index": 7, "call": "next_power_of_2(8)", "ast_sha256": "f2b683228a6ac726eae12d5129db82735acd0e1b0f45f34859666d8d86881772"}
+{"task_id": "Mbpp/172", "input_index": 0, "call": "count_occurance('letstdlenstdporstd')", "ast_sha256": "1e5038b43e5d355c999cca53fc03dbc63f5e70a57c702f516d43376a0a85b688"}
+{"task_id": "Mbpp/172", "input_index": 1, "call": "count_occurance('stdstdstd')", "ast_sha256": "b9ee3de7769fa6167df5e2605431d7bc0bb298aebd32aedd50b9c80c6d49b7e0"}
+{"task_id": "Mbpp/172", "input_index": 2, "call": "count_occurance('std')", "ast_sha256": "2a6f026311c1132b3f6e6897ac647ebdf766982cedea3f4f36af1ac2c0ff426e"}
+{"task_id": "Mbpp/172", "input_index": 3, "call": "count_occurance('')", "ast_sha256": "e3459c91b9e538f7ca85499ad2e0da2ac2cc32fd75c551362a27631561bdac4f"}
+{"task_id": "Mbpp/172", "input_index": 4, "call": "count_occurance('nostdhere')", "ast_sha256": "fa235dd3aeb6b445b7dc2085cbe82c2f0d37c951d8c72b4ab50e01e05fe03e8e"}
+{"task_id": "Mbpp/172", "input_index": 5, "call": "count_occurance('stdstd')", "ast_sha256": "013101ff2a5b5238981f36a160c0dccdc2adcf822b796c1e4ee3228d36dc4f43"}
+{"task_id": "Mbpp/172", "input_index": 6, "call": "count_occurance('stdstdstdstd')", "ast_sha256": "312e7a30786c3f90b4d3811efdb5f9444229fce15b5a8a51a2692b91486a0ca5"}
+{"task_id": "Mbpp/172", "input_index": 7, "call": "count_occurance('stdstdstdstdstd')", "ast_sha256": "5af6c61e127e9810da956a3b2c68373a99aa9e3d747d97f48a1f7aff8f039179"}
+{"task_id": "Mbpp/233", "input_index": 0, "call": "lateralsuface_cylinder(10, 5)", "ast_sha256": "ed8fffb138294489f71ff4522004bbc3aeef2bc07a49c573688896250f6bfefe"}
+{"task_id": "Mbpp/233", "input_index": 1, "call": "lateralsuface_cylinder(0, 5)", "ast_sha256": "9c04bff9cc35d65466d44237336eadbd4e50352015bcedef030bff3d59a86566"}
+{"task_id": "Mbpp/233", "input_index": 2, "call": "lateralsuface_cylinder(2, 3)", "ast_sha256": "7efd5f9ffa0cb21147784dc94e8a4955893c063085d75b45e27471d20368b754"}
+{"task_id": "Mbpp/233", "input_index": 3, "call": "lateralsuface_cylinder(1, 1)", "ast_sha256": "39cba08bf68c4c0dd67614d7ea863bf49727346ea327ee21d582e704372b129b"}
+{"task_id": "Mbpp/233", "input_index": 4, "call": "lateralsuface_cylinder(5, 0)", "ast_sha256": "e376421a591518f542bf04167a0de899aa916eff697c7ec073d059197dc75aee"}
+{"task_id": "Mbpp/233", "input_index": 5, "call": "lateralsuface_cylinder(4, 2)", "ast_sha256": "240d0e11ee069d68ae9025db617a4e5a1b521ff2f53f19d64eb0c5578b49eb77"}
+{"task_id": "Mbpp/233", "input_index": 6, "call": "lateralsuface_cylinder(3, 4)", "ast_sha256": "507d687fff1897246dcceac5b76f776df131bc207d58f486c2e76ca6937f4211"}
+{"task_id": "Mbpp/233", "input_index": 7, "call": "lateralsuface_cylinder(6, 1)", "ast_sha256": "763b63f9ff46e4fadbb529999461076d44be1be3aa2ea53f17dbd9110ff8bbe5"}
+{"task_id": "Mbpp/233", "input_index": 8, "call": "lateralsuface_cylinder(7, 2)", "ast_sha256": "69d6d45f0a72a0189618896b07fa585c8bb617fa1e5cdc6ec663fa06af32379a"}
+{"task_id": "Mbpp/235", "input_index": 0, "call": "even_bit_set_number(10)", "ast_sha256": "e287353892886ab9100c790a94324fcdde84ebc71819f8cd762eef4927416700"}
+{"task_id": "Mbpp/235", "input_index": 1, "call": "even_bit_set_number(0)", "ast_sha256": "f9ebfdd1a68bb5116b7dcb8979ee26e007b92947ae8e3cf0a03e77828c15ba59"}
+{"task_id": "Mbpp/235", "input_index": 2, "call": "even_bit_set_number(1)", "ast_sha256": "e71dd548a8a44d85dced327fffe4c005a42e7721ab606d2c40d44ee81f102248"}
+{"task_id": "Mbpp/235", "input_index": 3, "call": "even_bit_set_number(2)", "ast_sha256": "fdf3e265c1653ac30ec68b877078cc3ec6344e1c0ac8f69afa44cbdcebc3032b"}
+{"task_id": "Mbpp/235", "input_index": 4, "call": "even_bit_set_number(3)", "ast_sha256": "4a76ab67fb02bcb216668161e0e93f7c61ef47c4026b3443147cd2d99e34c086"}
+{"task_id": "Mbpp/235", "input_index": 5, "call": "even_bit_set_number(4)", "ast_sha256": "ff54b5df3f2b642ff08a9a589246440c93e83bce1aa102d73587ced7cf456b16"}
+{"task_id": "Mbpp/235", "input_index": 6, "call": "even_bit_set_number(5)", "ast_sha256": "b7fa9352b6f8a752736a5ebb1e233a8a6a1685b0fa21d04bb8f659e893c20ff2"}
+{"task_id": "Mbpp/235", "input_index": 7, "call": "even_bit_set_number(6)", "ast_sha256": "70f63f231138fdad0facdfa1c0a393ac961bd182303a085f97a4d7f73a10e59e"}
+{"task_id": "Mbpp/235", "input_index": 8, "call": "even_bit_set_number(7)", "ast_sha256": "3df3f02b3a8537378b356ff8b3c2f2ea61f4b0ec6c1e99ea88cba802a48583f0"}
+{"task_id": "Mbpp/240", "input_index": 0, "call": "replace_list([1, 3, 5, 7, 9, 10], [2, 4, 6, 8])", "ast_sha256": "013072645a5c7c6b84b54b4a13a59ffb32f268420449ddc5eda3ca28e7959039"}
+{"task_id": "Mbpp/240", "input_index": 1, "call": "replace_list([1, 2, 3], [4, 5])", "ast_sha256": "0593669cdddf4fb4897231820201736a516617697541309437c1eb316b210ca7"}
+{"task_id": "Mbpp/240", "input_index": 2, "call": "replace_list([1], [2, 3, 4])", "ast_sha256": "3a986ce46fa585ef52754ffbace3090af1e8a18c6ccc8bef857f53f281cc8610"}
+{"task_id": "Mbpp/240", "input_index": 3, "call": "replace_list([], [1, 2])", "ast_sha256": "f2eab64078ab85e0440b84945b0f7efc00f2a631092dc42ec11476543877aacd"}
+{"task_id": "Mbpp/240", "input_index": 4, "call": "replace_list([1, 2, 3, 4], [])", "ast_sha256": "50f45d96a3925a569716ea11ab6a169f24dd3e89e5c3b239b04c8af73630def8"}
+{"task_id": "Mbpp/240", "input_index": 5, "call": "replace_list([1, 2, 3], [1, 2, 3])", "ast_sha256": "7a28f221e750711c178bc80d6312bf668d65b5e4392af60d93f663fee5955e11"}
+{"task_id": "Mbpp/240", "input_index": 6, "call": "replace_list([1, 2, 3, 4, 5], [6])", "ast_sha256": "4b07dd73879adea06e77cca88912d1b0aaa8ea8ab0731f516dad3f04af581020"}
+{"task_id": "Mbpp/240", "input_index": 7, "call": "replace_list([1, 2, 3, 4, 5], [6, 7, 8])", "ast_sha256": "8dcfd87f653669a6ad76da4174efa1c923f44894051ddca196a8147763bddd95"}
+{"task_id": "Mbpp/240", "input_index": 8, "call": "replace_list([1, 2, 3, 4, 5], [6, 7])", "ast_sha256": "4afab174a3c11db2502a0c3ddd72e35f22bfa2fbe49de730339ba99295dc63bf"}
+{"task_id": "Mbpp/247", "input_index": 0, "call": "lps('TENS FOR TENS')", "ast_sha256": "31806052711d9db83e2124a7b1c7a6bc7debaa427df804f3623db29c47977fed"}
+{"task_id": "Mbpp/247", "input_index": 1, "call": "lps('A')", "ast_sha256": "79ddf381a29df6b33fa3f2c859bc66645db7a6c6dfebb342036b91897f4e7b4a"}
+{"task_id": "Mbpp/247", "input_index": 2, "call": "lps('AB')", "ast_sha256": "1cf47625acde23acb3a30736ff50fd3170712315b7b6cc9df2633fdba399a1a3"}
+{"task_id": "Mbpp/247", "input_index": 3, "call": "lps('ABA')", "ast_sha256": "9b59dbe3db8d0732f31770b4d7b3ab5dd4f1a13f49cb896f7819bac63960da3d"}
+{"task_id": "Mbpp/247", "input_index": 4, "call": "lps('ABBA')", "ast_sha256": "1d84b1e53f05065ff25b1a2288853534558a4b229fdd68b81ad4fb533cb6c4e4"}
+{"task_id": "Mbpp/247", "input_index": 5, "call": "lps('ABC')", "ast_sha256": "0a99cee7db9a6e5fe90718e1962e716ca602f2e28138498636f698a1cca615e4"}
+{"task_id": "Mbpp/247", "input_index": 6, "call": "lps('AA')", "ast_sha256": "cfc17ef3c3cfac708953ee08c696c707102b128c61414d5ef85ff7c8f99a6ea9"}
+{"task_id": "Mbpp/247", "input_index": 7, "call": "lps('ABCD')", "ast_sha256": "abd015d02165287b2bc63d04e2d25b0013804100444199910b1eae573b1bb0c1"}
+{"task_id": "Mbpp/251", "input_index": 0, "call": "insert_element(['Red', 'Green', 'Black'], 'c')", "ast_sha256": "87daf6a017b3f5db69636597270f3c7825643444538334c66dbcc66b4f214049"}
+{"task_id": "Mbpp/251", "input_index": 1, "call": "insert_element([], 'c')", "ast_sha256": "c77956bacea89c9b84dfe4652fc47fa07d0fa3e68152f3b015af461244858444"}
+{"task_id": "Mbpp/251", "input_index": 2, "call": "insert_element(['a'], 'c')", "ast_sha256": "6382d456fe145449cf22128dd6d97315ca9b8eb35492f1954d219d0cf7b0f7d2"}
+{"task_id": "Mbpp/251", "input_index": 3, "call": "insert_element(['Red', 'Green'], 'c')", "ast_sha256": "7753853f39bccf9d773f64c82255aed74bcd8d4b97ccce42627f6e7195aecfe5"}
+{"task_id": "Mbpp/251", "input_index": 4, "call": "insert_element(['1', '2', '3'], 'x')", "ast_sha256": "4094220428692c1e9c29f7466314e1a6532f9a78ecbd2334598466cb9670054a"}
+{"task_id": "Mbpp/251", "input_index": 5, "call": "insert_element(['True', 'False'], '0')", "ast_sha256": "e51997b885a3327b767b770f17120c8e28e71b1857b09aeb7b006d98e53d42e5"}
+{"task_id": "Mbpp/251", "input_index": 6, "call": "insert_element(['a', 'b', 'c'], 'x')", "ast_sha256": "ffd77ef6f18b291a6b18b272394d36d6c3228fd107e120855522a0be6f8f33be"}
+{"task_id": "Mbpp/251", "input_index": 7, "call": "insert_element(['None', 'NaN'], 'z')", "ast_sha256": "0302e413936829be7d890cedc2b1ec3bce9ca952cf2b9556a963a8dc0c648bdf"}
+{"task_id": "Mbpp/272", "input_index": 0, "call": "rear_extract([(1, 'Rash', 21), (2, 'Varsha', 20), (3, 'Kil', 19)])", "ast_sha256": "af24fde50d4f0fc51abeee33cdc96395fe489b459e1a0635a1704c56f9b45462"}
+{"task_id": "Mbpp/272", "input_index": 1, "call": "rear_extract([(1, 'Rash', 21)])", "ast_sha256": "54d91a1c3a1646e6d1abf87a64e14af4187942d662d71fff154b0e55a7a5871c"}
+{"task_id": "Mbpp/272", "input_index": 2, "call": "rear_extract([(1, 2, 3), (4, 5, 6)])", "ast_sha256": "a9d158076985351ef603e3770c038d10c512dbeb68dbdbe9f256263259d36631"}
+{"task_id": "Mbpp/272", "input_index": 3, "call": "rear_extract([(1,), (2,)])", "ast_sha256": "a49b358f9da75c50204b2fa14804ceaf451605b80005d8a6724ed852bda7ad5d"}
+{"task_id": "Mbpp/272", "input_index": 4, "call": "rear_extract([(1, 2), (3, 4, 5, 6)])", "ast_sha256": "c23d59fd19816746ba94a51d20d4fc6302dc392c923a2d3c04c39cb4a1bde66f"}
+{"task_id": "Mbpp/272", "input_index": 5, "call": "rear_extract([(1, 2, 3, 4, 5)])", "ast_sha256": "4f732ec57366adce698ebf3ed9297bdd302024f08a628af48ee1acd442637ac3"}
+{"task_id": "Mbpp/272", "input_index": 6, "call": "rear_extract([(1, 2, 3), (4, 5)])", "ast_sha256": "3aade705b09c629d243ee95b93b853d56663cfb6483df5c5557464a2618a7cc9"}
+{"task_id": "Mbpp/272", "input_index": 7, "call": "rear_extract([(1, 2, 3, 4)])", "ast_sha256": "e07bcb7fb11ab4aca7a02c0162c1c219586f1adc7922fb5f2d1f664fce6a949e"}
+{"task_id": "Mbpp/272", "input_index": 8, "call": "rear_extract([(1, 2, 3, 4, 5, 6)])", "ast_sha256": "221366b2bfe46e3944cb911a623cc3d5fb3b0f78271ec6d53f8df16128e4d11f"}
+{"task_id": "Mbpp/278", "input_index": 0, "call": "count_first_elements((1, 5, 7, (4, 6), 10))", "ast_sha256": "f99c7e71ad596b8138e8f3463ac17c11bf8aa0a901f28f54ab61d7e6e6a802f4"}
+{"task_id": "Mbpp/278", "input_index": 1, "call": "count_first_elements((1,))", "ast_sha256": "b1ef411d49dd9b30848ce6ee1e7ab87aa0007658d3376ca237037c891fc58387"}
+{"task_id": "Mbpp/278", "input_index": 2, "call": "count_first_elements((1, 2, 3, (4, 5), 6))", "ast_sha256": "5f6884fbc4f5dc498cae2d2af41a58773ea4f5b62e8fa40b38819b2591d3d7e6"}
+{"task_id": "Mbpp/278", "input_index": 3, "call": "count_first_elements(())", "ast_sha256": "32e1483d6c7b0d85b68b383b0c4d2c1fbb10e2f739283cd87c19e5aa061ebb3d"}
+{"task_id": "Mbpp/278", "input_index": 4, "call": "count_first_elements((1, (2, 3), 4, 5))", "ast_sha256": "a069701da4e6ba3230e066b437ad592ebb2581a462e9de7930158a3a6a02b222"}
+{"task_id": "Mbpp/278", "input_index": 5, "call": "count_first_elements((1, 2, (3, 4), 5))", "ast_sha256": "0175e76e3820f9cf31c288d43d3937b89b982c4a1a69b63dc832b13f4caf7542"}
+{"task_id": "Mbpp/278", "input_index": 6, "call": "count_first_elements((1, 2, 3, 4, (5, 6)))", "ast_sha256": "95460503bb34cef18901c2550afc7e9821d70a03aef1f66478cb0a92b2e0b8aa"}
+{"task_id": "Mbpp/278", "input_index": 7, "call": "count_first_elements(((), 1, 2, 3))", "ast_sha256": "19460f4cc9d5adddfaccbedfb943f2d626aeac70f9e85c0447628ee364ea1080"}
+{"task_id": "Mbpp/296", "input_index": 0, "call": "get_Inv_Count([1, 20, 6, 4, 5])", "ast_sha256": "439db45cfa6fbfb7efabe05f2bb5f68973b5ccc2358e4eab313144c12c0f9607"}
+{"task_id": "Mbpp/296", "input_index": 1, "call": "get_Inv_Count([2, 1])", "ast_sha256": "418f505cfd9a1f08aeef1f46a1cc7ecb383fdd718c4775dd5c2b3e348aa3d7a1"}
+{"task_id": "Mbpp/296", "input_index": 2, "call": "get_Inv_Count([1])", "ast_sha256": "2e774475698c1a01da6e515c4ba6270ffc88ffd2ae15f4d596e825a01fab820b"}
+{"task_id": "Mbpp/296", "input_index": 3, "call": "get_Inv_Count([3, 2, 1])", "ast_sha256": "ff7cfddd7eb973aad35d8efe1e2e042ee0f6f9c509903e9f02d9970accaef471"}
+{"task_id": "Mbpp/296", "input_index": 4, "call": "get_Inv_Count([5, 4, 3, 2, 1])", "ast_sha256": "74f5bb15ab42457e0ffdf41f72ca7a66ca0114ee8aace364c69430cb4246f241"}
+{"task_id": "Mbpp/296", "input_index": 5, "call": "get_Inv_Count([1, 3, 5, 2, 4])", "ast_sha256": "75135afc9f6cdb6ba6bfd4b1c0ee87e582357d60a52fdf59aad33fd040e607cb"}
+{"task_id": "Mbpp/296", "input_index": 6, "call": "get_Inv_Count([1, 1, 1, 1])", "ast_sha256": "b820d3fcc9ca8c559d2ebd42bd8ab5973e456dfecbed51cc459d731ccb8ce801"}
+{"task_id": "Mbpp/296", "input_index": 7, "call": "get_Inv_Count([4, 3, 2, 1, 0])", "ast_sha256": "e76b2acdab0bf4fe59adaa5b00af4c4177dd02cab0ac9dfa28f55637d060e9a8"}
+{"task_id": "Mbpp/300", "input_index": 0, "call": "count_binary_seq(1)", "ast_sha256": "c910bfe9e91ec75cfd63e0c3a4869ca9c931fa3171c27432ef53db6e0a121692"}
+{"task_id": "Mbpp/300", "input_index": 1, "call": "count_binary_seq(2)", "ast_sha256": "cece6ce5401dc8e3dfee5e10710d51eed8ec1372b2254ddb153fb7b1f25c4795"}
+{"task_id": "Mbpp/300", "input_index": 2, "call": "count_binary_seq(3)", "ast_sha256": "1cac544d53612f34fa59e09fc6a9bdcae65c5e26d7ffd354584e7ac504cceeca"}
+{"task_id": "Mbpp/300", "input_index": 3, "call": "count_binary_seq(4)", "ast_sha256": "a5223882c4cc5f5d23a29a34bf1ef5a7fd9f7ed18a356b1fea3fd25db1824886"}
+{"task_id": "Mbpp/300", "input_index": 4, "call": "count_binary_seq(0)", "ast_sha256": "a3e9f311899741fdf171415359c8ee2285959479705524fd9a280237dc194402"}
+{"task_id": "Mbpp/300", "input_index": 5, "call": "count_binary_seq(5)", "ast_sha256": "5b15056d67b2709e87976763b14f0fc424e9ecd253230b5c03142a65e2079a29"}
+{"task_id": "Mbpp/300", "input_index": 6, "call": "count_binary_seq(6)", "ast_sha256": "19b5b42bd79286108e171c8238983dee2ec64f51f29c48aaec94b77be02c7596"}
+{"task_id": "Mbpp/300", "input_index": 7, "call": "count_binary_seq(7)", "ast_sha256": "f637a17e4385de42df7d78d3e8281094103a480fb2740075ab914ed877061d9c"}
+{"task_id": "Mbpp/310", "input_index": 0, "call": "string_to_tuple('python 3.0')", "ast_sha256": "e859914c355204e5c4286f92fe7e36d95101b9469f7931ef93bb03e70585fb1d"}
+{"task_id": "Mbpp/310", "input_index": 1, "call": "string_to_tuple('')", "ast_sha256": "9ffec698fc50240946966d4696de792410cdd5331b022c13c7f0f44de1ef5180"}
+{"task_id": "Mbpp/310", "input_index": 2, "call": "string_to_tuple('a')", "ast_sha256": "b55930348599818338550a588b857bd7ba2b6f86e75ed24a6ac2f26cfe012ae7"}
+{"task_id": "Mbpp/310", "input_index": 3, "call": "string_to_tuple('123')", "ast_sha256": "5f4323531365f7f7a174dcf98dabf4e9a1ce44dcbaadf450dab10172f42bc1a6"}
+{"task_id": "Mbpp/310", "input_index": 4, "call": "string_to_tuple('abc!')", "ast_sha256": "dac54daa0323d7e7c0c540c3553afea6e51b0971a5241f2dd138e41d0064fa10"}
+{"task_id": "Mbpp/310", "input_index": 5, "call": "string_to_tuple('test')", "ast_sha256": "0ed46cca3060ab09306601c5a3ec486033dbee4af5ee698cb7d95e4600a9a6b4"}
+{"task_id": "Mbpp/310", "input_index": 6, "call": "string_to_tuple('hello world')", "ast_sha256": "a958918b87f88b1039967bd8fbd3016dab42c6043fe8e3683a6ba30e0c4ed43a"}
+{"task_id": "Mbpp/310", "input_index": 7, "call": "string_to_tuple('1234567890')", "ast_sha256": "632df5310fcba7d61faa86b0119c2c247d8f3e1f5a687ae882872a94f745982b"}
+{"task_id": "Mbpp/398", "input_index": 0, "call": "sum_of_digits([10, 2, 56])", "ast_sha256": "a1a595ae917b209b1f02ba20f256591e6723eba51a6307467c0ae842daabbd18"}
+{"task_id": "Mbpp/398", "input_index": 1, "call": "sum_of_digits([0])", "ast_sha256": "25fd50a95958025319ed0b8b9c81b2df9c54012e9bb942b5fa418f6e717e3d55"}
+{"task_id": "Mbpp/398", "input_index": 2, "call": "sum_of_digits([999])", "ast_sha256": "80e1c4c5af6f08fd7eacc74f4ef1b7f199b9be5e1c29d5e3425f91547dbc25fd"}
+{"task_id": "Mbpp/398", "input_index": 3, "call": "sum_of_digits([123, 456])", "ast_sha256": "f687a866e84903389ce12e836c2523ef7eaa884e0a11231bd338745a5bbe3dae"}
+{"task_id": "Mbpp/398", "input_index": 4, "call": "sum_of_digits([-123])", "ast_sha256": "8dfaded8d2fc76049c5c30988da3199211ca6a082fad8e3ca10e6c6e5c0804ca"}
+{"task_id": "Mbpp/398", "input_index": 5, "call": "sum_of_digits([1000])", "ast_sha256": "a456b08ec53e6bbb68593d1618998e81a27e9630a2a4e568155d9a79b9ffab4b"}
+{"task_id": "Mbpp/398", "input_index": 6, "call": "sum_of_digits([0, 0, 0])", "ast_sha256": "2510880e72fd067dac114dcd702a8a852dfa8256062189191ca0b171594fc645"}
+{"task_id": "Mbpp/398", "input_index": 7, "call": "sum_of_digits([1])", "ast_sha256": "13094ec9060c75a18a325b7efebf2bd15bc9f76d4b6ccb03a268b447510581cc"}
+{"task_id": "Mbpp/419", "input_index": 0, "call": "round_and_sum([22.4, 4.0, -16.22, -9.1, 11.0, -12.22, 14.2, -5.2, 17.5])", "ast_sha256": "9e114610bcd18ce29d87c77d90ac5fcdeea413df01b7c0454345a00341900acd"}
+{"task_id": "Mbpp/419", "input_index": 1, "call": "round_and_sum([1.1, 2.2, 3.3])", "ast_sha256": "017473464c9789d2eb74ac96ed34f5d3bb975d3769a8af358b88dc602fa9fc60"}
+{"task_id": "Mbpp/419", "input_index": 2, "call": "round_and_sum([-1.5, -2.5, -3.5])", "ast_sha256": "1d16cff63c24cbd994c2c32e0c6346b05a6af99959458636942f89535d9fe44c"}
+{"task_id": "Mbpp/419", "input_index": 3, "call": "round_and_sum([0.0, 0.0, 0.0])", "ast_sha256": "1fdb9e2eb2e65755fedc0023201a2457e51a7476e31fa1c4bdcc55e5127e8bf5"}
+{"task_id": "Mbpp/419", "input_index": 4, "call": "round_and_sum([3.9, 4.1, 5.0])", "ast_sha256": "4560f2137f38aac5dfa78f35d7cf13973d0f2ab67bff5b50983b32c84d8c5021"}
+{"task_id": "Mbpp/419", "input_index": 5, "call": "round_and_sum([-3.9, -4.1, -5.0])", "ast_sha256": "afc6953f63289c7e8fb25515f7ac2ab31e5837deb39bde18798c8f3f594beb06"}
+{"task_id": "Mbpp/419", "input_index": 6, "call": "round_and_sum([10.0, 20.0, 30.0])", "ast_sha256": "c78d2a209a1b883be0ef3b20302883e89b6a8c5cc7855a6c5edb32b0f1b7a222"}
+{"task_id": "Mbpp/419", "input_index": 7, "call": "round_and_sum([1.0, 2.0, 3.0, 4.0, 5.0])", "ast_sha256": "1b61df9f916b7b4206b69e592fded444e900c3c94847802b3ccc362e749c3a70"}
+{"task_id": "Mbpp/424", "input_index": 0, "call": "extract_rear(('Mers', 'for', 'Vers'))", "ast_sha256": "ca2a808e735294e951282f06ef89569c6f04366d1b5ca2d58c118796f047cf2e"}
+{"task_id": "Mbpp/424", "input_index": 1, "call": "extract_rear(('abc', 'def', 'ghi'))", "ast_sha256": "f818d7198b976ce4969a65c6a3a8f8951f9a9fc01683f1508debf6de122c3c75"}
+{"task_id": "Mbpp/424", "input_index": 2, "call": "extract_rear(('a', 'b', 'c'))", "ast_sha256": "ea10e9dc8e8531867d3753c1f89c74195cab04ae062cec49d1a9c9827da3cb50"}
+{"task_id": "Mbpp/424", "input_index": 3, "call": "extract_rear(('123', '456', '789'))", "ast_sha256": "7ae758827d5958f2e32592ac0ad77a8877ce2a77c67412d46882b9fd125d5b08"}
+{"task_id": "Mbpp/424", "input_index": 4, "call": "extract_rear(('hello', 'world', 'test'))", "ast_sha256": "12f5a4bbde1db50e59cdf319c3a5d1f1f5d0a65aaae17e008f418f6596dd2942"}
+{"task_id": "Mbpp/424", "input_index": 5, "call": "extract_rear(('x', 'y', 'z'))", "ast_sha256": "2cefc461e74e131985d1f36354054ef62c453fd52e8079145178a50fa5f81cab"}
+{"task_id": "Mbpp/424", "input_index": 6, "call": "extract_rear(('a', 'b', 'c', 'd'))", "ast_sha256": "f2f0115420e274bc7d153977733711885a3a3a11d4e556542328de30784b9165"}
+{"task_id": "Mbpp/424", "input_index": 7, "call": "extract_rear(('one', 'two', 'three'))", "ast_sha256": "201c36de7c06f777b63567fb1a8680f2126da94fcd475f33a5eea6d998782791"}
+{"task_id": "Mbpp/425", "input_index": 0, "call": "count_element_in_list([[1, 3], [5, 7], [1, 11], [1, 15, 7]], 1)", "ast_sha256": "73197a65c0a9589ec714229170643f428e56e199cda4a3deabab46439e4a461c"}
+{"task_id": "Mbpp/425", "input_index": 1, "call": "count_element_in_list([[1, 2], [3, 4], [5, 6]], 7)", "ast_sha256": "428e9d01b646b16ad8888d0c4db64380006067b8cb092317a9a620e4a4425986"}
+{"task_id": "Mbpp/425", "input_index": 2, "call": "count_element_in_list([[1], [1, 2], [3, 1]], 1)", "ast_sha256": "cf7d7257e5a0a1878184f6d6f4a5e52caf04a6498588149cbc1aaf88041c3912"}
+{"task_id": "Mbpp/425", "input_index": 3, "call": "count_element_in_list([[1, 1], [1], [1, 1, 1]], 1)", "ast_sha256": "70c478e499fb6b537d82f3bb0e8f2dbc180d8d59719b13faba7dcd63d246d47c"}
+{"task_id": "Mbpp/425", "input_index": 4, "call": "count_element_in_list([[1, 2, 3], [4, 5], [6, 7, 8]], 1)", "ast_sha256": "b83485493061de43a4f565dfd203a68195a92468bfcc94f35ecb5816a2aaad79"}
+{"task_id": "Mbpp/425", "input_index": 5, "call": "count_element_in_list([], 1)", "ast_sha256": "0301082a63829fe3ecad37fb350cefceef9161083e7a426aaa3ceaab9fd1e33a"}
+{"task_id": "Mbpp/425", "input_index": 6, "call": "count_element_in_list([[1], [2, 1], [1, 3]], 1)", "ast_sha256": "7ca57b9f22e5389b1a565a0be4b2f9112e2303f5877c81bf513c67d7c16a4515"}
+{"task_id": "Mbpp/425", "input_index": 7, "call": "count_element_in_list([[1, 2], [3, 4], [5, 1]], 1)", "ast_sha256": "184d1c5376089eed879f669f5dc4065119c7cea1337e3cb80d946e7a5b9b6a9a"}
+{"task_id": "Mbpp/439", "input_index": 0, "call": "multiple_to_single([11, 33, 50])", "ast_sha256": "02d4a89419dfbee9cdb8e844328459337fa50d23f3e765d22eaa99a22cac6d3c"}
+{"task_id": "Mbpp/439", "input_index": 1, "call": "multiple_to_single([0, 0, 1])", "ast_sha256": "60b076013cfb454409360ca4b882f15da9e5174c419f05ee0917bbf02152fb7c"}
+{"task_id": "Mbpp/439", "input_index": 2, "call": "multiple_to_single([9, 9, 9])", "ast_sha256": "0557cda03987c4f58633351046a2b46501db1a43d4e694e9921ca7c0f7f14097"}
+{"task_id": "Mbpp/439", "input_index": 3, "call": "multiple_to_single([1, 0, 0])", "ast_sha256": "675e06f488e4905a86fc0c2611e85433f84c9f782b7eaa1fc24ce78a6fc79c66"}
+{"task_id": "Mbpp/439", "input_index": 4, "call": "multiple_to_single([5])", "ast_sha256": "d938be90845569239444c99e1fbc34ef11bcab0d22f40c13250a14ea4ba781a4"}
+{"task_id": "Mbpp/439", "input_index": 5, "call": "multiple_to_single([0])", "ast_sha256": "2d6c54feb3f0f0bb487c2f82886261c3523620a781e1cfe527f099885094e9c1"}
+{"task_id": "Mbpp/439", "input_index": 6, "call": "multiple_to_single([10, 2])", "ast_sha256": "6266ea9be7b6c543b30b845b7eca8518e4298003ef1ac2123e7c7a0826335b63"}
+{"task_id": "Mbpp/439", "input_index": 7, "call": "multiple_to_single([1, 2, 3, 4])", "ast_sha256": "a35a5808c97e88f3d758a3947cd215331b7307296e85633db9c3b86493970b06"}
+{"task_id": "Mbpp/447", "input_index": 0, "call": "cube_nums([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])", "ast_sha256": "289278a5ea1ba2a5967e8c4a239d8faaee016bdeebafcc80b00a6234f53d4472"}
+{"task_id": "Mbpp/447", "input_index": 1, "call": "cube_nums([])", "ast_sha256": "a363dd46d3a0bac69673fef94459bfa7b412cd635160f6250f1f5c8621245fe9"}
+{"task_id": "Mbpp/447", "input_index": 2, "call": "cube_nums([0])", "ast_sha256": "e6ed2a60728f23f99588e2cad589d01a719b9c66e641614cfc5d04de38ec62cf"}
+{"task_id": "Mbpp/447", "input_index": 3, "call": "cube_nums([-1, 0, 1])", "ast_sha256": "6ca425540041222d646384e2ca5b31110e7e89d4e671cf482d487d4f7d3d17f9"}
+{"task_id": "Mbpp/447", "input_index": 4, "call": "cube_nums([2, 4, 6])", "ast_sha256": "ea9cac5175211bd01a39ac663c2171543363b061c0a4de2a66f0e7de837f8805"}
+{"task_id": "Mbpp/447", "input_index": 5, "call": "cube_nums([3, 5, 7])", "ast_sha256": "db110dd160329b53ab862909178a6c90011f736db3f12652ad34be041dac34ad"}
+{"task_id": "Mbpp/447", "input_index": 6, "call": "cube_nums([-2, -3, -4])", "ast_sha256": "6302c3e965ff236a99a593c2ca0db5e4a287b5650f6f4605f17665073736dd63"}
+{"task_id": "Mbpp/447", "input_index": 7, "call": "cube_nums([1, 3, 5, 7, 9])", "ast_sha256": "e7a7e8aa422ba32e41b2b2443fafbf4e9d6275d8d39c55ef6d2c63a2cccc8635"}
+{"task_id": "Mbpp/450", "input_index": 0, "call": "extract_string(['Python', 'list', 'exercises', 'practice', 'solution'], 8)", "ast_sha256": "2ad4080e0fbca16f20f840aa92583701ed44b995c4aa4b15ff4b96bb86697b7a"}
+{"task_id": "Mbpp/450", "input_index": 1, "call": "extract_string(['a', 'bb', 'ccc', 'dddd', 'eeeee'], 4)", "ast_sha256": "0427bbb79741eb27920dfe83e21ffa5773a1b564395adf3d58eee4f24d93e047"}
+{"task_id": "Mbpp/450", "input_index": 2, "call": "extract_string(['hello', 'world'], 5)", "ast_sha256": "ae7cd3789ff85f7b8ab3575e1dc4545bb24f3aae4a4344b42020777a100b720f"}
+{"task_id": "Mbpp/450", "input_index": 3, "call": "extract_string(['short', 'longer', 'verylong'], 6)", "ast_sha256": "4d4b9bd779ba6a608ea8558b468732794536c2716f35968158da103c16ae5c67"}
+{"task_id": "Mbpp/450", "input_index": 4, "call": "extract_string(['one', 'two', 'three'], 3)", "ast_sha256": "c734bd036f590180b49212d8ed46e0b5a4f3dd3514d98aecba20476860051c5a"}
+{"task_id": "Mbpp/450", "input_index": 5, "call": "extract_string(['a', 'b', 'c'], 1)", "ast_sha256": "8af4bef709f4bf054d3f4b73a61af8ab8045e20467b759e5288e72bc24645af6"}
+{"task_id": "Mbpp/450", "input_index": 6, "call": "extract_string(['longstring'], 10)", "ast_sha256": "003c6af520a74cf6a4e37ba72d8c495b617b67981894ef1ca673c75594a276b7"}
+{"task_id": "Mbpp/450", "input_index": 7, "call": "extract_string([], 5)", "ast_sha256": "975daba8e21953ec22d4c72789a3cb4c2e73f4252979a555633c947d71e9f59f"}
+{"task_id": "Mbpp/453", "input_index": 0, "call": "sumofFactors(18)", "ast_sha256": "87e163cd008120caa68a7df9c01fa8ca5d0698e8f851f6d56efbc66b465cbab6"}
+{"task_id": "Mbpp/453", "input_index": 1, "call": "sumofFactors(1)", "ast_sha256": "61cfac522bc99784614e9ecc53112b373ed0fd16a031200e589b6893761b4f23"}
+{"task_id": "Mbpp/453", "input_index": 2, "call": "sumofFactors(0)", "ast_sha256": "7bf0a408c852bfd6cc5b61ebdd6c1d49303e9181e922e1eae660ee2326d3fc76"}
+{"task_id": "Mbpp/453", "input_index": 3, "call": "sumofFactors(2)", "ast_sha256": "79e015cd8fe0c1d0353b4a2a08ea14cc899989b026701f6bcfb2879da986f00d"}
+{"task_id": "Mbpp/453", "input_index": 4, "call": "sumofFactors(3)", "ast_sha256": "f009d9600709f9232d10c10a982630bac519a0e8dabe703d5fb669ffdd17eb38"}
+{"task_id": "Mbpp/453", "input_index": 5, "call": "sumofFactors(4)", "ast_sha256": "5dd019e80b03c44511b1f264d593865764cba3e2fe1f564685eaf4961f2cdbe8"}
+{"task_id": "Mbpp/453", "input_index": 6, "call": "sumofFactors(6)", "ast_sha256": "5f082273558e9bac81477f56e436013c779a552962fd1a6ab2fd266b935b8a25"}
+{"task_id": "Mbpp/453", "input_index": 7, "call": "sumofFactors(10)", "ast_sha256": "e68b20b75afab0e7344c676d3b79421c90ebd2622fc2701b1c952647959d749d"}
+{"task_id": "Mbpp/458", "input_index": 0, "call": "rectangle_area(10, 20)", "ast_sha256": "572ae1b7792e42b9eb4eec33606ae26be6c9dba7d6cf9441229fee2281f82007"}
+{"task_id": "Mbpp/458", "input_index": 1, "call": "rectangle_area(0, 5)", "ast_sha256": "539d2b1db6bc96b8706de9c1e567a67083ea53e46f35b8293590d5a16796c946"}
+{"task_id": "Mbpp/458", "input_index": 2, "call": "rectangle_area(5, 0)", "ast_sha256": "eb8229e7f149ba4eecf3914e7674e164e627314ba36729f9d0d930eaeee205c6"}
+{"task_id": "Mbpp/458", "input_index": 3, "call": "rectangle_area(-5, 10)", "ast_sha256": "71e1c7d068812dc5560a9331e6a9769313b0f59d6c317b207f508d1328d4d1bd"}
+{"task_id": "Mbpp/458", "input_index": 4, "call": "rectangle_area(3, 4)", "ast_sha256": "ba3b92dcb4a10ed0e814c1769e9e9bf67b94cf3dac15736760ae4fd946dad75b"}
+{"task_id": "Mbpp/458", "input_index": 5, "call": "rectangle_area(1, 1)", "ast_sha256": "fa5442245edc3198de7c58eb904dd15d28ba47ad1892672822209bc044cc17ef"}
+{"task_id": "Mbpp/458", "input_index": 6, "call": "rectangle_area(2, 3)", "ast_sha256": "204ded4e465c29c5a5464ee6f9d72c1728e87579b7199a61a5dd398d4775a6f0"}
+{"task_id": "Mbpp/458", "input_index": 7, "call": "rectangle_area(-3, -4)", "ast_sha256": "d3384c5e73622ff1778e6f0d289ec1547599b588af4be512f9056fc82af76c8c"}
+{"task_id": "Mbpp/460", "input_index": 0, "call": "Extract([[1, 2], [3, 4, 5], [6, 7, 8, 9]])", "ast_sha256": "290c07feda509aa49c11e27d9f5d1c8eb6ded56b7dd99617e3c6720a3462a124"}
+{"task_id": "Mbpp/460", "input_index": 1, "call": "Extract([[1], [2], [3]])", "ast_sha256": "1a3211a1e2e01ce11ebc1c19ed9ae2cca65d5131b4956696fc896cb1eed4889e"}
+{"task_id": "Mbpp/460", "input_index": 2, "call": "Extract([[]])", "ast_sha256": "4f28fc518e49283837d7b059a02772739400384a466a2c60e1a012ebd2a352c3"}
+{"task_id": "Mbpp/460", "input_index": 3, "call": "Extract([[1, 2, 3], [4, 5], [6]])", "ast_sha256": "c765f994245221b0042e27499fd1f307764f5b755aa98f4beb68153d5d3536b7"}
+{"task_id": "Mbpp/460", "input_index": 4, "call": "Extract([[1], []])", "ast_sha256": "e8a7d68f8b1adc3640530121badee73ee3623020dee056f95fb3fec35837d85d"}
+{"task_id": "Mbpp/460", "input_index": 5, "call": "Extract([[1, 2], [3, 4], [5]])", "ast_sha256": "cee8b6c8e14dc03644ff0c08b593dabf3e052a90f9c57e169451883872330dbb"}
+{"task_id": "Mbpp/460", "input_index": 6, "call": "Extract([[1, 2, 3]])", "ast_sha256": "bb3af2f2da3dabc2741d5295d661855fd4cccacd5b24af4c710a07613ab3a996"}
+{"task_id": "Mbpp/460", "input_index": 7, "call": "Extract([[1, 2], [3, 4, 5, 6], [7]])", "ast_sha256": "a72e24f6e1b75ebb14d39f9c6acbe2aca8a7969675b4755656093780b4b23644"}
+{"task_id": "Mbpp/468", "input_index": 0, "call": "max_product([3, 100, 4, 5, 150, 6])", "ast_sha256": "1d053a689873319e638a7d527e1c11fe2a90d5c977ffb557a6413cacfa6b2307"}
+{"task_id": "Mbpp/468", "input_index": 1, "call": "max_product([1, 2, 3, 4, 5])", "ast_sha256": "41f1e3a427cfb2976a3af639ed717ad820b9c57cd07468d2ab76e56a93e51950"}
+{"task_id": "Mbpp/468", "input_index": 2, "call": "max_product([5, 4, 3, 2, 1])", "ast_sha256": "7f3c480cf3242dff576de84ef4894f0cb46fb24921259b69d743fc90baf1520b"}
+{"task_id": "Mbpp/468", "input_index": 3, "call": "max_product([0, 0, 0, 0])", "ast_sha256": "f5be586810467138a1f6b3f7b534778093e1decc41b7691ab9ade971e1e20a07"}
+{"task_id": "Mbpp/468", "input_index": 4, "call": "max_product([-1, -2, -3, -4])", "ast_sha256": "a1e88693153241a35701a6f5c12d801aecefeb4e9c5c86adaeeae9057cb72634"}
+{"task_id": "Mbpp/468", "input_index": 5, "call": "max_product([2, -5, -2, -4])", "ast_sha256": "f8f5af8f3f95abdf640b80787ae9143db0a39a46791a7f9644ca6d1e2880f734"}
+{"task_id": "Mbpp/468", "input_index": 6, "call": "max_product([1])", "ast_sha256": "0f51bd806dc0904abfe31c8db7ada8c2bf58d50057ea6547b629bacbc7ce258c"}
+{"task_id": "Mbpp/468", "input_index": 7, "call": "max_product([])", "ast_sha256": "0b85869904fe88d78f8e4981a351eb5be7f72f480e66f956df661ceb8c8549f5"}
+{"task_id": "Mbpp/471", "input_index": 0, "call": "find_remainder([100, 10, 5, 25, 35, 14], 11)", "ast_sha256": "7465026a1dc307c899431294eb4e56344e1143b8ee1e0c5812966aa72fbcd4ae"}
+{"task_id": "Mbpp/471", "input_index": 1, "call": "find_remainder([2, 3, 4], 5)", "ast_sha256": "4ad23f8238ffc6dc602b80d34f565af7ce49f19dc554a1dfba69f5b1fe6e3084"}
+{"task_id": "Mbpp/471", "input_index": 2, "call": "find_remainder([0], 100)", "ast_sha256": "28cc32d4624afa58b95cb1ba7530a0ec9a8ac33a1aaa9a4177982b8b33aea0b9"}
+{"task_id": "Mbpp/471", "input_index": 3, "call": "find_remainder([1, 2, 3, 4, 5], 6)", "ast_sha256": "7490c60dfd6edc0e4acca0734639ee1ac10169b0c71ba8a038802dbc6937e01a"}
+{"task_id": "Mbpp/471", "input_index": 4, "call": "find_remainder([7, 8, 9], 10)", "ast_sha256": "962d0353fd40133dffb138cc6f830ab718a66a51459ababa94c6b1e2eec606ad"}
+{"task_id": "Mbpp/471", "input_index": 5, "call": "find_remainder([1, 1, 1, 1], 3)", "ast_sha256": "13724527d32c365addf53b88dc1c101b512e32d8c5d130743ab70adb6717e6f3"}
+{"task_id": "Mbpp/471", "input_index": 6, "call": "find_remainder([-1, 2], 5)", "ast_sha256": "9a83cc5a8328b723b927cd89a46ffbe2ae8e44d942dfcf55514dcb9ce51845ec"}
+{"task_id": "Mbpp/471", "input_index": 7, "call": "find_remainder([3, 6, 9], 3)", "ast_sha256": "42d41ffbed7d253516841bf522e40155476c337f3172223a75dad82a83808acf"}
+{"task_id": "Mbpp/476", "input_index": 0, "call": "big_sum([1, 2, 3])", "ast_sha256": "1c44b227a68cb765c75cf9223f77cda65b1b9d98cad67532b071ccd431c9e6f0"}
+{"task_id": "Mbpp/476", "input_index": 1, "call": "big_sum([5, 1, 9])", "ast_sha256": "5bcbf16480e802404d4d69ccdcb14c4c1bf78541ebba9f4b885e21656422d32f"}
+{"task_id": "Mbpp/476", "input_index": 2, "call": "big_sum([-3, -1, -5])", "ast_sha256": "9db1c06e841b502ef4d5f097230053b42319f6f35889672210548af2ad973301"}
+{"task_id": "Mbpp/476", "input_index": 3, "call": "big_sum([10])", "ast_sha256": "579e818e35dcedb594ca8671f261cf378884bd7b50c41f37cea9d051e337fb9b"}
+{"task_id": "Mbpp/476", "input_index": 4, "call": "big_sum([4, 4, 4])", "ast_sha256": "4f03f083b83fe8382963474f8fa77332ab58261f648641086f8dfb3b08ae19e6"}
+{"task_id": "Mbpp/476", "input_index": 5, "call": "big_sum([0, 2, -1])", "ast_sha256": "3a44ef6596515629b2f182453264dde259745eff1e7d4477e56bc804dc904326"}
+{"task_id": "Mbpp/476", "input_index": 6, "call": "big_sum([100, 50, 25])", "ast_sha256": "c4f8f96d080fc499150b05c99bf9ed7c9395db6bf3eb4433f056a1b73b7d8c4d"}
+{"task_id": "Mbpp/476", "input_index": 7, "call": "big_sum([-10, -20, -30])", "ast_sha256": "1fc04a646da1f49652ae6f18dc1720b902fcb785c2dabdecba4e00a45319c6eb"}
+{"task_id": "Mbpp/478", "input_index": 0, "call": "remove_lowercase('PYTHon')", "ast_sha256": "8562723bc337be8a9a1728f465b614595666d79808ffae677b94a1cf926a1dbe"}
+{"task_id": "Mbpp/478", "input_index": 1, "call": "remove_lowercase('aBcD')", "ast_sha256": "d3204908a8a1e3b22447fb408ffb8664c4a0cf1ce62d56587d559e69c1449885"}
+{"task_id": "Mbpp/478", "input_index": 2, "call": "remove_lowercase('123abc')", "ast_sha256": "cbb7dc3de96091643ef4dc2a6f07dded7a79dfe9db862b4880ce37d2da24a4db"}
+{"task_id": "Mbpp/478", "input_index": 3, "call": "remove_lowercase('ALLCAPS')", "ast_sha256": "610b2814b669928e53dd7de6414f03f81c2a9558a408f9b14aad42741f1f5a2b"}
+{"task_id": "Mbpp/478", "input_index": 4, "call": "remove_lowercase('MixedCase')", "ast_sha256": "8562207878863a6cd826b05714fdac9b747bcd66aa8c1ad43c9cea4589876e9d"}
+{"task_id": "Mbpp/478", "input_index": 5, "call": "remove_lowercase('noLowercase')", "ast_sha256": "1ec4d98ccff55ad38e4a23eb4d33fae15ecb5045ad82d5445c4518d144b1b383"}
+{"task_id": "Mbpp/478", "input_index": 6, "call": "remove_lowercase('123456')", "ast_sha256": "0ec7fe29c4e659d023bc274e328bec1937c5abd03050ae8966d26ff0d358ef78"}
+{"task_id": "Mbpp/478", "input_index": 7, "call": "remove_lowercase('')", "ast_sha256": "91358dd9dfe33235fc7911f69e3ed7e0540aebca633ac5adef9aa5ac66127090"}
+{"task_id": "Mbpp/56", "input_index": 0, "call": "check(70)", "ast_sha256": "c1cf18de9d3e6fd3160b3e84c04acf566e1b46836fd9aed83b48f003824b2db1"}
+{"task_id": "Mbpp/56", "input_index": 1, "call": "check(10)", "ast_sha256": "9e16718b8dc77adb3e88432596f327ff4d03e001a5635aa31313c38f76baaa1e"}
+{"task_id": "Mbpp/56", "input_index": 2, "call": "check(1)", "ast_sha256": "dfbe6578d9a1153eb4b3d206d2eda9c25469353369f1b2d253663d2b61fc2aa9"}
+{"task_id": "Mbpp/56", "input_index": 3, "call": "check(2)", "ast_sha256": "f3334c3bd93d15194c2634c4ac1a0d211d7feb0bace8c6862a203b471d9485e2"}
+{"task_id": "Mbpp/56", "input_index": 4, "call": "check(101)", "ast_sha256": "b87541057edbbe915b49080cd640189719321ce08b5c15c96e28321a918bfc77"}
+{"task_id": "Mbpp/56", "input_index": 5, "call": "check(21)", "ast_sha256": "5d1b7e7dc7e318cbb991d1090676917e35fba96326720f700b80953a47488015"}
+{"task_id": "Mbpp/56", "input_index": 6, "call": "check(1001)", "ast_sha256": "bb5a98963d47c0939fcc56d1947c48a31a0182c892830930caa676f7be391c3c"}
+{"task_id": "Mbpp/56", "input_index": 7, "call": "check(121)", "ast_sha256": "6715c85a915aa69ec7a96d04af106b7b7f38c94fb36615b609c2e03c73e248e6"}
+{"task_id": "Mbpp/577", "input_index": 0, "call": "last_Digit_Factorial(4)", "ast_sha256": "c2fccff9b0a2f2b6aea500748a4ae81a7da86d406d72d45d92437be38ccd2e1b"}
+{"task_id": "Mbpp/577", "input_index": 1, "call": "last_Digit_Factorial(0)", "ast_sha256": "3cfd7f0ea90d173724db688a4605009f462150bb447d4ea4a25d30c3488edc4f"}
+{"task_id": "Mbpp/577", "input_index": 2, "call": "last_Digit_Factorial(1)", "ast_sha256": "db5adc71d7d4bda047e775765f7fcec3306c7975ef39808fbe43889161c11ed3"}
+{"task_id": "Mbpp/577", "input_index": 3, "call": "last_Digit_Factorial(2)", "ast_sha256": "6f7f4c4d0eb72a836c287ae3aa11001784b5b86f4102972fbeb80ed7c8463029"}
+{"task_id": "Mbpp/577", "input_index": 4, "call": "last_Digit_Factorial(3)", "ast_sha256": "12fe93889f623c3ffa9c44e64e98591945078cc022791cd67ae10dc2a9e5c8a0"}
+{"task_id": "Mbpp/577", "input_index": 5, "call": "last_Digit_Factorial(5)", "ast_sha256": "48de40bc029673a7f2149ad7fe4bd77a942c5103f36fc8325968bbb6fb9a5ecc"}
+{"task_id": "Mbpp/577", "input_index": 6, "call": "last_Digit_Factorial(6)", "ast_sha256": "6b87151146aaa7081acba3f0294149baa594f5f011832dafbde362588fea234a"}
+{"task_id": "Mbpp/577", "input_index": 7, "call": "last_Digit_Factorial(7)", "ast_sha256": "69dc0cbae76022896cb9c7263a97023f40cd4070b52de17f4400de716b6b38b2"}
+{"task_id": "Mbpp/580", "input_index": 0, "call": "extract_even((4, 5, (7, 6, (2, 4)), 6, 8))", "ast_sha256": "f6ea2011c11c2c21cf3cdc115fed462f96e41a74706499f5b4f2e59b91758bf8"}
+{"task_id": "Mbpp/580", "input_index": 1, "call": "extract_even((1, 3, (5, 7), 9))", "ast_sha256": "6a99056211e0e55054db7d7357f07528837627f7c0eff2dc8badcbc06d45c5d3"}
+{"task_id": "Mbpp/580", "input_index": 2, "call": "extract_even((2, 4, (6, 8), 10))", "ast_sha256": "91d356dd1b5a6e0cd1b3655d6cd2b139dc61bbe1eb8042fb6afcda141c9234f6"}
+{"task_id": "Mbpp/580", "input_index": 3, "call": "extract_even((1, 2, (3, 4), 5))", "ast_sha256": "d24128a84a7f5cad1fe55cc30ab980e014c8f43714571d48cfda8be0aae62ba0"}
+{"task_id": "Mbpp/580", "input_index": 4, "call": "extract_even((0, 1, (2, 3), 4))", "ast_sha256": "ce6264f5029b8bb3bb576e57b9e0e243e75ca92da5ff0ec630905b3405f11586"}
+{"task_id": "Mbpp/580", "input_index": 5, "call": "extract_even((2, 3, (4, 5), 6))", "ast_sha256": "00613f4f96f3df9b550d449fa2fa870822c8a18a68ce42ef7807188fe7ab7ae1"}
+{"task_id": "Mbpp/580", "input_index": 6, "call": "extract_even((1, 2, (3, 4), 5, (6, 7)))", "ast_sha256": "98e0dc5c89a90efbb7b799cf03f1ef1583813c9a4ac8f431f72e5a760a4cf35c"}
+{"task_id": "Mbpp/580", "input_index": 7, "call": "extract_even((2, 2, (2, 2), 2))", "ast_sha256": "19330cf27e399c88931156cb6174107f120e4ddae474c47596afc587a11ed94a"}
+{"task_id": "Mbpp/593", "input_index": 0, "call": "removezero_ip('216.08.094.196')", "ast_sha256": "87399c73a4fe0236d0286ac76f9649eb875087dc3b105e0de388fb95c056a7f6"}
+{"task_id": "Mbpp/593", "input_index": 1, "call": "removezero_ip('000.000.000.000')", "ast_sha256": "a809d3db22b6aaca07d304e11879b7c58e99758d4292271d79cb22ea9d53ec9d"}
+{"task_id": "Mbpp/593", "input_index": 2, "call": "removezero_ip('192.168.00.01')", "ast_sha256": "e1efef3c3a18ecb311c01caf7b15db0bd1a007e210046773e498c9ee86c2668c"}
+{"task_id": "Mbpp/593", "input_index": 3, "call": "removezero_ip('127.0.0.1')", "ast_sha256": "55e7ed3b0d8d11256562688f9b0261b527cbd93f23eeee27f90af7f254895654"}
+{"task_id": "Mbpp/593", "input_index": 4, "call": "removezero_ip('0.0.0.0')", "ast_sha256": "b8b90f50be199dbfb6f13767bd25986e1dbc94f5d6e2783c5af011d918402142"}
+{"task_id": "Mbpp/593", "input_index": 5, "call": "removezero_ip('00.00.00.00')", "ast_sha256": "e329cf76b382785c0ba3acea560702cbe856c94999c4860ed49e6fb51e1e1dda"}
+{"task_id": "Mbpp/593", "input_index": 6, "call": "removezero_ip('1.002.003.004')", "ast_sha256": "37fef186296d836b7621db28d919e9b8726132226325cf6f8399009a36b1bdfa"}
+{"task_id": "Mbpp/593", "input_index": 7, "call": "removezero_ip('123.45.67.89')", "ast_sha256": "7f1cb5ff533f6f311c95b12901d39e1b2f168e7de6bf6b53fac45da95d42ae81"}
+{"task_id": "Mbpp/600", "input_index": 0, "call": "is_Even(1)", "ast_sha256": "09dfc7ac02dd8a78a9a0daf8106698d32b25a9a3be83fa1bf781a82706a026c5"}
+{"task_id": "Mbpp/600", "input_index": 1, "call": "is_Even(0)", "ast_sha256": "4a25a978468f6e425e9fd1e1be3cf5d54c342c402636cab7dbba1751c648dd4a"}
+{"task_id": "Mbpp/600", "input_index": 2, "call": "is_Even(2)", "ast_sha256": "33e6f2a88d1d4ece9dfdd8785a627ef2e5711bf08cc53879f8c8b7cefab873c1"}
+{"task_id": "Mbpp/600", "input_index": 3, "call": "is_Even(3)", "ast_sha256": "2a7c1723cdcfbda40d9173b173c2bc3cf06dd6a06dda16f202aba6f9ac25e622"}
+{"task_id": "Mbpp/600", "input_index": 4, "call": "is_Even(-2)", "ast_sha256": "6e1877fda4e0223e50d978ec204a2af858dc1cd1b057ae3e473894455e6f17ca"}
+{"task_id": "Mbpp/600", "input_index": 5, "call": "is_Even(-3)", "ast_sha256": "eeef90931e23db5274a0bc590b8c7c22436599a3d8bf459ae2e2963a77096636"}
+{"task_id": "Mbpp/600", "input_index": 6, "call": "is_Even(100)", "ast_sha256": "6d782aa6a31eba3b0ab5cbfad87d1a1309500440c198e6dd630fbf3efe295290"}
+{"task_id": "Mbpp/600", "input_index": 7, "call": "is_Even(101)", "ast_sha256": "4b01315aaeef08be7bfbdcf2d9d42722fee5f82bb752b14c13d13c7a8f42e626"}
+{"task_id": "Mbpp/602", "input_index": 0, "call": "first_repeated_char('abcabc')", "ast_sha256": "e421287f013988fe1585b3c9a10fb07415cd9ebb1cabef56e1fce86ca3a26e25"}
+{"task_id": "Mbpp/602", "input_index": 1, "call": "first_repeated_char('abca')", "ast_sha256": "fdd54aed839a6690361d909f6813fa4374d7c208706c677db8b3cbdf3127b548"}
+{"task_id": "Mbpp/602", "input_index": 2, "call": "first_repeated_char('abcd')", "ast_sha256": "bf294d5d8c900fded6216fe92bdd8da57108d3c397eae0f611c851c16e4ff21c"}
+{"task_id": "Mbpp/602", "input_index": 3, "call": "first_repeated_char('a')", "ast_sha256": "6eddfdd80c0c8343be7daf96cbefcfcf49b7de61e6ec0a3c978bb7795c7ceb99"}
+{"task_id": "Mbpp/602", "input_index": 4, "call": "first_repeated_char('abba')", "ast_sha256": "41e78baec07835d43240466c93457de8ece8d65ced126d8fc465d32c4cca7a25"}
+{"task_id": "Mbpp/602", "input_index": 5, "call": "first_repeated_char('hello')", "ast_sha256": "58fc2ffe1e695b0710fff3e1c93dcd090f43883ed8aa77dc8c3910e8cffd1220"}
+{"task_id": "Mbpp/602", "input_index": 6, "call": "first_repeated_char('xyzzy')", "ast_sha256": "6ae22dcb78efd95ad3af5bdc5821ca53155e0457ea35e71db6ffa12c52e740b3"}
+{"task_id": "Mbpp/602", "input_index": 7, "call": "first_repeated_char('12321')", "ast_sha256": "ccd0a8574c77c41fb2af33a652dce28e5998e75d02821695f6e40ee598beb6e9"}
+{"task_id": "Mbpp/64", "input_index": 0, "call": "subject_marks([('English', 88), ('Science', 90), ('Maths', 97), ('Social sciences', 82)])", "ast_sha256": "9f508b0a3e733a210b480ee0538bf838ed2cfaacc4e4b2df429fe613a0dbee87"}
+{"task_id": "Mbpp/64", "input_index": 1, "call": "subject_marks([(3, 'Math'), (1, 'Science'), (2, 'English')])", "ast_sha256": "52ad04473729125a806548b568f8390bbd1a7ed49c1331dd539d118169347974"}
+{"task_id": "Mbpp/64", "input_index": 2, "call": "subject_marks([(10, 'A'), (5, 'B'), (15, 'C')])", "ast_sha256": "fc347a3ea3a9d86b488440c88181407ce322cf42043db03d920e0e7437060a4c"}
+{"task_id": "Mbpp/64", "input_index": 3, "call": "subject_marks([(1, 1), (2, 2), (3, 3)])", "ast_sha256": "675084abdc8623189c065dc2979af3d197d9b67a633209248b0a808ed94ba9f7"}
+{"task_id": "Mbpp/64", "input_index": 4, "call": "subject_marks([(5, 'B'), (3, 'A'), (4, 'C')])", "ast_sha256": "3300e8a151d2835a87bdc8b92d95217832be1342814bbf796d90d85cd545b569"}
+{"task_id": "Mbpp/64", "input_index": 5, "call": "subject_marks([(0, 'Z'), (1, 'A'), (2, 'B')])", "ast_sha256": "eb623f61875a363bebff2e8f031c2fa5d0ac2675b6e934ee291b13d81f49d1c3"}
+{"task_id": "Mbpp/64", "input_index": 6, "call": "subject_marks([(1, 'C'), (2, 'B'), (3, 'A')])", "ast_sha256": "5d55f7cd78d78b39d27b68b05f299e687d7d867f338e06fd005160191639dc48"}
+{"task_id": "Mbpp/64", "input_index": 7, "call": "subject_marks([(4, 'D'), (3, 'C'), (2, 'B'), (1, 'A')])", "ast_sha256": "d80fd8c1f318e0c951b7ec300ac244a05a11b9a0aaccd69564a334229fe51852"}
+{"task_id": "Mbpp/643", "input_index": 0, "call": "text_match_wordz_middle('pythonzabc.')", "ast_sha256": "39a4d9f9abde4e7653f0ee9795083d3c5356655788adb27fbbde10d9f6ede293"}
+{"task_id": "Mbpp/643", "input_index": 1, "call": "text_match_wordz_middle('zpythonzabc.')", "ast_sha256": "5b16517f9d7eba1f39946932a932950f7a93485819fad411b642cc56ede77152"}
+{"task_id": "Mbpp/643", "input_index": 2, "call": "text_match_wordz_middle('zpythonzabcz')", "ast_sha256": "ffafb88c1c166527b56d0f9668f482e0e227a0aeb8e913c890726ba550da7771"}
+{"task_id": "Mbpp/643", "input_index": 3, "call": "text_match_wordz_middle('zpythonzabcz.')", "ast_sha256": "648a61f52055f743f3793066ea0f9e1816280fadbcb47a262e971af217fba8bc"}
+{"task_id": "Mbpp/68", "input_index": 0, "call": "is_Monotonic([6, 5, 4, 4])", "ast_sha256": "9e07a7394e9f701ce1cc9c05d2b28100708c6990ca0ae81fef5f395f86c33f56"}
+{"task_id": "Mbpp/68", "input_index": 1, "call": "is_Monotonic([4, 4, 4, 4])", "ast_sha256": "74af74462ccd9abae131070cea11df8b22ef59c34d98530cebce5dcdc98a5035"}
+{"task_id": "Mbpp/68", "input_index": 2, "call": "is_Monotonic([1, 2, 3, 4])", "ast_sha256": "932389b21e2d421b0ff3530abe949058261efa42f30015e4dbbe78b1875b721b"}
+{"task_id": "Mbpp/68", "input_index": 3, "call": "is_Monotonic([4, 3, 2, 1])", "ast_sha256": "105da24e73779fdc49dbe7297d876d3ba9caa20aad26b1d71e77e811418f9089"}
+{"task_id": "Mbpp/68", "input_index": 4, "call": "is_Monotonic([1, 2, 2, 3])", "ast_sha256": "cd1d7513379791a1ec3ed9713d9e018c0ded51f0edd0b568eb51453e2ccbe879"}
+{"task_id": "Mbpp/68", "input_index": 5, "call": "is_Monotonic([3, 2, 2, 3])", "ast_sha256": "cef7b7fdd96e35d26a19e44fe2583c2632aacea35d0772d6fc1caf2f242a2315"}
+{"task_id": "Mbpp/68", "input_index": 6, "call": "is_Monotonic([1, 1, 2, 2])", "ast_sha256": "823e4f445d452dad4cadcb55be529aa9f991d736c6eef3065c72d22220e9b86d"}
+{"task_id": "Mbpp/68", "input_index": 7, "call": "is_Monotonic([2, 1, 2, 1])", "ast_sha256": "f42cdc29af0d5e2eda8e926558dc4efcb917c80b1dc4de67e17408ca49f468c4"}
+{"task_id": "Mbpp/69", "input_index": 0, "call": "is_sublist([2, 4, 3, 5, 7], [3, 7])", "ast_sha256": "e5ab3ff79bfaaadf39fd3fec69bc494ed73fba91ab57e04bc22ef1fe79ffa88c"}
+{"task_id": "Mbpp/69", "input_index": 1, "call": "is_sublist([1, 2, 3, 4], [2, 3])", "ast_sha256": "e6b7059225b0a37780ec3526fa84147392edcd5ab3a22adca9d612b537af0dfc"}
+{"task_id": "Mbpp/69", "input_index": 2, "call": "is_sublist([1, 2, 4, 3], [2, 3])", "ast_sha256": "d79826059630afb7f1d2ce6af14b48e4a1648f450bce7ad1ed644d79799cabec"}
+{"task_id": "Mbpp/69", "input_index": 3, "call": "is_sublist([1, 2, 3, 4], [3, 4, 5])", "ast_sha256": "517872869e2003c12590812448b43c62349334f03bfe2d05ce8aa9ea25e85f27"}
+{"task_id": "Mbpp/69", "input_index": 4, "call": "is_sublist([3, 4, 5], [3, 4, 5])", "ast_sha256": "47c21bc14cc8e71e874852922d396be78150edbd5d3576384fbf62de836497f7"}
+{"task_id": "Mbpp/69", "input_index": 5, "call": "is_sublist([1, 3, 2, 4], [3, 4])", "ast_sha256": "246121d2438187f347bde411b9b3b506f137a5922db68484096cd4227fa49a98"}
+{"task_id": "Mbpp/69", "input_index": 6, "call": "is_sublist([1, 2, 3], [4, 5])", "ast_sha256": "aa2ce84bf0bb9fdacd8614efbd88ed6042d3e538b1e3c9b323a886b9ab0ad8f7"}
+{"task_id": "Mbpp/69", "input_index": 7, "call": "is_sublist([1, 2, 3, 4, 5], [2, 3, 4])", "ast_sha256": "9fd62e9586bbba892c031daf60ca6e4bdf7e3ad3ebea55124cde932f8d7a7366"}
+{"task_id": "Mbpp/69", "input_index": 8, "call": "is_sublist([1, 2, 3, 4, 5], [2, 5])", "ast_sha256": "3593aec0dfd277ca0949d419776b05bbe44027fd05060badc0641e4c9432dac5"}
+{"task_id": "Mbpp/720", "input_index": 0, "call": "add_dict_to_tuple((4, 5, 6), {'MSAM': 1, 'is': 2, 'best': 3})", "ast_sha256": "e2b6d048c04787e4b56e854ae6db25d4197939e5e8297a9931cbec4e62ef2d3a"}
+{"task_id": "Mbpp/720", "input_index": 1, "call": "add_dict_to_tuple((1, 2, 3), {})", "ast_sha256": "8bc066873a88bad82270c48b91d48c9e45c11c265683cfa59eca843f709951ac"}
+{"task_id": "Mbpp/720", "input_index": 2, "call": "add_dict_to_tuple((0,), {'a': 1})", "ast_sha256": "479ab9179eaf187f60300c694cc0d77efee57fd28d54c98a4c96f26feaba9d1a"}
+{"task_id": "Mbpp/720", "input_index": 3, "call": "add_dict_to_tuple((True, False), {'key': 42})", "ast_sha256": "3e9efbb553d1dfd52cee9618b2acb22e2d408903db6007bb3a5a9da0764b9cfd"}
+{"task_id": "Mbpp/720", "input_index": 4, "call": "add_dict_to_tuple((10, 20, 30), {'x': 5, 'y': 6})", "ast_sha256": "984ddf09a880481bc85933045de8773712b98a827059bb512766f0f2fc764265"}
+{"task_id": "Mbpp/720", "input_index": 5, "call": "add_dict_to_tuple((), {'a': 1, 'b': 2})", "ast_sha256": "961995310a002c24d0fc22c08dca88a3c0536afbd79e27536dbe9da77d40978e"}
+{"task_id": "Mbpp/720", "input_index": 6, "call": "add_dict_to_tuple((1, 2), {'three': 3})", "ast_sha256": "e38d03b012147b3ff716cff8eaf9d1f26b716984e8c9c667cb41dbc88cd89d76"}
+{"task_id": "Mbpp/720", "input_index": 7, "call": "add_dict_to_tuple((7, 8), {'one': 1})", "ast_sha256": "3392efbe79be9905d3d5eaa5975579a10cb81c6718e7270d157263e815cb293a"}
+{"task_id": "Mbpp/724", "input_index": 0, "call": "power_base_sum(2, 100)", "ast_sha256": "1bc97b156baa4eff03c252e3b6d78f08f2c84192fc195cd302b4a2c391db55db"}
+{"task_id": "Mbpp/724", "input_index": 1, "call": "power_base_sum(3, 0)", "ast_sha256": "add7156ec18f49a211a7e66bc0ab9e9231fbdc75d2d7c6cfed9cbbeabe057249"}
+{"task_id": "Mbpp/724", "input_index": 2, "call": "power_base_sum(5, 1)", "ast_sha256": "1cc9dc18d104564b0c4b23c59775c8895fdbeacc28ef7c789de84f896a012c41"}
+{"task_id": "Mbpp/724", "input_index": 3, "call": "power_base_sum(9, 2)", "ast_sha256": "d22ae90bea59be33b3ca9332e2de87d77934fd8df2b519385dc9774aaac58452"}
+{"task_id": "Mbpp/724", "input_index": 4, "call": "power_base_sum(10, 3)", "ast_sha256": "a7942e1c44d8f19a520e7896999d1a57304fe0d0387a6abd1dae174c527d2967"}
+{"task_id": "Mbpp/724", "input_index": 5, "call": "power_base_sum(1, 5)", "ast_sha256": "100186da6ee4b0fcda072d906986d551a277d45a30076335b0005c55c96c9216"}
+{"task_id": "Mbpp/724", "input_index": 6, "call": "power_base_sum(0, 10)", "ast_sha256": "84b6601fc516d5efaa7b72fae59a8117a8b60bc069e65c98a3e313dc4caaf3bd"}
+{"task_id": "Mbpp/724", "input_index": 7, "call": "power_base_sum(123, 2)", "ast_sha256": "f65ff2ee4b033d49564ed321610ccb7c9fa49aa87bf07e2c04390fc738144378"}
+{"task_id": "Mbpp/730", "input_index": 0, "call": "consecutive_duplicates([0, 0, 1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9, 4, 4])", "ast_sha256": "27d0011f2d41070b0c1c8be41eee7bc887b8b705141c9c20b3a17022952c5009"}
+{"task_id": "Mbpp/730", "input_index": 1, "call": "consecutive_duplicates([1, 1, 1, 1])", "ast_sha256": "108a57c1bcb318ffde7d7de849dc2aa24789c9dc569d8f1fffa2c31bd3de631c"}
+{"task_id": "Mbpp/730", "input_index": 2, "call": "consecutive_duplicates([1, 2, 3])", "ast_sha256": "3a300966960874b871dccfd66cb65fe32267d9b7dd4b48401085c90295a772ac"}
+{"task_id": "Mbpp/730", "input_index": 3, "call": "consecutive_duplicates([1, 1, 2, 2, 3, 3])", "ast_sha256": "65de500df7eef9920fc7e0151a5993d8544113906cd5845bd92ebfec7672e0f0"}
+{"task_id": "Mbpp/730", "input_index": 4, "call": "consecutive_duplicates([1, 2, 2, 1])", "ast_sha256": "fc47b1bbea5ddd71a9884bbcc36aa97ccb415c89b83b84c326f85986c7328e12"}
+{"task_id": "Mbpp/730", "input_index": 5, "call": "consecutive_duplicates([1, 1, 1, 2, 2, 2, 3, 3, 3])", "ast_sha256": "0c43fd32f5b52d276e30c8c9ff0b5ae99dbb020ce5aa9979abb21936ad0adc65"}
+{"task_id": "Mbpp/730", "input_index": 6, "call": "consecutive_duplicates([1])", "ast_sha256": "5c54b0b66e665e7535fbd796543a8e7ce0d008aca09937b95921bf8a6cbfcbc6"}
+{"task_id": "Mbpp/730", "input_index": 7, "call": "consecutive_duplicates([])", "ast_sha256": "33a937de9dbbaabf92eaf184093addb274605bec55a34beef7a557a70042932d"}
+{"task_id": "Mbpp/735", "input_index": 0, "call": "toggle_middle_bits(9)", "ast_sha256": "541489e889eb6cdecca171a0f75afdf02cda44e1646986763de85c48f2e2737c"}
+{"task_id": "Mbpp/735", "input_index": 1, "call": "toggle_middle_bits(0)", "ast_sha256": "58d80d172fb37c9c5f43f5616be0b2dde7654698e0308f6897b829ece0fd591d"}
+{"task_id": "Mbpp/735", "input_index": 2, "call": "toggle_middle_bits(1)", "ast_sha256": "b0df2b5ca3d6cad00e8e8e0dd0a55220bf72d354b627ec91aeed0f9fbd168947"}
+{"task_id": "Mbpp/735", "input_index": 3, "call": "toggle_middle_bits(2)", "ast_sha256": "6a62cb5c6a5b5c53a977d568dd6b8000a9f5b2c5bfb865b7b1971cdc85414f2c"}
+{"task_id": "Mbpp/735", "input_index": 4, "call": "toggle_middle_bits(3)", "ast_sha256": "b4b9d5be4b04cbd56052b7673c0ccbbabd992c53a1e7121650c7081b39d4676b"}
+{"task_id": "Mbpp/735", "input_index": 5, "call": "toggle_middle_bits(12)", "ast_sha256": "c8349d4007bbaeddc25f5f5f5c28852ebd38bacfd54bc585f11b5c12da5731af"}
+{"task_id": "Mbpp/735", "input_index": 6, "call": "toggle_middle_bits(15)", "ast_sha256": "47eb4df573bd5e36904e6f410df51c64a9e46047c2d2623965af66a39bef1ec7"}
+{"task_id": "Mbpp/735", "input_index": 7, "call": "toggle_middle_bits(16)", "ast_sha256": "bfbc2331e24629c66da8e28daef4f62d5590616b0096e5f7dcc8f8919152545c"}
+{"task_id": "Mbpp/736", "input_index": 0, "call": "left_insertion([1, 2, 4, 5], 6)", "ast_sha256": "51205cf8a430fe4f627d7e88df048d6875c1827869945cf88a974fba8b5a8d2b"}
+{"task_id": "Mbpp/736", "input_index": 1, "call": "left_insertion([1, 3, 5, 7], 2)", "ast_sha256": "cacbf46283e57d34dcef88353beb9588e9b6ca5ff413d125b651972b00f1d4f2"}
+{"task_id": "Mbpp/736", "input_index": 2, "call": "left_insertion([1, 3, 5, 7], 0)", "ast_sha256": "ce9fb759703a16970514125e97ca31af9328fb65131e82e574ac9ccb42d0fb2b"}
+{"task_id": "Mbpp/736", "input_index": 3, "call": "left_insertion([1, 3, 5, 7], 1)", "ast_sha256": "568f08fb8a0abe9ebef568299be3e90b6d3eff5674a6e308e670f62512bae336"}
+{"task_id": "Mbpp/736", "input_index": 4, "call": "left_insertion([1, 2, 3, 4], 3)", "ast_sha256": "8d0311671ca3ca65b16757dc5bda19bea6f0cc5ecbfe7a805d731f90877d4b72"}
+{"task_id": "Mbpp/736", "input_index": 5, "call": "left_insertion([1, 2, 3, 4], 5)", "ast_sha256": "d2a8afb1031a9b4545e71b94a0ae4e1e26bb53a1c197bcad78f91e3d74d08176"}
+{"task_id": "Mbpp/736", "input_index": 6, "call": "left_insertion([1, 2, 3, 4], -1)", "ast_sha256": "6b560df5c8021bdb2acb890e131c588c93d7a2dd1b95562ebd6a5c59ae7ad65c"}
+{"task_id": "Mbpp/736", "input_index": 7, "call": "left_insertion([1, 2, 3, 4], 1)", "ast_sha256": "f163d6f273b118cf838fc1f5ffacc4c378ad17a092c2a7a78cb38b7e9ea731c9"}
+{"task_id": "Mbpp/74", "input_index": 0, "call": "is_samepatterns(['red', 'green', 'green'], ['a', 'b', 'b'])", "ast_sha256": "92a7f9f5fa85a22c4aeec50fa66e5d2087adc01c52c164234b282707809902c0"}
+{"task_id": "Mbpp/74", "input_index": 1, "call": "is_samepatterns(['red', 'red', 'green'], ['a', 'a', 'b'])", "ast_sha256": "48f0a7f26b342e820bf68d912655603de438dc16ffad28d765975e12ccabe491"}
+{"task_id": "Mbpp/74", "input_index": 2, "call": "is_samepatterns(['red', 'green', 'blue'], ['a', 'b', 'c'])", "ast_sha256": "41ee39993d9bcd68a46c38ca5ff7ee9420a7a7393f5bd93befd08d5a1974cce8"}
+{"task_id": "Mbpp/74", "input_index": 3, "call": "is_samepatterns(['red', 'red', 'red'], ['a', 'a', 'a'])", "ast_sha256": "6162f77e992cee197a222a3682334feee5b2e0c142e1c38a7488414e5e39f124"}
+{"task_id": "Mbpp/74", "input_index": 4, "call": "is_samepatterns(['red', 'green', 'blue'], ['a', 'b', 'a'])", "ast_sha256": "23f4b419b09f081ed1d9b312163e959649f56ba37842833d56b5e2ee5d3786c8"}
+{"task_id": "Mbpp/74", "input_index": 5, "call": "is_samepatterns(['red', 'green', 'green'], ['a', 'b', 'a'])", "ast_sha256": "63fedf30fce92a1d43bfd9ab55dd211962a82e05a9bf52ce4809e10fb6fc074c"}
+{"task_id": "Mbpp/74", "input_index": 6, "call": "is_samepatterns(['red', 'green', 'blue'], ['a', 'a', 'a'])", "ast_sha256": "fcee18c1b696a00d012118f7efac865bde66809b2c9799c69704353b38016587"}
+{"task_id": "Mbpp/74", "input_index": 7, "call": "is_samepatterns(['red', 'green', 'blue'], ['a', 'b', 'c', 'd'])", "ast_sha256": "1440d3ae52f9fa8f3cccc73b9ab242a4729653d6916d49a3d7852ad7f6f5df09"}
+{"task_id": "Mbpp/754", "input_index": 0, "call": "extract_index_list([1, 1, 3, 4, 5, 6, 7], [0, 1, 2, 3, 4, 5, 7], [0, 1, 2, 3, 4, 5, 7])", "ast_sha256": "08b68dfa266a722e2dffba4e2de0fc2888f1055d3a5140b31d8708ceba71ee47"}
+{"task_id": "Mbpp/754", "input_index": 1, "call": "extract_index_list([1, 2, 3], [1, 2, 3], [1, 2, 3])", "ast_sha256": "915e55ad46d23e2636de119f76a4225a4a824a7d5ca8fe873ddd3bee24413428"}
+{"task_id": "Mbpp/754", "input_index": 2, "call": "extract_index_list([1, 2, 3], [1, 2, 4], [1, 2, 3])", "ast_sha256": "43ffb0b33e1840135151a13f84bb94bf39dfb405c43f2ea9b5e4f612ad08848c"}
+{"task_id": "Mbpp/754", "input_index": 3, "call": "extract_index_list([1, 2, 3], [4, 5, 6], [7, 8, 9])", "ast_sha256": "d6c4ce4d1b60f1a40a795e9e78f22b6a5e23be466fe4a7e83560c4daae63d327"}
+{"task_id": "Mbpp/754", "input_index": 4, "call": "extract_index_list([1, 1, 1], [1, 1, 1], [1, 1, 1])", "ast_sha256": "1a5c9b3b3696c0773288e0eade5f2984fd5fb1b6e341f982192ed1473baeeabb"}
+{"task_id": "Mbpp/754", "input_index": 5, "call": "extract_index_list([1, 2, 3], [1, 2, 3], [1, 2])", "ast_sha256": "cf62be9641b38a25bb3031c78d9fa5c129630cd36a40176c1a0500c0ba46f64e"}
+{"task_id": "Mbpp/754", "input_index": 6, "call": "extract_index_list([1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3, 4])", "ast_sha256": "70ad564ce5ccd64dda22adc68c2ba2396f3b5f371b822c4f1bda2d5111f492ef"}
+{"task_id": "Mbpp/754", "input_index": 7, "call": "extract_index_list([1, 2, 3], [2, 3, 4], [3, 4, 5])", "ast_sha256": "04e1b138c2cfd26f725411a241a7f6403a23e0a737462b3b1a21f6b7f24b712c"}
+{"task_id": "Mbpp/754", "input_index": 8, "call": "extract_index_list([1, 2, 3], [1, 2, 3], [1, 2, 3, 4])", "ast_sha256": "fa2111955aa9c924c9326ca4e1f920420b214732e62205db2ac36d76697583ab"}
+{"task_id": "Mbpp/766", "input_index": 0, "call": "pair_wise([1, 1, 2, 3, 3, 4, 4, 5])", "ast_sha256": "5ef5181faf8ac59e16e0b3b1fca5775d784450bbf3c528fd2d2dfbc1dc4df5cb"}
+{"task_id": "Mbpp/766", "input_index": 1, "call": "pair_wise([1, 2, 3])", "ast_sha256": "6f84dcad4142ea0ca2cbafbe10af45aaaad5ebb276bf6c5ddf43331e1c3afac3"}
+{"task_id": "Mbpp/766", "input_index": 2, "call": "pair_wise([1])", "ast_sha256": "84f6395c65154858f9c516c16bc675433290f784f1422071351eae9039e5fc64"}
+{"task_id": "Mbpp/766", "input_index": 3, "call": "pair_wise([])", "ast_sha256": "cd280b81d4c25df1234629c62be4e8bc18751103e25b4f131b5bc4b66c51d111"}
+{"task_id": "Mbpp/766", "input_index": 4, "call": "pair_wise([5, 5, 5])", "ast_sha256": "a57a5f3de0840951906b620b6770b6836e94bc394f7e8f79edf265554685fa0a"}
+{"task_id": "Mbpp/766", "input_index": 5, "call": "pair_wise([0, 1, 2, 3])", "ast_sha256": "0525ea78eb2f65dfe3da757aff33a3432e9277036e545f94f3f0c424ce42b22e"}
+{"task_id": "Mbpp/766", "input_index": 6, "call": "pair_wise([4, 3, 2, 1])", "ast_sha256": "c0875e93046b31ba24bed366e486083b215f94c58ecd8794b6775f34384934fb"}
+{"task_id": "Mbpp/766", "input_index": 7, "call": "pair_wise([1, 2])", "ast_sha256": "eb909c88e1747bec34ab0f172c69c42637c1baebb83195696d3eb75ddcf67999"}
+{"task_id": "Mbpp/766", "input_index": 8, "call": "pair_wise([1, 2, 3, 4, 5])", "ast_sha256": "ea641791ff5a1ced40c9f95ef25a3493b8a42f001023997744df2cb5bb14ea8d"}
+{"task_id": "Mbpp/771", "input_index": 0, "call": "check_expression('{()}[{}]')", "ast_sha256": "640e096ffbf52a9b2b06dd3ac920d94122d37df26c441262fc275d2ce7b7142a"}
+{"task_id": "Mbpp/771", "input_index": 1, "call": "check_expression('()[]{}')", "ast_sha256": "5a9cdbd56fab89d691e6c1654159a978be7f3e7c3a7fc0a205055db9ee1ee2a6"}
+{"task_id": "Mbpp/771", "input_index": 2, "call": "check_expression('([{}])')", "ast_sha256": "a7ceae387fd3ffab9cb9cfbdc591ab36816344c127028d7783ac994b677d1289"}
+{"task_id": "Mbpp/771", "input_index": 3, "call": "check_expression('({[]})')", "ast_sha256": "3d3c3c84d73ae39595a46eae3e2863e56d0abd83496f42a6963e5540c8af0958"}
+{"task_id": "Mbpp/771", "input_index": 4, "call": "check_expression('({})')", "ast_sha256": "bb2cd95383cb300dcea0456c6c14132e30aa6a2b5c8113bb0bed2f683e0afc53"}
+{"task_id": "Mbpp/771", "input_index": 5, "call": "check_expression('([)]')", "ast_sha256": "79a2079f71c4bb3602d44994486a6d1682d62bd8153f2f8a66e0ecc91d11a997"}
+{"task_id": "Mbpp/771", "input_index": 6, "call": "check_expression('(([]))')", "ast_sha256": "c40c549d0ec94fa0bc2a7de0fc63c616fbaf0caf6738daf9bd80f59bb66eb4ab"}
+{"task_id": "Mbpp/771", "input_index": 7, "call": "check_expression('}{')", "ast_sha256": "dad3480d022c447218819edb26eeff7537a4d8f34cf58cd0b00775ed57542af0"}
+{"task_id": "Mbpp/772", "input_index": 0, "call": "remove_length('The person is most value tet', 3)", "ast_sha256": "c6a32e52c3019185911e3e15a381a2104881cce1e11435f3297ccc995841eb4b"}
+{"task_id": "Mbpp/772", "input_index": 1, "call": "remove_length('hello world', 5)", "ast_sha256": "94b3fec4fec98e120e14090fa92fab72f08d2ffafac8b9fe902393824c977e43"}
+{"task_id": "Mbpp/772", "input_index": 2, "call": "remove_length('a b c d', 1)", "ast_sha256": "797eb4629a6265d7e28fc1f0c4f62bc9438091a133a74bfb8bd06484cb7ff736"}
+{"task_id": "Mbpp/772", "input_index": 3, "call": "remove_length('test test test', 4)", "ast_sha256": "422afe43a6b27f016bacbbb463e35e2c5d2d8aee352de751d44a1f7957b5891e"}
+{"task_id": "Mbpp/772", "input_index": 4, "call": "remove_length('long short', 4)", "ast_sha256": "868a0c1b59adbfc89cdfd88187f9b016f5c4cc0ca3351f16d6026e1b93338256"}
+{"task_id": "Mbpp/772", "input_index": 5, "call": "remove_length('short long', 5)", "ast_sha256": "6afecb3872a91eda1ff8ce8992b80348ae535c275bf9ba7271806707ab5b370d"}
+{"task_id": "Mbpp/772", "input_index": 6, "call": "remove_length('one two three', 3)", "ast_sha256": "cfb28353c54e67f4ca9b39cc75f410d65d26c606a4a88548cb23898810f21158"}
+{"task_id": "Mbpp/772", "input_index": 7, "call": "remove_length('abc def ghi', 3)", "ast_sha256": "7cd1cb5263f450ec6c8b13071a7e25677f93452c2ea984e792cf9e012e88a95e"}
+{"task_id": "Mbpp/781", "input_index": 0, "call": "count_divisors(10)", "ast_sha256": "018409c1e53438afd32d8429492ffeae2da4464623f813692a8c5d1357287deb"}
+{"task_id": "Mbpp/781", "input_index": 1, "call": "count_divisors(1)", "ast_sha256": "d2d4127dacc1514118279c139477c2a1df1047fed1645876f169d923f753ca71"}
+{"task_id": "Mbpp/781", "input_index": 2, "call": "count_divisors(2)", "ast_sha256": "6261e5b06bf58a005972ceb8524011afc9a1af197c4f51ebaccc730c3bd4f2dc"}
+{"task_id": "Mbpp/781", "input_index": 3, "call": "count_divisors(3)", "ast_sha256": "7923a0af9502fe5de1631382b1b2437881ff4ea2d4dda8899b728ba87d0b576a"}
+{"task_id": "Mbpp/781", "input_index": 4, "call": "count_divisors(4)", "ast_sha256": "14cc594350a3bb28db67080f020ae43ce134319522ab5f839800f3346405674d"}
+{"task_id": "Mbpp/781", "input_index": 5, "call": "count_divisors(6)", "ast_sha256": "ae18a1160df70029bd4da0a6938b561920005639a4346a48e8c96f881ddb29f7"}
+{"task_id": "Mbpp/781", "input_index": 6, "call": "count_divisors(8)", "ast_sha256": "56a36d21e0e321aea370fc478b1f6129bac8b0f4df02851a878827bf58d1250c"}
+{"task_id": "Mbpp/781", "input_index": 7, "call": "count_divisors(9)", "ast_sha256": "8a80b6d26e5f982924b7446ba02de359da32a11cba17cbb10d157ddb6f74f7c7"}
+{"task_id": "Mbpp/781", "input_index": 8, "call": "count_divisors(16)", "ast_sha256": "ef3938d84560b8ea35032a4ef440142712dacf1aaa73087c2439d631d94d7e1b"}
+{"task_id": "Mbpp/785", "input_index": 0, "call": "tuple_str_int('(7, 8, 9)')", "ast_sha256": "b1a626e0881355ff35f46aee8cacdf69ed7d5c2cb6f647d67bd256bb63bd1425"}
+{"task_id": "Mbpp/785", "input_index": 1, "call": "tuple_str_int('(1, 2, 3, 4)')", "ast_sha256": "f40989829c492506cb3ffa23f815ddd0fa011e5c9c208995f3c72a85acf6d287"}
+{"task_id": "Mbpp/785", "input_index": 2, "call": "tuple_str_int('(0, 0, 0)')", "ast_sha256": "79cc431ecda5adb1b87ab4e3fbe640f665cd41af4f7b4f82f961c492d581b495"}
+{"task_id": "Mbpp/785", "input_index": 3, "call": "tuple_str_int('(10, 20, 30)')", "ast_sha256": "dc2b0e8aaaf739e66422887eb0b231c86f327f092cd8a33c3ad895645341e5bb"}
+{"task_id": "Mbpp/785", "input_index": 4, "call": "tuple_str_int('( -1, 0, 1 )')", "ast_sha256": "47e5f67a7a7b3568bb355f2288fac979b0924c3b5153d8169c45dbd0b59419e6"}
+{"task_id": "Mbpp/785", "input_index": 5, "call": "tuple_str_int('(123, 456, 789)')", "ast_sha256": "b24b467ae52cb8eff39279b89ee7eda443f832e24f3b62ed0e9c1ae16679189f"}
+{"task_id": "Mbpp/785", "input_index": 6, "call": "tuple_str_int('(5, 5, 5, 5)')", "ast_sha256": "eda7eaddb8049a2ccbbcf801bedd8c346ab19a569f0ed9dd40a9bc87cfca1439"}
+{"task_id": "Mbpp/785", "input_index": 7, "call": "tuple_str_int('( -5, 5, -5 )')", "ast_sha256": "53947a706de3802569aaf7234d3879baf425a6420e6bd40fb74fe7e93840c50c"}
+{"task_id": "Mbpp/792", "input_index": 0, "call": "count_list([[1, 3], [5, 7], [9, 11], [13, 15, 17]])", "ast_sha256": "3a9ce5d1d26eba816cc2ef369cbf78b2facc9ca87dd0fe3e166457de22b7f0d6"}
+{"task_id": "Mbpp/792", "input_index": 1, "call": "count_list([])", "ast_sha256": "06fdebbeb084dcc430d5ce6f7b437c09b500323f49aea67ed8617ba1c18b845c"}
+{"task_id": "Mbpp/792", "input_index": 2, "call": "count_list([[]])", "ast_sha256": "e63d40881563527e74e203626cb6129e5fbd42eca093a921eb53128082852d61"}
+{"task_id": "Mbpp/792", "input_index": 3, "call": "count_list([[1], [2], [3]])", "ast_sha256": "0cc3fb2d88618518ba82d3c663426188437c91252eadf7d7324a35bea6015d61"}
+{"task_id": "Mbpp/792", "input_index": 4, "call": "count_list([[[1]]])", "ast_sha256": "6a7d9d0496515161861491a1e213338183199408e71af8335383b624421787a6"}
+{"task_id": "Mbpp/792", "input_index": 5, "call": "count_list([1, 2, 3])", "ast_sha256": "0ecfe2bd1ae1ad1ac16c681adf310176244ed6fbbf248298ffaa5af38c2554d3"}
+{"task_id": "Mbpp/792", "input_index": 6, "call": "count_list([[1, 2], [3, 4], [5]])", "ast_sha256": "e06bdb3b3669d761e7c9c54587acd66163462629adce57909ed28bf20149bfdc"}
+{"task_id": "Mbpp/809", "input_index": 0, "call": "check_smaller((1, 2, 3), (2, 3, 4))", "ast_sha256": "d470b78927fed9bedaf0c389863b11cafca6465c6979d41d5f2546714e6e95c7"}
+{"task_id": "Mbpp/809", "input_index": 1, "call": "check_smaller((1, 2, 3), (0, 1, 2))", "ast_sha256": "576dfc42dd227bcfafe4a8b1bf2476327c5510667d1737b154d66017acae26fb"}
+{"task_id": "Mbpp/809", "input_index": 2, "call": "check_smaller((5, 5, 5), (5, 5, 5))", "ast_sha256": "cf3d79fe969fc452a5b928a4ee0a138b88bb1825c09e6f6fa9bfc56c9b14d2af"}
+{"task_id": "Mbpp/809", "input_index": 3, "call": "check_smaller((10, 20, 30), (9, 19, 29))", "ast_sha256": "4a5d6f65e0f2fa5b193fbb7f78290fce99d158f5c2170acaf89754b757780f4b"}
+{"task_id": "Mbpp/809", "input_index": 4, "call": "check_smaller((0, -1, -2), (1, 0, -1))", "ast_sha256": "1d70ce628152d3cf286812cfc37b30c1d15b28dcb42caf13a2f5f36e98a9aa80"}
+{"task_id": "Mbpp/809", "input_index": 5, "call": "check_smaller((1, 1, 1), (2, 2, 2))", "ast_sha256": "97e79dc07ace74850620b1fe4edc7c35301daae43474d5a341b83c9b67404ff1"}
+{"task_id": "Mbpp/809", "input_index": 6, "call": "check_smaller((3, 4, 5), (3, 4, 5))", "ast_sha256": "622cc7187d717670c2c3003161ce311eebc9231e6b32e8aa4599d6a9b5e3f68d"}
+{"task_id": "Mbpp/809", "input_index": 7, "call": "check_smaller((100, 200, 300), (99, 199, 299))", "ast_sha256": "3e306fed5daf80a963504d1eb32528172b78ec2af70412dd177acff5efd158ee"}
+{"task_id": "Mbpp/809", "input_index": 8, "call": "check_smaller((1, 2), (2, 3))", "ast_sha256": "dca1ef7ff86ec95a928089c71bf63ebb030a75585113394e057dedd5c07ecf99"}
+{"task_id": "Mbpp/90", "input_index": 0, "call": "len_log(['python', 'PHP', 'bigdata'])", "ast_sha256": "7b1f6ef7e1d0bd1c60b25f4e302f83f3ebbb290bbff28ad6435aee5b6fcbbe59"}
+{"task_id": "Mbpp/90", "input_index": 1, "call": "len_log(['a', 'bb', 'ccc'])", "ast_sha256": "defe4c5b3970df2d45f7b9f1e291e04b64a2a1780c22ad51b869c1db256e1803"}
+{"task_id": "Mbpp/90", "input_index": 2, "call": "len_log(['hello', 'world', 'python'])", "ast_sha256": "b449fb82ce3a2428db7952e75bd53b3a55f5aff515a4991a2075f751907d3346"}
+{"task_id": "Mbpp/90", "input_index": 3, "call": "len_log(['short', 'longer', 'longest'])", "ast_sha256": "1c61ee5e6e51ab719ff4d097f5dca076dc557e2be0b07917d95488ae7b216eb2"}
+{"task_id": "Mbpp/90", "input_index": 4, "call": "len_log(['one', 'two', 'three'])", "ast_sha256": "38275310d0956eaa6e82f6351b63e1c7c4aaa30894150b699ce991c55a9b344e"}
+{"task_id": "Mbpp/90", "input_index": 5, "call": "len_log(['apple', 'banana', 'cherry'])", "ast_sha256": "bef043e01a6e0bad9075583dfa60707b6e2eb813a1e61512c621903d3f29580f"}
+{"task_id": "Mbpp/90", "input_index": 6, "call": "len_log(['a', 'b', 'c'])", "ast_sha256": "0e0e5765deddae3e7f4304157acbc05380410578295f086f5d7040816d86030d"}
+{"task_id": "Mbpp/90", "input_index": 7, "call": "len_log(['longestword', 'short', 'medium'])", "ast_sha256": "4added3a494c1542016752a366ccf9c7db7e874df9f73c6c5b1599e32e610041"}
+{"task_id": "Mbpp/97", "input_index": 0, "call": "frequency_lists([[1, 2, 3, 2], [4, 5, 6, 2], [7, 8, 9, 5]])", "ast_sha256": "274efa3bda4a6c769ddf93f630272a38579ba0b3d04e9a7ab77ae89d7b1aac74"}
+{"task_id": "Mbpp/97", "input_index": 1, "call": "frequency_lists([[1, 1, 1], [2, 2, 2], [3, 3, 3]])", "ast_sha256": "04c515512437f239e951896128fab19c1896172ad3de95fceb4f7794cc7ae506"}
+{"task_id": "Mbpp/97", "input_index": 2, "call": "frequency_lists([[1], [2], [3]])", "ast_sha256": "59d60e08d46aecbc1196fcb023d3db34ef488603e02b1d1a4f1f4482d2783ecb"}
+{"task_id": "Mbpp/97", "input_index": 3, "call": "frequency_lists([[1, 2], [1, 2], [1, 2]])", "ast_sha256": "c2a8e1f0717ea843cd14731798ee2b2a855979cb3d27d930530f941f3145de11"}
+{"task_id": "Mbpp/97", "input_index": 4, "call": "frequency_lists([[1, 2, 3], [4, 5, 6], [7, 8, 9]])", "ast_sha256": "042413efb25c521dbf75aeea851a73b4ccd85fdc013db90534e4de61536e1a1e"}
+{"task_id": "Mbpp/97", "input_index": 5, "call": "frequency_lists([[1, 2, 2, 3], [2, 3, 4, 5]])", "ast_sha256": "3ece7e209caeca0220e0f3c2a9bf1252c33ff42226ff5f4da20f8f5715d35853"}
+{"task_id": "Mbpp/97", "input_index": 6, "call": "frequency_lists([[1, 1, 2, 2], [3, 3, 4, 4]])", "ast_sha256": "12023a251df4a08d1267d3eb0600d918f9730e20759f9796a4180700ffa6593f"}
+{"task_id": "Mbpp/97", "input_index": 7, "call": "frequency_lists([[1, 2, 3], [1, 2, 3], [1, 2, 3]])", "ast_sha256": "6dfdc34f4b0cd0f78617897795a735ae6ec95b6d5473d5886cbfa2f7ea9fb9e8"}

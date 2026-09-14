@@ -1,0 +1,16 @@
+{
+  "kind": "visible_evidence",
+  "parent_run": "mbpp-development60-20260913",
+  "tasks": 60,
+  "candidates": 240,
+  "wall_seconds": 32.597289276,
+  "hidden_benchmark_mounted": false,
+  "hidden_reference_loading": false,
+  "generations_sha256": "6f9124b38e804a5b28aa798bcc09d55cb25af2c23b8cf0bf557d554283146bd1",
+  "tests_sha256": "5e7ae02e912b8d7f07ccce25eebaa1607ff896cd384b823691b599531c0177cf",
+  "manifest_sha256": "e777a8429539633980153fd30903b62c34da615441e04ca3728418e80a561277",
+  "decisions_sha256": "002f0a762fe886c66054e224f0725e1cda29a77c2c6cdd3dd7dc271aef70ba46",
+  "matrix_sha256": "88be65f11f82ec623f6eab777b5ca06c1f62887a623fbbda0314d0eb79e22892",
+  "source_sha256": "25f823136fe34dd2ee23bd379350f79bc6320ede451eeb3ddb7a70942e4a7103",
+  "composition_decisions_sha256": "fffc9a14de179c18b39e4bf0b17bfba60fe2e64e96a9c7d6ee53415e3d1f20aa"
+}
