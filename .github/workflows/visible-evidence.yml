@@ -41,7 +41,14 @@ jobs:
           fi
           chmod 777 eval-output
       - name: Build isolated evaluator image
-        run: docker build -f docker/Dockerfile.eval -t verifier-eval .
+        env:
+          INPUT_RUN: ${{ inputs.input_run }}
+        run: |
+          if [ "$INPUT_RUN" = "mbpp-development60-20260913" ]; then
+            docker build -f docker/Dockerfile.development-eval -t verifier-eval .
+          else
+            docker build -f docker/Dockerfile.eval -t verifier-eval .
+          fi
       - name: Persist decisions without a hidden dataset
         env:
           INPUT_RUN: ${{ inputs.input_run }}

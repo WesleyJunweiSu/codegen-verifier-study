@@ -90,3 +90,8 @@ No local Python or active Actions jobs found. Frozen configs/development-reassig
 ## 2026-09-14 reassigned60 generation complete
 
 Validated all240 unique candidate keys and60 test responses, frozen generator hash, and enrollment. Total21098 output tokens,909.635 recorded generation wall-seconds. No Python jobs active. Next stage is visible-only Linux evaluation; accuracy and public-failure trigger count are not yet known. Reserve untouched.
+
+
+## Reassigned60 visible-stage recovery
+
+Workflow34846853016 failed after matrix generation because consensus CLI run-name choices omitted the new60 batch. No hidden labels loaded. New consensus_development_linux.py differs only by adding the new run name; dedicated development Dockerfile leaves original confirmation sources unchanged. Retry will preserve the failed run in journal and reuse all generation bytes. User reiterated protecting independent evaluation: next optimization remains on development only, with no reserve/external holdout scoring.
