@@ -1,0 +1,551 @@
+{
+  "date": "2026-09-15",
+  "run_id": "mbpp-matched-budget-development-20260915",
+  "phase": "Adaptive development, not independent confirmation",
+  "cohorts": [
+    {
+      "run": "mbpp-development40-20260907",
+      "decisions": "runs/mbpp-development40-public-consensus-20260908/decisions.jsonl",
+      "matrix": "runs/mbpp-development40-20260907/linux/candidate-test-matrix.jsonl"
+    },
+    {
+      "run": "mbpp-development60-20260913",
+      "decisions": "runs/mbpp-development60-20260913/visible/composition-decisions.jsonl",
+      "matrix": "runs/mbpp-development60-20260913/visible/candidate-test-matrix.jsonl"
+    }
+  ],
+  "question": "At identical per-trigger maximum output-token budget, does a single reasoning resample outperform repeated independent nonthinking samples?",
+  "alternative_explanation": "Original reasoning benefit may reflect more generation budget rather than uniquely informative reasoning content.",
+  "tasks": [
+    {
+      "task_id": "Mbpp/119",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/12",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/120",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/129",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/137",
+      "selected_index": 0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/226",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/227",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/256",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/257",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/276",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/309",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/312",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/388",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/394",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/412",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/429",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/436",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/455",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/463",
+      "selected_index": 2,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/470",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/555",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/559",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/568",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/598",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/623",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/624",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/626",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/628",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/70",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/75",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/758",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/767",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/777",
+      "selected_index": 0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/793",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/796",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/801",
+      "selected_index": 2,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/805",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/808",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/94",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/99",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/103",
+      "selected_index": 0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/104",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/108",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/109",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/126",
+      "selected_index": 0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/132",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/142",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/165",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/167",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/172",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/233",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/235",
+      "selected_index": 0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/240",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/247",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/251",
+      "selected_index": 0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/272",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/278",
+      "selected_index": 0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/296",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/300",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/310",
+      "selected_index": 0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/398",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/419",
+      "selected_index": 0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/424",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/425",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/439",
+      "selected_index": 0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/447",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/450",
+      "selected_index": 0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/453",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/458",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/460",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/468",
+      "selected_index": 0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/471",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/476",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/478",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/56",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/577",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/580",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/593",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/600",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/602",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/64",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/643",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/68",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/69",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/720",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/724",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/730",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/735",
+      "selected_index": 0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/736",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/74",
+      "selected_index": 1,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/754",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/766",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/771",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/772",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/781",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/785",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/792",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/809",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/90",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/97",
+      "selected_index": 0,
+      "triggered": false
+    }
+  ],
+  "triggered_tasks": 14,
+  "independent_unit": "Task, not sample;14 treated pairs,100 full-cohort denominator",
+  "budget_per_trigger_per_arm": 2048,
+  "reasoning": "One call; T0.6,p0.95,k20,thinking enabled; stop at EOS or2048. Index4.",
+  "nonthinking": "Repeated calls from original prompt, T0.7,p0.8,k20; cap=min(768,remaining); debit actual output tokens including special/partial tokens; no visible-test early stopping. Indices5 onward.",
+  "seed_rule": "sha256(matched:20260915:{task_id}:{reasoning|nonthinking}:{zero_based_arm_call})[:8] as hex; all calls newly generated",
+  "selection": "For each arm choose candidate with most public assertions passed; earliest sample_index breaks ties. Replace baseline only on strictly more passed assertions; otherwise baseline fallback. Selection before hidden scoring; no hidden oracle.",
+  "primary_development_contrast": "Final selected-answer accuracy reasoning minus nonthinking over100 tasks; report paired wins/losses and task-bootstrap uncertainty; underpowered conclusions qualified.",
+  "secondary": "Completion/parseability, all token and call costs, latency with desktop caveats, trigger-level rescues/regressions. Equal output-budget ceilings are not equal actual tokens or FLOPs; report remaining unused reasoning allowance.",
+  "failure_policy": "Retain malformed,empty,partial attempts; no quality retry. Resume exact saved keys. Zero-token generation stops as operational failure, not infinite retry.",
+  "model": "Existing fingerprinted Qwen3-4B BF16;9216MiB free guard",
+  "selection_implementation_status": "Rule frozen; isolated selector/scoring adapter still to implement before hidden scoring",
+  "protected": "No reserve or external holdout; old180 confirmation not used.",
+  "source_hashes": {
+    "configs\\matched-budget-development.json": "248fa8ca84f9627040a5497bbb62726f0098ea023a3f189f46b1355dbdb788b1",
+    "configs\\split-manifest-v2.json": "71b281f2e775aa0cd58c817adfd5f192bb44944c5dc1f8c66d6d4ac821f099e8",
+    "scripts\\generate_matched_budget.py": "ad803a9139ffcd234ca4e3cc10904bb6e62e92b147ce956d26d070a243e2a701",
+    "configs\\model-fingerprint.json": "0766a780dbefbb7104882c0a61be9a99d8a94787fac5467420c95d19fd00cbc6",
+    "src\\verifier_study\\generation.py": "639213725d2f28311a93a48c460fe9c6f29f9267ad8fba66a51ee279a9c2edc4",
+    "src\\verifier_study\\reasoning_generation.py": "e3d1fd0ee7ac851986abf6b4098cb8ec8cb628fc32e34450884bb9f2d4265877",
+    "data\\prompts\\mbpp-v0.2.0.jsonl": "3cf2bdc4478bb3228436e6234e39becadc87c5668ae02d89605b8fc98ea52ce0",
+    "runs\\mbpp-development40-public-consensus-20260908\\decisions.jsonl": "9bc8316022d5f40cc4550e37bbd14a56ddf0285f743d10a6781453a86f5f3d9d",
+    "runs\\mbpp-development40-20260907\\linux\\candidate-test-matrix.jsonl": "1c237edc580446ed2ccd83b0340cea183577ccf1f7bdf8e838acedeac2a829bc",
+    "runs\\mbpp-development40-20260907\\generations.jsonl": "51fa67fd47ea39ecc8372ad37a3e3c5952e1a02269281a1389f025a7fd5e2805",
+    "runs\\mbpp-development40-20260907\\generated-tests.jsonl": "3ba72a92a0fb930871b9e2847ac124ece489131dc5da5637b4e15327ae585638",
+    "runs\\mbpp-development60-20260913\\visible\\composition-decisions.jsonl": "fffc9a14de179c18b39e4bf0b17bfba60fe2e64e96a9c7d6ee53415e3d1f20aa",
+    "runs\\mbpp-development60-20260913\\visible\\candidate-test-matrix.jsonl": "88be65f11f82ec623f6eab777b5ca06c1f62887a623fbbda0314d0eb79e22892",
+    "runs\\mbpp-development60-20260913\\generations.jsonl": "6f9124b38e804a5b28aa798bcc09d55cb25af2c23b8cf0bf557d554283146bd1",
+    "runs\\mbpp-development60-20260913\\generated-tests.jsonl": "5e7ae02e912b8d7f07ccce25eebaa1607ff896cd384b823691b599531c0177cf"
+  }
+}

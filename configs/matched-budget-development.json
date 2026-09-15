@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-15",
+  "run_id": "mbpp-matched-budget-development-20260915",
+  "phase": "Adaptive development, not independent confirmation",
+  "cohorts": [
+    {
+      "run": "mbpp-development40-20260907",
+      "decisions": "runs/mbpp-development40-public-consensus-20260908/decisions.jsonl",
+      "matrix": "runs/mbpp-development40-20260907/linux/candidate-test-matrix.jsonl"
+    },
+    {
+      "run": "mbpp-development60-20260913",
+      "decisions": "runs/mbpp-development60-20260913/visible/composition-decisions.jsonl",
+      "matrix": "runs/mbpp-development60-20260913/visible/candidate-test-matrix.jsonl"
+    }
+  ],
+  "question": "At identical per-trigger maximum output-token budget, does a single reasoning resample outperform repeated independent nonthinking samples?",
+  "alternative_explanation": "Original reasoning benefit may reflect more generation budget rather than uniquely informative reasoning content.",
+  "tasks": 100,
+  "triggered_tasks": 14,
+  "independent_unit": "Task, not sample;14 treated pairs,100 full-cohort denominator",
+  "budget_per_trigger_per_arm": 2048,
+  "reasoning": "One call; T0.6,p0.95,k20,thinking enabled; stop at EOS or2048. Index4.",
+  "nonthinking": "Repeated calls from original prompt, T0.7,p0.8,k20; cap=min(768,remaining); debit actual output tokens including special/partial tokens; no visible-test early stopping. Indices5 onward.",
+  "seed_rule": "sha256(matched:20260915:{task_id}:{reasoning|nonthinking}:{zero_based_arm_call})[:8] as hex; all calls newly generated",
+  "selection": "For each arm choose candidate with most public assertions passed; earliest sample_index breaks ties. Replace baseline only on strictly more passed assertions; otherwise baseline fallback. Selection before hidden scoring; no hidden oracle.",
+  "primary_development_contrast": "Final selected-answer accuracy reasoning minus nonthinking over100 tasks; report paired wins/losses and task-bootstrap uncertainty; underpowered conclusions qualified.",
+  "secondary": "Completion/parseability, all token and call costs, latency with desktop caveats, trigger-level rescues/regressions. Equal output-budget ceilings are not equal actual tokens or FLOPs; report remaining unused reasoning allowance.",
+  "failure_policy": "Retain malformed,empty,partial attempts; no quality retry. Resume exact saved keys. Zero-token generation stops as operational failure, not infinite retry.",
+  "model": "Existing fingerprinted Qwen3-4B BF16;9216MiB free guard",
+  "selection_implementation_status": "Rule frozen; isolated selector/scoring adapter still to implement before hidden scoring",
+  "protected": "No reserve or external holdout; old180 confirmation not used."
+}
