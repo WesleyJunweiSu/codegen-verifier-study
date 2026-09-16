@@ -1,0 +1,15 @@
+{
+  "reasoning": {
+    "calls": 14,
+    "output_tokens": 18241,
+    "input_tokens": 1446,
+    "code_parses": 8,
+    "completed": 8
+  },
+  "nonthinking": {
+    "calls": 879,
+    "output_tokens": 28672,
+    "input_tokens": 95892,
+    "code_parses": 868
+  }
+}

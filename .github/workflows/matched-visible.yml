@@ -1,0 +1,54 @@
+name: Matched-budget visible evidence
+on:
+  workflow_dispatch:
+    inputs:
+      input_run:
+        description: Completed candidate pool, without hidden data
+        required: true
+        default: mbpp-matched-budget-development-20260915
+        type: choice
+        options:
+          - mbpp-matched-budget-development-20260915
+permissions:
+  contents: read
+concurrency:
+  group: verifier-linux-eval
+  cancel-in-progress: false
+jobs:
+  visible:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Stage only visible inputs and expected task manifest
+        env:
+          INPUT_RUN: ${{ inputs.input_run }}
+        run: |
+          mkdir -p visible-input eval-output
+          cp "runs/$INPUT_RUN/generations.jsonl" visible-input/
+          cp "runs/$INPUT_RUN/budget-plan.json" visible-input/
+          cp "runs/$INPUT_RUN/manifest.json" visible-input/
+          if [ -f "runs/$INPUT_RUN/repair-plan.json" ]; then
+            cp "runs/$INPUT_RUN/repair-plan.json" visible-input/
+          fi
+          chmod 777 eval-output
+      - name: Build isolated evaluator image
+        run: docker build -f docker/Dockerfile.matched-eval -t verifier-eval .
+      - name: Persist decisions without a hidden dataset
+        env:
+          INPUT_RUN: ${{ inputs.input_run }}
+        run: |
+          docker run --rm --network none --read-only --cap-drop ALL --security-opt no-new-privileges \
+            --pids-limit 128 --memory 3g --cpus 2 --user 65534:65534 \
+            --tmpfs /tmp:rw,nosuid,nodev,size=512m \
+            -e VERIFIER_ISOLATED_RUN=1 -e EVALPLUS_MAX_MEMORY_BYTES=2147483648 \
+            -v "$PWD/visible-input:/inputs:ro" -v "$PWD/eval-output:/output:rw" \
+            --entrypoint python verifier-eval /app/matched_visible_linux.py --input /inputs --output /output
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: visible-evidence
+          path: eval-output/
+          if-no-files-found: error

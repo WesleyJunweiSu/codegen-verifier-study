@@ -105,3 +105,9 @@ Retry succeeded after the CLI allowlist-only fix; artifacts committed1d37756. Ne
 ## 2026-09-15 matched-output-budget development batch prepared
 
 No running local/Actions job found;11151MiB free. Config matched-budget-development.json and generate_matched_budget.py freeze14 public-failure tasks within primary100, two2048-output-token-ceiling arms: one reasoning call versus sequential independent nonthinking sampling. Actual tokens including truncated final sample charged; no correctness-driven stopping. New seed schedule/all new extra calls. Baselines/tests reused. Public-only best-score/earliest-index selection and strict replacement fixed before hidden evaluation. No reserve/external holdout access. Generation can resume by exact keys; isolated variable-pool selection/scoring adapter remains next work.
+
+
+## 2026-09-16 matched-budget generation completed
+
+Validated993 records:100 reused baselines plus893 new calls. Reasoning14 calls/18241 output/1446 input tokens,8 completed; nonthinking879 calls/28672 output/95892 input tokens. Same2048 output-budget ceilings do not imply equal realized cost; repeated prefill is substantial. Public-only selector adapter implements frozen strict improvement and earliest-index ties;39 tests pass and old confirmation hashes valid. Continue with scripts/continue_matched_budget.py; journal in this run. No hidden outcome inspected yet; preserve reserve.
+

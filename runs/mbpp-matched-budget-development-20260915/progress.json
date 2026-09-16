@@ -1,0 +1,8 @@
+{
+  "status": "generation_complete",
+  "tasks": 100,
+  "triggers": 14,
+  "new_calls": 893,
+  "output_tokens": 46913,
+  "wall_seconds": 2625.7966000994493
+}
