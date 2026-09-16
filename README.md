@@ -90,3 +90,7 @@ Local hardware: RTX 5070 Ti Laptop, 12,227 MiB. The two model-generation phases 
 See [v0.9](reports/technical-report-v0.9.md): completed reasoning11 rescues/15 attempts, incomplete0/26. This is a post-hoc association, not a causal effect. Actual reasoning cost remains72,297 tokens (31.22x control);73.65% occurred in incomplete attempts. The completed-only8.22x ratio is not pipeline cost.
 
 [Split v2](configs/split-manifest-v2.json) reassigns former calibration60 to development:120 total, primary100 plus legacy pilot20. Original confirmation180 and reserve78 are unchanged. [Current research design](docs/research-direction-v3.md) prioritizes completion-rate cap ablations and budget-matched independent sampling; these experiments have not run.
+
+## Latest development budget control
+
+The [completed output-budget comparison](docs/matched-budget-development-results.md) gives reasoning77/100 versus baseline and independent nonthinking sampling72/100, with5 rescues and0 regressions on14 triggered tasks. Nonthinking used879 calls and28672 output tokens; reasoning14 calls and18241 output tokens. Identical output ceilings do not equal realized compute. This is adaptive development evidence, not independent confirmation or a causal-faithfulness result.

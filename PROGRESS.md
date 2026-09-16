@@ -111,3 +111,8 @@ No running local/Actions job found;11151MiB free. Config matched-budget-developm
 
 Validated993 records:100 reused baselines plus893 new calls. Reasoning14 calls/18241 output/1446 input tokens,8 completed; nonthinking879 calls/28672 output/95892 input tokens. Same2048 output-budget ceilings do not imply equal realized cost; repeated prefill is substantial. Public-only selector adapter implements frozen strict improvement and earliest-index ties;39 tests pass and old confirmation hashes valid. Continue with scripts/continue_matched_budget.py; journal in this run. No hidden outcome inspected yet; preserve reserve.
 
+## 2026-09-16 matched-budget batch complete
+
+Public-only selection and frozen hidden development scoring succeeded; continuation stage complete. Baseline72/100, reasoning77/100, budget-limited nonthinking72/100:5 rescues,0 regressions,14 treated pairs. New60 contributes40 baseline/44 reasoning/40 nonthinking; old40 remains32/33/32. Reasoning14calls18241output1446inputtokens versus nonthinking879calls28672output95892inputtokens. Same ceilings, unequal realized compute.8/14 reasoning completed. Post-hoc candidate-oracle audit finds0 correct nonthinking pools/14, indicating limited useful diversity for this preset, not a demonstrated selector failure.
+
+Full results cbd4dea; docs/matched-budget-development-results.md qualifies adaptive small-sample evidence and costs. No reserve or external evaluation used. Next priority is frozen external replication and cohort audit, not claiming causal faithfulness or spending reserve. All39 tests passed; no active generator/continuation remains.

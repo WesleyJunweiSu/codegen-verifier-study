@@ -1,0 +1,117 @@
+{
+  "scope": "Post-hoc oracle diagnostic, never used for selection",
+  "tasks": [
+    {
+      "task_id": "Mbpp/103",
+      "iid_calls": 23,
+      "iid_unique_source": 2,
+      "iid_any_correct": false,
+      "reasoning_correct": false,
+      "reasoning_complete": false
+    },
+    {
+      "task_id": "Mbpp/126",
+      "iid_calls": 18,
+      "iid_unique_source": 2,
+      "iid_any_correct": false,
+      "reasoning_correct": false,
+      "reasoning_complete": false
+    },
+    {
+      "task_id": "Mbpp/137",
+      "iid_calls": 39,
+      "iid_unique_source": 4,
+      "iid_any_correct": false,
+      "reasoning_correct": false,
+      "reasoning_complete": true
+    },
+    {
+      "task_id": "Mbpp/235",
+      "iid_calls": 116,
+      "iid_unique_source": 3,
+      "iid_any_correct": false,
+      "reasoning_correct": false,
+      "reasoning_complete": false
+    },
+    {
+      "task_id": "Mbpp/251",
+      "iid_calls": 108,
+      "iid_unique_source": 2,
+      "iid_any_correct": false,
+      "reasoning_correct": true,
+      "reasoning_complete": true
+    },
+    {
+      "task_id": "Mbpp/278",
+      "iid_calls": 59,
+      "iid_unique_source": 4,
+      "iid_any_correct": false,
+      "reasoning_correct": false,
+      "reasoning_complete": true
+    },
+    {
+      "task_id": "Mbpp/310",
+      "iid_calls": 171,
+      "iid_unique_source": 2,
+      "iid_any_correct": false,
+      "reasoning_correct": false,
+      "reasoning_complete": true
+    },
+    {
+      "task_id": "Mbpp/419",
+      "iid_calls": 54,
+      "iid_unique_source": 3,
+      "iid_any_correct": false,
+      "reasoning_correct": true,
+      "reasoning_complete": true
+    },
+    {
+      "task_id": "Mbpp/439",
+      "iid_calls": 63,
+      "iid_unique_source": 2,
+      "iid_any_correct": false,
+      "reasoning_correct": true,
+      "reasoning_complete": true
+    },
+    {
+      "task_id": "Mbpp/450",
+      "iid_calls": 90,
+      "iid_unique_source": 2,
+      "iid_any_correct": false,
+      "reasoning_correct": true,
+      "reasoning_complete": true
+    },
+    {
+      "task_id": "Mbpp/468",
+      "iid_calls": 32,
+      "iid_unique_source": 5,
+      "iid_any_correct": false,
+      "reasoning_correct": false,
+      "reasoning_complete": false
+    },
+    {
+      "task_id": "Mbpp/735",
+      "iid_calls": 12,
+      "iid_unique_source": 12,
+      "iid_any_correct": false,
+      "reasoning_correct": false,
+      "reasoning_complete": false
+    },
+    {
+      "task_id": "Mbpp/777",
+      "iid_calls": 90,
+      "iid_unique_source": 2,
+      "iid_any_correct": false,
+      "reasoning_correct": false,
+      "reasoning_complete": false
+    },
+    {
+      "task_id": "Mbpp/801",
+      "iid_calls": 4,
+      "iid_unique_source": 3,
+      "iid_any_correct": false,
+      "reasoning_correct": true,
+      "reasoning_complete": true
+    }
+  ]
+}
