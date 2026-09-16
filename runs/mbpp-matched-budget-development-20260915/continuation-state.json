@@ -4,8 +4,13 @@
       "source_commit": "42708148e81bc3aba2b5d91860a1aa4e4bd9da9a",
       "dispatch_pending": true,
       "run_id": "35158813041"
+    },
+    "matched_score": {
+      "source_commit": "ddc8b86de2737a8b0c1afa2d58607bd7a502d0cf",
+      "dispatch_pending": true,
+      "run_id": "35158882545"
     }
   },
-  "stage": "matched_visible_imported",
-  "updated_utc": "2026-09-16T22:41:18.690654+00:00"
+  "stage": "complete",
+  "updated_utc": "2026-09-16T22:42:28.290794+00:00"
 }

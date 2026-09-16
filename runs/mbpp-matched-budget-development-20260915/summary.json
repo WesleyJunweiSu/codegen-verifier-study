@@ -1,0 +1,93 @@
+{
+  "scope": "Adaptive development100;14 treated task pairs; not independent confirmation",
+  "methods": {
+    "selected_baseline": {
+      "correct": 72,
+      "tasks": 100,
+      "accuracy": 0.72,
+      "rescues": [],
+      "regressions": []
+    },
+    "reasoning_budget2048": {
+      "correct": 77,
+      "tasks": 100,
+      "accuracy": 0.77,
+      "rescues": [
+        "Mbpp/801",
+        "Mbpp/251",
+        "Mbpp/419",
+        "Mbpp/439",
+        "Mbpp/450"
+      ],
+      "regressions": []
+    },
+    "nonthinking_budget2048": {
+      "correct": 72,
+      "tasks": 100,
+      "accuracy": 0.72,
+      "rescues": [],
+      "regressions": []
+    }
+  },
+  "reasoning_minus_nonthinking": {
+    "wins": [
+      "Mbpp/801",
+      "Mbpp/251",
+      "Mbpp/419",
+      "Mbpp/439",
+      "Mbpp/450"
+    ],
+    "losses": [],
+    "difference_percentage_points": 5,
+    "exploratory_task_bootstrap95_pp": [
+      1,
+      10
+    ]
+  },
+  "cohorts": {
+    "mbpp-development40-20260907": {
+      "selected_baseline": {
+        "correct": 32,
+        "tasks": 40
+      },
+      "reasoning_budget2048": {
+        "correct": 33,
+        "tasks": 40
+      },
+      "nonthinking_budget2048": {
+        "correct": 32,
+        "tasks": 40
+      }
+    },
+    "mbpp-development60-20260913": {
+      "selected_baseline": {
+        "correct": 40,
+        "tasks": 60
+      },
+      "reasoning_budget2048": {
+        "correct": 44,
+        "tasks": 60
+      },
+      "nonthinking_budget2048": {
+        "correct": 40,
+        "tasks": 60
+      }
+    }
+  },
+  "cost": {
+    "reasoning": {
+      "calls": 14,
+      "output_tokens": 18241,
+      "input_tokens": 1446,
+      "code_parses": 8,
+      "completed": 8
+    },
+    "nonthinking": {
+      "calls": 879,
+      "output_tokens": 28672,
+      "input_tokens": 95892,
+      "code_parses": 868
+    }
+  },
+  "limitations": "Identical per-task output-budget ceilings, unequal realized output/input tokens, calls and compute. Mode and sampling preset differ jointly.14 treated pairs, one seed schedule, adaptively used development tasks; no causal content attribution or independent significance claim."
+}
