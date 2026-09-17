@@ -116,3 +116,8 @@ Validated993 records:100 reused baselines plus893 new calls. Reasoning14 calls/1
 Public-only selection and frozen hidden development scoring succeeded; continuation stage complete. Baseline72/100, reasoning77/100, budget-limited nonthinking72/100:5 rescues,0 regressions,14 treated pairs. New60 contributes40 baseline/44 reasoning/40 nonthinking; old40 remains32/33/32. Reasoning14calls18241output1446inputtokens versus nonthinking879calls28672output95892inputtokens. Same ceilings, unequal realized compute.8/14 reasoning completed. Post-hoc candidate-oracle audit finds0 correct nonthinking pools/14, indicating limited useful diversity for this preset, not a demonstrated selector failure.
 
 Full results cbd4dea; docs/matched-budget-development-results.md qualifies adaptive small-sample evidence and costs. No reserve or external evaluation used. Next priority is frozen external replication and cohort audit, not claiming causal faithfulness or spending reserve. All39 tests passed; no active generator/continuation remains.
+
+
+## 2026-09-17 external replication preflight
+
+No local/Actions jobs active; matched-budget batch remains complete. Pinned official LiveCodeBench source and dataset metadata without loading tasks or labels. All10 local checkpoint fingerprints match verified remote revision. Temporal enrollment is not frozen: distinguish repository creation, snapshot update and exact-weight publication; current dataset metadata predates the conservative snapshot bound. Upstream constructor eagerly decodes private cases, so public-only projection and separate restricted scorer are required. See docs/external-preflight.md and runs/external-preflight-20260917. No new model calls, no new experiment conclusion, reserve untouched.
