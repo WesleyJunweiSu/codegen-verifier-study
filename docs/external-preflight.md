@@ -13,3 +13,9 @@ Next bounded work: verify temporal enrollment metadata without inspecting privat
 Source digests and API metadata: runs/external-preflight-20260917/manifest.json. Exact model digest comparison: checkpoint-match.json. Upstream reference sources are cached outside the repository; never execute them on the host.
 
 Sources: [official repository](https://github.com/LiveCodeBench/LiveCodeBench), [project](https://livecodebench.github.io/), [Qwen release overview](https://qwenlm.github.io/blog/qwen3/), [model metadata](https://huggingface.co/api/models/Qwen/Qwen3-4B), [dataset metadata](https://huggingface.co/api/datasets/livecodebench/code_generation_lite).
+
+## 2026-09-18 update
+
+All10 local files also match historical revision8136a03248eac0530d0f630f9a4e21810f9137de (2025-05-19T07:44:39Z). The July snapshot bound is therefore unnecessarily late; a prospective2025-05-20 start can use identical published files. This does not establish a training cutoff. Proof is historical-checkpoint-match.json.
+
+Metadata census was NOT run: automatic approval rejected the proposed JSONL projection because raw rows include private_test_cases, even if left opaque and discarded. No task data was downloaded by that action. Downloader removed; no indirect retry. Need explicit permission for a strictly separated metadata projection or an official metadata-only artifact before enrollment can be frozen. Current work is preparation, not evaluation.

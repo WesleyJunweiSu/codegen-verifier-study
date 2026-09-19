@@ -1,0 +1,9 @@
+{
+  "date": "2026-09-18",
+  "status": "automatic_approval_rejected_before_execution",
+  "attempted_action": "Stream pinned LCB JSONL and retain only platform,ID,date,difficulty; discard opaque private_test_cases",
+  "reason": "Raw rows contain private_test_cases even if ignored; reviewer requires explicit user authorization for this access.",
+  "data_downloaded_by_rejected_action": false,
+  "retry_policy": "No workaround/indirect retry. Require user authorization or a genuinely separate official metadata-only source. Proposed downloader removed.",
+  "unaffected_completed_work": "All10 local checkpoint files matched historical revision8136a03248eac0530d0f630f9a4e21810f9137de dated2025-05-19; enables conservative post-May19 temporal criterion once metadata available."
+}

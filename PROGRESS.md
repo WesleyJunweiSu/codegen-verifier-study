@@ -121,3 +121,8 @@ Full results cbd4dea; docs/matched-budget-development-results.md qualifies adapt
 ## 2026-09-17 external replication preflight
 
 No local/Actions jobs active; matched-budget batch remains complete. Pinned official LiveCodeBench source and dataset metadata without loading tasks or labels. All10 local checkpoint fingerprints match verified remote revision. Temporal enrollment is not frozen: distinguish repository creation, snapshot update and exact-weight publication; current dataset metadata predates the conservative snapshot bound. Upstream constructor eagerly decodes private cases, so public-only projection and separate restricted scorer are required. See docs/external-preflight.md and runs/external-preflight-20260917. No new model calls, no new experiment conclusion, reserve untouched.
+
+
+## 2026-09-18 historical checkpoint verified; external metadata access needs approval
+
+All10 files match the2025-05-19 historical checkpoint; can use a conservative May20 temporal start once eligible metadata is available. Automatic approval rejected a proposed pinned-LCB metadata census because source JSONL includes private_test_cases. Command was blocked before execution; no new task data, hidden tests, generation or evaluation. Removed downloader; do not retry indirectly. Evidence/status in external-preflight-20260917/metadata-access-block.json. Next external enrollment requires explicit permission for separated metadata projection or an official metadata-only source. Reserve remains untouched; previous development result unchanged.
