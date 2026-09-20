@@ -1,0 +1,125 @@
+{
+  "scope": "Post-hoc descriptive audit of already-scored cohorts; no policy fitting or new hidden evaluation",
+  "groups": {
+    "additional40": {
+      "tasks": 40,
+      "correct": 32,
+      "accuracy": 0.8,
+      "accuracy_wilson95": [
+        0.652426936536005,
+        0.895000102745623
+      ],
+      "public_failure_triggers": 3,
+      "trigger_wilson95": [
+        0.025836025774588198,
+        0.19864233524310543
+      ],
+      "error_detection": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 5,
+        "tn": 32
+      },
+      "median_selected_input_tokens": 101.5,
+      "median_prompt_characters": 149.5,
+      "public_assertions": {
+        "min": 1,
+        "median": 1.0,
+        "max": 1
+      },
+      "candidate_seed_rule_matches": true
+    },
+    "reassigned60": {
+      "tasks": 60,
+      "correct": 40,
+      "accuracy": 0.6666666666666666,
+      "accuracy_wilson95": [
+        0.5405686645211968,
+        0.7727073847647731
+      ],
+      "public_failure_triggers": 11,
+      "trigger_wilson95": [
+        0.10557796889197638,
+        0.2991975374646805
+      ],
+      "error_detection": {
+        "tp": 11,
+        "fp": 0,
+        "fn": 9,
+        "tn": 40
+      },
+      "median_selected_input_tokens": 103.0,
+      "median_prompt_characters": 153.5,
+      "public_assertions": {
+        "min": 1,
+        "median": 1.0,
+        "max": 1
+      },
+      "candidate_seed_rule_matches": true
+    },
+    "historical_confirmation180": {
+      "tasks": 180,
+      "correct": 107,
+      "accuracy": 0.5944444444444444,
+      "accuracy_wilson95": [
+        0.521468259978129,
+        0.6634737015255664
+      ],
+      "public_failure_triggers": 41,
+      "trigger_wilson95": [
+        0.17257452984228494,
+        0.2943574634705932
+      ],
+      "error_detection": {
+        "tp": 41,
+        "fp": 0,
+        "fn": 32,
+        "tn": 107
+      },
+      "median_selected_input_tokens": 99.5,
+      "median_prompt_characters": 143.5,
+      "public_assertions": {
+        "min": 1,
+        "median": 1.0,
+        "max": 1
+      },
+      "candidate_seed_rule_matches": true
+    }
+  },
+  "runtime_packages": {
+    "mbpp-development40-20260907": {
+      "torch": "2.11.0+cu128",
+      "transformers": "5.13.0",
+      "accelerate": "1.14.0",
+      "tokenizers": "0.22.2"
+    },
+    "mbpp-development60-20260913": {
+      "torch": "2.11.0+cu128",
+      "transformers": "5.13.0",
+      "accelerate": "1.14.0",
+      "tokenizers": "0.22.2"
+    },
+    "mbpp-confirmation-20260911": {
+      "torch": "2.11.0+cu128",
+      "transformers": "5.13.0",
+      "accelerate": "1.14.0",
+      "tokenizers": "0.22.2"
+    }
+  },
+  "limitations": "Marginal Wilson intervals are descriptive, not tests of equality or proof of exchangeability. No label-driven reshuffling. Original pilot20 omitted from primary cohort comparison because adaptively used during method development. Same generation seeds do not imply identical task difficulty or counterfactual outcomes.",
+  "source_hashes": {
+    "configs\\split-manifest-v2.json": "71b281f2e775aa0cd58c817adfd5f192bb44944c5dc1f8c66d6d4ac821f099e8",
+    "configs\\development-expansion.json": "9a95befd2b977aa154cbf13fed1e7cfa788f28cf5f5cf4dd5f2f9521efa463e2",
+    "runs\\mbpp-matched-budget-development-20260915\\task-results.json": "de359ec3f922cd814a5b9e41a4cad0a6cf19695060a9232e66d97d1cc9db27bb",
+    "runs\\mbpp-confirmation-extensions-20260911\\task-results.json": "65ef7bdc7c5a7993dffb599aaeee7158cfb7a7a55d7d7ee17db99aabfc06b132",
+    "runs\\mbpp-matched-budget-development-20260915\\baseline-generations.jsonl": "5f946d51c5796afdb96a460b877ad5376e007d19c7b7331b6fd03576e1f5caa5",
+    "runs\\mbpp-confirmation-extensions-20260911\\frozen-decisions.jsonl": "74d0d7de015e6af095c6d6d1f68dfa5966e0f6b037dca2294e728713ea58c62c",
+    "runs\\mbpp-confirmation-20260911\\generations.jsonl": "ec2a6ddaec12ffc8deaec208b11121f7cc11feab9ec2e7160f4560a7027dff1b",
+    "data\\prompts\\mbpp-v0.2.0.jsonl": "3cf2bdc4478bb3228436e6234e39becadc87c5668ae02d89605b8fc98ea52ce0",
+    "runs\\mbpp-matched-budget-development-20260915\\budget-plan.json": "f4839317d449fe101f4e8f088e3ac7f48f09f831cc24af0466ebbb1da7c94216",
+    "runs\\mbpp-confirmation-extensions-20260911\\repair-plan.json": "7f5a10b57f1934b7210bec9e4eb9dc0490443fd0afdd97a899997254ebccff29",
+    "runs\\mbpp-development40-20260907\\manifest.json": "efcda5f6a4cea6bae88c0de5425d48847ff1d21498419085abec134f6c55366b",
+    "runs\\mbpp-development60-20260913\\manifest.json": "e777a8429539633980153fd30903b62c34da615441e04ca3728418e80a561277",
+    "runs\\mbpp-confirmation-20260911\\manifest.json": "e550a7e82f0994581dee90ae04643198e6a0b88022fc9d5a0e6b6a6057324507"
+  }
+}

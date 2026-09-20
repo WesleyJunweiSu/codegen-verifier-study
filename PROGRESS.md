@@ -126,3 +126,8 @@ No local/Actions jobs active; matched-budget batch remains complete. Pinned offi
 ## 2026-09-18 historical checkpoint verified; external metadata access needs approval
 
 All10 files match the2025-05-19 historical checkpoint; can use a conservative May20 temporal start once eligible metadata is available. Automatic approval rejected a proposed pinned-LCB metadata census because source JSONL includes private_test_cases. Command was blocked before execution; no new task data, hidden tests, generation or evaluation. Removed downloader; do not retry indirectly. Evidence/status in external-preflight-20260917/metadata-access-block.json. Next external enrollment requires explicit permission for separated metadata projection or an official metadata-only source. Reserve remains untouched; previous development result unchanged.
+
+
+## 2026-09-20 independent cohort audit; external permission still pending
+
+No local/Actions jobs active. Did not retry rejected external metadata access; user approval is still unanswered. Completed descriptive cohort audit using already-scored outcomes only:additional40 baseline80% (Wilson95%65.24–89.50),reassigned60 66.67% (54.06–77.27),historicalconfirmation59.44% (52.15–66.35). All280 selected baseline seeds match the original rule and recorded runtime versions match; prompt-length medians are similar. These checks do not prove exchangeability or explain difficulty. No reshuffling, threshold fitting, new generation or reserve access. Reproducible results in runs/cohort-audit-20260920 and docs/cohort-audit.md. External enrollment remains pending authorization or a genuinely separate official metadata-only artifact.

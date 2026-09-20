@@ -1,0 +1,2242 @@
+[
+  {
+    "task_id": "Mbpp/801",
+    "cohort": "additional40",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 91,
+    "prompt_characters": 132
+  },
+  {
+    "task_id": "Mbpp/429",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 117,
+    "prompt_characters": 153
+  },
+  {
+    "task_id": "Mbpp/388",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 96,
+    "prompt_characters": 131
+  },
+  {
+    "task_id": "Mbpp/455",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 89,
+    "prompt_characters": 129
+  },
+  {
+    "task_id": "Mbpp/309",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 85,
+    "prompt_characters": 95
+  },
+  {
+    "task_id": "Mbpp/767",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 111,
+    "prompt_characters": 188
+  },
+  {
+    "task_id": "Mbpp/129",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 135,
+    "prompt_characters": 172
+  },
+  {
+    "task_id": "Mbpp/758",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 196,
+    "prompt_characters": 353
+  },
+  {
+    "task_id": "Mbpp/808",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 100,
+    "prompt_characters": 120
+  },
+  {
+    "task_id": "Mbpp/119",
+    "cohort": "additional40",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 94,
+    "prompt_characters": 126
+  },
+  {
+    "task_id": "Mbpp/256",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 98,
+    "prompt_characters": 182
+  },
+  {
+    "task_id": "Mbpp/793",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 92,
+    "prompt_characters": 119
+  },
+  {
+    "task_id": "Mbpp/94",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 119,
+    "prompt_characters": 208
+  },
+  {
+    "task_id": "Mbpp/99",
+    "cohort": "additional40",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 97,
+    "prompt_characters": 172
+  },
+  {
+    "task_id": "Mbpp/628",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 104,
+    "prompt_characters": 151
+  },
+  {
+    "task_id": "Mbpp/626",
+    "cohort": "additional40",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 96,
+    "prompt_characters": 165
+  },
+  {
+    "task_id": "Mbpp/623",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 150,
+    "prompt_characters": 168
+  },
+  {
+    "task_id": "Mbpp/598",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 86,
+    "prompt_characters": 115
+  },
+  {
+    "task_id": "Mbpp/257",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 99,
+    "prompt_characters": 157
+  },
+  {
+    "task_id": "Mbpp/276",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 121,
+    "prompt_characters": 181
+  },
+  {
+    "task_id": "Mbpp/394",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 97,
+    "prompt_characters": 124
+  },
+  {
+    "task_id": "Mbpp/312",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 113,
+    "prompt_characters": 129
+  },
+  {
+    "task_id": "Mbpp/624",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 81,
+    "prompt_characters": 109
+  },
+  {
+    "task_id": "Mbpp/463",
+    "cohort": "additional40",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 107,
+    "prompt_characters": 144
+  },
+  {
+    "task_id": "Mbpp/555",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 99,
+    "prompt_characters": 182
+  },
+  {
+    "task_id": "Mbpp/137",
+    "cohort": "additional40",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 144,
+    "prompt_characters": 194
+  },
+  {
+    "task_id": "Mbpp/70",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 106,
+    "prompt_characters": 143
+  },
+  {
+    "task_id": "Mbpp/777",
+    "cohort": "additional40",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 103,
+    "prompt_characters": 131
+  },
+  {
+    "task_id": "Mbpp/796",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 105,
+    "prompt_characters": 132
+  },
+  {
+    "task_id": "Mbpp/120",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 113,
+    "prompt_characters": 182
+  },
+  {
+    "task_id": "Mbpp/226",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 89,
+    "prompt_characters": 148
+  },
+  {
+    "task_id": "Mbpp/227",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 85,
+    "prompt_characters": 91
+  },
+  {
+    "task_id": "Mbpp/75",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 130,
+    "prompt_characters": 189
+  },
+  {
+    "task_id": "Mbpp/12",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 137,
+    "prompt_characters": 190
+  },
+  {
+    "task_id": "Mbpp/470",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 113,
+    "prompt_characters": 160
+  },
+  {
+    "task_id": "Mbpp/412",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 87,
+    "prompt_characters": 107
+  },
+  {
+    "task_id": "Mbpp/568",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 85,
+    "prompt_characters": 106
+  },
+  {
+    "task_id": "Mbpp/805",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 128,
+    "prompt_characters": 179
+  },
+  {
+    "task_id": "Mbpp/559",
+    "cohort": "additional40",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 113,
+    "prompt_characters": 158
+  },
+  {
+    "task_id": "Mbpp/436",
+    "cohort": "additional40",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 92,
+    "prompt_characters": 113
+  },
+  {
+    "task_id": "Mbpp/458",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 85,
+    "prompt_characters": 92
+  },
+  {
+    "task_id": "Mbpp/240",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 145,
+    "prompt_characters": 218
+  },
+  {
+    "task_id": "Mbpp/439",
+    "cohort": "reassigned60",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 98,
+    "prompt_characters": 132
+  },
+  {
+    "task_id": "Mbpp/64",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 142,
+    "prompt_characters": 261
+  },
+  {
+    "task_id": "Mbpp/577",
+    "cohort": "reassigned60",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 90,
+    "prompt_characters": 123
+  },
+  {
+    "task_id": "Mbpp/453",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 88,
+    "prompt_characters": 107
+  },
+  {
+    "task_id": "Mbpp/771",
+    "cohort": "reassigned60",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 86,
+    "prompt_characters": 123
+  },
+  {
+    "task_id": "Mbpp/736",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 95,
+    "prompt_characters": 138
+  },
+  {
+    "task_id": "Mbpp/450",
+    "cohort": "reassigned60",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 105,
+    "prompt_characters": 206
+  },
+  {
+    "task_id": "Mbpp/424",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 103,
+    "prompt_characters": 164
+  },
+  {
+    "task_id": "Mbpp/172",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 98,
+    "prompt_characters": 147
+  },
+  {
+    "task_id": "Mbpp/310",
+    "cohort": "reassigned60",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 110,
+    "prompt_characters": 161
+  },
+  {
+    "task_id": "Mbpp/300",
+    "cohort": "reassigned60",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 116,
+    "prompt_characters": 202
+  },
+  {
+    "task_id": "Mbpp/593",
+    "cohort": "reassigned60",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 106,
+    "prompt_characters": 127
+  },
+  {
+    "task_id": "Mbpp/247",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 95,
+    "prompt_characters": 137
+  },
+  {
+    "task_id": "Mbpp/167",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 92,
+    "prompt_characters": 123
+  },
+  {
+    "task_id": "Mbpp/772",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 97,
+    "prompt_characters": 166
+  },
+  {
+    "task_id": "Mbpp/785",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 94,
+    "prompt_characters": 114
+  },
+  {
+    "task_id": "Mbpp/103",
+    "cohort": "reassigned60",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 88,
+    "prompt_characters": 93
+  },
+  {
+    "task_id": "Mbpp/809",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 107,
+    "prompt_characters": 180
+  },
+  {
+    "task_id": "Mbpp/69",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 96,
+    "prompt_characters": 128
+  },
+  {
+    "task_id": "Mbpp/460",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 112,
+    "prompt_characters": 137
+  },
+  {
+    "task_id": "Mbpp/476",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 93,
+    "prompt_characters": 129
+  },
+  {
+    "task_id": "Mbpp/104",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 124,
+    "prompt_characters": 250
+  },
+  {
+    "task_id": "Mbpp/296",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 93,
+    "prompt_characters": 105
+  },
+  {
+    "task_id": "Mbpp/68",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 97,
+    "prompt_characters": 128
+  },
+  {
+    "task_id": "Mbpp/132",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 106,
+    "prompt_characters": 137
+  },
+  {
+    "task_id": "Mbpp/735",
+    "cohort": "reassigned60",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 91,
+    "prompt_characters": 132
+  },
+  {
+    "task_id": "Mbpp/730",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 157,
+    "prompt_characters": 191
+  },
+  {
+    "task_id": "Mbpp/278",
+    "cohort": "reassigned60",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 108,
+    "prompt_characters": 170
+  },
+  {
+    "task_id": "Mbpp/126",
+    "cohort": "reassigned60",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 90,
+    "prompt_characters": 112
+  },
+  {
+    "task_id": "Mbpp/233",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 119,
+    "prompt_characters": 158
+  },
+  {
+    "task_id": "Mbpp/56",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 87,
+    "prompt_characters": 121
+  },
+  {
+    "task_id": "Mbpp/471",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 110,
+    "prompt_characters": 147
+  },
+  {
+    "task_id": "Mbpp/643",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 96,
+    "prompt_characters": 157
+  },
+  {
+    "task_id": "Mbpp/781",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 84,
+    "prompt_characters": 107
+  },
+  {
+    "task_id": "Mbpp/425",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 113,
+    "prompt_characters": 163
+  },
+  {
+    "task_id": "Mbpp/600",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 85,
+    "prompt_characters": 109
+  },
+  {
+    "task_id": "Mbpp/398",
+    "cohort": "reassigned60",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 93,
+    "prompt_characters": 122
+  },
+  {
+    "task_id": "Mbpp/109",
+    "cohort": "reassigned60",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 104,
+    "prompt_characters": 176
+  },
+  {
+    "task_id": "Mbpp/720",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 144,
+    "prompt_characters": 208
+  },
+  {
+    "task_id": "Mbpp/97",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 175,
+    "prompt_characters": 238
+  },
+  {
+    "task_id": "Mbpp/90",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 88,
+    "prompt_characters": 120
+  },
+  {
+    "task_id": "Mbpp/108",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 221,
+    "prompt_characters": 250
+  },
+  {
+    "task_id": "Mbpp/74",
+    "cohort": "reassigned60",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 99,
+    "prompt_characters": 166
+  },
+  {
+    "task_id": "Mbpp/447",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 152,
+    "prompt_characters": 170
+  },
+  {
+    "task_id": "Mbpp/419",
+    "cohort": "reassigned60",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 152,
+    "prompt_characters": 226
+  },
+  {
+    "task_id": "Mbpp/792",
+    "cohort": "reassigned60",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 115,
+    "prompt_characters": 153
+  },
+  {
+    "task_id": "Mbpp/580",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 119,
+    "prompt_characters": 154
+  },
+  {
+    "task_id": "Mbpp/754",
+    "cohort": "reassigned60",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 178,
+    "prompt_characters": 312
+  },
+  {
+    "task_id": "Mbpp/142",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 134,
+    "prompt_characters": 189
+  },
+  {
+    "task_id": "Mbpp/272",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 131,
+    "prompt_characters": 208
+  },
+  {
+    "task_id": "Mbpp/235",
+    "cohort": "reassigned60",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 88,
+    "prompt_characters": 109
+  },
+  {
+    "task_id": "Mbpp/724",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 100,
+    "prompt_characters": 170
+  },
+  {
+    "task_id": "Mbpp/478",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 85,
+    "prompt_characters": 121
+  },
+  {
+    "task_id": "Mbpp/165",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 103,
+    "prompt_characters": 206
+  },
+  {
+    "task_id": "Mbpp/602",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 88,
+    "prompt_characters": 132
+  },
+  {
+    "task_id": "Mbpp/766",
+    "cohort": "reassigned60",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 141,
+    "prompt_characters": 187
+  },
+  {
+    "task_id": "Mbpp/251",
+    "cohort": "reassigned60",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 121,
+    "prompt_characters": 246
+  },
+  {
+    "task_id": "Mbpp/468",
+    "cohort": "reassigned60",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 113,
+    "prompt_characters": 178
+  },
+  {
+    "task_id": "Mbpp/632",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 106,
+    "prompt_characters": 130
+  },
+  {
+    "task_id": "Mbpp/93",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 89,
+    "prompt_characters": 97
+  },
+  {
+    "task_id": "Mbpp/123",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 91,
+    "prompt_characters": 121
+  },
+  {
+    "task_id": "Mbpp/390",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 111,
+    "prompt_characters": 167
+  },
+  {
+    "task_id": "Mbpp/773",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 108,
+    "prompt_characters": 223
+  },
+  {
+    "task_id": "Mbpp/260",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 89,
+    "prompt_characters": 106
+  },
+  {
+    "task_id": "Mbpp/245",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 142,
+    "prompt_characters": 251
+  },
+  {
+    "task_id": "Mbpp/59",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 83,
+    "prompt_characters": 88
+  },
+  {
+    "task_id": "Mbpp/271",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 105,
+    "prompt_characters": 182
+  },
+  {
+    "task_id": "Mbpp/71",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 112,
+    "prompt_characters": 114
+  },
+  {
+    "task_id": "Mbpp/222",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 103,
+    "prompt_characters": 138
+  },
+  {
+    "task_id": "Mbpp/77",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 90,
+    "prompt_characters": 109
+  },
+  {
+    "task_id": "Mbpp/566",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 87,
+    "prompt_characters": 108
+  },
+  {
+    "task_id": "Mbpp/139",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 113,
+    "prompt_characters": 145
+  },
+  {
+    "task_id": "Mbpp/261",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 120,
+    "prompt_characters": 202
+  },
+  {
+    "task_id": "Mbpp/755",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 98,
+    "prompt_characters": 121
+  },
+  {
+    "task_id": "Mbpp/639",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 119,
+    "prompt_characters": 223
+  },
+  {
+    "task_id": "Mbpp/565",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 90,
+    "prompt_characters": 119
+  },
+  {
+    "task_id": "Mbpp/608",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 80,
+    "prompt_characters": 84
+  },
+  {
+    "task_id": "Mbpp/631",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 98,
+    "prompt_characters": 169
+  },
+  {
+    "task_id": "Mbpp/432",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 94,
+    "prompt_characters": 105
+  },
+  {
+    "task_id": "Mbpp/88",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 158,
+    "prompt_characters": 202
+  },
+  {
+    "task_id": "Mbpp/267",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 97,
+    "prompt_characters": 157
+  },
+  {
+    "task_id": "Mbpp/440",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 102,
+    "prompt_characters": 170
+  },
+  {
+    "task_id": "Mbpp/14",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 91,
+    "prompt_characters": 108
+  },
+  {
+    "task_id": "Mbpp/61",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 97,
+    "prompt_characters": 151
+  },
+  {
+    "task_id": "Mbpp/472",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 94,
+    "prompt_characters": 147
+  },
+  {
+    "task_id": "Mbpp/415",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 104,
+    "prompt_characters": 147
+  },
+  {
+    "task_id": "Mbpp/420",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 88,
+    "prompt_characters": 111
+  },
+  {
+    "task_id": "Mbpp/726",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 145,
+    "prompt_characters": 239
+  },
+  {
+    "task_id": "Mbpp/614",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 112,
+    "prompt_characters": 170
+  },
+  {
+    "task_id": "Mbpp/590",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 131,
+    "prompt_characters": 164
+  },
+  {
+    "task_id": "Mbpp/265",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 178,
+    "prompt_characters": 315
+  },
+  {
+    "task_id": "Mbpp/284",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 105,
+    "prompt_characters": 205
+  },
+  {
+    "task_id": "Mbpp/238",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 90,
+    "prompt_characters": 135
+  },
+  {
+    "task_id": "Mbpp/618",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 101,
+    "prompt_characters": 109
+  },
+  {
+    "task_id": "Mbpp/644",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 118,
+    "prompt_characters": 147
+  },
+  {
+    "task_id": "Mbpp/105",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 85,
+    "prompt_characters": 111
+  },
+  {
+    "task_id": "Mbpp/465",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 110,
+    "prompt_characters": 159
+  },
+  {
+    "task_id": "Mbpp/133",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 119,
+    "prompt_characters": 163
+  },
+  {
+    "task_id": "Mbpp/765",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 92,
+    "prompt_characters": 116
+  },
+  {
+    "task_id": "Mbpp/397",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 89,
+    "prompt_characters": 100
+  },
+  {
+    "task_id": "Mbpp/20",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 88,
+    "prompt_characters": 105
+  },
+  {
+    "task_id": "Mbpp/430",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 92,
+    "prompt_characters": 101
+  },
+  {
+    "task_id": "Mbpp/427",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 107,
+    "prompt_characters": 142
+  },
+  {
+    "task_id": "Mbpp/308",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 136,
+    "prompt_characters": 210
+  },
+  {
+    "task_id": "Mbpp/297",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 183,
+    "prompt_characters": 205
+  },
+  {
+    "task_id": "Mbpp/804",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 89,
+    "prompt_characters": 123
+  },
+  {
+    "task_id": "Mbpp/160",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 107,
+    "prompt_characters": 170
+  },
+  {
+    "task_id": "Mbpp/268",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 84,
+    "prompt_characters": 85
+  },
+  {
+    "task_id": "Mbpp/161",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 142,
+    "prompt_characters": 184
+  },
+  {
+    "task_id": "Mbpp/84",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 86,
+    "prompt_characters": 104
+  },
+  {
+    "task_id": "Mbpp/19",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 93,
+    "prompt_characters": 143
+  },
+  {
+    "task_id": "Mbpp/292",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 90,
+    "prompt_characters": 126
+  },
+  {
+    "task_id": "Mbpp/85",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 112,
+    "prompt_characters": 142
+  },
+  {
+    "task_id": "Mbpp/473",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 153,
+    "prompt_characters": 246
+  },
+  {
+    "task_id": "Mbpp/806",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 95,
+    "prompt_characters": 143
+  },
+  {
+    "task_id": "Mbpp/127",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 82,
+    "prompt_characters": 83
+  },
+  {
+    "task_id": "Mbpp/418",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 101,
+    "prompt_characters": 151
+  },
+  {
+    "task_id": "Mbpp/457",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 92,
+    "prompt_characters": 119
+  },
+  {
+    "task_id": "Mbpp/223",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 144,
+    "prompt_characters": 297
+  },
+  {
+    "task_id": "Mbpp/635",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 132,
+    "prompt_characters": 130
+  },
+  {
+    "task_id": "Mbpp/441",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 87,
+    "prompt_characters": 109
+  },
+  {
+    "task_id": "Mbpp/79",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 87,
+    "prompt_characters": 122
+  },
+  {
+    "task_id": "Mbpp/622",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 126,
+    "prompt_characters": 149
+  },
+  {
+    "task_id": "Mbpp/138",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 101,
+    "prompt_characters": 167
+  },
+  {
+    "task_id": "Mbpp/454",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 83,
+    "prompt_characters": 103
+  },
+  {
+    "task_id": "Mbpp/752",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 147,
+    "prompt_characters": 154
+  },
+  {
+    "task_id": "Mbpp/230",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 100,
+    "prompt_characters": 202
+  },
+  {
+    "task_id": "Mbpp/753",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 139,
+    "prompt_characters": 226
+  },
+  {
+    "task_id": "Mbpp/733",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 122,
+    "prompt_characters": 173
+  },
+  {
+    "task_id": "Mbpp/591",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 117,
+    "prompt_characters": 147
+  },
+  {
+    "task_id": "Mbpp/96",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 86,
+    "prompt_characters": 107
+  },
+  {
+    "task_id": "Mbpp/131",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 93,
+    "prompt_characters": 147
+  },
+  {
+    "task_id": "Mbpp/422",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 92,
+    "prompt_characters": 127
+  },
+  {
+    "task_id": "Mbpp/589",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 99,
+    "prompt_characters": 124
+  },
+  {
+    "task_id": "Mbpp/763",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 105,
+    "prompt_characters": 153
+  },
+  {
+    "task_id": "Mbpp/807",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 91,
+    "prompt_characters": 120
+  },
+  {
+    "task_id": "Mbpp/91",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 104,
+    "prompt_characters": 186
+  },
+  {
+    "task_id": "Mbpp/89",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 84,
+    "prompt_characters": 97
+  },
+  {
+    "task_id": "Mbpp/259",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 148,
+    "prompt_characters": 190
+  },
+  {
+    "task_id": "Mbpp/764",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 87,
+    "prompt_characters": 118
+  },
+  {
+    "task_id": "Mbpp/619",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 117,
+    "prompt_characters": 169
+  },
+  {
+    "task_id": "Mbpp/286",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 120,
+    "prompt_characters": 212
+  },
+  {
+    "task_id": "Mbpp/269",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 81,
+    "prompt_characters": 93
+  },
+  {
+    "task_id": "Mbpp/557",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 85,
+    "prompt_characters": 118
+  },
+  {
+    "task_id": "Mbpp/604",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 86,
+    "prompt_characters": 140
+  },
+  {
+    "task_id": "Mbpp/16",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 98,
+    "prompt_characters": 207
+  },
+  {
+    "task_id": "Mbpp/102",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 87,
+    "prompt_characters": 135
+  },
+  {
+    "task_id": "Mbpp/780",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 151,
+    "prompt_characters": 215
+  },
+  {
+    "task_id": "Mbpp/569",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 124,
+    "prompt_characters": 250
+  },
+  {
+    "task_id": "Mbpp/264",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 84,
+    "prompt_characters": 89
+  },
+  {
+    "task_id": "Mbpp/86",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 86,
+    "prompt_characters": 108
+  },
+  {
+    "task_id": "Mbpp/748",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 88,
+    "prompt_characters": 152
+  },
+  {
+    "task_id": "Mbpp/803",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 87,
+    "prompt_characters": 121
+  },
+  {
+    "task_id": "Mbpp/728",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 134,
+    "prompt_characters": 165
+  },
+  {
+    "task_id": "Mbpp/445",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 160,
+    "prompt_characters": 242
+  },
+  {
+    "task_id": "Mbpp/558",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 90,
+    "prompt_characters": 135
+  },
+  {
+    "task_id": "Mbpp/737",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 85,
+    "prompt_characters": 130
+  },
+  {
+    "task_id": "Mbpp/790",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 91,
+    "prompt_characters": 144
+  },
+  {
+    "task_id": "Mbpp/760",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 92,
+    "prompt_characters": 149
+  },
+  {
+    "task_id": "Mbpp/232",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 147,
+    "prompt_characters": 214
+  },
+  {
+    "task_id": "Mbpp/592",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 91,
+    "prompt_characters": 133
+  },
+  {
+    "task_id": "Mbpp/629",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 93,
+    "prompt_characters": 112
+  },
+  {
+    "task_id": "Mbpp/113",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 82,
+    "prompt_characters": 114
+  },
+  {
+    "task_id": "Mbpp/67",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 85,
+    "prompt_characters": 113
+  },
+  {
+    "task_id": "Mbpp/6",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 95,
+    "prompt_characters": 148
+  },
+  {
+    "task_id": "Mbpp/762",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 101,
+    "prompt_characters": 172
+  },
+  {
+    "task_id": "Mbpp/391",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 200,
+    "prompt_characters": 353
+  },
+  {
+    "task_id": "Mbpp/610",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 130,
+    "prompt_characters": 194
+  },
+  {
+    "task_id": "Mbpp/404",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 83,
+    "prompt_characters": 93
+  },
+  {
+    "task_id": "Mbpp/588",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 94,
+    "prompt_characters": 139
+  },
+  {
+    "task_id": "Mbpp/266",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 89,
+    "prompt_characters": 126
+  },
+  {
+    "task_id": "Mbpp/92",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 92,
+    "prompt_characters": 119
+  },
+  {
+    "task_id": "Mbpp/573",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 125,
+    "prompt_characters": 166
+  },
+  {
+    "task_id": "Mbpp/262",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 149,
+    "prompt_characters": 275
+  },
+  {
+    "task_id": "Mbpp/459",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 102,
+    "prompt_characters": 149
+  },
+  {
+    "task_id": "Mbpp/475",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 116,
+    "prompt_characters": 171
+  },
+  {
+    "task_id": "Mbpp/111",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 153,
+    "prompt_characters": 198
+  },
+  {
+    "task_id": "Mbpp/168",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 93,
+    "prompt_characters": 123
+  },
+  {
+    "task_id": "Mbpp/794",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 92,
+    "prompt_characters": 134
+  },
+  {
+    "task_id": "Mbpp/721",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 184,
+    "prompt_characters": 485
+  },
+  {
+    "task_id": "Mbpp/620",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 112,
+    "prompt_characters": 170
+  },
+  {
+    "task_id": "Mbpp/244",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 91,
+    "prompt_characters": 130
+  },
+  {
+    "task_id": "Mbpp/611",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 123,
+    "prompt_characters": 176
+  },
+  {
+    "task_id": "Mbpp/798",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 88,
+    "prompt_characters": 89
+  },
+  {
+    "task_id": "Mbpp/725",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 110,
+    "prompt_characters": 200
+  },
+  {
+    "task_id": "Mbpp/788",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 97,
+    "prompt_characters": 144
+  },
+  {
+    "task_id": "Mbpp/597",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 114,
+    "prompt_characters": 135
+  },
+  {
+    "task_id": "Mbpp/421",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 100,
+    "prompt_characters": 147
+  },
+  {
+    "task_id": "Mbpp/273",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 124,
+    "prompt_characters": 219
+  },
+  {
+    "task_id": "Mbpp/638",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 103,
+    "prompt_characters": 179
+  },
+  {
+    "task_id": "Mbpp/739",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 87,
+    "prompt_characters": 122
+  },
+  {
+    "task_id": "Mbpp/426",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 114,
+    "prompt_characters": 119
+  },
+  {
+    "task_id": "Mbpp/576",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 96,
+    "prompt_characters": 132
+  },
+  {
+    "task_id": "Mbpp/769",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 132,
+    "prompt_characters": 151
+  },
+  {
+    "task_id": "Mbpp/234",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 84,
+    "prompt_characters": 103
+  },
+  {
+    "task_id": "Mbpp/800",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 85,
+    "prompt_characters": 129
+  },
+  {
+    "task_id": "Mbpp/294",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 98,
+    "prompt_characters": 135
+  },
+  {
+    "task_id": "Mbpp/311",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 87,
+    "prompt_characters": 105
+  },
+  {
+    "task_id": "Mbpp/603",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 103,
+    "prompt_characters": 132
+  },
+  {
+    "task_id": "Mbpp/72",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 92,
+    "prompt_characters": 155
+  },
+  {
+    "task_id": "Mbpp/301",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 94,
+    "prompt_characters": 113
+  },
+  {
+    "task_id": "Mbpp/282",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 95,
+    "prompt_characters": 108
+  },
+  {
+    "task_id": "Mbpp/392",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 120,
+    "prompt_characters": 169
+  },
+  {
+    "task_id": "Mbpp/242",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 85,
+    "prompt_characters": 124
+  },
+  {
+    "task_id": "Mbpp/2",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 111,
+    "prompt_characters": 151
+  },
+  {
+    "task_id": "Mbpp/560",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 129,
+    "prompt_characters": 186
+  },
+  {
+    "task_id": "Mbpp/255",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 123,
+    "prompt_characters": 280
+  },
+  {
+    "task_id": "Mbpp/140",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 124,
+    "prompt_characters": 167
+  },
+  {
+    "task_id": "Mbpp/409",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 110,
+    "prompt_characters": 162
+  },
+  {
+    "task_id": "Mbpp/749",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 146,
+    "prompt_characters": 201
+  },
+  {
+    "task_id": "Mbpp/741",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 87,
+    "prompt_characters": 131
+  },
+  {
+    "task_id": "Mbpp/239",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 126,
+    "prompt_characters": 303
+  },
+  {
+    "task_id": "Mbpp/433",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 103,
+    "prompt_characters": 160
+  },
+  {
+    "task_id": "Mbpp/101",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 103,
+    "prompt_characters": 134
+  },
+  {
+    "task_id": "Mbpp/130",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 124,
+    "prompt_characters": 153
+  },
+  {
+    "task_id": "Mbpp/751",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 101,
+    "prompt_characters": 132
+  },
+  {
+    "task_id": "Mbpp/563",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 95,
+    "prompt_characters": 158
+  },
+  {
+    "task_id": "Mbpp/641",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 85,
+    "prompt_characters": 90
+  },
+  {
+    "task_id": "Mbpp/474",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 84,
+    "prompt_characters": 112
+  },
+  {
+    "task_id": "Mbpp/17",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 88,
+    "prompt_characters": 128
+  },
+  {
+    "task_id": "Mbpp/135",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 85,
+    "prompt_characters": 91
+  },
+  {
+    "task_id": "Mbpp/731",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 111,
+    "prompt_characters": 154
+  },
+  {
+    "task_id": "Mbpp/9",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 96,
+    "prompt_characters": 157
+  },
+  {
+    "task_id": "Mbpp/562",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 97,
+    "prompt_characters": 127
+  },
+  {
+    "task_id": "Mbpp/606",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 96,
+    "prompt_characters": 101
+  },
+  {
+    "task_id": "Mbpp/637",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 96,
+    "prompt_characters": 126
+  },
+  {
+    "task_id": "Mbpp/287",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": false,
+    "input_tokens": 94,
+    "prompt_characters": 145
+  },
+  {
+    "task_id": "Mbpp/572",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 104,
+    "prompt_characters": 143
+  },
+  {
+    "task_id": "Mbpp/3",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 81,
+    "prompt_characters": 95
+  },
+  {
+    "task_id": "Mbpp/106",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 109,
+    "prompt_characters": 128
+  },
+  {
+    "task_id": "Mbpp/82",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 109,
+    "prompt_characters": 130
+  },
+  {
+    "task_id": "Mbpp/462",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 190,
+    "prompt_characters": 461
+  },
+  {
+    "task_id": "Mbpp/732",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 99,
+    "prompt_characters": 206
+  },
+  {
+    "task_id": "Mbpp/306",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 143,
+    "prompt_characters": 250
+  },
+  {
+    "task_id": "Mbpp/63",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": false,
+    "trigger": true,
+    "input_tokens": 109,
+    "prompt_characters": 167
+  },
+  {
+    "task_id": "Mbpp/554",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 100,
+    "prompt_characters": 133
+  },
+  {
+    "task_id": "Mbpp/446",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 109,
+    "prompt_characters": 159
+  },
+  {
+    "task_id": "Mbpp/578",
+    "cohort": "historical_confirmation180",
+    "baseline_correct": true,
+    "trigger": false,
+    "input_tokens": 231,
+    "prompt_characters": 271
+  }
+]
