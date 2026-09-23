@@ -1,0 +1,902 @@
+[
+  {
+    "task_id": "Mbpp/227",
+    "fold": 0,
+    "error": false,
+    "public_failure": false,
+    "entropy": 4.038141797910798e-06,
+    "output_tokens": 20,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/736",
+    "fold": 1,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.006409520460479134,
+    "output_tokens": 66,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/108",
+    "fold": 2,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.0014015924746758406,
+    "output_tokens": 26,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/235",
+    "fold": 3,
+    "error": true,
+    "public_failure": true,
+    "entropy": 0.0727690579211927,
+    "output_tokens": 16,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/233",
+    "fold": 4,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.01962341876288414,
+    "output_tokens": 26,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/598",
+    "fold": 0,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.03598095828668043,
+    "output_tokens": 42,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/394",
+    "fold": 1,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.04654183715690182,
+    "output_tokens": 17,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/463",
+    "fold": 2,
+    "error": true,
+    "public_failure": false,
+    "entropy": 0.03727479542602322,
+    "output_tokens": 107,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/388",
+    "fold": 3,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.0008897997064960687,
+    "output_tokens": 24,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/801",
+    "fold": 4,
+    "error": true,
+    "public_failure": true,
+    "entropy": 0.04075125033116133,
+    "output_tokens": 21,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/247",
+    "fold": 0,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.006412096734534203,
+    "output_tokens": 126,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/425",
+    "fold": 1,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.0008043602068418642,
+    "output_tokens": 37,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/104",
+    "fold": 2,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.060217496532530466,
+    "output_tokens": 18,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/398",
+    "fold": 3,
+    "error": true,
+    "public_failure": false,
+    "entropy": 0.010714368468365794,
+    "output_tokens": 36,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/226",
+    "fold": 4,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.05208488870590616,
+    "output_tokens": 14,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/720",
+    "fold": 0,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.02419381625821127,
+    "output_tokens": 17,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/805",
+    "fold": 1,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.007652950409505204,
+    "output_tokens": 15,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/172",
+    "fold": 2,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.04715322618295581,
+    "output_tokens": 15,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/580",
+    "fold": 3,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.05776964492976396,
+    "output_tokens": 62,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/132",
+    "fold": 4,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.04954714993803038,
+    "output_tokens": 14,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/453",
+    "fold": 0,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.04005415764092429,
+    "output_tokens": 68,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/772",
+    "fold": 1,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.006044016524202403,
+    "output_tokens": 39,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/577",
+    "fold": 2,
+    "error": true,
+    "public_failure": false,
+    "entropy": 0.03485951927520115,
+    "output_tokens": 57,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/724",
+    "fold": 3,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.0012414178990486162,
+    "output_tokens": 29,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/624",
+    "fold": 4,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.004637324764094301,
+    "output_tokens": 11,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/455",
+    "fold": 0,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.008309276931396962,
+    "output_tokens": 36,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/300",
+    "fold": 1,
+    "error": true,
+    "public_failure": false,
+    "entropy": 0.021253855570692825,
+    "output_tokens": 112,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/476",
+    "fold": 2,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.035369381193205165,
+    "output_tokens": 15,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/471",
+    "fold": 3,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.002430280245863852,
+    "output_tokens": 38,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/626",
+    "fold": 4,
+    "error": true,
+    "public_failure": false,
+    "entropy": 0.0476704479783167,
+    "output_tokens": 74,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/109",
+    "fold": 0,
+    "error": true,
+    "public_failure": false,
+    "entropy": 0.03577709228009436,
+    "output_tokens": 66,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/470",
+    "fold": 1,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.00112769443016499,
+    "output_tokens": 26,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/419",
+    "fold": 2,
+    "error": true,
+    "public_failure": true,
+    "entropy": 0.028978270676289834,
+    "output_tokens": 38,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/120",
+    "fold": 3,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.010962698661578412,
+    "output_tokens": 50,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/458",
+    "fold": 4,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.004782175206623824,
+    "output_tokens": 13,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/730",
+    "fold": 0,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.002230577273981847,
+    "output_tokens": 43,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/165",
+    "fold": 1,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.027308119923868827,
+    "output_tokens": 45,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/137",
+    "fold": 2,
+    "error": true,
+    "public_failure": true,
+    "entropy": 0.022079417312197536,
+    "output_tokens": 71,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/808",
+    "fold": 3,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.004418737947698555,
+    "output_tokens": 14,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/771",
+    "fold": 4,
+    "error": true,
+    "public_failure": false,
+    "entropy": 0.10868695940974744,
+    "output_tokens": 114,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/272",
+    "fold": 0,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.015795930105444545,
+    "output_tokens": 21,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/142",
+    "fold": 1,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.005064939779642702,
+    "output_tokens": 43,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/439",
+    "fold": 2,
+    "error": true,
+    "public_failure": true,
+    "entropy": 0.011300994165494028,
+    "output_tokens": 33,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/278",
+    "fold": 3,
+    "error": true,
+    "public_failure": true,
+    "entropy": 0.05725200377496677,
+    "output_tokens": 35,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/129",
+    "fold": 4,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.028212279358312893,
+    "output_tokens": 65,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/103",
+    "fold": 0,
+    "error": true,
+    "public_failure": true,
+    "entropy": 0.0016038180832839422,
+    "output_tokens": 92,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/450",
+    "fold": 1,
+    "error": true,
+    "public_failure": true,
+    "entropy": 0.02132806767621125,
+    "output_tokens": 23,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/56",
+    "fold": 2,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.02978946845596034,
+    "output_tokens": 28,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/777",
+    "fold": 3,
+    "error": true,
+    "public_failure": true,
+    "entropy": 0.010271748995438718,
+    "output_tokens": 23,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/436",
+    "fold": 4,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.0004240284318179549,
+    "output_tokens": 21,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/310",
+    "fold": 0,
+    "error": true,
+    "public_failure": true,
+    "entropy": 4.244899375734542e-05,
+    "output_tokens": 12,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/628",
+    "fold": 1,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.042891369628172846,
+    "output_tokens": 16,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/68",
+    "fold": 2,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.013686784706407494,
+    "output_tokens": 50,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/90",
+    "fold": 3,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.005295230936823097,
+    "output_tokens": 17,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/257",
+    "fold": 4,
+    "error": false,
+    "public_failure": false,
+    "entropy": 1.4234038446117754e-05,
+    "output_tokens": 15,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/256",
+    "fold": 0,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.01441598529658771,
+    "output_tokens": 107,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/767",
+    "fold": 1,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.0018817717494378624,
+    "output_tokens": 57,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/69",
+    "fold": 2,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.02240578106857602,
+    "output_tokens": 48,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/447",
+    "fold": 3,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.04172451469645235,
+    "output_tokens": 17,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/167",
+    "fold": 4,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.010253520810418863,
+    "output_tokens": 35,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/99",
+    "fold": 0,
+    "error": true,
+    "public_failure": false,
+    "entropy": 0.002157541797613849,
+    "output_tokens": 14,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/296",
+    "fold": 1,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.020716637708056505,
+    "output_tokens": 200,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/70",
+    "fold": 2,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.029951750570340236,
+    "output_tokens": 48,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/600",
+    "fold": 3,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.0002731236357056063,
+    "output_tokens": 16,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/119",
+    "fold": 4,
+    "error": true,
+    "public_failure": false,
+    "entropy": 0.00020335157428284217,
+    "output_tokens": 72,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/809",
+    "fold": 0,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.031032196370026244,
+    "output_tokens": 37,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/94",
+    "fold": 1,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.01181129965858899,
+    "output_tokens": 25,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/276",
+    "fold": 2,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.002679813255237907,
+    "output_tokens": 23,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/785",
+    "fold": 3,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.072194046027644,
+    "output_tokens": 22,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/424",
+    "fold": 4,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.0029850673221311535,
+    "output_tokens": 20,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/460",
+    "fold": 0,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.012144594441136513,
+    "output_tokens": 18,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/312",
+    "fold": 1,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.01745360959283273,
+    "output_tokens": 29,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/240",
+    "fold": 2,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.016264125865761,
+    "output_tokens": 24,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/468",
+    "fold": 3,
+    "error": true,
+    "public_failure": true,
+    "entropy": 0.02904423937700072,
+    "output_tokens": 65,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/758",
+    "fold": 4,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.05363682951465468,
+    "output_tokens": 55,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/796",
+    "fold": 0,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.000896771350043272,
+    "output_tokens": 12,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/735",
+    "fold": 1,
+    "error": true,
+    "public_failure": true,
+    "entropy": 0.11453367475108922,
+    "output_tokens": 199,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/429",
+    "fold": 2,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.009209314582885004,
+    "output_tokens": 28,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/478",
+    "fold": 3,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.010200081811197302,
+    "output_tokens": 21,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/623",
+    "fold": 4,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.046717209550335745,
+    "output_tokens": 19,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/97",
+    "fold": 0,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.03400894615381481,
+    "output_tokens": 50,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/754",
+    "fold": 1,
+    "error": true,
+    "public_failure": false,
+    "entropy": 0.02998049943160157,
+    "output_tokens": 44,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/251",
+    "fold": 2,
+    "error": true,
+    "public_failure": true,
+    "entropy": 0.040528971772245105,
+    "output_tokens": 19,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/126",
+    "fold": 3,
+    "error": true,
+    "public_failure": true,
+    "entropy": 0.021538056450183852,
+    "output_tokens": 116,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/781",
+    "fold": 4,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.010216608643117905,
+    "output_tokens": 70,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/555",
+    "fold": 0,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.0295760172022233,
+    "output_tokens": 46,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/74",
+    "fold": 1,
+    "error": true,
+    "public_failure": false,
+    "entropy": 0.055219290819337,
+    "output_tokens": 34,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/766",
+    "fold": 2,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.0026357953857523856,
+    "output_tokens": 27,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/568",
+    "fold": 3,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.010794436525035651,
+    "output_tokens": 16,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/559",
+    "fold": 4,
+    "error": true,
+    "public_failure": false,
+    "entropy": 0.022926930692518766,
+    "output_tokens": 64,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/309",
+    "fold": 0,
+    "error": false,
+    "public_failure": false,
+    "entropy": 2.0050948669467295e-05,
+    "output_tokens": 16,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/12",
+    "fold": 1,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.00311651873374042,
+    "output_tokens": 18,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/643",
+    "fold": 2,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.04244645967299344,
+    "output_tokens": 21,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/593",
+    "fold": 3,
+    "error": true,
+    "public_failure": false,
+    "entropy": 0.01728935893746144,
+    "output_tokens": 34,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/75",
+    "fold": 4,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.01994368895131972,
+    "output_tokens": 32,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/793",
+    "fold": 0,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.011180874451981834,
+    "output_tokens": 98,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/792",
+    "fold": 1,
+    "error": true,
+    "public_failure": false,
+    "entropy": 0.09129527946847003,
+    "output_tokens": 11,
+    "entropy_routed": true
+  },
+  {
+    "task_id": "Mbpp/602",
+    "fold": 2,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.0017632027340786257,
+    "output_tokens": 37,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/412",
+    "fold": 3,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.009164741190902144,
+    "output_tokens": 23,
+    "entropy_routed": false
+  },
+  {
+    "task_id": "Mbpp/64",
+    "fold": 4,
+    "error": false,
+    "public_failure": false,
+    "entropy": 0.0045613457933225895,
+    "output_tokens": 23,
+    "entropy_routed": false
+  }
+]

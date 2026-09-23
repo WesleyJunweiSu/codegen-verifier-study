@@ -1,0 +1,14 @@
+{
+  "date": "2026-09-23",
+  "scope": "Adaptive descriptive development diagnostic; no new generation, no independent confirmation",
+  "cohort": "split-manifest-v2 development_primary100",
+  "feature": "mean_token_entropy of previously selected baseline candidate; high values route",
+  "folds": 5,
+  "fold_rule": "Sort task IDs by sha256(entropy-cv:20260923:{task_id}), assign rank modulo5; no label stratification",
+  "threshold_rule": "For each training fold, among public-pass tasks with finite entropy, pick smallest of top ceil(0.20*n) entropies; route heldout public-pass if entropy>=threshold. Ties kept and actual rate reported. Missing entropy adds no trigger.",
+  "extra_training_fraction": 0.2,
+  "selection": "Fixed fraction, no label-based threshold or fraction tuning",
+  "comparators": "Public-only; public plus uniform random extra tasks in each heldout fold with exactly the entropy rule extra-trigger count.10000 repetitions,seed20260923.",
+  "metrics": "Out-of-fold error TP/FP/FN/TN, recall, precision, added trigger cost, missing entropy; random comparator distribution; descriptive entropy-length correlation and AUROC among public-pass only",
+  "claim_limit": "Detection improvement is not correct-answer rescue. No best fraction/model search, no significance claim, no confirmation/reserve labels used."
+}

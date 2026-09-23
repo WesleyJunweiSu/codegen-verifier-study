@@ -131,3 +131,8 @@ All10 files match the2025-05-19 historical checkpoint; can use a conservative Ma
 ## 2026-09-20 independent cohort audit; external permission still pending
 
 No local/Actions jobs active. Did not retry rejected external metadata access; user approval is still unanswered. Completed descriptive cohort audit using already-scored outcomes only:additional40 baseline80% (Wilson95%65.24–89.50),reassigned60 66.67% (54.06–77.27),historicalconfirmation59.44% (52.15–66.35). All280 selected baseline seeds match the original rule and recorded runtime versions match; prompt-length medians are similar. These checks do not prove exchangeability or explain difficulty. No reshuffling, threshold fitting, new generation or reserve access. Reproducible results in runs/cohort-audit-20260920 and docs/cohort-audit.md. External enrollment remains pending authorization or a genuinely separate official metadata-only artifact.
+
+
+## 2026-09-23 P2 entropy diagnostic completed on saved development data
+
+External metadata authorization remains unanswered; no retry or new external access. No live jobs found. Completed the independent P2 section on100 already-used development baselines:five task folds, fixed20% train-fold entropy-tail cutoff, no correctness labels used to fit thresholds. No missing entropy. Public-only detects14/28 errors with14 triggers; entropy extension detects18/28 with30 triggers (12 false positives), recall50%→64.29%,precision100%→60%. Matched-count random routing detects16.9216 errors on average; central95% assignment range14–20 includes18. No reliable superiority claim or answer-accuracy gain. No new generation, reserve or confirmation labels. Saved config, fold decisions, source hashes and report docs/entropy-routing-development.md.
