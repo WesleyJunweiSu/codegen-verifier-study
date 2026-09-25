@@ -81,7 +81,7 @@ Recorded candidate keys are skipped. This resumes the pilot; it does not silentl
 
 ## Scope and limitations
 
-This is a runnable research harness and evidence-inspection CLI, not a production coding assistant. The pilot has no demonstrated benefit from generated-test filtering or abstention. Full S* reproduction, calibrated operating points, independent seed repetitions, held-out confirmation and external data-science tasks remain unfinished. The temperature intervention used the same seeds on the same exposed tasks; it is not independent task confirmation.
+This is a runnable research harness and evidence-inspection CLI, not a production coding assistant. The pilot has no demonstrated benefit from generated-test filtering or abstention. The180-task confirmation and primary100-task development budget control are complete. Full S* reproduction, independent seed repetitions, external replication and paired causal interventions remain unfinished. The former calibration cohort is now development under split v2. The temperature intervention used the same seeds on the same exposed tasks; it is not independent task confirmation.
 
 Local hardware: RTX 5070 Ti Laptop, 12,227 MiB. The two model-generation phases took 352.5 seconds combined, excluding loading and other overhead; peak allocated VRAM was 8.08 GiB. The parser ablation reused all generations and added zero model tokens. No GPU rental or paid model API was used; Linux jobs use the account's GitHub Actions allowance.
 
@@ -89,8 +89,10 @@ Local hardware: RTX 5070 Ti Laptop, 12,227 MiB. The two model-generation phases 
 
 See [v0.9](reports/technical-report-v0.9.md): completed reasoning11 rescues/15 attempts, incomplete0/26. This is a post-hoc association, not a causal effect. Actual reasoning cost remains72,297 tokens (31.22x control);73.65% occurred in incomplete attempts. The completed-only8.22x ratio is not pipeline cost.
 
-[Split v2](configs/split-manifest-v2.json) reassigns former calibration60 to development:120 total, primary100 plus legacy pilot20. Original confirmation180 and reserve78 are unchanged. [Current research design](docs/research-direction-v3.md) prioritizes completion-rate cap ablations and budget-matched independent sampling; these experiments have not run.
+[Split v2](configs/split-manifest-v2.json) reassigns former calibration60 to development:120 total, primary100 plus legacy pilot20. Original confirmation180 and reserve78 are unchanged. [Current research design](docs/research-direction-v3.md) prioritizes external replication and paired reasoning-content interventions. The development budget control is complete; external replication and paired trace interventions remain pending.
 
 ## Latest development budget control
+
+For autonomous continuation, read [program.md](program.md) and its [research-automation reference mapping](docs/autoresearch-methods.md). These instructions adapt bounded experiment loops and evidence review to this project's protected evaluation protocol.
 
 The [completed output-budget comparison](docs/matched-budget-development-results.md) gives reasoning77/100 versus baseline and independent nonthinking sampling72/100, with5 rescues and0 regressions on14 triggered tasks. Nonthinking used879 calls and28672 output tokens; reasoning14 calls and18241 output tokens. Identical output ceilings do not equal realized compute. This is adaptive development evidence, not independent confirmation or a causal-faithfulness result.

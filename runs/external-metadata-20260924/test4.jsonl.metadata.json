@@ -1,0 +1,619 @@
+{
+  "revision": "0fe84c3912ea0c4d4a78037083943e8f0c4dd505",
+  "source": {
+    "file": "test4.jsonl",
+    "url": "https://huggingface.co/datasets/livecodebench/code_generation_lite/resolve/0fe84c3912ea0c4d4a78037083943e8f0c4dd505/test4.jsonl",
+    "sha256": "d711138ddaebfcf5f8ec6a4283ee677298c0f5c5d374a235af92aaf0584510da",
+    "bytes": 1204644685,
+    "rows": 101
+  },
+  "rows": [
+    {
+      "platform": "atcoder",
+      "question_id": "abc366_f",
+      "contest_date": "2024-08-10T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc366_b",
+      "contest_date": "2024-08-10T00:00:00",
+      "difficulty": "easy"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc366_e",
+      "contest_date": "2024-08-10T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc366_d",
+      "contest_date": "2024-08-10T00:00:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc366_a",
+      "contest_date": "2024-08-10T00:00:00",
+      "difficulty": "easy"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc366_c",
+      "contest_date": "2024-08-10T00:00:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc366_g",
+      "contest_date": "2024-08-10T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc367_e",
+      "contest_date": "2024-08-17T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc367_f",
+      "contest_date": "2024-08-17T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc367_a",
+      "contest_date": "2024-08-17T00:00:00",
+      "difficulty": "easy"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc367_g",
+      "contest_date": "2024-08-17T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc367_b",
+      "contest_date": "2024-08-17T00:00:00",
+      "difficulty": "easy"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc367_d",
+      "contest_date": "2024-08-17T00:00:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc367_c",
+      "contest_date": "2024-08-17T00:00:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc368_g",
+      "contest_date": "2024-08-24T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc368_a",
+      "contest_date": "2024-08-24T00:00:00",
+      "difficulty": "easy"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc368_b",
+      "contest_date": "2024-08-24T00:00:00",
+      "difficulty": "easy"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc368_f",
+      "contest_date": "2024-08-24T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc368_c",
+      "contest_date": "2024-08-24T00:00:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc368_d",
+      "contest_date": "2024-08-24T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc368_e",
+      "contest_date": "2024-08-24T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc369_d",
+      "contest_date": "2024-08-31T00:00:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc369_g",
+      "contest_date": "2024-08-31T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc369_c",
+      "contest_date": "2024-08-31T00:00:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc369_a",
+      "contest_date": "2024-08-31T00:00:00",
+      "difficulty": "easy"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc369_b",
+      "contest_date": "2024-08-31T00:00:00",
+      "difficulty": "easy"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc369_e",
+      "contest_date": "2024-08-31T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc370_a",
+      "contest_date": "2024-09-07T00:00:00",
+      "difficulty": "easy"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc370_g",
+      "contest_date": "2024-09-07T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc370_c",
+      "contest_date": "2024-09-07T00:00:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc370_d",
+      "contest_date": "2024-09-07T00:00:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc370_e",
+      "contest_date": "2024-09-07T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc370_b",
+      "contest_date": "2024-09-07T00:00:00",
+      "difficulty": "easy"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc370_f",
+      "contest_date": "2024-09-07T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc371_b",
+      "contest_date": "2024-09-14T00:00:00",
+      "difficulty": "easy"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc371_d",
+      "contest_date": "2024-09-14T00:00:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc371_g",
+      "contest_date": "2024-09-14T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc371_f",
+      "contest_date": "2024-09-14T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc371_c",
+      "contest_date": "2024-09-14T00:00:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc371_e",
+      "contest_date": "2024-09-14T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc371_a",
+      "contest_date": "2024-09-14T00:00:00",
+      "difficulty": "easy"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc372_e",
+      "contest_date": "2024-09-21T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc372_c",
+      "contest_date": "2024-09-21T00:00:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc372_d",
+      "contest_date": "2024-09-21T00:00:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc372_g",
+      "contest_date": "2024-09-21T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc372_f",
+      "contest_date": "2024-09-21T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc372_a",
+      "contest_date": "2024-09-21T00:00:00",
+      "difficulty": "easy"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc373_a",
+      "contest_date": "2024-09-28T00:00:00",
+      "difficulty": "easy"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc373_b",
+      "contest_date": "2024-09-28T00:00:00",
+      "difficulty": "easy"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc373_f",
+      "contest_date": "2024-09-28T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc373_g",
+      "contest_date": "2024-09-28T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc373_c",
+      "contest_date": "2024-09-28T00:00:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "abc373_e",
+      "contest_date": "2024-09-28T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "arc181_d",
+      "contest_date": "2024-08-04T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "arc181_c",
+      "contest_date": "2024-08-04T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "arc181_b",
+      "contest_date": "2024-08-04T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "arc181_a",
+      "contest_date": "2024-08-04T00:00:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "arc182_d",
+      "contest_date": "2024-08-11T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "arc182_e",
+      "contest_date": "2024-08-11T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "arc182_a",
+      "contest_date": "2024-08-11T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "arc182_c",
+      "contest_date": "2024-08-11T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "arc183_b",
+      "contest_date": "2024-08-25T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "arc183_c",
+      "contest_date": "2024-08-25T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "arc183_a",
+      "contest_date": "2024-08-25T00:00:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "atcoder",
+      "question_id": "arc183_d",
+      "contest_date": "2024-08-25T00:00:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3026",
+      "contest_date": "2023-08-26T19:30:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3543",
+      "contest_date": "2024-08-17T19:30:00",
+      "difficulty": "easy"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3525",
+      "contest_date": "2024-08-17T19:30:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3552",
+      "contest_date": "2024-08-17T19:30:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3555",
+      "contest_date": "2024-08-24T19:30:00",
+      "difficulty": "easy"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3534",
+      "contest_date": "2024-08-24T19:30:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3553",
+      "contest_date": "2024-08-31T19:30:00",
+      "difficulty": "easy"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3495",
+      "contest_date": "2024-08-31T19:30:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3563",
+      "contest_date": "2024-08-31T19:30:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3551",
+      "contest_date": "2024-08-31T19:30:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3567",
+      "contest_date": "2024-09-07T19:30:00",
+      "difficulty": "easy"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3485",
+      "contest_date": "2024-09-07T19:30:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3528",
+      "contest_date": "2024-09-07T19:30:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3560",
+      "contest_date": "2024-09-07T19:30:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3518",
+      "contest_date": "2024-09-14T19:30:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3559",
+      "contest_date": "2024-09-14T19:30:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3522",
+      "contest_date": "2024-08-17T07:30:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3550",
+      "contest_date": "2024-08-17T07:30:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3568",
+      "contest_date": "2024-08-31T07:30:00",
+      "difficulty": "easy"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3540",
+      "contest_date": "2024-08-31T07:30:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3548",
+      "contest_date": "2024-08-31T07:30:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3531",
+      "contest_date": "2024-08-31T07:30:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3558",
+      "contest_date": "2024-09-14T07:30:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3575",
+      "contest_date": "2024-09-14T07:30:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3571",
+      "contest_date": "2024-09-14T07:30:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3541",
+      "contest_date": "2024-09-21T19:30:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3496",
+      "contest_date": "2024-09-21T19:30:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3573",
+      "contest_date": "2024-09-21T19:30:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3600",
+      "contest_date": "2024-09-28T19:30:00",
+      "difficulty": "easy"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3570",
+      "contest_date": "2024-09-28T19:30:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3579",
+      "contest_date": "2024-10-05T19:30:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3583",
+      "contest_date": "2024-10-05T19:30:00",
+      "difficulty": "hard"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3606",
+      "contest_date": "2024-09-28T07:30:00",
+      "difficulty": "easy"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3510",
+      "contest_date": "2024-09-28T07:30:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3584",
+      "contest_date": "2024-09-28T07:30:00",
+      "difficulty": "medium"
+    },
+    {
+      "platform": "leetcode",
+      "question_id": "3580",
+      "contest_date": "2024-09-28T07:30:00",
+      "difficulty": "hard"
+    }
+  ],
+  "projection_sha256": "9034556c406e10d0cbeb65519b10f155bab3e661d54c4f0f2ef826af257fdccc"
+}

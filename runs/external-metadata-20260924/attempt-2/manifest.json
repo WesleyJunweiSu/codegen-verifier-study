@@ -1,0 +1,49 @@
+{
+  "started_utc": "2026-09-25T02:56:43.294647+00:00",
+  "dataset": "livecodebench/code_generation_lite",
+  "revision": "0fe84c3912ea0c4d4a78037083943e8f0c4dd505",
+  "script_sha256": "53576c51d4c1bafacc69a32c56d2cd3399660107e5439706b5eef36072db2f1b",
+  "authorization_sha256": "53463b2ae2a597d464f14fe80a6543e8125d963f8e30e347a8c8fb165bd8325c",
+  "source_commit": "f0f7bdbc6ae05e1cb6685cc35f25af8e2820ea73",
+  "retained_fields": [
+    "platform",
+    "question_id",
+    "contest_date",
+    "difficulty"
+  ],
+  "raw_rows_persisted": false,
+  "private_test_payloads_decoded": false,
+  "generated_code_executed": false,
+  "model_calls": 0,
+  "gpu_seconds": 0,
+  "paid_api_calls": 0,
+  "limits": {
+    "max_total_bytes": 2147483648,
+    "max_line_bytes": 134217728,
+    "max_seconds": 900,
+    "request_timeout_seconds": 60
+  },
+  "sources": [
+    {
+      "file": "test.jsonl",
+      "url": "https://huggingface.co/datasets/livecodebench/code_generation_lite/resolve/0fe84c3912ea0c4d4a78037083943e8f0c4dd505/test.jsonl",
+      "sha256": "2bd02b38beb48e8c46b5b9987095d999ff38cd8efc255ea5d58974317c48f63f",
+      "bytes": 1252609773,
+      "rows": 400
+    },
+    {
+      "file": "test2.jsonl",
+      "url": "https://huggingface.co/datasets/livecodebench/code_generation_lite/resolve/0fe84c3912ea0c4d4a78037083943e8f0c4dd505/test2.jsonl",
+      "sha256": "095df7c5daf15f882c51a9deb84085cff1e073495a5dbcf95015a564d485f3a3",
+      "bytes": 713377060,
+      "rows": 111
+    }
+  ],
+  "status": "failed",
+  "failed_file": "test3.jsonl",
+  "error_type": "ValueError",
+  "failure_phase": "line_size_check",
+  "projected_rows": 541,
+  "downloaded_bytes": 2165454207,
+  "wall_seconds": 104.735
+}

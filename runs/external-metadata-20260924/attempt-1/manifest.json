@@ -1,0 +1,31 @@
+{
+  "started_utc": "2026-09-25T02:54:41.777272+00:00",
+  "dataset": "livecodebench/code_generation_lite",
+  "revision": "0fe84c3912ea0c4d4a78037083943e8f0c4dd505",
+  "script_sha256": "069e7ab3a423571f5b02396c1485869182e9b4578b21d6d375f62c96bea2ffc0",
+  "authorization_sha256": "53463b2ae2a597d464f14fe80a6543e8125d963f8e30e347a8c8fb165bd8325c",
+  "source_commit": "f0f7bdbc6ae05e1cb6685cc35f25af8e2820ea73",
+  "retained_fields": [
+    "platform",
+    "question_id",
+    "contest_date",
+    "difficulty"
+  ],
+  "raw_rows_persisted": false,
+  "private_test_payloads_decoded": false,
+  "generated_code_executed": false,
+  "model_calls": 0,
+  "gpu_seconds": 0,
+  "paid_api_calls": 0,
+  "limits": {
+    "max_total_bytes": 2147483648,
+    "max_seconds": 900,
+    "request_timeout_seconds": 60
+  },
+  "sources": [],
+  "status": "failed",
+  "failed_file": "test.jsonl",
+  "error_type": "ValueError",
+  "downloaded_bytes": 113769071,
+  "wall_seconds": 16.218
+}

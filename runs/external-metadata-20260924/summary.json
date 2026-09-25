@@ -1,0 +1,9 @@
+{
+  "total_tasks": 1055,
+  "eligible_tasks": 0,
+  "criterion": "contest_date >= 2025-05-20; post-identical-snapshot, not proven post-training-cutoff",
+  "date_min": "2023-05-07T00:00:00",
+  "date_max": "2025-04-06T00:00:00",
+  "eligible_by_platform": {},
+  "eligible_by_difficulty": {}
+}

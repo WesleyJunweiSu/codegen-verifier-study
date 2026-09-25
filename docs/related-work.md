@@ -44,3 +44,7 @@ The current question is completion-aware allocation of conditional resampling bu
 | [BigCodeBench](https://github.com/bigcode-project/bigcodebench) | External library-oriented task distribution | Hard subset does not establish absence of training overlap |
 
 Official abstracts/project descriptions checked2026-09-13. Full methods, benchmark adapters and a code-specific intervention novelty search remain pending. These references guide design, not a completed reproduction. Olausson remains required for the matched-budget sampling comparator. Current agenda is docs/research-direction-v3.md.
+
+## Research automation workflow references
+
+See [autoresearch-methods.md](autoresearch-methods.md) for the2026-09-24 review of Karpathy autoresearch, ADAS and CycleResearcher (ICLR2025), AI-Researcher (NeurIPS2025), and the AIDE/AI Scientist-v2 preprints. These inform how we organize experiments; they are not direct baselines for the scientific content-versus-compute claim. [program.md](../program.md) records the project-specific adaptation, reading depth and evidence boundaries.

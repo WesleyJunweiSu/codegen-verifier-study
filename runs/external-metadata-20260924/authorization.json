@@ -1,0 +1,8 @@
+{
+  "date": "2026-09-24",
+  "scope": "lcb_metadata_projection_only",
+  "user_reply": "允许读取 然后参考karpathay还有其他顶会的autoresearch skills https://github.com/karpathy/autoresearch 加到md里面",
+  "approved_action": "Read pinned LiveCodeBench raw JSONL in memory only to extract platform, question_id, contest_date and difficulty. Do not decode, display, persist or use private test payloads.",
+  "resolves": "../external-preflight-20260917/metadata-access-block.json",
+  "does_not_authorize": "Hidden-test inspection, outcome-driven enrollment, reserve access, paid GPU/API spending or host execution of generated code."
+}
