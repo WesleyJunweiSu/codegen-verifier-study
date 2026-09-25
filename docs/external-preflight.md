@@ -2,6 +2,8 @@
 
 **Current status2026-09-24:** metadata access is authorized and the census is complete. The pinned snapshot has0 tasks meeting the prospective2025-05-20 date bound. Locate a newer official snapshot; do not repeat the completed census. Details and historical status follow.
 
+**2026-09-25 continuation:** [source discovery](external-source-discovery.md) identifies a separate LiveCodeBench Pro2025Q3 candidate, with provider access and evaluator feasibility still unresolved. The original LCB revision remains unchanged.
+
 2026-09-17. Preparation only: no benchmark tasks, private tests, labels or model calls loaded. No independent evaluation opportunity spent.
 
 Official evaluator pinned at28fef95ea8c9f7a547c8329f2cd3d32b92c1fa24. Dataset metadata revision0fe84c3912ea0c4d4a78037083943e8f0c4dd505, files test.jsonl through test6.jsonl. Metadata does not establish eligible task dates. The homepage's older coverage description is not a reliable current enrollment inventory.
