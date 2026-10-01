@@ -13,3 +13,4 @@ results/raw/
 *.pt
 *.pth
 *.gguf
+runs/mbpp-diversity-budget-development-20261001/execution.lock

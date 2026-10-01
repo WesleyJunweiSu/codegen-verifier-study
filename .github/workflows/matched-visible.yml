@@ -8,6 +8,7 @@ on:
         default: mbpp-matched-budget-development-20260915
         type: choice
         options:
+          - mbpp-diversity-budget-development-20261001
           - mbpp-matched-budget-development-20260915
 permissions:
   contents: read

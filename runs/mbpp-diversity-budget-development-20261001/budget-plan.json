@@ -1,0 +1,591 @@
+{
+  "date": "2026-09-15",
+  "run_id": "mbpp-diversity-budget-development-20261001",
+  "phase": "Adaptive development, not independent confirmation",
+  "cohorts": [
+    {
+      "run": "mbpp-development40-20260907",
+      "decisions": "runs/mbpp-development40-public-consensus-20260908/decisions.jsonl",
+      "matrix": "runs/mbpp-development40-20260907/linux/candidate-test-matrix.jsonl"
+    },
+    {
+      "run": "mbpp-development60-20260913",
+      "decisions": "runs/mbpp-development60-20260913/visible/composition-decisions.jsonl",
+      "matrix": "runs/mbpp-development60-20260913/visible/candidate-test-matrix.jsonl"
+    }
+  ],
+  "question": "Increasing only nonthinking temperature from0.7 to1.0 may improve useful diversity under the same per-task output budget",
+  "alternative_explanation": "Original reasoning benefit may reflect more generation budget rather than uniquely informative reasoning content.",
+  "tasks": [
+    {
+      "task_id": "Mbpp/119",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/12",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/120",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/129",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/137",
+      "selected_index": 0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/226",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/227",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/256",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/257",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/276",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/309",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/312",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/388",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/394",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/412",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/429",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/436",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/455",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/463",
+      "selected_index": 2,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/470",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/555",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/559",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/568",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/598",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/623",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/624",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/626",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/628",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/70",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/75",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/758",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/767",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/777",
+      "selected_index": 0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/793",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/796",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/801",
+      "selected_index": 2,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/805",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/808",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/94",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/99",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/103",
+      "selected_index": 0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/104",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/108",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/109",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/126",
+      "selected_index": 0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/132",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/142",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/165",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/167",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/172",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/233",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/235",
+      "selected_index": 0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/240",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/247",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/251",
+      "selected_index": 0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/272",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/278",
+      "selected_index": 0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/296",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/300",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/310",
+      "selected_index": 0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/398",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/419",
+      "selected_index": 0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/424",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/425",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/439",
+      "selected_index": 0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/447",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/450",
+      "selected_index": 0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/453",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/458",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/460",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/468",
+      "selected_index": 0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/471",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/476",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/478",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/56",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/577",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/580",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/593",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/600",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/602",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/64",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/643",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/68",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/69",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/720",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/724",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/730",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/735",
+      "selected_index": 0,
+      "triggered": true
+    },
+    {
+      "task_id": "Mbpp/736",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/74",
+      "selected_index": 1,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/754",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/766",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/771",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/772",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/781",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/785",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/792",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/809",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/90",
+      "selected_index": 0,
+      "triggered": false
+    },
+    {
+      "task_id": "Mbpp/97",
+      "selected_index": 0,
+      "triggered": false
+    }
+  ],
+  "triggered_tasks": 14,
+  "independent_unit": "Task, not sample;14 treated pairs,100 full-cohort denominator",
+  "budget_per_trigger_per_arm": 2048,
+  "reasoning": "One call; T0.6,p0.95,k20,thinking enabled; stop at EOS or2048. Index4.",
+  "nonthinking": "Temperature1.0,top_p0.8,top_k20; otherwise original budget/seed/selector",
+  "seed_rule": "sha256(matched:20260915:{task_id}:{reasoning|nonthinking}:{zero_based_arm_call})[:8] as hex; all calls newly generated",
+  "selection": "For each arm choose candidate with most public assertions passed; earliest sample_index breaks ties. Replace baseline only on strictly more passed assertions; otherwise baseline fallback. Selection before hidden scoring; no hidden oracle.",
+  "primary_development_contrast": "Final selected-answer accuracy reasoning minus nonthinking over100 tasks; report paired wins/losses and task-bootstrap uncertainty; underpowered conclusions qualified.",
+  "secondary": "Completion/parseability, all token and call costs, latency with desktop caveats, trigger-level rescues/regressions. Equal output-budget ceilings are not equal actual tokens or FLOPs; report remaining unused reasoning allowance.",
+  "failure_policy": "Retain malformed,empty,partial attempts; no quality retry. Resume exact saved keys. Zero-token generation stops as operational failure, not infinite retry.",
+  "model": "Existing fingerprinted Qwen3-4B BF16;9216MiB free guard",
+  "selection_implementation_status": "Rule frozen; isolated selector/scoring adapter still to implement before hidden scoring",
+  "protected": "No reserve or external holdout; old180 confirmation not used.",
+  "source_hashes": {
+    "configs\\matched-budget-development.json": "248fa8ca84f9627040a5497bbb62726f0098ea023a3f189f46b1355dbdb788b1",
+    "configs\\split-manifest-v2.json": "71b281f2e775aa0cd58c817adfd5f192bb44944c5dc1f8c66d6d4ac821f099e8",
+    "scripts\\generate_matched_budget.py": "ad803a9139ffcd234ca4e3cc10904bb6e62e92b147ce956d26d070a243e2a701",
+    "configs\\model-fingerprint.json": "0766a780dbefbb7104882c0a61be9a99d8a94787fac5467420c95d19fd00cbc6",
+    "src\\verifier_study\\generation.py": "639213725d2f28311a93a48c460fe9c6f29f9267ad8fba66a51ee279a9c2edc4",
+    "src\\verifier_study\\reasoning_generation.py": "e3d1fd0ee7ac851986abf6b4098cb8ec8cb628fc32e34450884bb9f2d4265877",
+    "data\\prompts\\mbpp-v0.2.0.jsonl": "3cf2bdc4478bb3228436e6234e39becadc87c5668ae02d89605b8fc98ea52ce0",
+    "runs\\mbpp-development40-public-consensus-20260908\\decisions.jsonl": "9bc8316022d5f40cc4550e37bbd14a56ddf0285f743d10a6781453a86f5f3d9d",
+    "runs\\mbpp-development40-20260907\\linux\\candidate-test-matrix.jsonl": "1c237edc580446ed2ccd83b0340cea183577ccf1f7bdf8e838acedeac2a829bc",
+    "runs\\mbpp-development40-20260907\\generations.jsonl": "51fa67fd47ea39ecc8372ad37a3e3c5952e1a02269281a1389f025a7fd5e2805",
+    "runs\\mbpp-development40-20260907\\generated-tests.jsonl": "3ba72a92a0fb930871b9e2847ac124ece489131dc5da5637b4e15327ae585638",
+    "runs\\mbpp-development60-20260913\\visible\\composition-decisions.jsonl": "fffc9a14de179c18b39e4bf0b17bfba60fe2e64e96a9c7d6ee53415e3d1f20aa",
+    "runs\\mbpp-development60-20260913\\visible\\candidate-test-matrix.jsonl": "88be65f11f82ec623f6eab777b5ca06c1f62887a623fbbda0314d0eb79e22892",
+    "runs\\mbpp-development60-20260913\\generations.jsonl": "6f9124b38e804a5b28aa798bcc09d55cb25af2c23b8cf0bf557d554283146bd1",
+    "runs\\mbpp-development60-20260913\\generated-tests.jsonl": "5e7ae02e912b8d7f07ccce25eebaa1607ff896cd384b823691b599531c0177cf",
+    "configs/diversity-budget-development.json": "525615d90b1c0f2e9b719cf85f6cc472fb0f26de2b5324c62682efe28f89f842",
+    "scripts/diversity_budget.py": "eafcb6b4bcf4027a79eee6aa44a747da15144e5b18868b2fcfe9d4e9d6326cfe",
+    "runs/mbpp-matched-budget-development-20260915/budget-plan.json": "f4839317d449fe101f4e8f088e3ac7f48f09f831cc24af0466ebbb1da7c94216",
+    "runs/mbpp-matched-budget-development-20260915/generations.jsonl": "fb6c0ab126c78ac36c4e3391e513033997d7c5b17b519ef729cfe0f01dca21fb",
+    "src/verifier_study/matched_budget.py": "cbe78ab34e2bf3b0fb5dea093d3ecebdd2942b73468a4973c652e0e6936cb2b7",
+    "scripts/matched_visible_linux.py": "1f50ed41d8237a58b91fbb04424e9da5047c0ac7fb5ab8b092120dda073e9ca3",
+    "scripts/freeze_matched_score.py": "c76cbaafadd2931856dd517a4d1ac2b7c6fa948245971df570a03b70f49e5274",
+    "scripts/analyze_matched_budget.py": "7b706832a802b2d61db1db4391d96a883ec52da18bb3eb4d0f1eb1128e1dd0f9",
+    "scripts/continue_confirmation.py": "a4c96e58f4820e24e06223aff0afdcee82dd14ca1782476e6630ad0c70ba6469",
+    ".github/workflows/matched-visible.yml": "c3a9548695a8724e945353135e1b87872b4c3abb37ce75b88708bae5856b3dd5",
+    ".github/workflows/score-frozen.yml": "e94268b80d47f79eb03d18200de17e1401f8269d53ba9e1fa9ea1b5f8c8c51ab",
+    "docker/Dockerfile.matched-eval": "4fd15032565c614dad4d911d058b502c42fecf19de748fd864bccd0e30c62675"
+  },
+  "parent_run": "mbpp-matched-budget-development-20260915",
+  "intervention": {
+    "date": "2026-10-01",
+    "run_id": "mbpp-diversity-budget-development-20261001",
+    "parent_run": "mbpp-matched-budget-development-20260915",
+    "scope": "Adaptive primary development100; exactly the same14 public-failure tasks; no reserve or new confirmation",
+    "hypothesis": "Increasing only nonthinking temperature from0.7 to1.0 may improve useful diversity under the same per-task output budget",
+    "alternative": "The original weak iid control may be sampling-limited; extra diversity may also be incorrect and leave selected accuracy unchanged",
+    "primary": "Paired selected-answer correctness new nonthinking versus saved parent nonthinking over100 tasks, with14 independently treated pairs",
+    "secondary": "Distinct exact source strings, parseability, candidate oracle after frozen scoring, reasoning versus new iid, all costs",
+    "decision": "If useful iid coverage improves, qualify the reasoning advantage against this stronger control; otherwise report this single-setting result with uncertainty, not general rejection of iid sampling",
+    "temperature": 1.0,
+    "top_p": 0.8,
+    "expected_top_k": 20,
+    "budget_per_task": 2048,
+    "max_tokens_per_call": 768,
+    "max_new_output_tokens": 28672,
+    "max_new_calls": 28672,
+    "max_generation_wall_seconds": 5400,
+    "gpu_minimum_free_mib": 9216,
+    "paid_gpu_api_budget": 0,
+    "seed_rule": "Reuse sha256(matched:20260915:{task_id}:nonthinking:{call_index})[:8]. Call-index seeds pair where both arms have that call; different lengths mean different call counts and not a fully paired random stream.",
+    "reuse": "Exact saved100 baselines,14 reasoning outputs and public tests; only temperature1 iid candidates are new",
+    "selector": "Existing matched_budget.select: maximize public passes, earliest index ties, replace baseline only on strict improvement; freeze before isolated hidden development scoring",
+    "stopping": "Exhaust2048 output tokens per triggered task regardless of visible outcomes. No quality retries. Preserve truncations/errors. Resume exact saved keys.5400-second execution timeout stops incomplete generation; do not automatically extend it.",
+    "analysis": "Report paired wins/losses and10000 task-bootstrap draws with seed20261001. Descriptive adaptive interval, no new confirmatory p-value. Report actual input/output tokens, calls, elapsed/peak VRAM and source diversity per task; do not call text uniqueness semantic correctness.",
+    "history": "Temperature1 was previously inconclusive on the separate20-task pilot with four candidates; this addresses the expanded14-trigger budget-limited pool, not independent confirmation"
+  }
+}
