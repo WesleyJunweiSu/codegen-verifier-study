@@ -1,0 +1,9 @@
+{
+  "generator_pid": 18788,
+  "generator_started_utc": "2026-10-01T04:15:42.3760416Z",
+  "deadline_utc": "2026-10-01T05:45:42.3760416Z",
+  "script_sha256": "4ea715d68a7b48aa4561c2eb5af5c8b368afa669e5b66d08e7e80194cc0e6ff6",
+  "status": "generator_exited_before_deadline",
+  "reason": "Windows venv launcher has a child interpreter; guard its actual process handle as well as the parent timeout",
+  "finished_utc": "2026-10-01T04:40:41.2485892Z"
+}
