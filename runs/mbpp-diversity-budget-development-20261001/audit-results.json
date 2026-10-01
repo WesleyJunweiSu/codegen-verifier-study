@@ -1,0 +1,122 @@
+{
+  "status": "saved_evidence_verified",
+  "audited_candidates": 993,
+  "treated_tasks": 14,
+  "old_distinct_task_code_pairs": 48,
+  "new_distinct_task_code_pairs": 53,
+  "tasks_with_more_distinct": 3,
+  "new_oracle_tasks": 0,
+  "shared_call_keys": 876,
+  "identical_code_on_shared_keys": 833,
+  "old_cost": {
+    "calls": 879,
+    "input_tokens": 95892,
+    "output_tokens": 28672,
+    "parseable": 868,
+    "model_wall_seconds": 1590.6958651994064,
+    "peak_allocated_vram_bytes": 9165692928
+  },
+  "new_cost": {
+    "calls": 879,
+    "input_tokens": 95879,
+    "output_tokens": 28672,
+    "parseable": 870,
+    "model_wall_seconds": 1450.4336730000027,
+    "peak_allocated_vram_bytes": 9164722176
+  },
+  "per_task": [
+    {
+      "task_id": "Mbpp/137",
+      "old_distinct": 4,
+      "new_distinct": 4,
+      "new_oracle": false
+    },
+    {
+      "task_id": "Mbpp/777",
+      "old_distinct": 2,
+      "new_distinct": 2,
+      "new_oracle": false
+    },
+    {
+      "task_id": "Mbpp/801",
+      "old_distinct": 3,
+      "new_distinct": 3,
+      "new_oracle": false
+    },
+    {
+      "task_id": "Mbpp/103",
+      "old_distinct": 2,
+      "new_distinct": 2,
+      "new_oracle": false
+    },
+    {
+      "task_id": "Mbpp/126",
+      "old_distinct": 2,
+      "new_distinct": 5,
+      "new_oracle": false
+    },
+    {
+      "task_id": "Mbpp/235",
+      "old_distinct": 3,
+      "new_distinct": 3,
+      "new_oracle": false
+    },
+    {
+      "task_id": "Mbpp/251",
+      "old_distinct": 2,
+      "new_distinct": 2,
+      "new_oracle": false
+    },
+    {
+      "task_id": "Mbpp/278",
+      "old_distinct": 4,
+      "new_distinct": 4,
+      "new_oracle": false
+    },
+    {
+      "task_id": "Mbpp/310",
+      "old_distinct": 2,
+      "new_distinct": 2,
+      "new_oracle": false
+    },
+    {
+      "task_id": "Mbpp/419",
+      "old_distinct": 3,
+      "new_distinct": 3,
+      "new_oracle": false
+    },
+    {
+      "task_id": "Mbpp/439",
+      "old_distinct": 2,
+      "new_distinct": 2,
+      "new_oracle": false
+    },
+    {
+      "task_id": "Mbpp/450",
+      "old_distinct": 2,
+      "new_distinct": 2,
+      "new_oracle": false
+    },
+    {
+      "task_id": "Mbpp/468",
+      "old_distinct": 5,
+      "new_distinct": 6,
+      "new_oracle": false
+    },
+    {
+      "task_id": "Mbpp/735",
+      "old_distinct": 12,
+      "new_distinct": 13,
+      "new_oracle": false
+    }
+  ],
+  "interval_warning": "All observed paired correctness differences are zero. The saved percentile bootstrap [0,0] is degenerate and must not be interpreted as an equivalence bound or zero uncertainty in unseen tasks/seeds.",
+  "cost_warning": "Recorded model wall times are different desktop sessions, not a controlled latency experiment. Reasoning outputs are reused, not fresh replicated gains.",
+  "source_sha256": {
+    "runs\\mbpp-diversity-budget-development-20261001\\audit_results.py": "5a82833ad714d5d948f17775f2ba3cc279566e91f6dcc698e0d9eb635b2a77a8",
+    "runs\\mbpp-diversity-budget-development-20261001\\temperature-summary.json": "7351c66c2dbaa4682a55793fb8c571c06996fac6355f74aa974e5fbd7528bd3a",
+    "runs\\mbpp-diversity-budget-development-20261001\\generations.jsonl": "e131f090e59e75d181a7ec712196d1659e2fa2f6264e8c33505763bd2d2174dc",
+    "runs\\mbpp-diversity-budget-development-20261001\\linux\\evaluation.jsonl": "6a370ddd066d003a8549d19b4b7d9fafd39dbe1899c990143a48b6b859168443",
+    "runs\\mbpp-matched-budget-development-20260915\\new-generations.jsonl": "fcfed1e0998e98686fb46b401f333f848689834edf582d3885e08fcd54c93f38"
+  }
+}

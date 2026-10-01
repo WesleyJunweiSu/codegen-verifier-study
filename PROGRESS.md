@@ -173,3 +173,11 @@ Launch verified after protocold326fbf was pushed: actual execution interpreter P
 ## 2026-10-01 temperature budget control completed
 
 Nonthinking T1.0 selected72/100 versus saved T0.7 72/100;0 wins,0 losses on14 triggered development tasks. Same2048 output budget per trigger; report input/latency separately. Evidence in runs/mbpp-diversity-budget-development-20261001/temperature-summary.json and generation-audit.json. This is adaptive development evidence, not independent confirmation. Reserve untouched.
+
+### 2026-10-01 completed-batch audit and interpretation
+
+Visible workflow36816233139 and scoring36816280405 succeeded; generated/scored artifacts and automatic progress entry were pushed as6fbc310. No active local Python or recent Actions job remains. Original hashes, frozen decisions,993 scored code hashes, dataset digest and per-trigger budgets verified by the saved-only audit in runs/mbpp-diversity-budget-development-20261001/audit_results.py. No generation or evaluation repeated.
+
+Temperature1.0 generated879 new calls,28672 output/95879 input tokens,1450.43 recorded model seconds, peak allocated8.54GiB. Task/code variants48→53;3/14 tasks gained variants, parseable outputs868→870, and833/876 shared call keys produced identical code. Still0/14 pools contain a correct new candidate and72/100 selected accuracy. Reasoning77/100 is reused. Documented in docs/temperature-budget-results.md and claim ledger. Saved bootstrap[0,0] is a degenerate resampling artifact, not an equivalence bound;14 treated tasks cannot establish general futility. Desktop wall-time differences are not controlled speedups.
+
+Next decision: stop blind temperature sweeps; prepare the bounded paired trace-content protocol (full/no-trace anchors and truncation/filler controls) on exposed development, with source completion strata and all costs. Executable protocol and method review remain prerequisites; no such experiment is currently running. External replication still needs provider login (standard token check remains false) and evaluator adaptation. Do not repeat the access request or census; keep reserve untouched.
