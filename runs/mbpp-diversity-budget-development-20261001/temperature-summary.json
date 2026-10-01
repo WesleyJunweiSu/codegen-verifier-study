@@ -1,0 +1,127 @@
+{
+  "scope": "Adaptive primary development100; exactly the same14 public-failure tasks; no reserve or new confirmation",
+  "temperature07_correct": 72,
+  "temperature10_correct": 72,
+  "wins": [],
+  "losses": [],
+  "difference_pp": 0,
+  "exploratory_bootstrap95_pp": [
+    0,
+    0
+  ],
+  "per_task": [
+    {
+      "task_id": "Mbpp/137",
+      "old_calls": 39,
+      "new_calls": 39,
+      "old_distinct_code": 4,
+      "new_distinct_code": 4,
+      "new_pool_oracle": false
+    },
+    {
+      "task_id": "Mbpp/777",
+      "old_calls": 90,
+      "new_calls": 90,
+      "old_distinct_code": 2,
+      "new_distinct_code": 2,
+      "new_pool_oracle": false
+    },
+    {
+      "task_id": "Mbpp/801",
+      "old_calls": 4,
+      "new_calls": 4,
+      "old_distinct_code": 3,
+      "new_distinct_code": 3,
+      "new_pool_oracle": false
+    },
+    {
+      "task_id": "Mbpp/103",
+      "old_calls": 23,
+      "new_calls": 23,
+      "old_distinct_code": 2,
+      "new_distinct_code": 2,
+      "new_pool_oracle": false
+    },
+    {
+      "task_id": "Mbpp/126",
+      "old_calls": 18,
+      "new_calls": 20,
+      "old_distinct_code": 2,
+      "new_distinct_code": 5,
+      "new_pool_oracle": false
+    },
+    {
+      "task_id": "Mbpp/235",
+      "old_calls": 116,
+      "new_calls": 114,
+      "old_distinct_code": 3,
+      "new_distinct_code": 3,
+      "new_pool_oracle": false
+    },
+    {
+      "task_id": "Mbpp/251",
+      "old_calls": 108,
+      "new_calls": 108,
+      "old_distinct_code": 2,
+      "new_distinct_code": 2,
+      "new_pool_oracle": false
+    },
+    {
+      "task_id": "Mbpp/278",
+      "old_calls": 59,
+      "new_calls": 58,
+      "old_distinct_code": 4,
+      "new_distinct_code": 4,
+      "new_pool_oracle": false
+    },
+    {
+      "task_id": "Mbpp/310",
+      "old_calls": 171,
+      "new_calls": 171,
+      "old_distinct_code": 2,
+      "new_distinct_code": 2,
+      "new_pool_oracle": false
+    },
+    {
+      "task_id": "Mbpp/419",
+      "old_calls": 54,
+      "new_calls": 54,
+      "old_distinct_code": 3,
+      "new_distinct_code": 3,
+      "new_pool_oracle": false
+    },
+    {
+      "task_id": "Mbpp/439",
+      "old_calls": 63,
+      "new_calls": 63,
+      "old_distinct_code": 2,
+      "new_distinct_code": 2,
+      "new_pool_oracle": false
+    },
+    {
+      "task_id": "Mbpp/450",
+      "old_calls": 90,
+      "new_calls": 90,
+      "old_distinct_code": 2,
+      "new_distinct_code": 2,
+      "new_pool_oracle": false
+    },
+    {
+      "task_id": "Mbpp/468",
+      "old_calls": 32,
+      "new_calls": 32,
+      "old_distinct_code": 5,
+      "new_distinct_code": 6,
+      "new_pool_oracle": false
+    },
+    {
+      "task_id": "Mbpp/735",
+      "old_calls": 12,
+      "new_calls": 13,
+      "old_distinct_code": 12,
+      "new_distinct_code": 13,
+      "new_pool_oracle": false
+    }
+  ],
+  "limitation": "Adaptive development,14 treated tasks; source uniqueness is not semantic correctness; shared baselines/reasoning are reused; no confirmation or causal claim."
+}

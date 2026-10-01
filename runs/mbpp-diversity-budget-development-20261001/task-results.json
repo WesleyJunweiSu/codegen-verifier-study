@@ -1,0 +1,602 @@
+[
+  {
+    "task_id": "Mbpp/119",
+    "selected_baseline": false,
+    "reasoning_budget2048": false,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/12",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/120",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/129",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/137",
+    "selected_baseline": false,
+    "reasoning_budget2048": false,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/226",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/227",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/256",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/257",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/276",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/309",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/312",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/388",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/394",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/412",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/429",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/436",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/455",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/463",
+    "selected_baseline": false,
+    "reasoning_budget2048": false,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/470",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/555",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/559",
+    "selected_baseline": false,
+    "reasoning_budget2048": false,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/568",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/598",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/623",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/624",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/626",
+    "selected_baseline": false,
+    "reasoning_budget2048": false,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/628",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/70",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/75",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/758",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/767",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/777",
+    "selected_baseline": false,
+    "reasoning_budget2048": false,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/793",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/796",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/801",
+    "selected_baseline": false,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/805",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/808",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/94",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/99",
+    "selected_baseline": false,
+    "reasoning_budget2048": false,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/103",
+    "selected_baseline": false,
+    "reasoning_budget2048": false,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/104",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/108",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/109",
+    "selected_baseline": false,
+    "reasoning_budget2048": false,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/126",
+    "selected_baseline": false,
+    "reasoning_budget2048": false,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/132",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/142",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/165",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/167",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/172",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/233",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/235",
+    "selected_baseline": false,
+    "reasoning_budget2048": false,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/240",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/247",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/251",
+    "selected_baseline": false,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/272",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/278",
+    "selected_baseline": false,
+    "reasoning_budget2048": false,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/296",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/300",
+    "selected_baseline": false,
+    "reasoning_budget2048": false,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/310",
+    "selected_baseline": false,
+    "reasoning_budget2048": false,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/398",
+    "selected_baseline": false,
+    "reasoning_budget2048": false,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/419",
+    "selected_baseline": false,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/424",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/425",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/439",
+    "selected_baseline": false,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/447",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/450",
+    "selected_baseline": false,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/453",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/458",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/460",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/468",
+    "selected_baseline": false,
+    "reasoning_budget2048": false,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/471",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/476",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/478",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/56",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/577",
+    "selected_baseline": false,
+    "reasoning_budget2048": false,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/580",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/593",
+    "selected_baseline": false,
+    "reasoning_budget2048": false,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/600",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/602",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/64",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/643",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/68",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/69",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/720",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/724",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/730",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/735",
+    "selected_baseline": false,
+    "reasoning_budget2048": false,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/736",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/74",
+    "selected_baseline": false,
+    "reasoning_budget2048": false,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/754",
+    "selected_baseline": false,
+    "reasoning_budget2048": false,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/766",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/771",
+    "selected_baseline": false,
+    "reasoning_budget2048": false,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/772",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/781",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/785",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/792",
+    "selected_baseline": false,
+    "reasoning_budget2048": false,
+    "nonthinking_budget2048": false
+  },
+  {
+    "task_id": "Mbpp/809",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/90",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  },
+  {
+    "task_id": "Mbpp/97",
+    "selected_baseline": true,
+    "reasoning_budget2048": true,
+    "nonthinking_budget2048": true
+  }
+]
